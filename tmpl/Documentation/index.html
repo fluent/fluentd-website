@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Unify | Documentation...</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
+</head>	
+
+<body>
+
+<div class="container">
+	<div class="row">
+    
+        <div class="col-md-3">
+            <div class="aside">
+                <h1>Unify - Responsive Bootstrap 3 Template</h1>
+                <p>Documentation v1.3</p>
+                <hr />
+                
+                <ul class="list-unstyled">
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#main">Main Structures</a></li>
+                    <li><a href="#nav">Header & Navigation</a></li>
+                    <li><a href="#theme">Theme Configuration</a></li>
+                    <li><a href="#js">JavaScript initialization</a></li>
+                    <li><a href="#fonts">Fonts</a></li>
+                    <li><a href="#icons">Icons</a></li>
+                    <li><a href="#credits">Credits</a></li>
+                    <li><a href="#changelog">Change Log</a></li>
+                    <li><a href="#upgrade">Upgrade</a></li>
+                    <li><a href="#end">End of Documentation</a></li>
+                </ul>                
+            </div>
+        </div><!--/aside-->
+        
+        <div class="content col-md-9">
+        	<div id="overview" class="margin-bottom-70">
+                <h2>Overview</h2>
+                <hr />
+                <p>Unify is an incredibly beautiful responsive Bootstrap Template for corporate and creative professionals. It works on all main web browsers, tablets and phones. Current upgraded release is v1.3 and much more new amazing features are coming soon in the next releases. Thank you for using Unify.</p><br />
+                <ul class="list-unstyled">
+                	<li>Author: <a href="#">Html Stream</a></li>
+                	<li>Contact: <a href="mailto:support@htmlstream.com">support@htmlstream.com</a></li>
+                	<li>Created on: 24/04/2013</li>
+                </ul>
+            </div><!--/overview-->
+            
+            <div id="main" class="margin-bottom-70">
+                <h2>Main Structures <a href="#top">top <i class="icon-angle-up"></i></a></h2>
+                <hr />
+                <p>Template files consist of <code>top</code>, <code>header</code>, <code>slider</code>, <code>content part</code>, <code>footer</code> and <code>copyright</code></p>
+				
+                <div>
+                	<img class="img-responsive" src="img/unify.jpg" alt="" />
+                </div>
+                
+				<!--Beginning of Page-->
+                <h3>Beginning of Page</h3>
+                <p>Below code is used at the beginning of all HTML pages to detect Internet Explorer browser version and set a spesific class applied to Internet Explorer versions.</p>
+				<pre>
+&lt;!DOCTYPE html&gt;
+&lt;!--[if IE 8]&gt; &lt;html lang=&quot;en&quot; class=&quot;ie8&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 9]&gt; &lt;html lang=&quot;en&quot; class=&quot;ie9&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if !IE]&gt;&lt;!--&gt; &lt;html lang=&quot;en&quot;&gt; &lt;!--&lt;![endif]--&gt;
+                </pre>
+
+				<!--Page Head-->
+                <h3>Page Head</h3>
+                <p>Page head contains metadata, javascript and css files.</p>
+				<pre>
+&lt;head&gt;
+    &lt;title&gt;Unify | Welcome...&lt;/title&gt;
+
+    &lt;!-- Meta --&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot; /&gt;
+    &lt;meta content=&quot;&quot; name=&quot;description&quot; /&gt;
+    &lt;meta content=&quot;&quot; name=&quot;author&quot; /&gt;
+    
+    &lt;!-- CSS Global Compulsory --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/plugins/bootstrap/css/bootstrap.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/style.css&quot; /&gt;
+    <span class="tag-cover">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/headers/header1.css&quot; /&gt;</span>
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/responsive.css&quot; /&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; /&gt;
+    &lt;!-- CSS Implementing Plugins --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/plugins/font-awesome/css/font-awesome.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/plugins/flexslider/flexslider.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/plugins/parallax-slider/css/parallax-slider.css&quot; /&gt;
+    &lt;!-- CSS Theme --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/themes/default.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/themes/headers/default.css&quot; /&gt;
+&lt;/head&gt;
+                </pre>
+                <p><label class="label label-info">Info</label> Please read <a href="#nav">Header & Navigation</a> part to implement <code>header</code> options.</p>
+
+                <!--Top-->
+                <h3>Top</h3>
+                <pre>
+&lt;!--=== Top  ===--&gt;
+&lt;div class=&quot;top&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        ...
+        ...
+    &lt;/div&gt;&lt;!--/container--&gt;
+&lt;/div&gt;&lt;!--/top--&gt;
+&lt;!--=== End Top  ===--&gt;
+                </pre>
+
+                <!--Header-->
+                <h3>Header</h3>
+                <pre>
+&lt;!--=== Header ===--&gt;
+&lt;div class=&quot;header&quot;&gt;
+    &lt;div class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+        ...
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!--/header--&gt;
+&lt;!--=== End Header ===--&gt;
+                </pre>
+
+                <!--Content-->
+                <h3>Content</h3>
+                <p>Content consists of Purchase Block, Breadcrumbs and many more components.</p>
+                <pre>
+&lt;!--=== Content Part  ===--&gt;
+&lt;div class=&quot;container&quot;&gt;
+    ...
+    ...
+&lt;/div&gt;&lt;!--/container--&gt;
+&lt;!--=== End Content Part  ===--&gt;
+                </pre>
+
+				<!--Footer-->
+				<h3>Footer</h3>
+				<pre>
+&lt;!--=== Footer ===--&gt;
+&lt;div class=&quot;footer&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+	    ...
+	    ...
+    &lt;/div&gt;&lt;!--/container--&gt;
+&lt;/div&gt;&lt;!--/footer--&gt;
+&lt;!--=== End Footer ===--&gt;
+                </pre>
+                
+				<pre>
+&lt;!--=== Copyright ===--&gt;
+&lt;div class=&quot;copyright&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+	    ...
+	    ...
+    &lt;/div&gt;&lt;!--/container--&gt;
+&lt;/div&gt;&lt;!--/copyright--&gt;
+&lt;!--=== End Copyright ===--&gt;
+                </pre>
+
+				<!--Javascript and jQuery-->
+                <h3>Javascript and jQuery</h3>
+                <p>Javascript files loaded in the end of page. This will reduce page load time.</p>
+				<pre>
+&lt;!-- JS Global Compulsory --&gt;
+&lt;script src=&quot;assets/plugins/jquery-1.10.2.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/jquery-migrate-1.2.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/bootstrap/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/hover-dropdown.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/back-to-top.js&quot;&gt;&lt;/script&gt;
+&lt;!-- JS Implementing Plugins --&gt;
+&lt;script src=&quot;assets/plugins/flexslider/jquery.flexslider-min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/parallax-slider/js/modernizr.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/plugins/parallax-slider/js/jquery.cslider.js&quot;&gt;&lt;/script&gt;
+&lt;!-- JS Page Level --&gt;
+&lt;script src=&quot;assets/js/app.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/js/pages/index.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+jQuery(document).ready(function() {
+    App.init();
+    App.initSliders();
+    Index.initParallaxSlider();
+});
+&lt;/script&gt;
+&lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;assets/js/respond.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+                </pre>
+            </div><!--/end-->
+
+			<!--Header and Navigation-->            
+            <div id="nav" class="margin-bottom-70">
+                <h2>Header &amp; Navigation <a href="#top">top <i class="icon-angle-up"></i></a></h2>
+                <hr />
+                <p>Unify Template consist in two basic navigations (menu) and you can use any of them in your project. Here has shown how you can connect navigations.</p>
+
+                <p>If you want to use an alternative header, you should change in <code>head</code> the style's name:</p>
+                <pre>
+&lt;head&gt;
+    &lt;!-- This is default header style --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/headers/header1.css&quot; /&gt;
+    
+    &lt;!-- OR (This is an alternative header style) --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/headers/header2.css&quot; /&gt;
+&lt;/head&gt;
+                </pre>                
+                <p><label class="label label-info">Info</label> The default header style is <strong>assets/css/headers/header1.css</strong></p><br />
+
+                <p>Moreover, do not forget to connect <code>top</code> and <code>header</code> as shown below:</p>
+
+				<pre>
+&lt;!--=== Top ===--&gt;
+&lt;div class=&quot;top&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+	    ...
+    &lt;/div&gt;&lt;!--/container--&gt;
+&lt;/div&gt;&lt;!--/top--&gt;
+                </pre>
+                
+				<pre>
+&lt;!--=== Header ===--&gt;
+&lt;div class=&quot;header&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+	    ...
+	    ...
+    &lt;/div&gt;&lt;!--/container--&gt;
+&lt;/div&gt;&lt;!--/header--&gt;
+                </pre>                
+                <p><label class="label label-info">Info</label> Make sure you have changed <code>top</code> and <code>header</code> blocks for alternative header as they have different codes inside blocks.</p><br />
+                                
+                <div>
+                    <img class="img-responsive" src="img/header1.jpg" alt="Default Menu" />
+                    <p><span class="label label-info">Info</span> This is <strong>default</strong> header view</p><br />
+
+                    <hr class="margin-bottom-30">
+
+                    <img class="img-responsive" src="img/header2.jpg" alt="Alternative Menu" />
+                    <p><span class="label label-danger">Info</span> This is an <strong>alternative</strong> header view</p>
+                </div>
+            </div><!--/end-->
+
+            <!--Theme Configuration-->            
+            <div id="theme" class="theme margin-bottom-70">
+                <h2>Theme Configuration <a href="#top">top <i class="icon-angle-up"></i></a></h2>
+                <hr />
+                <p>All theme css files located in <code>assets/css/themes/..</code></p>
+                <p>To change theme color you should just replace <code>assets/css/themes/default.css</code> to <code>assets/css/themes/your_theme.css</code> or you can use ready theme css files such as:</p>
+                <ul class="list-unstyled">
+                    <li><code>assets/css/themes/red.css</code> and <code>assets/css/themes/header1-red.css</code></li>
+                    <li><code>assets/css/themes/blue.css</code> and <code>assets/css/themes/header1-blue.css</code></li>
+                    <li><code>assets/css/themes/light.css</code> and <code>assets/css/themes/header1-light.css</code></li>
+                    <li><code>assets/css/themes/orange.css</code> and <code>assets/css/themes/header1-orange.css</code></li>
+                </ul>
+                <pre>
+&lt;head&gt;
+    &lt;title&gt;Unify | Welcome...&lt;/title&gt;
+
+    &lt;!-- Meta --&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot; /&gt;
+    &lt;meta content=&quot;&quot; name=&quot;description&quot; /&gt;
+    &lt;meta content=&quot;&quot; name=&quot;author&quot; /&gt;
+
+    &lt;!-- CSS Global Compulsory --&gt;
+    ......    
+    <span class="tag-cover">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/headers/header1.css&quot; /&gt;</span>
+    ......    
+    ......    
+
+    &lt;!-- CSS Implementing Plugins --&gt;
+    ......    
+    ......    
+
+    &lt;!-- CSS Theme --&gt;
+    <span class="tag-cover">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/themes/default.css&quot; /&gt;</span>
+    <span class="tag-cover">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/themes/headers/default.css&quot; /&gt;</span>
+&lt;/head&gt;
+                </pre>
+                <p class="theme-info"><span class="label label-info">Info</span> If you want to use <strong>default theme</strong> style there's no necessity to write theme css files, It means no need to link <code>assets/css/themes/default.css</code> and <code>assets/css/themes/headers/default.css</code> to <code>head</code> because they've already included in main css file <code>style.css</code></p> <br>
+                <hr>
+                <p class="theme-info">If you are using <code>header2</code> option just change to <code>assets/css/themes/headers/default.css</code> to <code>assets/css/themes/header2-your_theme.css</code></p>
+                <pre>
+&lt;head&gt;
+    &lt;title&gt;Unify | Welcome...&lt;/title&gt;
+
+    &lt;!-- Meta --&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta content=&quot;width=device-width, initial-scale=1.0&quot; name=&quot;viewport&quot; /&gt;
+    &lt;meta content=&quot;&quot; name=&quot;description&quot; /&gt;
+    &lt;meta content=&quot;&quot; name=&quot;author&quot; /&gt;
+
+    &lt;!-- CSS Global Compulsory --&gt;
+    ......    
+    <span class="tag-cover tag-cover-color">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/headers/header2.css&quot; /&gt;</span>
+    ......    
+    ......    
+
+    &lt;!-- CSS Implementing Plugins --&gt;
+    ......    
+    ......    
+
+    &lt;!-- CSS Theme --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/themes/your_theme.css&quot; /&gt;
+    <span class="tag-cover tag-cover-color">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/css/themes/headers/header2-your_theme.css&quot; /&gt;</span>
+&lt;/head&gt;
+                </pre>
+                <p><span class="label label-info">Info</span> About how to change <code>headers</code> read more detailed information above <a href="#nav">Header & Navigation</a></p>
+            </div>
+            
+			<!--JavaScript initialization-->            
+            <div id="js" class="margin-bottom-70">
+                <h2>JavaScript initialization <a href="#top">top <i class="icon-angle-up"></i></a></h2>
+                <hr />
+                <p>Core javascript initialization implemented in <code>assets/js/app.js</code> thorugh App object as shown below. This approach enables an easy modular implementation to initialize jquery plugins and other application logics.</p>
+				<pre>
+var App = function () {
+    ...
+    ...
+}();
+                </pre>                
+            </div><!--/end-->
+            
+			<!--Fonts-->            
+            <div id="fonts" class="margin-bottom-70">
+                <h2>Fonts <a href="#top">top <i class="icon-angle-up"></i></a></h2>
+                <hr />
+                <p>Unify Template uses Open Sans and Monda fonts from google fonts.</p> 
+                <p>The font imported in main css file <code>assets/css/style.css</code></p>
+				<pre>
+/*Import Google Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Monda:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+                </pre>                
+            </div><!--/end-->
+            
+			<!--Icons-->            
+            <div id="icons" class="margin-bottom-70">
+                <h2>Icons <a href="#top">top <i class="icon-angle-up"></i></a></h2>
+                <hr />
+                <p>Unify Template mainly uses Font-Awesome icons and you can find all icons on page <code>feature_icons.html</code> <br>
+                    Here are some Font Awesome icons examples:</p>
+                <div class="row icon-page fa-icons">
+                    <div class="col-md-3">
+                        <ul class="list-unstyled">
+                            <li><i class="icon-compass"></i> icon-compass</li>
+                            <li><i class="icon-eur "></i> icon-eur </li>
+                            <li><i class="icon-usd  "></i> icon-usd </li>
+                            <li><i class="icon-jpy "></i> icon-jpy </li>
+                            <li><i class="icon-krw  "></i> icon-krw </li>
+                            <li><i class="icon-file-text "></i> icon-file-text </li>
+                            <li><i class="icon-sort-by-attributes-alt "></i> icon-sort-by-attributes-alt</li>
+                            <li><i class="icon-thumbs-down"></i> icon-thumbs-down </li>
+                            <li><i class="icon-xing-sign"></i> icon-xing-sign</li>
+                            <li><i class="icon-instagram "></i> icon-instagram</li>
+                            <li><i class="icon-bitbucket-sign"></i> icon-bitbucket-sign</li>
+                            <li><i class="icon-long-arrow-up"></i> icon-long-arrow-up </li>
+                            <li><i class="icon-windows"></i> icon-windows </li>
+                            <li><i class="icon-skype"></i> icon-skype</li>
+                            <li><i class="icon-male"></i> icon-male</li>
+                            <li><i class="icon-archive"></i> icon-archive</li>
+                            <li><i class="icon-renren"></i> icon-renren</li>
+                        </ul>
+                    </div>            
+                    <div class="col-md-3">
+                        <ul class="list-unstyled">
+                            <li><i class="icon-collapse"></i> icon-collapse</li>
+                            <li><i class="icon-eur"></i> icon-eur  </li>
+                            <li><i class="icon-inr"></i> icon-inr </li>
+                            <li><i class="icon-cny"></i> icon-cny  </li>
+                            <li><i class="icon-btc "></i> icon-btc  </li>
+                            <li><i class="icon-sort-by-alphabet"></i> icon-sort-by-alphabet</li>
+                            <li><i class="icon-sort-by-order"></i> icon-sort-by-order </li>
+                            <li><i class="icon-youtube-sign"></i> icon-youtube-sign  </li>
+                            <li><i class="icon-youtube-play"></i> icon-youtube-play  </li>
+                            <li><i class="icon-flickr"></i> icon-flickr  </li>
+                            <li><i class="icon-tumblr"></i> icon-tumblr </li>
+                            <li><i class="icon-long-arrow-left "></i> icon-long-arrow-left </li>
+                            <li><i class="icon-android"></i> icon-android/li>
+                            <li><i class="icon-foursquare"></i> icon-foursquare </li>
+                            <li><i class="icon-gittip  "></i> icon-gittip </li>
+                            <li><i class="icon-bug "></i> icon-bug </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="list-unstyled">
+                            <li><i class="icon-collapse-top"></i> icon-collapse-top</li>
+                            <li><i class="icon-gbp"></i> icon-gbp</li>
+                            <li><i class="icon-inr"></i> icon-inr</li>
+                            <li><i class="icon-cny "></i> icon-cny</li>
+                            <li><i class="icon-btc"></i> icon-btc </li>
+                            <li><i class="icon-sort-by-alphabet-alt "></i> icon-sort-by-alphabet-alt </li>
+                            <li><i class="icon-sort-by-order-alt"></i> icon-sort-by-order-alt  </li>
+                            <li><i class="icon-youtube "></i> icon-youtube </li>
+                            <li><i class="icon-dropbox "></i> icon-dropbox </li>
+                            <li><i class="icon-adn"></i> icon-adn   </li>
+                            <li><i class="icon-tumblr-sign"></i> icon-tumblr-sign</li>
+                            <li><i class="icon-long-arrow-right "></i> icon-long-arrow-right   </li>
+                            <li><i class="icon-linux"></i> icon-linux </li>
+                            <li><i class="icon-trello "></i> icon-trello   </li>
+                            <li><i class="icon-sun"></i> icon-sun</li>
+                            <li><i class="icon-vk"></i> icon-vk</li>
+                        </ul>
+                    </div>                
+                    <div class="col-md-3">
+                        <ul class="list-unstyled">
+                            <li><i class="icon-expand"></i> icon-expand </li>
+                            <li><i class="icon-usd"></i> icon-usd</li>
+                            <li><i class="icon-jpy"></i> icon-jpy</li>
+                            <li><i class="icon-krw"></i> icon-krw</li>
+                            <li><i class="icon-file"></i> icon-file </li>
+                            <li><i class="icon-sort-by-attributes"></i> icon-sort-by-attributes </li>
+                            <li><i class="icon-thumbs-up"></i> icon-thumbs-up    </li>
+                            <li><i class="icon-xing "></i> icon-xing </li>
+                            <li><i class="icon-stackexchange"></i> icon-stackexchange</li>
+                            <li><i class="icon-bitbucket "></i> icon-bitbucket  </li>
+                            <li><i class="icon-long-arrow-down "></i> icon-long-arrow-down</li>
+                            <li><i class="icon-apple"></i> icon-apple</li>
+                            <li><i class="icon-dribbble"></i> icon-dribbble</li>
+                            <li><i class="icon-female"></i> icon-female </li>
+                            <li><i class="icon-moon"></i> icon-moon </li>
+                            <li><i class="icon-weibo"></i> icon-weibo</li>     
+                        </ul>
+                    </div>                
+                </div>                
+                <p><label class="label label-info">Info</label> You can find more detailed information from the official website <a target="_blank" href="http://fortawesome.github.com/Font-Awesome/">http://fortawesome.github.com/Font-Awesome</a></p>
+
+                <hr>
+
+                <p>Moreover, we added Glyphicons Pro Icons (<strong>value $59</strong>) in v1.2. <br> Here are some more icons examples:</p>
+                <div class="icon-page">
+                    <ul class="bs-glyphicons">
+                        <li><span class="glyphicon glyphicon-adjust"></span> .glyphicon .glyphicon-adjust</li>
+                        <li><span class="glyphicon glyphicon-align-center"></span> .glyphicon .glyphicon-align-center</li>
+                        <li><span class="glyphicon glyphicon-align-justify"></span> .glyphicon .glyphicon-align-justify</li>
+                        <li><span class="glyphicon glyphicon-align-left"></span> .glyphicon .glyphicon-align-left</li>
+                        <li><span class="glyphicon glyphicon-align-right"></span> .glyphicon .glyphicon-align-right</li>
+                        <li><span class="glyphicon glyphicon-arrow-down"></span> .glyphicon .glyphicon-arrow-down</li>
+                        <li><span class="glyphicon glyphicon-arrow-left"></span> .glyphicon .glyphicon-arrow-left</li>
+                        <li><span class="glyphicon glyphicon-arrow-right"></span> .glyphicon .glyphicon-arrow-right</li>
+                        <li><span class="glyphicon glyphicon-arrow-up"></span> .glyphicon .glyphicon-arrow-up</li>
+                        <li><span class="glyphicon glyphicon-asterisk"></span> .glyphicon .glyphicon-asterisk</li>
+                        <li><span class="glyphicon glyphicon-backward"></span> .glyphicon .glyphicon-backward</li>
+                        <li><span class="glyphicon glyphicon-ban-circle"></span> .glyphicon .glyphicon-ban-circle</li>
+                        <li><span class="glyphicon glyphicon-barcode"></span> .glyphicon .glyphicon-barcode</li>
+                        <li><span class="glyphicon glyphicon-bell"></span> .glyphicon .glyphicon-bell</li>
+                        <li><span class="glyphicon glyphicon-bold"></span> .glyphicon .glyphicon-bold</li>
+                        <li><span class="glyphicon glyphicon-book"></span> .glyphicon .glyphicon-book</li>
+                        <li><span class="glyphicon glyphicon-bookmark"></span> .glyphicon .glyphicon-bookmark</li>
+                        <li><span class="glyphicon glyphicon-briefcase"></span> .glyphicon .glyphicon-briefcase</li>
+                        <li><span class="glyphicon glyphicon-bullhorn"></span> .glyphicon .glyphicon-bullhorn</li>
+                        <li><span class="glyphicon glyphicon-calendar"></span> .glyphicon .glyphicon-calendar</li>
+                        <li><span class="glyphicon glyphicon-camera"></span> .glyphicon .glyphicon-camera</li>
+                        <li><span class="glyphicon glyphicon-certificate"></span> .glyphicon .glyphicon-certificate</li>
+                        <li><span class="glyphicon glyphicon-check"></span> .glyphicon .glyphicon-check</li>
+                        <li><span class="glyphicon glyphicon-chevron-down"></span> .glyphicon .glyphicon-chevron-down</li>
+                        <li><span class="glyphicon glyphicon-chevron-left"></span> .glyphicon .glyphicon-chevron-left</li>
+                        <li><span class="glyphicon glyphicon-chevron-right"></span> .glyphicon .glyphicon-chevron-right</li>
+                        <li><span class="glyphicon glyphicon-chevron-up"></span> .glyphicon .glyphicon-chevron-up</li>
+                        <li><span class="glyphicon glyphicon-circle-arrow-down"></span> .glyphicon .glyphicon-circle-arrow-down</li>
+                        <li><span class="glyphicon glyphicon-circle-arrow-left"></span> .glyphicon .glyphicon-circle-arrow-left</li>
+                        <li><span class="glyphicon glyphicon-circle-arrow-right"></span> .glyphicon .glyphicon-circle-arrow-right</li>
+                    </ul>
+                </div>
+                <br>                
+                <p><label class="label label-info">Info</label> In addition, you can find more detailed information on the official website <a target="_blank" href="http://glyphicons.com">http://http://glyphicons.com</a></p>
+            </div><!--/end-->
+
+            <!--Credits-->            
+            <div id="credits" class="table-credits margin-bottom-70">
+                <h2>Credits <a href="#top">top <i class="icon-angle-up"></i></a></h2>
+                <hr />
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th width="120">Name</th>
+                            <th class="hidden-sm">Description</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Twitter Bootstrap</td>
+                            <td class="hidden-sm">Sleek, intuitive, and powerful front-end framework for faster and easier web development.</td>
+                            <td><a target="_blank" href="http://twitter.github.io/bootstrap">http://twitter.github.io/bootstrap</a></td>
+                        </tr>
+                        <tr>
+                            <td>jQuery</td>
+                            <td class="hidden-sm">jQuery is a fast, small, and feature-rich JavaScript library.</td>
+                            <td><a target="_blank" href="http://jquery.com">http://jquery.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Font Awesome</td>
+                            <td class="hidden-sm">Font Awesome The iconic font designed for Bootstrap</td>
+                            <td><a target="_blank" href="http://fortawesome.github.io/Font-Awesome">http://fortawesome.github.io/Font-Awesome</a></td>
+                        </tr>
+                        <tr>
+                            <td>Glyphicons Pro</td>
+                            <td class="hidden-sm">Icons are designed primarily for toolbars and navigation bars in OS X Lion, the application for iPhone, iPhone 4, iPad and other Apple devices.</td>
+                            <td><a target="_blank" href="http://glyphicons.com">http://glyphicons.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Revolution Slider</td>
+                            <td class="hidden-sm">Slider Revolution is a fully developed slide displaying system offering the capability to show images, videos and captions paired with simple, modern and fancy 3D transitions.</td>
+                            <td><a target="_blank" href="http://www.themepunch.com/codecanyon/revolution">http://www.themepunch.com/codecanyon/revolution</a></td>
+                        </tr>
+                        <tr>
+                            <td>Parallax Slider</td>
+                            <td class="hidden-sm">A simple parallax content slider with different animations for each slider element and a background parallax effect.</td>
+                            <td><a target="_blank" href="http://tympanus.net/codrops/2012/03/15/parallax-content-slider-with-css3-and-jquery">http://tympanus.net/codrops/2012/03/15/parallax-content-slider-with-css3-and-jquery</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sequence Slider</td>
+                            <td class="hidden-sm">Sequence Slider is Responsive slider with Advanced CSS3 Transitions. Unify template uses "Sliding Horizontal Parallax" and "Apple Style" sliders.</td>
+                            <td><a target="_blank" href="http://www.sequencejs.com">http://www.sequencejs.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>BxSlider</td>
+                            <td class="hidden-sm">The Responsive jQuery Content Slider.</td>
+                            <td><a target="_blank" href="http://bxslider.com">http://bxslider.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>FlexSlider</td>
+                            <td class="hidden-sm">FlexSlider an awesome, fully responsive jQuery slider toolkit. Unify uses FlexSlider for "Our Clients" carousel.</td>
+                            <td><a target="_blank" href="http://www.woothemes.com/flexslider">http://www.woothemes.com/flexslider</a></td>
+                        </tr>
+                        <tr>
+                            <td>Backstretch</td>
+                            <td class="hidden-sm">A simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element.</td>
+                            <td><a target="_blank" href="http://srobbin.com/jquery-plugins/backstretch">http://srobbin.com/jquery-plugins/backstretch</a></td>
+                        </tr>
+                        <tr>
+                            <td>FancyBox</td>
+                            <td class="hidden-sm">FancyBox is a tool for displaying images, html content and multi-media.</td>
+                            <td><a target="_blank" href="http://fancybox.net">http://fancybox.net</a></td>
+                        </tr>
+                        <tr>
+                            <td>Quicksand</td>
+                            <td class="hidden-sm">Quicksand reorder and filter items with a nice shuffling animation. The folder name in Unify Template is portfolioSorting.</td>
+                            <td><a target="_blank" href="https://github.com/razorjack/quicksand">https://github.com/razorjack/quicksand</a></td>
+                        </tr>
+                        <tr>
+                            <td>Countdown</td>
+                            <td class="hidden-sm">jQuery Countdown Plugin</td>
+                            <td><a target="_blank" href="http://keith-wood.name/countdown.html">http://keith-wood.name/countdown.html</a></td>
+                        </tr>
+                        <tr>
+                            <td>GMaps</td>
+                            <td class="hidden-sm">gmaps.js allows you to use the potential of Google Maps in a simple way. No more extensive documentation or large amount of code</td>
+                            <td><a target="_blank" href="http://hpneo.github.io/gmaps">http://hpneo.github.io/gmaps</a></td>
+                        </tr>
+                    </tbody>
+                </table> 
+                <h2>Image and Design credits</h2>
+                <ul class="margin-bottom-20">
+                    <li>Google Fonts - <a target="_blank" href="http://www.google.com/fonts">http://www.google.com/fonts</a></li>
+                    <li>Photo by DAVID ILIFF. License: CC-BY-SA 3.0 - <a href="http://bit.ly/ZhuJG1">http://bit.ly/ZhuJG1</a></li>
+                    <li>Showcase - <a target="_blank" href="http://www.pixeden.com/psd-web-elements/responsive-showcase-psd">http://www.pixeden.com/psd-web-elements/responsive-showcase-psd</a></li>
+                    <li>Blurred backgrounds - <a target="_blank" href="http://www.cssauthor.com/10-beautiful-collection-of-blurred-backgrounds">http://www.cssauthor.com/10-beautiful-collection-of-blurred-backgrounds</a></li>
+                    <li>Unsplash free hi-resolution photos - <a target="_blank" href="http://unsplash.com/">http://unsplash.com/</a></li>
+                </ul>
+                <p>The following images were used for Unify Template:</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li><a target="_blank" href="http://www.flickr.com/photos/76029035@N02/6829467731/in/photostream">Image1</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/76029035@N02/6829377121/in/photostream">Image2</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/76029035@N02/6829378917/in/photostream">Image3</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/76029035@N02/6829462937/in/photostream">Image4</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/vinothchandar/4440514696/in/photostream">Image5</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/igorputina/7301645098/in/photostream">Image6</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/76029035@N02/6829478403">Image7</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/56278705@N05/7813906062">Image8</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/samstimpson/2348233460">Image9</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/stonechat/2866207528">Image10</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/dellphotos/5536417061">Image11</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/igorputina/7301607968">Image12</a></li>
+                        </ul>               
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li><a target="_blank" href="http://www.flickr.com/photos/hexadb/7538316530">Image13</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/dellphotos/5517016824/in/photostream">Image14</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/dellphotos/5516423517/in/photostream">Image15</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/dellphotos/5516423089/in/photostream">Image16</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/dellphotos/5516414821/in/photostream">Image17</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/dellphotos/5516410097/in/photostream">Image18</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/dellphotos/5516401107/in/photostream">Image19</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/dellphotos/5516990726/in/photostream">Image20</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/dellphotos/5516400193/in/photostream">Image21</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/dellphotos/5516989744/in/photostream">Image22</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/dellphotos/5516980612/in/photostream">Image23</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/93963757@N05/8550837719/in/photostream">Image24</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li><a target="_blank" href="http://www.flickr.com/photos/rachephotos/2244619635">Image25</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/jeanpaulit/2944279434">Image26</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/orofacial/8220685636/in/photostream">Image27</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/idhren/7171472960">Image28</a></li>
+                            <li><a target="_blank" href="http://www.flickr.com/photos/kurtbudiarto/7425681370">Image29</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p><label class="label label-info">Info</label> All pictures are allowed to make commercial use of the work. Feel free to use any pictures in Unify Template without any restriction.</p>                
+            </div>
+            
+			<!--Change Log-->            
+            <div id="changelog" class="changelog margin-bottom-70">
+                <h2>Change Log <a href="#top">top <i class="icon-angle-up"></i></a></h2>
+                <hr />
+                <p><label class="label label-danger">Info</label> Please do not forget to backup your files before the upgrade.</p>
+                <br>
+
+                <h4><strong>Version 1.3 – 19 October 2013</strong></h4>
+                <ul class="margin-bottom-40">
+                    <li>NEW: Layer Slider (<strong>value $10</strong>)</li>
+                    <li>NEW: Flatty Home Page</li>
+                    <li>NEW: Portfolio Home Page</li>
+                    <li>NEW: About Us Option Page</li>
+                    <li>NEW: Services Option Page</li>
+                    <li>NEW: Invoice Page</li>
+                    <li>NEW: Funny Boxes</li>
+                    <li>NEW: Meet Our Teamm Page</li>
+                    <li>NEW: Registration Option Page</li>
+                    <li>NEW: Login Option Page</li>
+                    <li>NEW: 3 Column Page</li>
+                    <li>NEW: Blog/Magazine Page</li>
+                    <li>NEW: Blog Medium Page</li>
+                    <li>NEW: Blog Full Width Page</li>
+                    <li>NEW: Blog Item Option</li>
+                    <li>NEW: Contact Option Page</li>
+                    <li>NEW: 404 Error Option Page</li>
+                    <li>NEW: Soring Plugin</li>
+                    <li>NEW: Tweet Blocks</li>
+                    <li>NEW: Tab Styles</li>
+                    <li>NEW: Header Option</li>
+                    <li>NEW: Content Boxes</li>
+                    <li>NEW: Rounded Icon Styles</li>
+                    <li>NEW: Colored Social Icon</li>
+                    <li>NEW: 12 Different Color Panels</li>
+                    <li>NEW: Testimonial Blocks</li>
+                    <li>NEW: Boxed Layout</li>
+                    <li>NEW: Blog Posts</li>
+                    <li>NEW: Blog Quick Links</li>
+                    <li>NEW: Panel Tabs</li>
+                    <li>NEW: Panel Forms</li>
+                    <li>NEW: Responsive Video Class</li>
+                    <li>NEW: Youtube Video Example</li>
+                    <li>NEW: Info Blocks with Icons</li>
+                    <li>NEW: Sidebar Navigation</li>
+                    <li>NEW: Hover Dropdown Menu</li>
+
+                    <li>UPGRADE: <strong>Twitter Bootstrap 3</strong></li>
+                    <li>UPGRADE: jQuery <strong>1.10.2</strong></li>
+                    <li>UPGRADE: Revolution Slider <strong>3.0.8</strong></li>
+                    <li>UPGRADE: Font Awesome <strong>v3.2.1</strong></li>
+                    <li>UPGRADE: Glyphicons Pro Icons</li>
+
+                    <li>IMPROVEMENT: Redesigned All Feature Pages</li>
+                    <li>IMPROVEMENT: Redesigned Vertical Parallax Slider</li>
+                    <li>IMPROVEMENT: Redesigned Service Page</li>
+                    <li>IMPROVEMENT: Navigation (Menu)</li>
+                    <li>IMPROVEMENT: Blog Spacing</li>
+                    <li>IMPROVEMENT: Blog Tags</li>
+                    <li>IMPROVEMENT: Tabs/Accordions</li>
+                    <li>IMPROVEMENT: Parallax Slider Arrows</li>
+
+                    <li>FIXED: Navigation for Mobile Devices</li>
+                    <li>FIXED: Google Map zoom in/out</li>
+                    <li>FIXED: Navigation Toggle Color</li>
+                    <li>FIXED: Pricing Tables Color</li>
+                    <li>FIXED: IE8 Parallax Arrows</li>
+                </ul>
+
+                <div class="clearfix"></div>
+
+                <h4><strong>Version 1.2 – 27 May 2013</strong></h4>
+                <ul class="margin-bottom-40">
+                    <li>NEW: Revolution Slider (<strong>value $12</strong>)</li>
+                    <li>NEW: Coming Soon Page <code>page_coming_soon.html</code></li>
+                    <li>NEW: Glyphicons Pro (<strong>value $59</strong>)</li>
+                    <li>NEW: Four Theme Color Options</li>
+                    <li>NEW: Button Styles <code>feature_button.html</code></li>
+                    <li>NEW: Boxed Contact Page <code>page_contact1.html</code></li>
+                    <li>NEW: Search Page <code>page_search.html</code></li>
+                    <li>NEW: Amazing Alternative Home Page <code>page_home5.html</code></li>
+                    <li>IMPROVEMENT: Documentation</li>
+                    <li>IMPROVEMENT: Paralax Slider (High Resolution)</li>
+                    <li>IMPROVEMENT: HTML/CSS & JS code structures</li>
+                    <li>UPGRADE: Twitter Bootstrap v2.3.2</li>
+                    <li>UPGRADE: Font Awesome v3.1.1</li>
+                    <li>
+                        FIXED: 
+                        <ul>
+                            <li>Header Search Block (for responsive)</li>
+                            <li>Footer Subscribe Form (for IE8)</li>
+                            <li>Accardion and Tabs in Firefox browser (added some default bootstrap classes)</li>
+                        </ul>
+                    </li>
+                </ul>
+                 
+                <div class="clearfix"></div>
+
+                <h4><strong>Version 1.1 – 24 April 2013</strong></h4>
+                <ul>
+                    <li>UPGRADE: Twitter Bootstrap v2.3.1</li>
+                    <li>FIXED: Some page issues in <code>login.html</code> and <code>registration.html</code></li>
+                </ul>
+                <br>
+
+                <h4><strong>Version 1.0 – 23 April 2013</strong></h4>
+                <ul>
+                    <li>Initial release</li>
+                </ul>
+            </div><!--/end-->
+
+            <!--Update-->            
+            <div id="upgrade" class="upgrade margin-bottom-70">
+                <h2>Upgrade <a href="#top">top <i class="icon-angle-up"></i></a></h2>
+                <hr />
+                <p>Please do not forget to <strong>backup</strong> your files before the upgrade.</p>
+                <p>Since latest version upgraded to <strong>Twitter Bootstrap 3</strong> all files comes with a huge JavaScript, HTML and CSS changes. <br> We suggest you to add the codes from previous version into v1.3 and use it as a base template.</p>
+                <p>*Please visit the offecial Bootstrap 3 documentation page for more detalied info <a target="_blank" href="http://getbootstrap.com">http://getbootstrap.com</a></p>
+
+                <div class="margin-bottom-30 clearfix"></div>
+
+                <h4>v1.2 Upgrade</h4>
+                <p>Here is breifly explained what we have changed in v1.2:</p>
+                <ul class="margin-bottom-40">
+                    <li>
+                        File structures:
+                        <ul>
+                            <li>
+                                Changed HTML file names. For example:
+                                <ul>
+                                    <li><code>faq.html</code> to <code>page_faq.html</code></li>
+                                    <li><code>about.html</code> to <code>page_about.html</code></li>
+                                    <li><code>contact.html</code> to <code>page_contact.html</code></li>
+                                    <li><code>icons.html</code> to <code>feature_icons.html</code></li>
+                                    <li><code>table.html</code> to <code>feature_table</code></li>
+                                    <li>and others...</li>
+                                </ul>
+                            </li>
+                            <li>We added all plugins to plugin folder and now all plugins located in <code>assets/plugins/..</code></li>
+                        </ul>
+                    </li>
+                    <li>Parallax Slider now on autoplay.  Modified file: <code>assets/plugins/parallax-slider/js/jquery.cslider.js</code></li>
+                    <li>Changed <strong>folder</strong> and <strong>file</strong> names from  <code>menu</code> to <code>header</code> in CSS folder <code>assets/css/headers/header1.css</code> and <code>assets/css/headers/header2.css</code></li>
+                    <li>Changed Modernizr JS file name <code>assets/js/modernizr.custom.js</code></li>                    
+                    <li>
+                        Changed top and header ID names to CLASS names and now they are 
+                        <code>&lt;div class="top"&gt;</code> 
+                        and 
+                        <code>&lt;div class="header"&gt;</code>
+                    </li>
+                    <li>Changed Social Icons class names which is in footer and in other pages.</li>
+                    <li>Deleted tag <code>&lt;div id="body"&gt;</code> in all HTML files</li>    
+                    <li>Added favicon icon <code>&lt;link rel="shortcut icon" href="favicon.ico"&gt;</code></li>
+                </ul>
+                <p><span class="label label-info">Info</span> If you come across any problem during the upgrade please contact to our support at <a href="mailto:support@htmlstream.com">support@htmlstream.com</a></p>
+            </div>
+            
+			<!--End of Documentation-->            
+            <div id="end">
+                <h2>End of Documentation <a href="#top">top <i class="icon-angle-up"></i></a></h2>
+                <hr />
+                <p>Once again, thank you for purchasing Unify Template.</p>
+            </div><!--/end-->
+        </div><!--/content-->
+        
+    </div><!--/row-->
+</div><!--/container-->
+
+<script type="text/javascript" src="plugins/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="plugins/back-to-top.js"></script>
+<!--[if lt IE 9]>
+	<script src="../assets/js/respond.js"></script>
+<![endif]-->		
+</body>
+</html>	

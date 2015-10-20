@@ -1,0 +1,10 @@
+test:
+  override:
+    - bundle exec ruby scripts/test_5xx.rb
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - git push git@heroku.com:fluentd-website-v2.git $CIRCLE_SHA1:master
+      - $REFRESH_CACHE_COMMAND

@@ -1,0 +1,50 @@
+/*Menu
+------------------------------------*/
+/*Top Bar*/
+.top-v1 .top-v1-data li a:hover i {
+	color: #787d80;
+}
+
+/*Header Default
+------------------------------------*/
+/*Navbar*/
+.header .navbar-default .navbar-nav > .active > a {
+	color: #787d80;
+}
+
+/*Navber Toggle*/
+.navbar-toggle,
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+	background: #787d80;
+}
+
+.navbar-toggle:hover {
+	background: #7f8c8d !important;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #7f8c8d;
+}
+
+/*Responsive @Media 
+------------------------------------*/
+@media (min-width: 767px) {
+	/*Navbar*/
+	.header .navbar-default .navbar-nav > li > a:hover,
+	.header .navbar-default .navbar-nav > .active > a {
+		color: #fff;
+		background: #787d80 !important;
+	}
+
+	.header .navbar-default .navbar-nav > .open > a,
+	.header .navbar-default .navbar-nav > .open > a:hover,
+	.header .navbar-default .navbar-nav > .open > a:focus {
+		background: #787d80;		
+	}
+
+	/*Dropdown Menu*/
+	.header .dropdown-menu { 
+		border-top: solid 2px #787d80; 
+	}
+}

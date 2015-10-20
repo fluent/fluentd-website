@@ -1,0 +1,40 @@
+/*404 Error Page v1 
+------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Kite+One);
+
+.error-v1 {
+	margin-bottom: 20px;
+	text-align: center;	
+}
+
+.error-v1 p {
+	color: #555;
+	font-size: 20px;
+}
+
+.error-v1 span {
+	color: #555;
+	display: block;
+	font-size: 40px;
+}
+
+.error-v1 span.error-v1-title {
+	color: #777;	
+	font-size: 180px;
+	font-family: 'Kite One', sans-serif;	
+}
+
+/*For Mobile Devices*/
+@media (max-width: 500px) { 
+	.error-v1 p {
+		font-size: 16px;
+	}	
+
+	.error-v1 span {
+		font-size: 30px;
+	}
+
+	.error-v1 span.error-v1-title {
+		font-size: 140px;
+	}
+}

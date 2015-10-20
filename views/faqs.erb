@@ -1,0 +1,113 @@
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Frequently Asked Questions</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li class="active">FAQs</li>
+    </ul>
+  </div>
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">     
+  <div class="row">
+    <div class="col-md-9">
+      <div class="headline"><h4>What is Fluentd?</h4></div>
+      <div>
+        Fluentd is an open source data collector for building the <a href="/blog/unified-logging-layer">unified logging layer</a>. Once installed on a server, it runs in the background to collect, parse, transform, analyze and store various types of data. This project is invented and sponsored by <a href="/treasuredata">Treasure Data, Inc.</a>, having full-time mainteainers for Fluentd.
+      </div>
+      <br/>
+
+      <div class="headline"><h4>What are the differences between td-agent and Fluentd?</h4></div>
+      <p>Here's the differences. In one word, td-agent is a stable distribution package of Fluentd.</p>
+      <div>
+        <table border="1px" style="margin: 10px;">
+          <tr>
+            <th width="25%"></th>
+            <th width="30%">Fluentd</th>
+            <th width="45%">td-agent</th>
+          </tr>
+          <tr>
+            <td>QA/Support</td>
+            <td>Community-driven</td>
+            <td>QAed by <a href="/treasuredata">Treasure Data, Inc</a> maintainers<br/>Support available for Treasure Data customers</td>
+          </tr>
+          <tr>
+            <td>Installation</td>
+            <td>Ruby gems</td>
+            <td><a href="http://docs.fluentd.org/articles/install-by-rpm" rel="noreferrer">rpm</a> / <a href="http://docs.fluentd.org/articles/install-by-deb"rel="noreferrer">deb</a> / <a href="http://docs.fluentd.org/articles/install-by-dmg">dmg</a> packages.</td>
+          </tr>
+          <tr>
+            <td>Configuration</td>
+            <td>Self service</td>
+            <td>Preconfigured with a couple of recommended settings, and sending data to <a href="/treasuredata" rel="noreferrer">Treasure Data</a> by default (can be modified)</td>
+          </tr>
+          <tr>
+            <td>Adding 3rd party <a href="http://www.fluentd.org/plugin/" rel="noreferrer">plugins</a></td>
+            <td>$ fluent-gem install fluent-plugin-xx</td>
+            <td>$ /usr/sbin/td-agent-gem install fluent-plugin-xx</td>
+          </tr>
+          <tr>
+            <td>/etc/init.d/ scripts</td>
+            <td>No (the user needs to write shell script to set it up)</td>
+            <td>Yes (shipped with .deb and .rpm)</td>
+          </tr>
+          <tr>
+            <td>Chef recipe</td>
+            <td>No</td>
+            <td><a href="http://docs.fluentd.org/articles/install-by-chef">Yes</a></td>
+          </tr>
+          <tr>
+            <td>Memory allocator</td>
+            <td>OS default</td>
+            <td>Optimized (jemalloc)</td>
+          </tr>
+        </table>
+      </div>
+      <br/>
+
+      <div class="headline"><h4>Should I use td-agent or the Fluentd gem?</h4></div>
+      <div>
+        <b>td-agent prioritizes stability over new features</b>.
+        If you wish to control Fluentd features and updates on your own, using the Fluentd gem is recommended.
+        If you are using Fluentd for the first time or are using it in a large scale environment, using td-agent is recommended.
+        A new version of td-agent is released every 2 or 3 months.
+      </div>
+      <br/>
+
+      <div class="headline"><h4>Fluentd is written in Ruby. How's the performance?</h4></div>
+      <div>
+        <p>
+          The most performance sensitive parts of Fluentd are written in C. 
+          The Ruby code acts as a wrapper that provides flexibility to the overall solution.
+          In particular, the networking layer and object serialization layer are written in C (See <a href="https://github.com/tarcieri/cool.io">cool.io</a> and <a href="http://www.msgpack.org/">MessagePack</a>, both are maintained by Fluentd maintainers too).
+        </p>
+        <p>
+          Since Fluentd is not written entirely in C or C++, it may be slow in its Ruby parts.
+          But by giving up a little bit of speed, we have gained many plugins from the Ruby community :).
+          Fluentd’s performance has been put to the test at many large services;
+          in fact, a regular PC box can handle 18,000 messages/second with a single process.
+        </p>
+        <p>
+          If this number is insufficient for your application, please consider other solutions which are written entirely in C-family or Java.
+          However, please note that you will lose some flexibility as a tradeoff.
+        </p>
+      </div>
+      <br/>
+
+      <div class="headline"><h4>Does Fluentd run on Windows?</h4></div>
+      <div>
+        Yes, but it is still in an early stage.
+        Please see <a href="https://github.com/fluent/fluentd/tree/windows">the Windows branch on GitHub</a>
+      </div>
+      <br/>
+    </div>
+    <div class="col-md-3">
+      <%= erb(:_right_menu, :layout => false) %>
+    </div><!--/col-md-3-->
+  </div><!--/row-->        
+
+</div><!--/container-->     
+<!--=== End Content Part ===-->

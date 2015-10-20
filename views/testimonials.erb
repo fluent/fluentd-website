@@ -1,0 +1,74 @@
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Testimonials</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li class="active">Testimonials</li>
+    </ul>
+  </div>
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="row">
+ 	    <%
+      @testimonials.slice!(0, 2).each { |featured_testimonial|
+	      quote = featured_testimonial["quote"]
+	      company = featured_testimonial["company"]
+	      company_normalized = company.gsub(" ", "").downcase
+      %>
+	    <div class="col-md-6">
+        <div class="margin-bottom-20">
+          <a class="img-hover" href="#">
+            <img style="height:200px" src="/assets/img/testimonials/<%=company_normalized%>.png" alt="<%=company%>" />
+    	    </a>
+          <p style="font-weight:700; font-size: 12px; padding:10px; color: #0096e1;"><%=quote%></p>
+        </div>
+      </div><!--/col-md-6-->
+	    <% } %>
+      </div><!--/row-->
+
+      <div class="col-md-12 margin-bottom-30">
+        <center>
+          <a class="btn btn-primary hover-effect" style="font-size: 20px;" href="/download">Download Fluentd Now</a>
+        </center>
+      </div>
+
+	    <%
+      @testimonials.sort { |x, y| x["company"].downcase <=> y["company"].downcase }.each { |testimonial|
+        quote = testimonial["quote"]
+        company = testimonial["company"]
+        company_normalized = company.gsub(" ", "").downcase
+      %>
+      <hr/>
+      <div class="row">
+        <div class="col-md-12 margin-bottom-20">
+          <div class="col-md-3">
+            <a name="<%=company_normalized.downcase%>" class="img-hover" href="#<%=company_normalized.downcase%>">
+              <img src="/assets/img/testimonials/<%=company_normalized%>.png" alt="<%=company%>" width="100%"/>
+    	      </a>
+          </div>
+          <div class="col-md-9">
+            <span style="font-size: 10pt;"><%=quote%></span>
+          </div>
+        </div><!--/col-md-12-->
+      </div><!--/row-->
+      <% } %>
+
+      <div class="row margin-bottom-40">
+        <center>
+          <a class="btn btn-primary hover-effect" style="font-size: 20px;" href="/download">Download Fluentd Now</a>
+        </center>
+      </div>
+
+    </div><!--/col-md-9-->
+  	<div class="col-md-3">
+      <%= erb(:_right_menu, :layout => false) %>
+    </div><!--/col-md-3-->
+  </div><!--/row-->
+</div><!--/container-->
+<!--=== End Content Part ===-->

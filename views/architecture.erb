@@ -1,0 +1,94 @@
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">What is Fluentd?</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li class="active">Architecture</li>
+    </ul>
+  </div><!--/container-->
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row margin-bottom-20">
+        <div class="col-md-6">
+          <img src="/images/fluentd-before.png" width="95%"/>
+          <center><h3>Before Fluentd</h3></center>
+        </div>
+        <div class="col-md-6">
+          <img src="//docs.fluentd.org/images/fluentd-architecture.png" width="100%"/>
+          <center><h3>After Fluentd</h3></center>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div class="row margin-bottom-10">
+        <h3>Fluentd is an open source data collector, which lets you unify the data collection and consumption for a better use and understanding of data.</h3>
+        <p>Here're the key features.</p>
+      </div>
+
+      <div id="log-as-json" class="row margin-bottom-40">
+        <div class="col-md-4">
+          <img src="/assets/img/architecture/log-as-json.png" width="100%"/>
+        </div>
+        <div class="col-md-8">
+          <h2>Unified Logging with JSON</h2>
+          <p>Fluentd tries to structure data as JSON as much as possible: this allows Fluentd to <b>unify</b> all facets of processing log data: collecting, filtering, buffering, and outputting logs across <b>multiple sources and destinations</b> (<a href="http://www.fluentd.org/blog/unified-logging-layer">Unified Logging Layer</a>). The downstream data processing is much easier with JSON, since it has enough structure to be accessible while retaining flexible schemas.</p>
+        </div>
+      </div>
+
+      <div id="plugin" class="row margin-bottom-40">
+        <div class="col-md-4">
+          <img src="/assets/img/architecture/pluggable.png" width="100%"/>
+        </div>
+        <div class="col-md-8">
+          <h2>Pluggable Architecture</h2>
+          <p>Fluentd has a flexible plugin system that allows the community to extend its functionality. Our 300+ community-contributed plugins connect dozens of <a href="/datasources">data sources</a> and <a href="/dataoutputs">data outputs</a>. By leveraging the plugins, you can start making better use of your logs right away.</p>
+        </div>
+      </div>
+
+      <div id="resources" class="row margin-bottom-40">
+        <div class="col-md-4">
+          <img src="/assets/img/architecture/c-and-ruby.png" width="100%"/>
+        </div>
+        <div class="col-md-8">
+          <h2>Minimum Resources Required</h2>
+          <p>Fluentd is written in a combination of C language and Ruby, and requires very little system resource. The vanilla instance runs on 30-40MB of memory and can process 13,000 events/second/core.</p>
+        </div>
+      </div>
+
+      <div id="reliable" class="row margin-bottom-40">
+        <div class="col-md-4">
+          <img src="/assets/img/architecture/reliable.png" width="100%"/>
+        </div>
+        <div class="col-md-8">
+          <h2>Built-in Reliability</h2>
+          <p>Fluentd supports memory- and file-based buffering to prevent inter-node data loss. Fluentd also support robust failover and can be set up for high availability. <a href="/testimonials">2,000+ data-driven companies</a> rely on Fluentd to differentiate their products and services through a better use and understanding of their log data.</p>
+        </div>
+      </div>
+
+      <div class="row margin-bottom-40">
+        <center>
+          <a class="btn btn-primary hover-effect" style="font-size: 20px;" href="/why">Learn why Fluentd is for you</a>
+        </center>
+      </div>
+
+      <div class="tag-box tag-box-v2">
+        <h3>Fluentd History</h3>
+        <p>Fluentd was conceived by <a href="http://github.com/frsyuki">Sadayuki "Sada" Furuhashi</a> in 2011. Sada is a co-founder of <a href="/treasuredata">Treasure Data, Inc.</a>, a primary sponsor of the Fluentd project. Since open-sourced in October 2011, the Fluentd project has grown dramatically: dozens of contributers, hundreds of community-contributed plugins, thousands of users, and trillions of events collected, filtered and stored. Currently <a href="http://github.com/repeatedly">Masahiro "Masa" Nakagawa</a> is the main maintainer.</p>
+      </div>
+
+    </div>
+
+    <div class="col-md-3">
+      <%= erb(:_right_menu, :layout => false) %>
+    </div>
+  </div><!--/row-->
+</div><!--/container-->
+<!--=== End Content Part ===-->

@@ -1,0 +1,72 @@
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Use Case: Centralized App Logging</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li class="active">Use Case: Centralized App Logging</li>
+    </ul>
+  </div><!--/container-->
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">     
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row margin-bottom-40">
+        <img class="col-md-7" src="/images/fluentd_usecase_applogging.png" width="100%"/>
+        <div class="col-md-5">
+          <h3>Centralized App Logging</h3>
+          <p>Fluentd decouples application logging from backend systems by the <a href="/blog/unified-logging-layer">unified logging layer</a>.</p>
+          <p>This layer allows developers and data analysts to utilize application logs as they are generated.</p>
+          <p>A unified logging layer lets you and your organization make better use of data and iterate more quickly on your software.</p>
+        </div>
+      </div>
+
+      <div class="row margin-bottom-40">
+        <div class="col-md-3">
+          <center><img src="/images/polyglot.png" width="100%" /></center>
+        </div>
+        <div class="col-md-9">
+          <h2>Polyglot</h2>
+          <p>Fluentd supports most of the common <a href="http://docs.fluentd.org/categories/logging-from-apps">programming languages</a>. Fluentd can unify the logging mechanism from multiple applications written in diffent languages, deployed at different data centers. The logger libraries are easy to install, and lightweight.
+        </div>
+      </div>
+
+      <div class="row margin-bottom-40">
+        <div class="col-md-3">
+          <center><img src="/assets/img/architecture/log-as-json.png" width="110%" /></center>
+        </div>
+        <div class="col-md-9">
+          <h2>Log Everything in JSON</h2>
+          <p>Fluentd tries to structure data as JSON as much as possible: this allows Fluentd to <b>unify</b> all facets of processing log data: collecting, filtering, buffering, and outputting logs across <b>multiple sources and destinations</b>. The downstream data processing is much easier with JSON, since it has enough structure to be accessible while retaining flexible schemas.</p>
+        </div>
+      </div>
+
+      <div class="row margin-bottom-40">
+        <div class="col-md-3">
+          <center><img src="/images/decouple.jpg" width="80%" /></center>
+        </div>
+        <div class="col-md-9">
+          <h2>Choose Your Backend</h2>
+          <p>Now the backend system is fully decoupled from the logging system. It's time to pick up your favirite backend system from a library of <a href="/dataoutputs">output plugins</a>.</p>
+        </div>
+      </div>
+
+      <div class="tag-box tag-box-v2">
+        <h3>Ad: Want Someone to Manage Your Backend?</h3>
+        <p>Our sponsor <a href="/treasuredata">Treasure Data</a> provides the <b>unified data management</b> cloud service, specifically designed for Fluentd.</p>
+        <br/>
+        <center>
+          <a class="btn btn-danger hover-effect" style="font-size: 20px;" href="/treasuredata">What is Treasure Data?</a>
+        </center>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <%= erb(:_right_menu, :layout => false) %>
+    </div>
+  </div>
+</div><!--/container-->     
+<!--=== End Content Part ===-->
