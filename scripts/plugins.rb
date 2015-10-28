@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rubygems/gem_runner'
 require 'rubygems/exceptions'
 require 'json'
-require 'net/http'
+require 'net/https'
 require 'cgi'
 require 'erb'
 require 'redis'
@@ -35,17 +35,21 @@ class Plugins
 
     gemlist = cmdout.scan(/fluent-plugin-[^\s]+/)
     plugins = []
-    http = Net::HTTP.new("rubygems.org", 80)
+    http = Net::HTTP.new("rubygems.org", 443)
+    http.use_ssl = true
     http.start do
       gemlist.each do |gemname|
-        res = http.get("/api/v1/gems/#{e gemname}.json")
-        js = JSON.parse(res.body)
-        plugins << JSON.parse(res.body)
+        begin
+          res = http.get("/api/v1/gems/#{e gemname}.json")
+          plugins << JSON.parse(res.body)
+        rescue => e
+          puts "failed to get plugin info. Skip #{gemname} plugin. #{e.inspect}"
+        end
       end
     end
 
     plugins = plugins.sort_by { |pl| -pl['downloads'] }
-	
+
     # Mark obsolete plugins
     plugins.each { |p|
       if OBSOLETE_PLUGINS.include?(p["name"])
