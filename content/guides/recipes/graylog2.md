@@ -21,11 +21,13 @@ sudo apt-get install mongodb-server openjdk-7-jre-headless uuid-runtime adduser 
 
 ### Elasticsearch
 
-**Graylog2 requires Elasticsearch 0.90.10**, which can be installed with the following commands.
+**Latest Graylog2 requires Elasticsearch 1.7 or later**, which can be installed with the following commands.
+
+NOTE: Graylog2 doesn't support Elasticsearch 2.0 yet.
 
 ```
-wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.10.deb
-dpkg -i elasticsearch-0.90.10.deb
+wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.7.1.deb
+dpkg -i elasticsearch-1.7.1.deb
 ```
 
 Then, open `/etc/elasticsearch/elasticsearch.yml`, find the line that says
@@ -50,35 +52,37 @@ sudo /etc/init.d/elasticsearch restart
 
 ### Graylog2
 
+In this article, we use Graylog2 1.2.
+
 Get the GPG key.
 
 ```
-sudo apt-key adv --keyserver pgp.surfnet.nl --recv-keys 016CFFD0
+wget -qO - https://raw.githubusercontent.com/Graylog2/graylog2-puppet/master/files/RPM-GPG-KEY-graylog2 | apt-key add -
 ```
 
 Update the package list.
 
 ```
-echo 'deb http://finja.brachium-system.net/~jonas/packages/graylog2_repro/ wheezy main' > /etc/apt/sources.list.d/graylog2.list
+echo 'deb http://packages.graylog2.org/repo/debian/ trusty 1.2' > /etc/apt/sources.list.d/graylog2.list
 ```
 
 Finally, install Graylog's components.
 
 ```
 sudo apt-get update
-sudo apt-get install graylog2-server graylog2-web graylog2-stream-dashboard --yes
+sudo apt-get install graylog-server graylog-web graylog2-stream-dashboard --yes
 ```
 
-Edit `/etc/default/graylog2-server` and `/etc/default/graylog2-web` and update `RUN=no` to `RUN=yes`.
+Edit `/etc/default/graylog-server` and `/etc/default/graylog-web` and update `RUN=no` to `RUN=yes`.
 
-Edit `/etc/graylog2/server/server.conf` and cocnfigure the following parameters:
+Edit `/etc/graylog/server/server.conf` and cocnfigure the following parameters:
 
 - password_secret
-- root_password_sha2
+- root\_password\_sha2
 
 For `root_password_sha2`, run `echo -n YOUR_PASSWORD | shasum -a 256` and copy and paste the output string. This "YOUR_PASSWORD" will be used later to log into Graylog2's web interface.
 
-Edit `/etc/graylog2/web/graylog2-web-interface.conf` and configure the following parameters:
+Edit `/etc/graylog/web/web.conf` and configure the following parameters:
 
 - graylog2-server.uris="http://127.0.0.1:12900/" 
 - application.secret
@@ -86,8 +90,8 @@ Edit `/etc/graylog2/web/graylog2-web-interface.conf` and configure the following
 Finally, start Graylog2!
 
 ```
-sudo /etc/init.d/graylog2-server restart
-sudo /etc/init.d/graylog2-web restart
+sudo /etc/init.d/graylog-server restart
+sudo /etc/init.d/graylog-web restart
 ```
 
 ### Nginx (Optional)
@@ -134,7 +138,7 @@ To log in, use "admin" as the username and "YOUR_PASSWORD" from the Graylog2 ser
 
 Once logged in, click on "System" in the top nav. Next, click on "Inputs" from the left nav. (Or, you can just go to `<YOUR_ GRAYLOG2 URL>/system/inputs`).
 
-Then, from the dropdown, choose "GELF UDP" and click on "Launch new input", which should pop up a modal dialogue, Since the default values are good, just click "Launch".
+Then, from the dropdown, choose "GELF UDP" and click on "Launch new input", which should pop up a modal dialogue, Since the default values are good, fill the "Title" and just click "Launch".
 
 <img src="/images/graylog2-inputs.png" style="display:block"/>
 
