@@ -64,7 +64,7 @@ TD_AGENT_VERSIONS = {
   },
   :v2 => {
     linux: "2.3.0",
-    mac: "2.1.4"
+    mac: "2.3.0"
   }
 }
 
