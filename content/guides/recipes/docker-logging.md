@@ -52,12 +52,12 @@ $ fluentd -c in_docker.conf
 2015-09-01 15:07:12 -0600 [info]: adding source type="forward"
 2015-09-01 15:07:12 -0600 [info]: using configuration file: <ROOT>
   <source>
-    type forward
+    @type forward
     port 24224
     bind 0.0.0.0
   </source>
   <match docker.*>
-    type stdout
+    @type stdout
   </match>
 </ROOT>
 2015-09-01 15:07:12 -0600 [info]: listening fluent socket on 0.0.0.0:24224
@@ -85,6 +85,18 @@ Now on the Fluentd output, you will see the incoming message from the container,
 ```
 
 At this point you will notice something interesting, the incoming messages have a timestamp, are tagged with the container_id and contains general information from the source container along the message, everything in JSON format.
+
+### Additional Step: Parse log message
+
+Application log is stored into `"log"` field in the record. You can parse this log by using [fluent-plugin-parser](https://github.com/tagomoris/fluent-plugin-parser) filter before send to destinatinos.
+
+```
+<filter docker.**>
+  @type parser
+  format nginx
+  key_name log
+</filter
+```
 
 ## Driver options
 
