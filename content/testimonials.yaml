@@ -3,6 +3,10 @@
     quote: |
         We use Fluentd to collect massive data logs for our platforms. Having developed a system based on Fluentd, we are now effectively monitoring and analyzing our services in real-time. We are very much satisfied with its flexibility, especially how easy it is to use in tandem with other systems.
 -
+    company: Microsoft
+    quote: |
+        <a href="https://www.microsoft.com/en-us/server-cloud/operations-management-suite/overview.aspx" style="text-decoration:underline">Operations Management Suite</a> <a href="http://blogs.technet.com/b/momteam/archive/2015/11/04/oms-agent-for-linux-now-available.aspx">uses</a> Fluentd: "The core of the agent uses an existing open source data aggregator called FluentD.  FluentD has hundreds of existing plugins, which will make it really easy for you to add new data sources."
+-
     company: GungHo
     quote: |
         We use fluentd to tally action logs and monitor action logs for our hit puzzle games. We're extremely satisfied, as fluentd delivers a simple architecture with high availability.
@@ -10,7 +14,7 @@
     company: Amazon Web Services
     quote: |
         The architecture of Fluentd (Sponsored by Treasure Data) is very similar to Apache Flume or Facebook’s Scribe. Fluentd is easier to install and maintain and has better documentation and support than Flume and Scribe.
-    name: <a href="http://media.amazonwebservices.com/AWS_Amazon_EMR_Best_Practices.pdf">Best Practices for Amazon EMR</a>
+    name: Best Practices for Amazon EMR
 -
     company: PPLive
     quote: |
