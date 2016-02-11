@@ -5,7 +5,7 @@
 -
     company: Microsoft
     quote: |
-        <a href="https://www.microsoft.com/en-us/server-cloud/operations-management-suite/overview.aspx" style="text-decoration:underline">Operations Management Suite</a> <a href="http://blogs.technet.com/b/momteam/archive/2015/11/04/oms-agent-for-linux-now-available.aspx">uses</a> Fluentd: "The core of the agent uses an existing open source data aggregator called FluentD.  FluentD has hundreds of existing plugins, which will make it really easy for you to add new data sources."
+        <a href="https://www.microsoft.com/en-us/server-cloud/operations-management-suite/overview.aspx" style="text-decoration:underline">Operations Management Suite</a> <a href="http://blogs.technet.com/b/momteam/archive/2015/11/04/oms-agent-for-linux-now-available.aspx">uses</a> Fluentd: "The core of the agent uses an existing open source data aggregator called Fluentd.  Fluentd has hundreds of existing plugins, which will make it really easy for you to add new data sources."
 -
     company: GungHo
     quote: |
