@@ -128,3 +128,8 @@
     quote: |
         <a href="http://www.change.org/">Change.org</a> has been able to implement multi-source, multi-destination event streaming quickly and easily using fluentd. We're very appreciative.
     name: Bob Tucker
+-
+    company: Knowlarity
+    quote: |
+        At <a href="https://www.knowlarity.com/">Knowlarity Communications</a>, process anywhere between 2 ~  10 Million calls a daily basis. This needs us to be highly fault tolerant & resilient. We use Fluentd to collect Call Detail Records(CDRs) from various machines and feed it to our analytics tools & alerting systems in real time. Fluentd is very easy to setup. It also provides a variety of plugins which lets you get started quickly. Additionally It has also proved to be very reliable and scalable.
+
