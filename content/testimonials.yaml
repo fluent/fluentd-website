@@ -131,5 +131,5 @@
 -
     company: Knowlarity
     quote: |
-        At <a href="https://www.knowlarity.com/">Knowlarity Communications</a>, process anywhere between 2 ~  10 Million calls a daily basis. This needs us to be highly fault tolerant & resilient. We use Fluentd to collect Call Detail Records(CDRs) from various machines and feed it to our analytics tools & alerting systems in real time. Fluentd is very easy to setup. It also provides a variety of plugins which lets you get started quickly. Additionally It has also proved to be very reliable and scalable.
+        At <a href="https://www.knowlarity.com/">Knowlarity Communications</a>, we process anywhere between 2 ~ 10 Million calls on a daily basis. This needs us to be Fault tolerant & Resilient. We use Fluentd to collect Call Detail Records (CDRs) from various machines and feed it to our analytics tools & alerting systems in real time. Fluentd was very easy to setup & use. It also provides a variety of plugins which lets you get started quickly. Additionally It has also proved to be very reliable and scalable.
 
