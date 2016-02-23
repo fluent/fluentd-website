@@ -1,11 +1,15 @@
 -
-    company: Nintendo
+    company: Atlassian
     quote: |
-        We use Fluentd to collect massive data logs for our platforms. Having developed a system based on Fluentd, we are now effectively monitoring and analyzing our services in real-time. We are very much satisfied with its flexibility, especially how easy it is to use in tandem with other systems.
+        "At Atlassian, we've been impressed by Fluentd and have chosen to use it in Atlassian Cloud's logging and analytics pipeline."
 -
     company: Microsoft
     quote: |
         <a href="https://www.microsoft.com/en-us/server-cloud/operations-management-suite/overview.aspx" style="text-decoration:underline">Operations Management Suite</a> <a href="http://blogs.technet.com/b/momteam/archive/2015/11/04/oms-agent-for-linux-now-available.aspx">uses</a> Fluentd: "The core of the agent uses an existing open source data aggregator called Fluentd.  Fluentd has hundreds of existing plugins, which will make it really easy for you to add new data sources."
+-
+    company: Nintendo
+    quote: |
+        We use Fluentd to collect massive data logs for our platforms. Having developed a system based on Fluentd, we are now effectively monitoring and analyzing our services in real-time. We are very much satisfied with its flexibility, especially how easy it is to use in tandem with other systems.
 -
     company: GungHo
     quote: |
