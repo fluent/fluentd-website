@@ -10,14 +10,17 @@
 <div class="container">
   <div class="row portfolio-item margin-bottom-20">
     <!-- Content Info -->
+    <!--
     <div class="col-md-12 md-margin-bottom-20">
-      <p>Fluentd is available on Linux and Mac OSX and experimentally on Windows. Also, Treausure Data packages it as Treasure Agent (td-agent) for RedHat/CentOS and Ubuntu/Debian and provides a binary for OSX.</p>
     </div>
+    -->
   </div><!--/row-->
 
   <div class="row margin-bottom-20">
     <div class="col-md-9">
-      <h3>Current Stable</h3>
+      <h3>Fluentd (for Servers)</h3>
+      <div>Fluentd is available on Linux and Mac OSX and experimentally on Windows. Also, Treausure Data packages it as Treasure Agent (td-agent) for RedHat/CentOS and Ubuntu/Debian and provides a binary for OSX.</div>
+      <br/>
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -142,7 +145,67 @@
           </tr>
         </tbody>
       </table>
-      <h3>Old Stable (v1)</h3>
+      <br/>
+
+      <h3>Fluent-Bit (for Embedded Devices)</h3>
+      <div>If you're trying to collect data from embedded devices, we have a child product called <a href="http://fluentbit.io/">Fluent-Bit</a>, an open source data collector specifically designed for embedded devices.</div>
+      <br/>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="20%">Platform</th>
+            <th width="20%">Platform Version</th>
+            <th width="50%">Package or Installer</th>
+            <th width="10%">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/icon_redhat.png" height="60px"><br/>
+                RHEL / CentOS
+              </center>
+            </td>
+            <td>2.6+ kernel Linux distributions (64bit & 32-bit)</td>
+            <td>
+              <span style="font-style:bold;">Fluent-Bit v<%=TD_AGENT_VERSIONS[:bit][:linux]%></span>
+              <ul>
+                <li>
+                  <a href="http://fluentbit.io/download/">Download</a>
+                </li>
+              </ul>
+            </td>
+            <td>
+              <a href="http://fluentbit.io/documentation/">Documents</a><br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/icon_ubuntu.png" height="60px"><br/>
+                Ubuntu / Debian
+              </center>
+            </td>
+            <td>2.6+ kernel Linux distributions (64-bit & 32-bit)</td>
+            <td>
+              <span style="font-style:bold;">Fluent-Bit v<%=TD_AGENT_VERSIONS[:bit][:linux]%></span>
+              <ul>
+                <li>
+                  <a href="http://fluentbit.io/download/">Download</a>
+                </li>
+              </ul>
+            </td>
+            <td>
+              <a href="http://fluentbit.io/documentation/">Documents</a><br/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+
+      <!--
+      <h3>Fluentd: Old Stable (Obsoleted)</h3>
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -197,6 +260,7 @@
           </tr>
         </tbody>
       </table>
+      -->
 
     </div><!--/col-md-9-->
     <div class="col-md-3">
