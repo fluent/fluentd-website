@@ -17,16 +17,24 @@ begin
     x.text
   }.select { |x| x !~ /blog/ }
 
+  # Some notable 3rd party stuff
+  urls << 'https://docs.docker.com/engine/admin/logging/fluentd/' # Docker
+  urls << 'http://forums.juniper.net/t5/Analytics/Open-Source-Universal-Telemetry-Collector-for-Junos/ba-p/288677' # Juniper Networks
+  urls << 'https://blogs.technet.microsoft.com/momteam/2015/11/03/announcing-linux-docker-container-management-with-oms/'
+  urls << 'https://www.pandastrike.com/posts/20150807-fluentd-vs-logstash'
+  urls << 'http://logz.io/blog/elk-role-based-access-s3-fluentd/'
+  urls << 'https://aws.amazon.com/blogs/aws/all-your-data-fluentd/'
+
+
   # Randomly pick one
   # TODO: weight this based on priority
   urls.shuffle!
   url_to_tweet = urls.first
 
   # Formatting
-  url_to_tweet
   title = Nokogiri::HTML(open(url_to_tweet)).css("title").text
   title.gsub!(/\s*\| Fluentd.*$/, "")
-  tweet_body = "On our website: \"#{title}\" #{url_to_tweet}"
+  tweet_body = "\"#{title}\" #{url_to_tweet}"
 
   # client
   client = Twitter::REST::Client.new do |config|
