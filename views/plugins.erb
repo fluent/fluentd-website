@@ -19,24 +19,21 @@
       <div class="clearfix">
         <a name="toc"></a>
         <p class="margin-bottom-30">
-        <%
-          @search_categories.each do |category, search_terms|
-        %>
+        <% @search_categories.each do |category, search_terms| %>
           <a href="#<%=category.downcase.gsub(' ', '-')%>"><%=category%></a>&nbsp;/&nbsp;
-        <%
-          end
-        %>
+        <% end %>
         </p>
         <% @search_categories.each do |category, search_terms| %>
-          <a name="<%=category.downcase.gsub(' ', '-')%>" href="#toc"><h3><%=category.upcase%></h3></a>
+        <a name="<%=category.downcase.gsub(' ', '-')%>" href="#toc"><h3><%=category.upcase%></h3></a>
         <table class="table table-bordered">
 			    <thead>
 				    <tr>
-					    <th width="">Download</th>
-					    <th width="">Name</th>
-					    <th width="">Author</th>
-					    <th width="">About</th>
-					    <th width="">Version</th>
+					    <th width="5%">Certified</th>
+					    <th width="10%">Download</th>
+					    <th width="15%">Name</th>
+					    <th width="15%">Author</th>
+					    <th width="45%">About</th>
+					    <th width="10%">Version</th>
 				    </tr>
 			    </thead>
 			    <tbody rel="<%=search_terms%>" class="plugin-category">
@@ -103,7 +100,8 @@ jQuery(document).ready(function(){
       search_result = search_results_array[kk]; 
       plugin_data = plugin_hash[search_result.ref];
       inner_html += "<tr>";
-      inner_html += ("<td>" + plugin_data.downloads + "</td>");
+      inner_html += ("<td>" + plugin_data.certified + "</td>");
+      inner_html += ("<td style='text-align:right;'>" + plugin_data.downloads + "</td>");
       inner_html += ("<td><a href='" + plugin_data.homepage_uri + "'>" + search_result.ref + "</a></td>");
       inner_html += ("<td>" + plugin_data.authors + "</td>");
       inner_html += ("<td>" + plugin_data.info + "</td>");

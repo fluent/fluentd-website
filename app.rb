@@ -281,6 +281,7 @@ get '/plugins' do
   rescue
     @plugins = File.new("scripts/plugins.json").read
   end
+  @plugins = JSON.parse(@plugins).map{ |e| e.merge({'certified' => is_certified(e) ? "<center><a href='/faqs#certified'><img src='/images/certified.png'></a></center>" : ""}) }.to_json
   erb :plugins
 end
 
@@ -384,5 +385,19 @@ helpers do
     author ||= "masa"
     title.gsub!(/^#+/, "")
     return [title, MARKDOWN.render(content), tags.strip.split(/\W+/).map do |tag| tag.downcase end, author.strip]
+  end
+
+  def is_certified(plugin)
+    author = plugin['authors']
+    return true if author.downcase.include?('furuhashi')
+    return true if author.downcase.include?('tagomori')
+    return true if author.downcase.include?('nakagawa')
+    return true if author.downcase.include?('naotoshi')
+    return true if author.downcase.include?('kentaro yoshida')
+    return true if author.downcase.include?('kentaro kuribayashi')
+    return true if author.downcase.include?('pitr')
+    return true if author.downcase.include?('treasure data')
+    return true if author.downcase.include?('amazon web services')
+    false
   end
 end

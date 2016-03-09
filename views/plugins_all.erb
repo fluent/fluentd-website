@@ -24,6 +24,7 @@
 		    <table class="table table-bordered">
 			    <thead>
 				    <tr>
+					    <th width="">Certified</th>
 					    <th width="">Download</th>
 					    <th width="">Name</th>
 					    <th width="">Author</th>
@@ -34,6 +35,7 @@
 			    <tbody>
             <% @plugins.each do |plugin| %>
 				    <tr>
+              <td><% if is_certified(plugin) %><center><a href='/faqs#certified'><img src="/images/certified.png" height="25px"/></a></center><% end %></td>
 					    <td align="right"><%= plugin['downloads'] %></td>
 					    <td><a href="<%= plugin['homepage_uri'] %>"><%= plugin['name'].gsub(/fluent-plugin-/, '') %></a></td>
 					    <td style="font-size: 12px;"><%= plugin['authors'] %></td>
