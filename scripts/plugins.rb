@@ -69,7 +69,8 @@ class Plugins
     'fluent-plugin-tail-lite',
     'fluent-plugin-tail-multiline',
     'fluent-plugin-tail-asis',
-    'fluent-plugin-hostname'
+    'fluent-plugin-hostname',
+    'fluent-plugin-mysql-bulk'
   ]
 end
 
