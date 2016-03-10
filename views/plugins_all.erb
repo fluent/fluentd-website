@@ -19,8 +19,13 @@
         This page gets updated every 10 minutes to tabulate all the Fluentd plugins listed on Rubygems.
         <a href="/plugins">Go here</a> to browse the plugins by category.
       </p>
+      <p>
+        <a href="#input-output">Input/Output plugin</a> | <a href="#filter">Filter plugin</a> | <a href="#parser">Parser plugin</a> | <a href="#formatter">Formatter plugin</a> | <a href="#obsoleted">Obsoleted plugin</a>
+      </p>
 
       <div class="clearfix">
+                    <h3 id="input-output">Input / Output plugins:</h3>
+                    <p>Collect events from sources or send events to destinations</p>
 		    <table class="table table-bordered">
 			    <thead>
 				    <tr>
@@ -35,7 +40,7 @@
 			    <tbody>
             <% @plugins.each do |plugin| %>
 				    <tr>
-              <td><% if is_certified(plugin) %><center><a href='/faqs#certified'><img src="/images/certified.png" height="25px"/></a></center><% end %></td>
+                                            <td><% if is_certified(plugin) %><center><a href='/faqs#certified'><img src="/images/certified.png" height="25px"/></a></center><% end %></td>
 					    <td align="right"><%= plugin['downloads'] %></td>
 					    <td><a href="<%= plugin['homepage_uri'] %>"><%= plugin['name'].gsub(/fluent-plugin-/, '') %></a></td>
 					    <td style="font-size: 12px;"><%= plugin['authors'] %></td>
@@ -45,7 +50,88 @@
             <% end %>
 			    </tbody>
 		    </table>
- 			<h3 style="color:#FF0000"> Obsolete Plugins: These plugins are considered either unmaintained, or their functionalities have been subsumed by other plugins. Use them with caution.</h3>
+                    <h3 id="filter">Filter plugins:</h3>
+                    <p>Mutating, filtering, calculating events. This list includes filter like output plugins.</p>
+		    <table class="table table-bordered">
+			    <thead>
+				    <tr>
+					    <th width="">Certified</th>
+					    <th width="">Download</th>
+					    <th width="">Name</th>
+					    <th width="">Author</th>
+					    <th width="">About</th>
+					    <th width="">Version</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+            <% @filter_plugins.each do |plugin| %>
+				    <tr>
+                                            <td><% if is_certified(plugin) %><center><a href='/faqs#certified'><img src="/images/certified.png" height="25px"/></a></center><% end %></td>
+					    <td align="right"><%= plugin['downloads'] %></td>
+					    <td><a href="<%= plugin['homepage_uri'] %>"><%= plugin['name'].gsub(/fluent-plugin-/, '') %></a></td>
+					    <td style="font-size: 12px;"><%= plugin['authors'] %></td>
+					    <td style="font-size: 14px;"><%= plugin['info'] %></td>
+					    <td><%= plugin['version'] %></td>
+				    </tr>
+            <% end %>
+			    </tbody>
+		    </table>
+
+                    <h3 id="parser"> Parser plugins:</h3>
+                    <p>Parse data in input/filter/output plugins</p>
+		    <table class="table table-bordered">
+			    <thead>
+				    <tr>
+					    <th width="">Certified</th>
+					    <th width="">Download</th>
+					    <th width="">Name</th>
+					    <th width="">Author</th>
+					    <th width="">About</th>
+					    <th width="">Version</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+            <% @parser_plugins.each do |plugin| %>
+				    <tr>
+					    <td><% if is_certified(plugin) %><center><a href='/faqs#certified'><img src="/images/certified.png" height="25px"/></a></center><% end %></td>
+                                            <td align="right"><%= plugin['downloads'] %></td>
+					    <td><a href="<%= plugin['homepage_uri'] %>"><%= plugin['name'].gsub(/fluent-plugin-/, '') %></a></td>
+					    <td style="font-size: 12px;"><%= plugin['authors'] %></td>
+					    <td style="font-size: 14px;"><%= plugin['info'] %></td>
+					    <td><%= plugin['version'] %></td>
+				    </tr>
+            <% end %>
+			    </tbody>
+		    </table>
+
+                    <h3 id="formatter"> Formatter plugins:</h3>
+                    <p>Format events in output plugins</p>
+		    <table class="table table-bordered">
+			    <thead>
+				    <tr>
+					    <th width="">Certified</th>
+					    <th width="">Download</th>
+					    <th width="">Name</th>
+					    <th width="">Author</th>
+					    <th width="">About</th>
+					    <th width="">Version</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+            <% @formatter_plugins.each do |plugin| %>
+				    <tr>
+                                            <td><% if is_certified(plugin) %><center><a href='/faqs#certified'><img src="/images/certified.png" height="25px"/></a></center><% end %></td>
+					    <td align="right"><%= plugin['downloads'] %></td>
+					    <td><a href="<%= plugin['homepage_uri'] %>"><%= plugin['name'].gsub(/fluent-plugin-/, '') %></a></td>
+					    <td style="font-size: 12px;"><%= plugin['authors'] %></td>
+					    <td style="font-size: 14px;"><%= plugin['info'] %></td>
+					    <td><%= plugin['version'] %></td>
+				    </tr>
+            <% end %>
+			    </tbody>
+		    </table>
+
+ 		    <h3 id="obsoleted" style="color:#FF0000"> Obsolete Plugins: These plugins are considered either unmaintained, or their functionalities have been subsumed by other plugins. Use them with caution.</h3>
 		    <table class="table table-bordered">
 			    <thead>
 				    <tr>

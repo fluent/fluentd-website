@@ -285,6 +285,8 @@ get '/plugins' do
   erb :plugins
 end
 
+FILTER_PLUGINS = ['fluent-plugin-parser', 'fluent-plugin-geoip', 'fluent-plugin-flatten', 'fluent-plugin-flowcounter-simple']
+
 get '/plugins/all' do
   @title = "List of All Plugins"
   begin
@@ -297,12 +299,25 @@ get '/plugins/all' do
   all_plugins = JSON.parse(plugins)
   @plugins = []
   @obsolete_plugins = []
+  @filter_plugins = []
+  @parser_plugins = []
+  @formatter_plugins = []
 
   all_plugins.each { |p|
     if p["obsolete"]
       @obsolete_plugins << p
     else
-      @plugins << p
+      name = p['name']
+      info = p['info']
+      if check_plugin_category(name, info, ['filter', 'Filter']) || FILTER_PLUGINS.include?(name)
+        @filter_plugins << p
+      elsif check_plugin_category(name, info, ['parser', 'Parser'])
+        @parser_plugins << p
+      elsif check_plugin_category(name, info, ['formatter', 'Formatter'])
+        @formatter_plugins << p
+      else
+        @plugins << p
+      end
     end
   }
   erb :plugins_all
@@ -387,6 +402,7 @@ helpers do
     return [title, MARKDOWN.render(content), tags.strip.split(/\W+/).map do |tag| tag.downcase end, author.strip]
   end
 
+
   def is_certified(plugin)
     author = plugin['authors']
     return true if author.downcase.include?('furuhashi')
@@ -399,5 +415,9 @@ helpers do
     return true if author.downcase.include?('treasure data')
     return true if author.downcase.include?('amazon web services')
     false
+  end
+
+  def check_plugin_category(name, info, words)
+    words.any? { |word| name.include?(word) || info.include?(word) }
   end
 end
