@@ -402,7 +402,6 @@ helpers do
     return [title, MARKDOWN.render(content), tags.strip.split(/\W+/).map do |tag| tag.downcase end, author.strip]
   end
 
-
   def is_certified(plugin)
     author = plugin['authors']
     return true if author.downcase.include?('furuhashi')
