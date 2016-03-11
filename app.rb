@@ -285,7 +285,7 @@ get '/plugins' do
   erb :plugins
 end
 
-FILTER_PLUGINS = ['fluent-plugin-parser', 'fluent-plugin-geoip', 'fluent-plugin-flatten', 'fluent-plugin-flowcounter-simple']
+FILTER_PLUGINS = ['fluent-plugin-parser', 'fluent-plugin-geoip', 'fluent-plugin-flatten', 'fluent-plugin-flowcounter-simple', 'fluent-plugin-stats']
 
 get '/plugins/all' do
   @title = "List of All Plugins"
