@@ -88,7 +88,7 @@ At this point you will notice something interesting, the incoming messages have 
 
 ### Additional Step: Parse log message
 
-Application log is stored into `"log"` field in the record. You can parse this log by using [fluent-plugin-parser](https://github.com/tagomoris/fluent-plugin-parser) filter before send to destinatinos.
+Application log is stored into `"log"` field in the record. You can parse this log by using [fluent-plugin-parser](https://github.com/tagomoris/fluent-plugin-parser) filter before send to destinations.
 
 ```
 <filter docker.**>
