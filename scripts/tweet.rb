@@ -15,7 +15,7 @@ begin
   sitemap_xml = Nokogiri::XML(open(sitemap_url))
   urls = sitemap_xml.css("url loc").map { |x|
     x.text
-  }.select { |x| x !~ /blog/ }
+  }.select { |x| x !~ /blog|newsletter/ }
 
   # Some notable 3rd party stuff
   urls << 'https://docs.docker.com/engine/admin/logging/fluentd/' # Docker
@@ -34,7 +34,7 @@ begin
   # Formatting
   title = Nokogiri::HTML(open(url_to_tweet)).css("title").text
   title.gsub!(/\s*\| Fluentd.*$/, "")
-  tweet_body = "\"#{title}\" #{url_to_tweet}"
+  tweet_body = "\"#{title.strip}\" #{url_to_tweet}"
 
   # client
   client = Twitter::REST::Client.new do |config|
