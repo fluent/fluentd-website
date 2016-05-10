@@ -27,3 +27,7 @@ The benefit of this approach is:
     </source>
     ```
     By default, `bind` is localhost and `port` is 56789.
+
+### Note
+
+This article is for `Flume-Legacy`. If you use Flume-NG, please see this article: [datasources/flume-ng](/datasources/flume-ng)
