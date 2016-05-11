@@ -57,5 +57,5 @@ You can two choices for this purpose whether using `in_kafka` or using `kafka-fl
 
 ### Note
 
-For simplification, you can use `in_kafka` plugin to retrive kafka messages.
-If you assume highly kafka traffic in production, we recommend to use `kafka-fluentd-consumer` instead of `in_kafka`. Because `in_kafka` has been reported high CPU usage when 1000req/sec environment. In more detail, please refer to [the issue](https://github.com/htgc/fluent-plugin-kafka/issues/16).
+For simplification, you can use `in_kafka` plugin to retrive Lafka messages.
+If you assume highly Kafka traffic in production, we recommend to use `kafka-fluentd-consumer` instead of `in_kafka`. Because `in_kafka` has been reported high CPU usage when 1000req/sec environment. In more detail, please refer to [the issue](https://github.com/htgc/fluent-plugin-kafka/issues/16).
