@@ -269,7 +269,7 @@ get '/plugins' do
     "Internet of Things" => 'mqtt',
     "Monitoring" => "growthforecast graphite monitor librato zabbix",
     "Notifications" => "irc ikachan hipchat twilio",
-    "NoSQL" => 'riak couch mongo couchbase rethink',
+    "NoSQL" => 'riak couch mongo couchbase rethink influxdb',
     "Online Processing" => 'norikra anomaly',
     "RDBMS" => 'mysql postgres vertica',
     "Search" => 'splunk elasticsearch sumologic'
@@ -370,6 +370,14 @@ get '/sitemap.xml' do
   erb :sitemap, :layout => false
 end
 
+CERTIFIED_PLUINGS = %W(firehose kinesis s3 td webhdfs anonymizer filter_typecast geoip grep td-monitoring
+grok-parser multi-format-parser parser record-modifier record-reformer woothee rewrite-tag-filter
+growthforecast ping-message ikachan twilio mongo influxdb norikra mysql mysql-replicator encrypt
+elasticsearch secure-forward forest rewrite scribe flowcounter flowcounter-simple datacounter flatten
+grepcounter numeric-counter mail multiprocess slack metricsense extract_query_params notifier keep-forward
+twitter munin hash-forward route groupcounter sql netflow elapsed-time stats-notifier copy_ex beats
+numeric-monitor kafka).map { |name| "fluent-plugin-#{name}"}
+
 helpers do
   def read_blog_articles(markdown_files)
     markdown_files.map { |f| read_blog_article(f) }
@@ -403,17 +411,7 @@ helpers do
   end
 
   def is_certified(plugin)
-    author = plugin['authors']
-    return true if author.downcase.include?('furuhashi')
-    return true if author.downcase.include?('tagomori')
-    return true if author.downcase.include?('nakagawa')
-    return true if author.downcase.include?('naotoshi')
-    return true if author.downcase.include?('kentaro yoshida')
-    return true if author.downcase.include?('kentaro kuribayashi')
-    return true if author.downcase.include?('pitr')
-    return true if author.downcase.include?('treasure data')
-    return true if author.downcase.include?('amazon web services')
-    false
+    CERTIFIED_PLUINGS.include?(plugin['name'])
   end
 
   def check_plugin_category(name, info, words)
