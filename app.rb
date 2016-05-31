@@ -86,7 +86,12 @@ AUTHORS = {
     'name' => 'Eduardo Silva',
     'avatar_url' => 'https://avatars3.githubusercontent.com/u/369718?v=3&s=70',
     'desc' => 'Eduardo (<a href="https://twitter.com/edsiper">@edsiper</a>) is a maintainer of Fluentd. He works as an Open Source Engineer at <a href="http://www.treasuredata.com/">Treasure Data</a>, the cloud-based, managed service for big data.'
-  }
+  },
+  'moris' => {
+    'name' => 'Satoshi Tagomori',
+    'avatar_url' => 'https://avatars3.githubusercontent.com/u/230654?v=3&s=70',
+    'desc' => 'Satoshi (a.k.a. Moris) (<a href="https://twitter.com/tagomoris">@tagomoris</a>) is a maintainer of Fluentd. He works on Fluentd, many Fluentd plugins, other OSS projects like msgpack-ruby, Norikra and so on, and distributed systems at <a href="http://www.treasuredata.com/">Treasure Data</a>.'
+  },
 }
 
 #
