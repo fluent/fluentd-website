@@ -51,6 +51,9 @@
                   32-bit (<a href="https://td-agent-package-browser.herokuapp.com/2/redhat/6/i386">RHEL6</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/2/redhat/5/i386">RHEL5</a>)
                 </li>
+                <li>
+                  Amazon Linux (<a href="https://td-agent-package-browser.herokuapp.com/2/redhat/2016.03/x86_64">2016.03</a>)
+                </li>
               </ul>
             </td>
           </tr>
@@ -67,7 +70,8 @@
               <ul>
                 <li><a href="//docs.fluentd.org/articles/install-by-deb">Installation Guide</a></li>
                 <li>
-                  64-bit/amd64 (<a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/trusty/pool/contrib/t/td-agent">Trusty</a>,
+                  64-bit/amd64 (<a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/xenial/pool/contrib/t/td-agent">Xenial</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/trusty/pool/contrib/t/td-agent">Trusty</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/precise/pool/contrib/t/td-agent">Precise</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/lucid/pool/contrib/t/td-agent">Lucid</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/2/debian/jessie/pool/contrib/t/td-agent">Jessie</a>,
@@ -75,7 +79,8 @@
                   <a href="https://td-agent-package-browser.herokuapp.com/2/debian/squeeze/pool/contrib/t/td-agent">Squeeze</a>)
                 </li>
                 <li>
-                  32-bit/i386 (<a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/precise/pool/contrib/t/td-agent">Precise</a>,
+                  32-bit/i386 (<a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/trusty/pool/contrib/t/td-agent">Trusty</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/precise/pool/contrib/t/td-agent">Precise</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/lucid/pool/contrib/t/td-agent">Lucid</a>)
                 </li>
               </ul>
@@ -106,16 +111,12 @@
                 Windows
               </center>
             </td>
-            <td>In development for Windows</td>
+            <td>Windows</td>
             <td>
               <span style="font-style:bold">Fluentd</span>
               <ul>
-                <li>In Development. Try github master or fluentd v0.14.0.pre series. <a href="http://www.fluentd.org/newsletter_signup">Get notified first about the upcoming release by signing up for the newsletter!</a></li>
-              </ul>
-              <span style="font-style:bold"><a href="https://github.com/fluent/fluentd-forwarder">Fluentd Forwarder</a></span>
-              <ul>
-                <li>Lightweight data collector written in Go</li>
-                <li>It's still experimental. Your feedback is appreciated!</li>
+                <li>fluentd v0.14 supports Windows environment</li>
+                <li>td-agent for Windows is in development</li>
               </ul>
             </td>
           </tr>
@@ -126,12 +127,18 @@
                 Ruby
               </center>
             </td>
-            <td>Ruby v1.9.3 and above</td>
+            <td>Ruby v2.1.0 and above</td>
             <td>
-              <span style="font-style:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:gem_v12]%></span>
+              <span style="font-style:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:gem_v14]%></span>
               <ul>
                 <li>
                   <code>gem install fluentd</code><br/>
+                </li>
+              </ul>
+              <span style="font-style:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:gem_v12]%></span>
+              <ul>
+                <li>
+                  <code>gem install fluentd -v '~> 0.12.0'</code><br/>
                 </li>
               </ul>
               <span style="font-style:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:gem_v10]%></span>
