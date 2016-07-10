@@ -63,11 +63,11 @@ TD_AGENT_VERSIONS = {
     gem_v12: "0.12.26"
   },
   :v2 => {
-    linux: "2.3.1",
+    linux: "2.3.2",
     mac: "2.3.0"
   },
   :bit => {
-    linux: "0.8.0"
+    linux: "0.8.3"
   }
 }
 
