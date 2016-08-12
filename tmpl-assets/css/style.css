@@ -1461,3 +1461,11 @@ ul.loginbar li.socialbutton.slack a {
 ul.loginbar li.socialbutton.github iframe {
   top: 10px;
 }
+
+ul.nav li a.extraleftmar {
+  margin-right: 15px;
+}
+
+ul.nav li.search-icon {
+  margin-left: 24px;
+}
