@@ -1441,3 +1441,31 @@ ul.blog-tags a:hover i {
 .info-blocks .info-blocks-in p {
 	font-size: 12px;
 }
+
+ul.loginbar li {
+  color: #7c8082;
+  font-size: 11px;
+  font-family: 'Open Sans', sans-serif; 
+}
+
+ul.loginbar li.socialbutton.slack a, 
+ul.loginbar li.socialbutton.github iframe {
+  position: relative;
+  display: inline-block;
+}
+
+ul.loginbar li.socialbutton.slack a {
+  top: -2px;
+}
+
+ul.loginbar li.socialbutton.github iframe {
+  top: 10px;
+}
+
+ul.nav li a.extraleftmar {
+  margin-right: 15px;
+}
+
+ul.nav li.search-icon {
+  margin-left: 24px;
+}
