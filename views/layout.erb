@@ -66,12 +66,10 @@
         <ul class="loginbar pull-right">
           <li><a href="/faqs">FAQs</a></li>
           <li class="devider"></li>
-          <a href="http://slack.fluentd.org">
-            <img src="/images/slack_badge.png" width="55px" style="padding-bottom: 12px;"/>
-          </a>
+          <li class="socialbutton slack"><a href="http://slack.fluentd.org"><img src="/images/slack_badge.png" width="55px" /></a></li>
           <li class="devider"></li>
-          <li>
-            <iframe src="http://ghbtns.com/github-btn.html?user=fluent&amp;repo=fluentd&amp;type=watch&amp;count=true" allowtransparency="true" scrolling="0" frameborder="0" height="25px" width="95px" style="padding-top: 5px;">
+          <li class="socialbutton github">
+            <iframe src="http://ghbtns.com/github-btn.html?user=fluent&amp;repo=fluentd&amp;type=watch&amp;count=true" allowtransparency="true" scrolling="0" frameborder="0" height="25px" width="95px">
             </iframe>
           </li>
           <li class="devider"></li>
@@ -94,7 +92,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-              <img style="margin-top:-20px" id="logo-header" src="/assets/img/miscellany/fluentd-logo.png" alt="Logo">
+              <img style="margin-top:-20px" id="logo-header" srcset="/assets/img/miscellany/fluentd-logo.png 1x, /assets/img/miscellany/fluentd-logo_2x.png 2x" src="/assets/img/miscellany/fluentd-logo.png" alt="Logo">
             </a>
           </div>
 
@@ -110,31 +108,24 @@
                 <ul class="dropdown-menu">
                   <li><a href="/architecture">What is Fluentd?</a></li>
                   <li><a href="/why">Why use Fluentd?</a></li>
-                  <li><a href="/testimonials">Users</a></li>
-                  <li><a href="/datasources">List of Data Sources</a></li>
-                  <li><a href="/dataoutputs">List of Data Outputs</a></li>
-                  <li><a href="/plugins">List of All Plugins</a></li>
+                  <li><a href="/testimonials">User Testimonials</a></li>
                   <li><a href="/faqs">FAQs</a></li>
+                  <li><a href="/centralized_application_logging">Centralized App Logging</a></li>
+                  <li><a href="/gaming_application_logging">Gaming App Logging</a></li>
+                  <li><a href="/adtech_application_logging">Adtech App Logging</a></li>                  
                 </ul>
               </li>
-
+              
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
-                  Solution
+                  Plug-ins
                   <i class="icon-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="/centralized_application_logging">Centralized App Logging</a></li>
-                  <li><a href="/gaming_application_logging">Gaming App Logging</a></li>
-                  <li><a href="/adtech_application_logging">Adtech App Logging</a></li>
-                  <!--
-                  <li><a href="/">Centralized Syslog Logging</a></li>
-                  -->
+                  <li><a href="/plugins">List of All Plugins</a></li>                
+                  <li><a href="/datasources">List of Data Sources</a></li>
+                  <li><a href="/dataoutputs">List of Data Outputs</a></li>
                 </ul>
-              </li>
-
-              <li>
-                <a href="http://docs.fluentd.org/">Docs</a>
               </li>
 
               <li class="dropdown">
@@ -143,22 +134,30 @@
                   <i class="icon-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="/community">Community</a></li>
-                  <li><a href="/guides">Guides & Recipes</a></li>
+                  <li><a href="http://docs.fluentd.org/">Documentation</a></li>
+                  <li><a href="/guides">Guides &amp; Recipes</a></li>
                   <li><a href="/videos">Videos</a></li>
                   <li><a href="/slides">Slides</a></li>
-                  <li><a href="/events">Events</a></li>
                   <li><a href="/related-projects">Related Projects</a></li>
+                  <li><a href="/blog/">Blog</a></li>
                 </ul>
               </li>
-
+              
               <li class="dropdown">
-                <a href="/blog/">Blog</a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                  Community
+                  <i class="icon-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/community">Join</a></li>
+                  <li><a href="/events">Events</a></li>
+                  <li><a href="/newsletter_signup">Newsletter</a></li>
+                </ul>
               </li>
 
               <li>
                 <a href="http://www.treasuredata.com/fluentd_enterprise">
-                  Enterprise &nbsp;&nbsp;&nbsp;
+                  Enterprise
                 </a>
               </li>
 
@@ -178,24 +177,24 @@
                   <button class="btn-u" type="button">Go</button>
                 </span>
 
-  <!-- JS Global Compulsory -->
-  <%= js  :libraries %>
-  <script type="text/javascript" src="/assets/js/app.js"></script>
-  <script type="text/javascript" src="/assets/js/pages/index.js"></script>
+                <!-- JS Global Compulsory -->
+                <%= js  :libraries %>
+                <script type="text/javascript" src="/assets/js/app.js"></script>
+                <script type="text/javascript" src="/assets/js/pages/index.js"></script>
 
-<!-- SwiftType: SaaS Site Seach -->
-<script type="text/javascript">
-var Swiftype = window.Swiftype || {};
-  (function() {
-    Swiftype.key = 'fxqyKZ6ijDifm8yjw2an';
+                <!-- SwiftType: SaaS Site Seach -->
+                <script type="text/javascript">
+                var Swiftype = window.Swiftype || {};
+                  (function() {
+                    Swiftype.key = 'fxqyKZ6ijDifm8yjw2an';
 
-    /** DO NOT EDIT BELOW THIS LINE **/
-    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-    script.src = "//s.swiftypecdn.com/embed.js";
-    var entry = document.getElementsByTagName('script')[0];
-    entry.parentNode.insertBefore(script, entry);
-  }());
-</script>
+                    /** DO NOT EDIT BELOW THIS LINE **/
+                    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+                    script.src = "//s.swiftypecdn.com/embed.js";
+                    var entry = document.getElementsByTagName('script')[0];
+                    entry.parentNode.insertBefore(script, entry);
+                  }());
+                </script>
 
               </div><!-- /input-group -->
             </div>
