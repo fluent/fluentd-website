@@ -88,14 +88,27 @@ At this point you will notice something interesting, the incoming messages have 
 
 ### Additional Step 1: Parse log message
 
-Application log is stored into `"log"` field in the record. You can parse this log by using [fluent-plugin-parser](https://github.com/tagomoris/fluent-plugin-parser) filter before send to destinations.
+Application log is stored into `"log"` field in the record. You can parse this log by using [filter_parser](http://docs.fluentd.org/articles/filter_parser) filter before send to destinations.
 
 ```
 <filter docker.**>
   @type parser
   format nginx
   key_name log
+  reserve_data true
 </filter
+```
+
+Original event:
+
+```
+2015-09-01 15:10:40 -0600 docker.3fd8678d487e: {"source":"stdout","log":"{\"key\":\"value\"}","container_id":"3fd8678d487e540c7a303e1613101e746c5012f3317434eda93f24351c1928f7","container_name":"/angry_kalam"}
+```
+
+Filtered event:
+
+```
+2015-09-01 15:10:40 -0600 docker.3fd8678d487e: {"source":"stdout","log":"{\"key\":\"value\"}","container_id":"3fd8678d487e540c7a303e1613101e746c5012f3317434eda93f24351c1928f7","container_name":"/angry_kalam","key":"value"}
 ```
 
 ### Additional Step 2: Concatenate multiple lines log messages
