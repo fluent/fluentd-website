@@ -376,7 +376,7 @@ get '/sitemap.xml' do
   erb :sitemap, :layout => false
 end
 
-CERTIFIED_PLUINGS = %W(firehose kinesis s3 td webhdfs anonymizer filter_typecast geoip grep td-monitoring
+CERTIFIED_PLUGINS = %W(firehose kinesis s3 td webhdfs anonymizer filter_typecast geoip grep td-monitoring
 grok-parser multi-format-parser parser record-modifier record-reformer woothee rewrite-tag-filter
 growthforecast ping-message ikachan twilio mongo influxdb norikra mysql mysql-replicator encrypt
 elasticsearch secure-forward forest rewrite scribe flowcounter flowcounter-simple datacounter flatten
@@ -417,7 +417,7 @@ helpers do
   end
 
   def is_certified(plugin)
-    CERTIFIED_PLUINGS.include?(plugin['name'])
+    CERTIFIED_PLUGINS.include?(plugin['name'])
   end
 
   def check_plugin_category(name, info, words)
