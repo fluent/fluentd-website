@@ -47,6 +47,10 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
    margin-right: 7px;
 }
 
+h1.splashheader {
+   font-size: 40px;
+}
+
 img.img-circle {
     border-radius: 50% !important;  
 }
