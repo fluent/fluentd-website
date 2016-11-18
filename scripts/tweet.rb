@@ -24,6 +24,9 @@ begin
   urls << 'https://www.pandastrike.com/posts/20150807-fluentd-vs-logstash'
   urls << 'http://logz.io/blog/elk-role-based-access-s3-fluentd/'
   urls << 'https://aws.amazon.com/blogs/aws/all-your-data-fluentd/'
+  urls << 'https://www.cncf.io/blog/2016/11/09/fluentd-joins-cloud-native-computing-foundation'
+  urls << 'http://thenewstack.io/microsoft-contributing-fluentd/'
+  urls << 'http://thenewstack.io/fluentd-offers-comprehensive-log-collection-cloud-microservices-world/'
 
 
   # Randomly pick one
