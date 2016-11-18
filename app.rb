@@ -86,7 +86,7 @@ AUTHORS = {
   'eduardo' => {
     'name' => 'Eduardo Silva',
     'avatar_url' => 'https://avatars3.githubusercontent.com/u/369718?v=3&s=70',
-    'desc' => 'Eduardo (<a href="https://twitter.com/edsiper">@edsiper</a>) is a maintainer of Fluentd. He works as an Open Source Engineer at <a href="http://www.treasuredata.com/">Treasure Data</a>, the cloud-based, managed service for big data.'
+    'desc' => 'Eduardo (<a href="https://twitter.com/edsiper">@edsiper</a>) is an Open Source Engineer at <a href="http://www.treasuredata.com/">Treasure Data</a>, he is part of Fluentd core team and maintains Fluent Bit.'
   },
   'moris' => {
     'name' => 'Satoshi Tagomori',
