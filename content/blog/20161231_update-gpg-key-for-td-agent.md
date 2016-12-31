@@ -2,12 +2,14 @@
 
 Hi folks,
 
-We have updated Treasure Agent's GPG key for deb/rpm to replace old SHA1 based signing.
-It means you need to update imported old GPG key on existing servers for td-agent update.
+This article is for Treasure Agent users.
 
-For new deployment, no need update action.
+We have updated Treasure Agent's GPG key for deb/rpm to drop deprecated SHA1 based signing.
+It means you need to update imported old GPG key before td-agent update.
 
-Here is update step for deb / rpm.
+If new deployment or if you disable gpg check, no need update action.
+
+Here is an update steps for deb and rpm.
 
 ## deb
 
