@@ -4,12 +4,15 @@ Hi folks,
 
 This article is for Treasure Agent users.
 
-We have updated Treasure Agent's GPG key for deb/rpm to drop deprecated SHA1 based signing.
+We used SHA1 based GPG key for td-agent package signing, but SHA1 has beed deprecated.
+For example, apt will remove SHA1 support: [Teams/Apt/Sha1Removal - Debian Wiki](https://wiki.debian.org/Teams/Apt/Sha1Removal)
+
+So we have updated Treasure Agent's GPG key for deb/rpm to drop SHA1 based signing.
 It means you need to update imported old GPG key before td-agent update.
 
 If new deployment or if you disable gpg check, no need update action.
 
-Here is an update steps for deb and rpm.
+Here is an update steps for deb/rpm.
 
 ## deb
 
