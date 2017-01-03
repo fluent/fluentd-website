@@ -141,4 +141,7 @@
     company: Knowlarity
     quote: |
         At <a href="https://www.knowlarity.com/">Knowlarity Communications</a>, we process anywhere between 2 ~ 10 Million calls on a daily basis. This needs us to be Fault tolerant & Resilient. We use Fluentd to collect Call Detail Records (CDRs) from various machines and feed it to our analytics tools & alerting systems in real time. Fluentd was very easy to setup & use. It also provides a variety of plugins which lets you get started quickly. Additionally It has also proved to be very reliable and scalable.
-
+-
+    company: TOAST eXchange
+    quote: |
+        <a href="http://exchange.toast.com/">TOAST eXchange</a>, an advertisement platform service made by NHN Entertainment, requires ingesting tremendous volume of data to target customers based on their interest fast and accurately. Fluentd provides flexible configuration and easy installation so that we could adopt it with low cost and resources and coould focus our core comepetency on business layer. Fluentd is really helpful to construct expandable streaming data pipelines for large scale event handling.
