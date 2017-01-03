@@ -144,4 +144,4 @@
 -
     company: TOAST eXchange
     quote: |
-        <a href="http://exchange.toast.com/">TOAST eXchange</a>, an advertisement platform service made by NHN Entertainment, requires ingesting tremendous volume of data to target customers based on their interest fast and accurately. Fluentd provides flexible configuration and easy installation so that we could adopt it with low cost and resources and coould focus our core comepetency on business layer. Fluentd is really helpful to construct expandable streaming data pipelines for large scale event handling.
+        <a href="http://exchange.toast.com/">TOAST eXchange</a>, an advertisement platform service made by NHN Entertainment, requires ingesting tremendous volume of data to target customers based on their interest fast and accurately. Fluentd provides flexible configuration and easy installation so that we could adopt it with low cost and resources and could focus our core competency on business layer. Fluentd is really helpful to construct expandable streaming data pipelines for large scale event handling.
