@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 # https://devcenter.heroku.com/articles/ruby-versions
-#ruby '2.1.2'
+ruby '2.4.0'
 
 # Framework
-gem 'sinatra', '1.3.3'
-gem 'sinatra-assetpack', '0.2.8', :require => 'sinatra/assetpack'
+gem 'sinatra', '1.4.7'
+gem 'sinatra-assetpack', '0.3.5', :require => 'sinatra/assetpack'
 gem 'jemalloc', '~> 0.1.8'
 gem 'redcarpet'
 gem 'slugify'
@@ -14,8 +14,8 @@ gem 'slugify'
 gem 'redis'
 
 # Webserver
-gem 'unicorn', '~> 4.2.1'
-gem 'unicorn-worker-killer', '~> 0.2.0'
+gem 'unicorn', '~> 5.2.0'
+gem 'unicorn-worker-killer', '~> 0.4.4'
 
 # Compressor
 gem 'yui-compressor', :require => 'yui/compressor'
@@ -27,6 +27,7 @@ gem 'newrelic_rpm', '~> 3.5.4'
 group :development do
   gem 'rake'
   gem 'shotgun', '~> 0.9'
+  gem 'test-unit'
 end
 
 # Scripts
