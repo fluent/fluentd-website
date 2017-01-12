@@ -124,12 +124,12 @@
         Fluentd has been worked in our business to help day-by-day data driven development for our Growth Hacker. Therefore, I felt Fluentd is revolutionary log collection tool I have ever seen.
     name: Kentaro Yoshida
 
-- 
+-
     company: NAMCO BANDAI Studios
     quote: |
-        <a href="http://www.bandainamcostudios.com/en/">NAMCO BANDAI Studios Inc.</a> is a platform-agnostic development studio that mainly develops console games, arcade games, online games, and mobile games. 
+        <a href="http://www.bandainamcostudios.com/en/">NAMCO BANDAI Studios Inc.</a> is a platform-agnostic development studio that mainly develops console games, arcade games, online games, and mobile games.
         Besides games, NBSI also produces music, movie, and other entertainment content.<br/><br/>
-        Log file analysis is key to examining user trends for our game services.  We keep numerous logs such as access logs, error logs, and action logs.  In order to efficiently analyze the information, we needed a solution flexible enough to aggregate the data from all the various logs. 
+        Log file analysis is key to examining user trends for our game services.  We keep numerous logs such as access logs, error logs, and action logs.  In order to efficiently analyze the information, we needed a solution flexible enough to aggregate the data from all the various logs.
         The Fluentd concept fits our needs perfectly. For a large-scale service with hundreds of thousands of users, Fluentd's scalability has proven to be valuable.
     name: Yasuhiro Ishimaru
 -
@@ -145,3 +145,9 @@
     company: TOAST eXchange
     quote: |
         <a href="http://exchange.toast.com/">TOAST eXchange</a>, an advertisement platform service made by NHN Entertainment, requires ingesting tremendous volume of data to target customers based on their interest fast and accurately. Fluentd provides flexible configuration and easy installation so that we could adopt it with low cost and resources and could focus our core competency on business layer. Fluentd is really helpful to construct expandable streaming data pipelines for large scale event handling.
+-
+    company: Twilio
+    quote: |
+        <a href="https://www.twilio.com/">Twilio</a>, the leading cloud communications platform, provides building blocks to add messaging, voice, and video in your web and mobile applications. At Twilio, we use Fluentd to forward billions of logs messages per day from our instances in Amazon AWS to Google's BigQuery service.
+        <br/><br/>
+        Having operated Fluentd on thousands of production instances for the past several months, we are very happy with Fluentd's reliability, flexibility, and performance. It has proven to be one of the more dependable parts of our log aggregation solution.
