@@ -25,8 +25,8 @@
         <thead>
           <tr>
             <th width="20%">Platform</th>
-            <th width="20%">Platform Version</th>
-            <th width="60%">Package or Installer</th>
+            <th width="30%">Platform Version</th>
+            <th width="50%">Package or Installer</th>
           </tr>
         </thead>
         <tbody>
@@ -37,7 +37,7 @@
                 RHEL / CentOS / Amazon Linux
               </center>
             </td>
-            <td>2.6+ kernel Linux distributions (64-bit & 32-bit)</td>
+            <td>2.6+ Linux kernel (64-bit & 32-bit)</td>
             <td>
               <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v2][:linux]%></span>
               <ul>
@@ -52,7 +52,7 @@
                   <a href="https://td-agent-package-browser.herokuapp.com/2/redhat/5/i386">RHEL5</a>)
                 </li>
                 <li>
-                  Amazon Linux (<a href="https://td-agent-package-browser.herokuapp.com/2/redhat/2016.03/x86_64">2016.03</a>)
+                  Amazon Linux (<a href="https://td-agent-package-browser.herokuapp.com/2/redhat/2016.03/x86_64">2016.03</a>, <a href="https://td-agent-package-browser.herokuapp.com/2/redhat/2016.09/x86_64">2016.09</a>)
                 </li>
               </ul>
             </td>
@@ -64,7 +64,7 @@
                 Ubuntu
               </center>
             </td>
-            <td>2.6+ kernel Linux distributions (64-bit & 32-bit)</td>
+            <td>2.6+ Linux kernel (64-bit & 32-bit)</td>
             <td>
               <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v2][:linux]%></span>
               <ul>
@@ -93,7 +93,7 @@
                 MacOS X
               </center>
             </td>
-            <td>td-agent 2.1.4 for OSX 10.9 and 10.10.<br /> td-agent 2.3.0 for OSX 10.11</td>
+            <td>v2.1.4 for OSX 10.9 and 10.10.<br /> v2.3.0 for OSX 10.11</td>
             <td>
               <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v2][:mac]%></span>
               <ul>
@@ -102,6 +102,8 @@
                   <a href="https://td-agent-package-browser.herokuapp.com/2/macosx">dmg repository</a>
                 </li>
               </ul>
+              <br/>
+              <br/>
             </td>
           </tr>
           <tr>
@@ -111,13 +113,17 @@
                 Windows
               </center>
             </td>
-            <td>Windows</td>
+            <td>Windows Server 2012+ (64-bit)</td>
             <td>
-              <span style="font-style:bold">Fluentd</span>
+              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:win]%> <b>(Beta Release)</b></span>
               <ul>
-                <li>fluentd v0.14 supports Windows environment</li>
-                <li>td-agent for Windows is in development</li>
+                <li><a href="//docs.fluentd.org/articles/install-by-msi">Installation Guide</a></li>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/windows">msi repository</a>
+                </li>
               </ul>
+              <br/>
+              <br/>
             </td>
           </tr>
           <tr>
