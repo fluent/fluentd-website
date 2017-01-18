@@ -18,7 +18,7 @@
 
   <div class="row margin-bottom-20">
     <div class="col-md-9">
-      <h3>Fluentd</h3>
+      <h3>Fluentd (v0.12, stable version)</h3>
       <div>Fluentd is available on Linux and Mac OSX and experimentally on Windows. Also, Treasure Data packages it as Treasure Agent (td-agent) for RedHat/CentOS and Ubuntu/Debian and provides a binary for OSX.</div>
       <br/>
       <table class="table table-bordered">
@@ -113,15 +113,12 @@
                 Windows
               </center>
             </td>
-            <td>Windows Server 2012+ (64-bit)</td>
+            <td></td>
             <td>
-              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:win]%> <b>(Beta Release)</b></span>
-              <ul>
-                <li><a href="//docs.fluentd.org/v0.14/articles/install-by-msi">Installation Guide</a></li>
-                <li>
-                  <a href="https://td-agent-package-browser.herokuapp.com/3/windows">msi repository</a>
-                </li>
-              </ul>
+              Please use the experimental version, scroll down.
+              <br/>
+              <br/>
+              <br/>
               <br/>
               <br/>
             </td>
@@ -141,12 +138,6 @@
                   <code>gem install fluentd -v '~> 0.12.0'</code><br/>
                 </li>
               </ul>
-              <span style="font-style:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:gem_v14]%> (dev version)</span>
-              <ul>
-                <li>
-                  <code>gem install fluentd</code><br/>
-                </li>
-              </ul>
               <a href="http://docs.fluentd.org/articles/install-by-gem">Installation Guide</a> (* ruby expert-use only)<br/>
             </td>
           </tr>
@@ -161,9 +152,9 @@
         <thead>
           <tr>
             <th width="20%">Platform</th>
-            <th width="20%">Platform Version</th>
-            <th width="50%">Package or Installer</th>
-            <th width="10%">Notes</th>
+            <th width="30%">Platform Version</th>
+            <th width="30%">Package or Installer</th>
+            <th width="20%">Notes</th>
           </tr>
         </thead>
         <tbody>
@@ -174,12 +165,12 @@
                 RHEL / CentOS
               </center>
             </td>
-            <td>2.6+ kernel Linux distributions (64bit)</td>
+            <td>2.6+ Linux kernel (64-bit)</td>
             <td>
               <span style="font-style:bold;">TD-Agent Bit v<%=TD_AGENT_VERSIONS[:bit][:linux]%></span>
               <ul>
                 <li>
-                  <a href="http://fluentbit.io/documentation/0.9/installation/redhat_centos.html">Download Instructions</a>
+                  <a href="http://fluentbit.io/documentation/0.10/installation/redhat_centos.html">Download Instructions</a>
                 </li>
               </ul>
             </td>
@@ -194,12 +185,12 @@
                 Ubuntu
               </center>
             </td>
-            <td>2.6+ kernel Linux distributions (64-bit)</td>
+            <td>2.6+ Linux kernel (64-bit)</td>
             <td>
               <span style="font-style:bold;">TD-Agent Bit v<%=TD_AGENT_VERSIONS[:bit][:linux]%></span>
               <ul>
                 <li>
-                  <a href="http://fluentbit.io/documentation/0.9/installation/ubuntu.html">Download Instructions</a>
+                  <a href="http://fluentbit.io/documentation/0.10/installation/ubuntu.html">Download Instructions</a>
                 </li>
               </ul>
             </td>
@@ -211,15 +202,15 @@
       </table>
       <br/>
 
-      <!--
-      <h3>Fluentd: Old Stable (Obsoleted)</h3>
+      <h3>Fluentd (v0.14, experimental version)</h3>
+      <div>Fluentd is available on Linux and Mac OSX and experimentally on Windows. Also, Treasure Data packages it as Treasure Agent (td-agent) for RedHat/CentOS and Ubuntu/Debian and provides a binary for OSX.</div>
+      <br/>
       <table class="table table-bordered">
         <thead>
           <tr>
             <th width="20%">Platform</th>
-            <th width="20%">Platform Version</th>
+            <th width="30%">Platform Version</th>
             <th width="50%">Package or Installer</th>
-            <th width="10%">Notes</th>
           </tr>
         </thead>
         <tbody>
@@ -227,47 +218,81 @@
             <td>
               <center>
                 <img src="/images/icon_redhat.png" height="60px"><br/>
-                RHEL / CentOS
+                RHEL / CentOS / Amazon Linux
               </center>
             </td>
-            <td>2.6+ kernel Linux distributions (64bit & 32-bit)</td>
+            <td>2.6+ Linux kernel (64-bit)</td>
             <td>
-              <span style="font-style:bold;">td-agent v<%=TD_AGENT_VERSIONS[:v1][:linux]%></span>
+              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:linux]%></span>
               <ul>
+                <li><a href="http://docs.fluentd.org/v0.14/articles/install-by-rpm">Installation Guide</a></li>
                 <li>
-                  <a href="http://docs.fluentd.org/articles/install-by-rpm-v1">RedHat/CentOS RPM Repository</a>
+                  64-bit (<a href="https://td-agent-package-browser.herokuapp.com/3/redhat/7/x86_64">RHEL7</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/redhat/6/x86_64">RHEL6</a>)
                 </li>
               </ul>
-            </td>
-            <td>
-              <a href="http://docs.fluentd.org/articles/install-by-rpm">Documents</a><br/>
-              <a href="http://docs.treasuredata.com/articles/td-agent-changelog">ChangeLog</a>
             </td>
           </tr>
           <tr>
             <td>
               <center>
                 <img src="/images/icon_ubuntu.png" height="60px"><br/>
-                Ubuntu / Debian
+                Ubuntu
               </center>
             </td>
-            <td>2.6+ kernel Linux distributions (64-bit & 32-bit)</td>
+            <td>2.6+ Linux kernel (64-bit)</td>
             <td>
-              <span style="font-style:bold;">td-agent v<%=TD_AGENT_VERSIONS[:v1][:linux]%></span>
+              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:linux]%></span>
               <ul>
+                <li><a href="//docs.fluentd.org/articles/install-by-deb">Installation Guide</a></li>
                 <li>
-                  <a href="http://docs.fluentd.org/articles/install-by-deb-v1">Ubuntu/Debian Apt Repository</a>
+                  64-bit/amd64 (<a href="https://td-agent-package-browser.herokuapp.com/3/ubuntu/xenial/pool/contrib/t/td-agent">Xenial</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/ubuntu/trusty/pool/contrib/t/td-agent">Trusty</a>)
                 </li>
               </ul>
             </td>
+          </tr>
+          <tr>
             <td>
-              <a href="http://docs.fluentd.org/articles/install-by-deb-v1">Documents</a>
-              <a href="http://docs.treasuredata.com/articles/td-agent-changelog">ChangeLog</a>
+              <center>
+                <img src="/assets/img/download-icons/windows-logo.png"><br/>
+                Windows
+              </center>
+            </td>
+            <td>Windows Server 2012+ (64-bit)</td>
+            <td>
+              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:win]%></span>
+              <ul>
+                <li><a href="//docs.fluentd.org/v0.14/articles/install-by-msi">Installation Guide</a></li>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/windows">msi repository</a>
+                </li>
+              </ul>
+              <br/>
+              <br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/assets/img/download-icons/ruby.jpg"><br/>
+                Ruby
+              </center>
+            </td>
+            <td>Ruby v2.1.0 and above</td>
+            <td>
+              <span style="font-style:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:gem_v14]%> (dev version)</span>
+              <ul>
+                <li>
+                  <code>gem install fluentd</code><br/>
+                </li>
+              </ul>
+              <a href="http://docs.fluentd.org/articles/install-by-gem">Installation Guide</a> (* ruby expert-use only)<br/>
             </td>
           </tr>
         </tbody>
       </table>
-      -->
+      <br/>
 
     </div><!--/col-md-9-->
     <div class="col-md-3">
