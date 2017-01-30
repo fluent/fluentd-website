@@ -80,6 +80,12 @@ Check that the correct key URLs are configured for this repository.
  GPG Keys are configured as: https://packages.treasuredata.com/GPG-KEY-td-agent
 ```
 
+## Old GPG key
+
+If you need old GPG key for older packages, use following key:
+
+[GPG-KEY-td-agent-old-sha1](https://packages.treasuredata.com/GPG-KEY-td-agent-old-sha1)
+
 
 TAG: Fluentd td-agent Announcement
 AUTHOR: masa
