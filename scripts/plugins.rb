@@ -71,7 +71,8 @@ class Plugins
     'fluent-plugin-tail-asis',
     'fluent-plugin-hostname',
     'fluent-plugin-mysql-bulk',
-    'fluent-plugin-calc'
+    'fluent-plugin-calc',
+    'fluent-plugin-mysqlslowquery'
   ]
 end
 
