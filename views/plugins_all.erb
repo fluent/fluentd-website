@@ -139,6 +139,7 @@
 					    <th width="">Name</th>
 					    <th width="">Author</th>
 					    <th width="">About</th>
+					    <th width="">Note</th>
 					    <th width="">Version</th>
 				    </tr>
 			    </thead>
@@ -149,6 +150,7 @@
 					    <td><a href="<%= plugin['homepage_uri'] %>"><%= plugin['name'].gsub(/fluent-plugin-/, '') %></a></td>
 					    <td style="font-size: 12px;"><%= plugin['authors'] %></td>
 					    <td style="font-size: 14px;"><%= plugin['info'] %></td>
+					    <td style="font-size: 14px;"><%= MARKDOWN.render(plugin['note']) %></td>
 					    <td><%= plugin['version'] %></td>
 				    </tr>
             <% end %>

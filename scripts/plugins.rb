@@ -5,6 +5,7 @@ require 'json'
 require 'net/https'
 require 'cgi'
 require 'erb'
+require 'yaml'
 require 'redis'
 
 def e(s)
@@ -52,8 +53,9 @@ class Plugins
 
     # Mark obsolete plugins
     plugins.each { |p|
-      if OBSOLETE_PLUGINS.include?(p["name"])
+      if OBSOLETE_PLUGINS.key?(p["name"])
         p["obsolete"] = true
+        p["note"] = OBSOLETE_PLUGINS[p["name"]]
       end
     }
 
@@ -63,19 +65,7 @@ class Plugins
     redis.set("plugins", plugins.to_json)
   end
 
-  OBSOLETE_PLUGINS = [
-    'fluent-plugin-librato-metrics',
-    'fluent-plugin-tail-ex',
-    'fluent-plugin-tail-lite',
-    'fluent-plugin-tail-multiline',
-    'fluent-plugin-tail-asis',
-    'fluent-plugin-hostname',
-    'fluent-plugin-mysql-bulk',
-    'fluent-plugin-calc',
-    'fluent-plugin-mysqlslowquery',
-    'fluent-plugin-tail_path',
-    'fluent-plugin-amqp2',
-  ]
+  OBSOLETE_PLUGINS = YAML.load_file(File.expand_path(File.join(__dir__, 'obsolete-plugins.yml')))
 end
 
 Plugins.update
