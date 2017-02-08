@@ -1,0 +1,25 @@
+---
+fluent-plugin-librato-metrics: |+
+  TODO
+fluent-plugin-tail-ex: |+
+  Merged in in_tail in Fluentd v0.10.45. [fluent/fluentd#269](https://github.com/fluent/fluentd/issues/269)
+fluent-plugin-tail-lite: |+
+  Use [in_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
+fluent-plugin-tail-multiline: |+
+  Merged in in_tail in Fluentd v0.10.45. [fluent/fluentd#269](https://github.com/fluent/fluentd/issues/269)
+fluent-plugin-tail-asis: |+
+  Use [in_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
+fluent-plugin-hostname: |+
+  Use [filter_record_transformer](http://docs.fluentd.org/v0.12/articles/filter_record_transformer) instead.
+fluent-plugin-mysql-bulk: |+
+  Merged to [tagomoris/fluent-plugin-mysql](https://github.com/tagomoris/fluent-plugin-mysql)
+fluent-plugin-calc: |+
+  Moved to [sonots/fluent-plugin-stats](https://github.com/sonots/fluent-plugin-stats)
+fluent-plugin-mysqlslowquery: |+
+  Unmaintained since 2015-10-08.
+  See: [comment](https://github.com/yuku-t/fluent-plugin-mysqlslowquery/issues/15#issuecomment-146473679)
+fluent-plugin-tail_path: |+
+  Merged in in_tail in Fluentd v0.12.24. [fluent/fluentd#951](https://github.com/fluent/fluentd/pull/951)
+fluent-plugin-amqp2: |+
+  Unmaintained since 2015-09-01.
+  Use [fluent-plugin-amqp](https://github.com/giraffi/fluent-plugin-amqp) instead.
