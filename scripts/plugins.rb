@@ -74,6 +74,7 @@ class Plugins
     'fluent-plugin-calc',
     'fluent-plugin-mysqlslowquery',
     'fluent-plugin-tail_path',
+    'fluent-plugin-amqp2',
   ]
 end
 
