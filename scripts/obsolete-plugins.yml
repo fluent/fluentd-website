@@ -4,13 +4,15 @@ fluent-plugin-librato-metrics: |+
 fluent-plugin-tail-ex: |+
   Merged in in_tail in Fluentd v0.10.45. [fluent/fluentd#269](https://github.com/fluent/fluentd/issues/269)
 fluent-plugin-tail-lite: |+
-  Use [in_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
+  Use [in\_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
 fluent-plugin-tail-multiline: |+
   Merged in in_tail in Fluentd v0.10.45. [fluent/fluentd#269](https://github.com/fluent/fluentd/issues/269)
 fluent-plugin-tail-asis: |+
-  Use [in_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
+  Use [in\_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
+fluent-plugin-tailpath: |+
+  Use [in\_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
 fluent-plugin-hostname: |+
-  Use [filter_record_transformer](http://docs.fluentd.org/v0.12/articles/filter_record_transformer) instead.
+  Use [filter\_record\_transformer](http://docs.fluentd.org/v0.12/articles/filter_record_transformer) instead.
 fluent-plugin-mysql-bulk: |+
   Merged to [tagomoris/fluent-plugin-mysql](https://github.com/tagomoris/fluent-plugin-mysql)
 fluent-plugin-calc: |+
@@ -23,3 +25,11 @@ fluent-plugin-tail_path: |+
 fluent-plugin-amqp2: |+
   Unmaintained since 2015-09-01.
   Use [fluent-plugin-amqp](https://github.com/giraffi/fluent-plugin-amqp) instead.
+fluent-plugin-s3-fork: |+
+  Git repository has gone away.
+fluent-plugin-rambler: |+
+  Git repository has gone away.
+fluent-plugin-out_chatwork: |+
+  Replaced with [fluent-plugin-chatwork](https://rubygems.org/gems/fluent-plugin-chatwork).
+fluent-plugin-firehose: |+
+  Git repository has gone away. Use `kinesis_firehose` in fluent-plugin-kinesis.
