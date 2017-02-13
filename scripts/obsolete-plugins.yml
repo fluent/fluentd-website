@@ -27,5 +27,7 @@ fluent-plugin-amqp2: |+
   Use [fluent-plugin-amqp](https://github.com/giraffi/fluent-plugin-amqp) instead.
 fluent-plugin-s3-fork: |+
   Git repository has gone away.
+fluent-plugin-rambler: |+
+  Git repository has gone away.
 fluent-plugin-out_chatwork: |+
   Replaced with [fluent-plugin-chatwork](https://rubygems.org/gems/fluent-plugin-chatwork).
