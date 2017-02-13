@@ -32,4 +32,8 @@ fluent-plugin-rambler: |+
 fluent-plugin-out_chatwork: |+
   Replaced with [fluent-plugin-chatwork](https://rubygems.org/gems/fluent-plugin-chatwork).
 fluent-plugin-firehose: |+
-  Git repository has gone away. Use `kinesis_firehose` in fluent-plugin-kinesis.
+  Git repository has gone away. Use `kinesis_firehose` in [fluent-plugin-kinesis](https://github.com/awslabs/aws-fluent-plugin-kinesis) instead..
+fluent-plugin-kinesis-firehose: |+
+  Deprecated. Use [fluent-plugin-kinesis](https://github.com/awslabs/aws-fluent-plugin-kinesis) instead.
+fluent-plugin-kinesis-alt: |+
+  Unmaintained since 2013-12-26. Use [fluent-plugin-kinesis](https://github.com/awslabs/aws-fluent-plugin-kinesis) instead.
