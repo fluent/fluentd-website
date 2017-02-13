@@ -25,3 +25,5 @@ fluent-plugin-tail_path: |+
 fluent-plugin-amqp2: |+
   Unmaintained since 2015-09-01.
   Use [fluent-plugin-amqp](https://github.com/giraffi/fluent-plugin-amqp) instead.
+fluent-plugin-s3-fork: |+
+  Git repository has gone away.
