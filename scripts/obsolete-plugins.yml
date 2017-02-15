@@ -11,6 +11,8 @@ fluent-plugin-tail-asis: |+
   Use [in\_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
 fluent-plugin-tailpath: |+
   Use [in\_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
+fluent-plugin-tail-multiline-ex: |+
+  Use [in\_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
 fluent-plugin-hostname: |+
   Use [filter\_record\_transformer](http://docs.fluentd.org/v0.12/articles/filter_record_transformer) instead.
 fluent-plugin-mysql-bulk: |+
