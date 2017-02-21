@@ -3,28 +3,6 @@
     writeKey: "3867/9da79963a7a77270ae75eceb9f35893c56bd6073",
     database: "fluentd_website"
   });
-/*
-Commenting out until we fix the http v. https issue that prevents the page from loading
-$("a").click(function(ev) {
-    ev.preventDefault();
-    var node = ev.target;
-
-    while (!node.href && node !== document) {
-      node = node.parentNode;
-    }
-
-    if (!node || $(node).hasClass("search") || node.href === undefined ) return;
-    td_client.trackEvent('anchor_clicks_v1_2_0', {
-      current_host: window.location.hostname,
-      current_path: window.location.pathname,
-      clicked_link_host: node.hostname,
-      clicked_link_path: node.pathname,
-      clicked_link_href: node.href
-    }, function() { window.location = node.href }, function(err) { if (err) console.log(err) } );
-  })
-*/
   td_client.set('$global', 'td_global_id', 'td_global_id');
   td_client.trackPageview('views_unified_v1_2_0', function() {}, function(err) { if (err) console.log(err) });
-
 </script>
-<script src="http://my.hellobar.com/3e0ae30fa0e15c62fe45fdfcd31c15868f515e5b.js" type="text/javascript" charset="utf-8" async="async"></script>

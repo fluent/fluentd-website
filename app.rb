@@ -172,7 +172,6 @@ get '/faqs' do
   erb :faqs
 end
 
-
 get '/datasources' do
   @title = "List of Data Sources"
   erb :datasources
@@ -206,6 +205,11 @@ get '/casestudy/:company' do
     MARKDOWN.render(content)
   }
   erb :casestudy
+end
+
+get '/enterprise' do
+  @title = "Enterprise"
+  erb :enterprise
 end
 
 get '/blog' do
