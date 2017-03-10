@@ -60,7 +60,7 @@ TD_AGENT_VERSIONS = {
   :v1 => {
     linux: "1.1.21",
     gem_v10: "0.10.61",
-    gem_v12: "0.12.32",
+    gem_v12: "0.12.33",
     gem_v14: "0.14.13"
   },
   :v2 => {
@@ -69,7 +69,7 @@ TD_AGENT_VERSIONS = {
   },
   :v3 => {
     linux: "3.0.0",
-    win: "3.0.0-beta1"
+    win: "3.0.1-beta2"
   },
   :bit => {
     linux: "0.10.1"
