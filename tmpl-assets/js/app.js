@@ -189,3 +189,33 @@ var App = function () {
     };
 
 }();
+
+(function (){
+  var invalidDomains = ["@qq."];
+
+  MktoForms2.whenReady(function (form){
+    form.onValidate(function(){
+      var email = form.vals().Email;
+      if(email){
+        if(!isEmailGood(email)) {
+          form.submitable(false);
+          var emailElem = form.getFormElem().find("#Email");
+          form.showErrorMessage("Must be valid email.", emailElem);
+        }else{
+          form.submitable(true);
+        }
+      }
+    });
+  });
+  
+  function isEmailGood(email) {
+    for(var i=0; i < invalidDomains.length; i++) {
+      var domain = invalidDomains[i];
+      if (email.indexOf(domain) != -1) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+})();
