@@ -39,3 +39,5 @@ fluent-plugin-kinesis-firehose: |+
   Deprecated. Use [fluent-plugin-kinesis](https://github.com/awslabs/aws-fluent-plugin-kinesis) instead.
 fluent-plugin-kinesis-alt: |+
   Unmaintained since 2013-12-26. Use [fluent-plugin-kinesis](https://github.com/awslabs/aws-fluent-plugin-kinesis) instead.
+fluent-plugin-cloudtrail: |+
+  Deprecated: Consider using [fluent-plugin-s3](https://github.com/fluent/fluent-plugin-s3).
