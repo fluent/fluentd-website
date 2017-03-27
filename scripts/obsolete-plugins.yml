@@ -9,6 +9,10 @@ fluent-plugin-tail-multiline: |+
   Merged in in_tail in Fluentd v0.10.45. [fluent/fluentd#269](https://github.com/fluent/fluentd/issues/269)
 fluent-plugin-tail-asis: |+
   Use [in\_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
+fluent-plugin-tail-ex-asis: |+
+  Use [in\_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
+fluent-plugin-tail-ex-rotate: |+
+  Use [in\_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
 fluent-plugin-tailpath: |+
   Use [in\_tail](http://docs.fluentd.org/v0.12/categories/in_tail) instead.
 fluent-plugin-tail-multiline-ex: |+
