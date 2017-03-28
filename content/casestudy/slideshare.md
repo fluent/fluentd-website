@@ -2,7 +2,7 @@
 
 Founded in October 2006 with the goal of facilitating knowledge-sharing online, SlideShare has grown into the world’s largest community for sharing presentations and other content. In Q4 2013, SlideShare averaged 60 million unique visitors per month and 215 million page views as users viewed presentations, infographics, documents, videos and PDFs.
 
-<img width="600px" style="display:block" src="http://engineering.slideshare.net/wp-content/uploads/2014/04/skynet-archi.jpg"/>
+<img width="600px" style="display:block" src="https://content.linkedin.com/content/dam/engineering/en-us/blog/migrated/skynet-archi.jpg"/>
 
 ## The Goal: Deeper and Quicker Insights that Transform Usage Patterns and System Health
 
