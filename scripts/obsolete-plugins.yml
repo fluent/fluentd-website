@@ -45,3 +45,5 @@ fluent-plugin-bigquery-custom: |+
   Almost feature is included in original. Use fluent-plugin-bigquery instead.
 fluent-plugin-embedded-elasticsearch: |+
   Git repository has gone away.
+fluent-plugin-kestrel: |+
+  [Kestrel](https://github.com/robey/kestrel) is inactive. Unmaintained since 2014-03-07.
