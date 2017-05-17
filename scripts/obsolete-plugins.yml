@@ -41,3 +41,9 @@ fluent-plugin-kinesis-alt: |+
   Unmaintained since 2013-12-26. Use [fluent-plugin-kinesis](https://github.com/awslabs/aws-fluent-plugin-kinesis) instead.
 fluent-plugin-cloudtrail: |+
   Deprecated: Consider using [fluent-plugin-s3](https://github.com/fluent/fluent-plugin-s3).
+fluent-plugin-bigquery-custom: |+
+  Almost feature is included in original. Use fluent-plugin-bigquery instead.
+fluent-plugin-embedded-elasticsearch: |+
+  Git repository has gone away.
+fluent-plugin-kestrel: |+
+  [Kestrel](https://github.com/robey/kestrel) is inactive. Unmaintained since 2014-03-07.
