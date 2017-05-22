@@ -53,3 +53,5 @@ fluent-plugin-bigquery-patched-retry-insert-502: |+
   This has already been merged into upstream.
 fluent-plugin-dummydata-producer: |+
   Use built-in [in\_dummy](http://docs.fluentd.org/v0.12/categories/in_dummy).
+fluent-plugin-encrypt: |+
+  This is outdated. See [comment](https://github.com/tagomoris/fluent-plugin-encrypt/pull/4#issuecomment-299804521).
