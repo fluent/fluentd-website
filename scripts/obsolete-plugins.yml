@@ -47,3 +47,5 @@ fluent-plugin-embedded-elasticsearch: |+
   Git repository has gone away.
 fluent-plugin-kestrel: |+
   [Kestrel](https://github.com/robey/kestrel) is inactive. Unmaintained since 2014-03-07.
+fluent-plugin-access: |+
+  There are no implementation. Unmaintained since 2012-11-27.
