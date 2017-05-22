@@ -51,3 +51,5 @@ fluent-plugin-access: |+
   There are no implementation. Unmaintained since 2012-11-27.
 fluent-plugin-bigquery-patched-retry-insert-502: |+
   This has already been merged into upstream.
+fluent-plugin-dummydata-producer: |+
+  Use built-in [in\_dummy](http://docs.fluentd.org/v0.12/categories/in_dummy).
