@@ -49,3 +49,5 @@ fluent-plugin-kestrel: |+
   [Kestrel](https://github.com/robey/kestrel) is inactive. Unmaintained since 2014-03-07.
 fluent-plugin-access: |+
   There are no implementation. Unmaintained since 2012-11-27.
+fluent-plugin-bigquery-patched-retry-insert-502: |+
+  This has already been merged into upstream.
