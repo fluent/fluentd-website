@@ -57,3 +57,5 @@ fluent-plugin-encrypt: |+
   This is outdated. See [comment](https://github.com/tagomoris/fluent-plugin-encrypt/pull/4#issuecomment-299804521).
 fluent-plugin-winevtlog: |+
   Use [fluent-plugin-windows-eventlog](https://github.com/fluent/fluent-plugin-windows-eventlog) instead.
+fluent-plugin-droonga: |+
+  Use [Droonga engine](https://github.com/droonga/droonga-engine) instead.
