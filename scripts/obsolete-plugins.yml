@@ -59,3 +59,5 @@ fluent-plugin-winevtlog: |+
   Use [fluent-plugin-windows-eventlog](https://github.com/fluent/fluent-plugin-windows-eventlog) instead.
 fluent-plugin-droonga: |+
   Use [Droonga engine](https://github.com/droonga/droonga-engine) instead.
+fluent-plugin-hatohol: |+
+  This plugin is obsolete because HAPI1 is deprecated.
