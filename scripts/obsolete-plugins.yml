@@ -63,3 +63,5 @@ fluent-plugin-growl: |+
   Growl does not support OS X 10.10 or later. Use [fluent-plugin-terminal_notifier](https://github.com/cosmo0920/fluent-plugin-terminal_notifier) instead.
 fluent-plugin-hatohol: |+
   This plugin is obsolete because HAPI1 is deprecated.
+fluent-plugin-norikra-patched-7: |+
+  Already merged into upstream.
