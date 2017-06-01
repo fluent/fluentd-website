@@ -65,3 +65,5 @@ fluent-plugin-hatohol: |+
   This plugin is obsolete because HAPI1 is deprecated.
 fluent-plugin-norikra-patched-7: |+
   Already merged into upstream.
+fluent-plugin-ruby-memory-usage-profiler: |+
+  This plugin is already obsolete (especially for 2.1 or later).
