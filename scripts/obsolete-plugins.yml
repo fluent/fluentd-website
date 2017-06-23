@@ -67,3 +67,5 @@ fluent-plugin-norikra-patched-7: |+
   Already merged into upstream.
 fluent-plugin-boundio: |+
   Boundio has closed on the 30th Sep 2013. Use [fluent-plugin-twilio](https://github.com/y-ken/fluent-plugin-twilio) instead.
+fluent-plugin-dynamodb-drc: |+
+  Unmaintained since 2014-09-30. Use [fluent-plugin-dynamodb](https://github.com/gonsuke/fluent-plugin-dynamodb) instead.
