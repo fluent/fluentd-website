@@ -74,3 +74,6 @@ fluent-plugin-gcs-dustinblackman: |+
 fluent-plugin-gcloud-storage: |+
   Unmaintained since 2014-02-10.
   Use [fluent-plugin-gcs](https://github.com/daichirata/fluent-plugin-gcs) instead.
+fluent-plugin-redshift-aws-v1: |+
+  Using aws-sdk-v1 is alreay supported at upstream.
+  Use [fluent-plugin-redshift](https://github.com/flydata/fluent-plugin-redshift) instead.
