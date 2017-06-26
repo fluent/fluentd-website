@@ -67,3 +67,15 @@ fluent-plugin-norikra-patched-7: |+
   Already merged into upstream.
 fluent-plugin-ruby-memory-usage-profiler: |+
   This plugin is already obsolete (especially for 2.1 or later).
+fluent-plugin-boundio: |+
+  Boundio has closed on the 30th Sep 2013. Use [fluent-plugin-twilio](https://github.com/y-ken/fluent-plugin-twilio) instead.
+fluent-plugin-dynamodb-drc: |+
+  Unmaintained since 2014-09-30. Use [fluent-plugin-dynamodb](https://github.com/gonsuke/fluent-plugin-dynamodb) instead.
+fluent-plugin-gcs-dustinblackman: |+
+  Almost feature is included in original. Use [fluent-plugin-gcs](https://github.com/daichirata/fluent-plugin-gcs) instead.
+fluent-plugin-gcloud-storage: |+
+  Unmaintained since 2014-02-10.
+  Use [fluent-plugin-gcs](https://github.com/daichirata/fluent-plugin-gcs) instead.
+fluent-plugin-redshift-aws-v1: |+
+  Using aws-sdk-v1 is alreay supported at upstream.
+  Use [fluent-plugin-redshift](https://github.com/flydata/fluent-plugin-redshift) instead.
