@@ -79,3 +79,7 @@ fluent-plugin-gcloud-storage: |+
 fluent-plugin-redshift-aws-v1: |+
   Using aws-sdk-v1 is alreay supported at upstream.
   Use [fluent-plugin-redshift](https://github.com/flydata/fluent-plugin-redshift) instead.
+fluent-plugin-redshift-kwarter: |+
+  Almost feature is included in original. Use [fluent-plugin-redshift](https://github.com/flydata/fluent-plugin-redshift) instead.
+fluent-plugin-hekk_redshift: |+
+  Almost feature is included in original. Use [fluent-plugin-redshift](https://github.com/flydata/fluent-plugin-redshift) instead.
