@@ -172,5 +172,5 @@ $ docker run --log-driver=fluentd --log-opt fluentd-tag=docker.{{.ID}} ubuntu ec
 
 In a more serious environment, you would want to use something other than the Fluentd standard output to store Docker containers messages, such as Elasticsearch, MongoDB, HDFS, S3, Google Cloud Storage and so on. This can be done by installing the necessary Fluentd plugins and configuring `fluent.conf` appropriately for `<match docker.all>...</match>` section.
 
-- [Kubernetes's Logging Pod](https://github.com/GoogleCloudPlatform/kubernetes/tree/master/contrib/logging)
+- [Kubernetes's Logging Pod](https://kubernetes.io/docs/concepts/cluster-administration/logging/)
 - [A Sample Automated Build of Docker-Fluentd logging container](https://registry.hub.docker.com/u/kiyoto/docker-fluentd/)
