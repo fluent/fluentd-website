@@ -1,6 +1,6 @@
 # Fluentd website
 
-[http://www.fluentd.org](http://www.fluentd.org)
+[https://www.fluentd.org](https://www.fluentd.org)
 
 ## Running it locally
 
