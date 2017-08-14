@@ -11,12 +11,12 @@
 <!--=== End Breadcrumbs ===-->
 
 <!--=== Content Part ===-->
-<div class="container">     
+<div class="container">
   <div class="row">
     <div class="col-md-9">
       <div class="headline"><h4>What is Fluentd?</h4></div>
       <div>
-        Fluentd is an open source data collector for building the <a href="/blog/unified-logging-layer">unified logging layer</a>. Once installed on a server, it runs in the background to collect, parse, transform, analyze and store various types of data. This project is invented and sponsored by <a href="/treasuredata">Treasure Data, Inc.</a>, having full-time mainteainers for Fluentd.
+        Fluentd is an open source data collector for building the <a href="/blog/unified-logging-layer">unified logging layer</a>. Once installed on a server, it runs in the background to collect, parse, transform, analyze and store various types of data.
       </div>
       <br/>
 
@@ -80,7 +80,7 @@
       <div class="headline"><h4>Fluentd is written in Ruby. How's the performance?</h4></div>
       <div>
         <p>
-          The most performance sensitive parts of Fluentd are written in C. 
+          The most performance sensitive parts of Fluentd are written in C.
           The Ruby code acts as a wrapper that provides flexibility to the overall solution.
           In particular, the networking layer and object serialization layer are written in C (See <a href="https://github.com/tarcieri/cool.io">cool.io</a> and <a href="http://www.msgpack.org/">MessagePack</a>, both are maintained by Fluentd maintainers too).
         </p>
@@ -178,7 +178,7 @@
     <div class="col-md-3">
       <%= erb(:_right_menu, :layout => false) %>
     </div><!--/col-md-3-->
-  </div><!--/row-->        
+  </div><!--/row-->
 
-</div><!--/container-->     
+</div><!--/container-->
 <!--=== End Content Part ===-->
