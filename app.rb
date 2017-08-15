@@ -151,6 +151,11 @@ get '/guides/recipes/:type' do
   erb :solution_recipe
 end
 
+get '/contributing' do
+  @title = "Contributing"
+  erb :contributing
+end
+
 get '/community' do
   @title = "Community"
   erb :community
