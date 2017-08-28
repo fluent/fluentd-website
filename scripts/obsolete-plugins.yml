@@ -83,3 +83,5 @@ fluent-plugin-redshift-kwarter: |+
   Almost feature is included in original. Use [fluent-plugin-redshift](https://github.com/flydata/fluent-plugin-redshift) instead.
 fluent-plugin-hekk_redshift: |+
   Almost feature is included in original. Use [fluent-plugin-redshift](https://github.com/flydata/fluent-plugin-redshift) instead.
+fluent-plugin-docker-tag-resolver: |+
+  You should use official Docker logging drivers instead.
