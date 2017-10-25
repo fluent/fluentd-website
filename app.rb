@@ -234,7 +234,7 @@ get '/blog/feed.rss' do
   erb :rss, :layout => false
 end
 
-get '/newsletter_signup' do
+get '/newsletter' do
   @title = "Sign up for Fluentd Newsletter"
   erb :newsletter_signup, :layout => :minimal_layout
 end
