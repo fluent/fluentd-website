@@ -188,6 +188,8 @@ header a svg {
   padding: 0 36px;
   width: 100%!important;
   height: auto!important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   display: inline-block;
   border: 0px solid transparent;
@@ -200,6 +202,7 @@ header a svg {
   text-transform: uppercase;
   letter-spacing: 1px;
   text-shadow: none!important;
+  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
@@ -365,8 +368,6 @@ header a svg {
   }
 }
 
-
-}
 @media (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 120dpi) {
   .formwrapper .signup .column.left {
