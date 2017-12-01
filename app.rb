@@ -72,7 +72,7 @@ TD_AGENT_VERSIONS = {
     win: "3.0.1-beta2"
   },
   :bit => {
-    linux: "0.11.12"
+    linux: "0.12.10"
   }
 }
 
