@@ -18,8 +18,169 @@
 
   <div class="row margin-bottom-20">
     <div class="col-md-9">
-      <h3>Fluentd (v0.12, stable version)</h3>
-      <div>Fluentd is available on Linux and Mac OSX and experimentally on Windows. Also, Treasure Data packages it as Treasure Agent (td-agent) for RedHat/CentOS and Ubuntu/Debian and provides a binary for OSX.</div>
+      <h3>Fluentd (v1.0, current stable)</h3>
+      <div>Fluentd v1.0 is available on Linux, Mac OSX and Windows. Also, Treasure Data packages it as Treasure Agent (td-agent) for RedHat/CentOS and Ubuntu/Debian and Windows</div>
+      <br/>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="20%">Platform</th>
+            <th width="30%">Platform Version</th>
+            <th width="50%">Package or Installer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/icon_redhat.png" height="60px"><br/>
+                RHEL / CentOS / Amazon Linux
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:linux]%></span>
+              <ul>
+                <li><a href="http://docs.fluentd.org/v1.0/articles/install-by-rpm">Installation Guide</a></li>
+                <li>
+                  64-bit (<a href="https://td-agent-package-browser.herokuapp.com/3/redhat/7/x86_64">RHEL7</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/redhat/6/x86_64">RHEL6</a>)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/icon_ubuntu.png" height="60px"><br/>
+                Ubuntu
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:linux]%></span>
+              <ul>
+                <li><a href="//docs.fluentd.org/v1.0/articles/install-by-deb">Installation Guide</a></li>
+                <li>
+                  64-bit/amd64 (<a href="https://td-agent-package-browser.herokuapp.com/3/ubuntu/xenial/pool/contrib/t/td-agent">Xenial</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/ubuntu/trusty/pool/contrib/t/td-agent">Trusty</a>)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/assets/img/download-icons/windows-logo.png"><br/>
+                Windows
+              </center>
+            </td>
+            <td>Windows Server 2012+ (64-bit)</td>
+            <td>
+              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:win]%></span>
+              <ul>
+                <li><a href="//docs.fluentd.org/v1.0/articles/install-by-msi">Installation Guide</a></li>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/windows">msi repository</a>
+                </li>
+              </ul>
+              <br/>
+              <br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/assets/img/download-icons/ruby.jpg"><br/>
+                Ruby
+              </center>
+            </td>
+            <td>Ruby v2.1.0 and above</td>
+            <td>
+              <span style="font-style:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:'gem_v1.0']%></span>
+              <ul>
+                <li>
+                  <code>gem install fluentd</code><br/>
+                </li>
+              </ul>
+              <a href="http://docs.fluentd.org/articles/install-by-gem">Installation Guide</a> (* ruby expert-use only)<br/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+
+      <h3>Fluent Bit (Lightweight Forwarder)</h3>
+      <div>If you're looking for more lightweight forwarder for edge devices / servers / containers, use <a href="http://fluentbit.io/">Fluent Bit</a>, an open source data collector specifically designed for data forwarding. Fluent Bit is more efficient in terms of CPU / Memory usage, but has limited features. The following table list the available Linux packages for different distributions. Note that Fluent Bit packaged is known as <i>td-agent-bit</i>.</div>
+      <br/><br />
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="20%">Platform</th>
+            <th width="30%">Platform Version</th>
+            <th width="30%">Package or Installer</th>
+            <th width="20%">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/icon_redhat.png" height="60px"><br/>
+                RHEL / CentOS
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-style:bold;">TD-Agent Bit v<%=TD_AGENT_VERSIONS[:bit][:linux]%></span>
+              <ul>
+                <li>
+                  <a href="http://fluentbit.io/documentation/0.10/installation/redhat_centos.html">Download Instructions</a>
+                </li>
+              </ul>
+            </td>
+            <td>
+              <a href="http://fluentbit.io/documentation/">Documents</a><br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/icon_ubuntu.png" height="60px"><br/>
+                Ubuntu
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-style:bold;">TD-Agent Bit v<%=TD_AGENT_VERSIONS[:bit][:linux]%></span>
+              <ul>
+                <li>
+                  <a href="http://fluentbit.io/documentation/0.10/installation/ubuntu.html">Download Instructions</a>
+                </li>
+              </ul>
+            </td>
+            <td>
+              <a href="http://fluentbit.io/documentation/">Documents</a><br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                Enterprsie
+              </center>
+            </td>
+            <td>All Platform Versions Above</td>
+            <td>
+              If you need Security Tested Binary with a clear life cycle management, please check the <a href="http://www.fluentd.org/enterprise">Enterprise Offering</a>.
+            </td>
+          <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+
+      <h3>Fluentd (v0.12, old stable version)</h3>
+      <div>Fluentd v0.12 is available on Linux and Mac OSX. Also, Treasure Data packages it as Treasure Agent (td-agent) for RedHat/CentOS and Ubuntu/Debian and provides a binary for OSX.</div>
       <br/>
       <table class="table table-bordered">
         <thead>
@@ -109,23 +270,6 @@
           <tr>
             <td>
               <center>
-                <img src="/assets/img/download-icons/windows-logo.png"><br/>
-                Windows
-              </center>
-            </td>
-            <td></td>
-            <td>
-              Please use the experimental version, scroll down.
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <center>
                 <img src="/assets/img/download-icons/ruby.jpg"><br/>
                 Ruby<br/><br/>
               </center>
@@ -150,167 +294,6 @@
             <td>All Platform Versions Above</td>
             <td>
               If you need Security Tested Binary with a clear life cycle management, please check the <a href="http://www.fluentd.org/enterprise">Enterprise Offering</a>.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <br/>
-
-      <h3>Fluent Bit (Lightweight Forwarder)</h3>
-      <div>If you're looking for more lightweight forwarder for edge devices / servers / containers, use <a href="http://fluentbit.io/">Fluent Bit</a>, an open source data collector specifically designed for data forwarding. Fluent Bit is more efficient in terms of CPU / Memory usage, but has limited features. The following table list the available Linux packages for different distributions. Note that Fluent Bit packaged is known as <i>td-agent-bit</i>.</div>
-      <br/><br />
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th width="20%">Platform</th>
-            <th width="30%">Platform Version</th>
-            <th width="30%">Package or Installer</th>
-            <th width="20%">Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <center>
-                <img src="/images/icon_redhat.png" height="60px"><br/>
-                RHEL / CentOS
-              </center>
-            </td>
-            <td>2.6+ Linux kernel (64-bit)</td>
-            <td>
-              <span style="font-style:bold;">TD-Agent Bit v<%=TD_AGENT_VERSIONS[:bit][:linux]%></span>
-              <ul>
-                <li>
-                  <a href="http://fluentbit.io/documentation/0.10/installation/redhat_centos.html">Download Instructions</a>
-                </li>
-              </ul>
-            </td>
-            <td>
-              <a href="http://fluentbit.io/documentation/">Documents</a><br/>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <center>
-                <img src="/images/icon_ubuntu.png" height="60px"><br/>
-                Ubuntu
-              </center>
-            </td>
-            <td>2.6+ Linux kernel (64-bit)</td>
-            <td>
-              <span style="font-style:bold;">TD-Agent Bit v<%=TD_AGENT_VERSIONS[:bit][:linux]%></span>
-              <ul>
-                <li>
-                  <a href="http://fluentbit.io/documentation/0.10/installation/ubuntu.html">Download Instructions</a>
-                </li>
-              </ul>
-            </td>
-            <td>
-              <a href="http://fluentbit.io/documentation/">Documents</a><br/>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <center>
-                Enterprsie
-              </center>
-            </td>
-            <td>All Platform Versions Above</td>
-            <td>
-              If you need Security Tested Binary with a clear life cycle management, please check the <a href="http://www.fluentd.org/enterprise">Enterprise Offering</a>.
-            </td>
-          <td></td>
-          </tr>
-        </tbody>
-      </table>
-      <br/>
-
-      <h3>Fluentd (v0.14, experimental version)</h3>
-      <div>Fluentd is available on Linux and Mac OSX and experimentally on Windows. Also, Treasure Data packages it as Treasure Agent (td-agent) for RedHat/CentOS and Ubuntu/Debian and provides a binary for OSX.</div>
-      <br/>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th width="20%">Platform</th>
-            <th width="30%">Platform Version</th>
-            <th width="50%">Package or Installer</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <center>
-                <img src="/images/icon_redhat.png" height="60px"><br/>
-                RHEL / CentOS / Amazon Linux
-              </center>
-            </td>
-            <td>2.6+ Linux kernel (64-bit)</td>
-            <td>
-              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:linux]%></span>
-              <ul>
-                <li><a href="http://docs.fluentd.org/v0.14/articles/install-by-rpm">Installation Guide</a></li>
-                <li>
-                  64-bit (<a href="https://td-agent-package-browser.herokuapp.com/3/redhat/7/x86_64">RHEL7</a>,
-                  <a href="https://td-agent-package-browser.herokuapp.com/3/redhat/6/x86_64">RHEL6</a>)
-                </li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <center>
-                <img src="/images/icon_ubuntu.png" height="60px"><br/>
-                Ubuntu
-              </center>
-            </td>
-            <td>2.6+ Linux kernel (64-bit)</td>
-            <td>
-              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:linux]%></span>
-              <ul>
-                <li><a href="//docs.fluentd.org/v0.14/articles/install-by-deb">Installation Guide</a></li>
-                <li>
-                  64-bit/amd64 (<a href="https://td-agent-package-browser.herokuapp.com/3/ubuntu/xenial/pool/contrib/t/td-agent">Xenial</a>,
-                  <a href="https://td-agent-package-browser.herokuapp.com/3/ubuntu/trusty/pool/contrib/t/td-agent">Trusty</a>)
-                </li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <center>
-                <img src="/assets/img/download-icons/windows-logo.png"><br/>
-                Windows
-              </center>
-            </td>
-            <td>Windows Server 2012+ (64-bit)</td>
-            <td>
-              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:win]%></span>
-              <ul>
-                <li><a href="//docs.fluentd.org/v0.14/articles/install-by-msi">Installation Guide</a></li>
-                <li>
-                  <a href="https://td-agent-package-browser.herokuapp.com/3/windows">msi repository</a>
-                </li>
-              </ul>
-              <br/>
-              <br/>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <center>
-                <img src="/assets/img/download-icons/ruby.jpg"><br/>
-                Ruby
-              </center>
-            </td>
-            <td>Ruby v2.1.0 and above</td>
-            <td>
-              <span style="font-style:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:gem_v14]%> (dev version)</span>
-              <ul>
-                <li>
-                  <code>gem install fluentd</code><br/>
-                </li>
-              </ul>
-              <a href="http://docs.fluentd.org/articles/install-by-gem">Installation Guide</a> (* ruby expert-use only)<br/>
             </td>
           </tr>
         </tbody>
