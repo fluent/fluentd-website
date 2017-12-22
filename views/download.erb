@@ -93,13 +93,34 @@
           <tr>
             <td>
               <center>
+                <img src="/assets/img/download-icons/docker_small.png" height="60px"><br/>
+                Container
+              </center>
+            </td>
+            <td>Docker</td>
+            <td>
+              <span style="font-style:bold">Images: </span>
+              <ul>
+                <li>
+                  <a href="https://hub.docker.com/r/fluent/fluentd/">Docker image at Docker Hub</a>
+                </li>
+                <li>
+                  Fluentd Daemonset for Kubernetes will support v1.0 soon
+                </li>
+              </ul>
+              Above links include installation guide
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
                 <img src="/assets/img/download-icons/ruby.jpg"><br/>
                 Ruby
               </center>
             </td>
             <td>Ruby v2.1.0 and above</td>
             <td>
-              <span style="font-style:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:'gem_v1.0']%></span>
+              <span style="font-style:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:'gem_v1.0']%> (current stable. recommend for production)</span>
               <ul>
                 <li>
                   <code>gem install fluentd</code><br/>
@@ -160,6 +181,30 @@
                   <a href="http://fluentbit.io/documentation/0.10/installation/ubuntu.html">Download Instructions</a>
                 </li>
               </ul>
+            </td>
+            <td>
+              <a href="http://fluentbit.io/documentation/">Documents</a><br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/assets/img/download-icons/docker_small.png" height="60px"><br/>
+                Container
+              </center>
+            </td>
+            <td>Docker / Kubernetes</td>
+            <td>
+              <span style="font-style:bold">Images: </span>
+              <ul>
+                <li>
+                  <a href="https://hub.docker.com/r/fluent/fluent-bit/">Docker image at Docker Hub</a>
+                </li>
+                <li>
+                  <a href="https://hub.docker.com/r/fluent/fluent-bit-kubernetes-daemonset/">Fluent-bit Daemonset for Kubernetes at Docker Hub</a>
+                </li>
+              </ul>
+              Above links include installation guide
             </td>
             <td>
               <a href="http://fluentbit.io/documentation/">Documents</a><br/>
@@ -272,13 +317,34 @@
           <tr>
             <td>
               <center>
+                <img src="/assets/img/download-icons/docker_small.png" height="60px"><br/>
+                Container
+              </center>
+            </td>
+            <td>Docker / Kubernetes</td>
+            <td>
+              <span style="font-style:bold">Images: </span>
+              <ul>
+                <li>
+                  <a href="https://hub.docker.com/r/fluent/fluentd/">Docker image at Docker Hub</a>
+                </li>
+                <li>
+                  <a href="https://hub.docker.com/r/fluent/fluentd-kubernetes-daemonset/">Fluentd Daemonset for Kubernetes at Docker Hub</a>
+                </li>
+              </ul>
+              Above links include installation guide.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
                 <img src="/assets/img/download-icons/ruby.jpg"><br/>
                 Ruby<br/><br/>
               </center>
             </td>
             <td>Ruby v2.1.0 and above</td>
             <td>
-              <span style="font-style:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:gem_v12]%> (current stable. recommend for production)</span>
+              <span style="font-style:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:gem_v12]%> (old stable)</span>
               <ul>
                 <li>
                   <code>gem install fluentd -v '~> 0.12.0'</code><br/>
