@@ -69,7 +69,7 @@ TD_AGENT_VERSIONS = {
     mac: "2.3.5"
   },
   :v3 => {
-    linux: "3.1.0",
+    linux: "3.1.1",
     win: "3.0.1-beta2"
   },
   :bit => {
