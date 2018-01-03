@@ -287,7 +287,7 @@ get '/plugins' do
     "Google Cloud Platform" => 'google bigquery',
     "Internet of Things" => 'mqtt',
     "Monitoring" => "growthforecast graphite monitor librato zabbix",
-    "Notifications" => "irc ikachan hipchat twilio",
+    "Notifications" => "slack irc ikachan hipchat twilio",
     "NoSQL" => 'riak couch mongo couchbase rethink influxdb',
     "Online Processing" => 'norikra anomaly',
     "RDBMS" => 'mysql postgres vertica',
