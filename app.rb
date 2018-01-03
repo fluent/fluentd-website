@@ -214,8 +214,7 @@ get '/casestudy/:company' do
 end
 
 get '/enterprise' do
-  @title = "Enterprise"
-  erb :enterprise
+  redirect '/', 301
 end
 
 get '/blog' do
