@@ -70,7 +70,7 @@ TD_AGENT_VERSIONS = {
   },
   :v3 => {
     linux: "3.1.1",
-    win: "3.0.1-beta2"
+    win: "3.1.1"
   },
   :bit => {
     linux: "0.12.10"
