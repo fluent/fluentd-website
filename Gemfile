@@ -6,7 +6,7 @@ ruby '2.4.1'
 # Framework
 gem 'sinatra', '1.4.7'
 gem 'sinatra-assetpack', '0.3.5', :require => 'sinatra/assetpack'
-gem 'jemalloc', '~> 0.1.8'
+gem 'jemalloc', '~> 1.0.1'
 gem 'redcarpet'
 gem 'slugify'
 
