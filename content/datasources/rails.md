@@ -28,11 +28,11 @@ Rails comes with an excellent logging API, which we will take advantage of to co
 
     ```
     <source>
-      type forward
+      @type forward
       port 24224
     </source>
     <match foo>
-      type stdout 
+      @type stdout
     </match>
     ```
 
@@ -103,18 +103,28 @@ Rails comes with an excellent logging API, which we will take advantage of to co
 
     ```
     <source>
-      type forward
+      @type forward
       port 24224
+      @label @raw
     </source>
-    <match foo>
-      type parser
-      key_name messages
-      format json
-      tag rails
-    </match>
-    <match rails>
-      type stdout
-    </match>
+    <label @raw>
+      <filter>
+        @type parser
+        key_name messages
+        <parse>
+          @type json
+        </parse>
+      </filter>
+      <match>
+        @type relabel
+        @label @rails
+      </match>
+    </label>
+    <label @rails>
+      <match>
+        @type stdout
+      </match>
+    </label>
     ```
 
     Now, if you restart Fluentd and access your Rails app, you should see data like this in Fluentd's stdout.
@@ -127,7 +137,7 @@ Rails comes with an excellent logging API, which we will take advantage of to co
    
     ```
     <match rails>
-      type stdout
+      @type stdout
     </match>
     ```
 
@@ -140,13 +150,15 @@ Rails comes with an excellent logging API, which we will take advantage of to co
     and replace the match statement with
 
     ```
-    <match rails>
-      type elasticsearch
-      host <YOUR_HOST>
-      port <YOUR_PORT>
-      logstash_format true
-      # other options...
-    </match>
+    <label @rails>
+      <match>
+        @type elasticsearch
+        host <YOUR_HOST>
+        port <YOUR_PORT>
+        logstash_format true
+        # other options...
+      </match>
+    </label>
     ``` 
     
     (Do not forget to install the corresponding output plugin!)
