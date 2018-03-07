@@ -88,3 +88,5 @@ fluent-plugin-elasticsearch-ssl-verify: |+
 fluent-plugin-grep: |+
   [grep filter](http://docs.fluentd.org/articles/filter_grep) is now a built-in plugin. Use the built-in plugin instead of installing this plugin.
   Or, [fluent-plugin-filter_where](https://github.com/sonots/fluent-plugin-filter_where) is more useful.
+fluent-plugin-elasticsearchfork: |+
+  Git repository has gone away.
