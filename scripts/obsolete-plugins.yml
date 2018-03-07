@@ -90,3 +90,5 @@ fluent-plugin-grep: |+
   Or, [fluent-plugin-filter_where](https://github.com/sonots/fluent-plugin-filter_where) is more useful.
 fluent-plugin-elasticsearchfork: |+
   Git repository has gone away.
+fluent-plugin-docker-tag-resolver: |+
+  You should use official Docker logging drivers instead.
