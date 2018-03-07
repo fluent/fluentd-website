@@ -88,6 +88,10 @@ fluent-plugin-elasticsearch-ssl-verify: |+
 fluent-plugin-grep: |+
   [grep filter](http://docs.fluentd.org/articles/filter_grep) is now a built-in plugin. Use the built-in plugin instead of installing this plugin.
   Or, [fluent-plugin-filter_where](https://github.com/sonots/fluent-plugin-filter_where) is more useful.
+fluent-plugin-elasticsearchfork: |+
+  Git repository has gone away.
+fluent-plugin-docker-tag-resolver: |+
+  You should use official Docker logging drivers instead.
 fluent-plugin-kv-parser: |+
   Use built-in [parser_ltsv](https://docs.fluentd.org/v1.0/articles/parser_ltsv) instead of installing this plugin.
   Built-in parser_ltsv provides all feature of this plugin.
