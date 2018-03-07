@@ -92,3 +92,10 @@ fluent-plugin-elasticsearchfork: |+
   Git repository has gone away.
 fluent-plugin-docker-tag-resolver: |+
   You should use official Docker logging drivers instead.
+fluent-plugin-kv-parser: |+
+  Use built-in [parser_ltsv](https://docs.fluentd.org/v1.0/articles/parser_ltsv) instead of installing this plugin.
+  Built-in parser_ltsv provides all feature of this plugin.
+fluent-plugin-ltsv-parser: |+
+  Use built-in [parser_ltsv](https://docs.fluentd.org/v1.0/articles/parser_ltsv) instead of installing this plugin to parse LTSV.
+fluent-plugin-json-parser: |+
+  Use built-in [parser_json](https://docs.fluentd.org/v1.0/articles/parser_json) instead of installing this plugin to parse JSON.
