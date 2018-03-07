@@ -83,5 +83,12 @@ fluent-plugin-redshift-kwarter: |+
   Almost feature is included in original. Use [fluent-plugin-redshift](https://github.com/flydata/fluent-plugin-redshift) instead.
 fluent-plugin-hekk_redshift: |+
   Almost feature is included in original. Use [fluent-plugin-redshift](https://github.com/flydata/fluent-plugin-redshift) instead.
+fluent-plugin-elasticsearch-ssl-verify: |+
+  SSL verify feature is included in original. Use [fluent-plugin-elasticsearch](https://github.com/uken/fluent-plugin-elasticsearch) instead.
+fluent-plugin-grep: |+
+  [grep filter](http://docs.fluentd.org/articles/filter_grep) is now a built-in plugin. Use the built-in plugin instead of installing this plugin.
+  Or, [fluent-plugin-filter_where](https://github.com/sonots/fluent-plugin-filter_where) is more useful.
+fluent-plugin-elasticsearchfork: |+
+  Git repository has gone away.
 fluent-plugin-docker-tag-resolver: |+
   You should use official Docker logging drivers instead.

@@ -60,19 +60,21 @@ TD_AGENT_VERSIONS = {
   :v1 => {
     linux: "1.1.21",
     gem_v10: "0.10.61",
-    gem_v12: "0.12.39",
-    gem_v14: "0.14.20"
+    gem_v12: "0.12.42",
+    gem_v14: "0.14.25",
+    'gem_v1.0': '1.1.0'
   },
   :v2 => {
-    linux: "2.3.5",
+    linux: "2.3.6",
     mac: "2.3.5"
   },
   :v3 => {
-    linux: "3.0.1",
-    win: "3.0.1-beta2"
+    linux: "3.1.1",
+    mac: "3.1.1",
+    win: "3.1.1"
   },
   :bit => {
-    linux: "0.11.12"
+    linux: "0.12.10"
   }
 }
 
@@ -213,8 +215,7 @@ get '/casestudy/:company' do
 end
 
 get '/enterprise' do
-  @title = "Enterprise"
-  erb :enterprise
+  redirect '/', 301
 end
 
 get '/blog' do
@@ -234,7 +235,7 @@ get '/blog/feed.rss' do
   erb :rss, :layout => false
 end
 
-get '/newsletter_signup' do
+get '/newsletter' do
   @title = "Sign up for Fluentd Newsletter"
   erb :newsletter_signup, :layout => :minimal_layout
 end
@@ -287,7 +288,7 @@ get '/plugins' do
     "Google Cloud Platform" => 'google bigquery',
     "Internet of Things" => 'mqtt',
     "Monitoring" => "growthforecast graphite monitor librato zabbix",
-    "Notifications" => "irc ikachan hipchat twilio",
+    "Notifications" => "slack irc ikachan hipchat twilio",
     "NoSQL" => 'riak couch mongo couchbase rethink influxdb',
     "Online Processing" => 'norikra anomaly',
     "RDBMS" => 'mysql postgres vertica',
