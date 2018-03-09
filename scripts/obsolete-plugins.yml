@@ -101,3 +101,6 @@ fluent-plugin-json-parser: |+
   Use built-in [parser_json](https://docs.fluentd.org/v1.0/articles/parser_json) instead of installing this plugin to parse JSON.
 fluent-plugin-kanicounter: |+
   This plugin does not include any practical functionalities.
+fluent-plugin-buffered-stdout: |+
+  Use built-in [out_stdout](https://docs.fluentd.org/v1.0/articles/out_stdout) instead of installing this plugin to print events to stdout.
+
