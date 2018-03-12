@@ -34,7 +34,7 @@ class Plugins
       exit ecode
     end
 
-    gemlist = cmdout.scan(/fluent-plugin-[^\s]+/)
+    gemlist = cmdout.scan(/^fluent-plugin-[^\s]+/)
     plugins = []
     http = Net::HTTP.new("rubygems.org", 443)
     http.use_ssl = true
