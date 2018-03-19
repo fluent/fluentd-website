@@ -21,10 +21,9 @@ begin
   urls << 'https://docs.docker.com/engine/admin/logging/fluentd/' # Docker
   urls << 'http://forums.juniper.net/t5/Analytics/Open-Source-Universal-Telemetry-Collector-for-Junos/ba-p/288677' # Juniper Networks
   urls << 'https://blogs.technet.microsoft.com/momteam/2015/11/03/announcing-linux-docker-container-management-with-oms/'
-  urls << 'https://www.pandastrike.com/posts/20150807-fluentd-vs-logstash'
   urls << 'http://logz.io/blog/elk-role-based-access-s3-fluentd/'
+  urls << 'https://blog.minio.io/iot-data-storage-and-analysis-with-fluentd-minio-and-spark-26f183381183'
   urls << 'https://aws.amazon.com/blogs/aws/all-your-data-fluentd/'
-  urls << 'https://www.cncf.io/blog/2016/11/09/fluentd-joins-cloud-native-computing-foundation'
   urls << 'http://thenewstack.io/microsoft-contributing-fluentd/'
   urls << 'http://thenewstack.io/fluentd-offers-comprehensive-log-collection-cloud-microservices-world/'
 
