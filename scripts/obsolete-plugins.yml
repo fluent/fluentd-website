@@ -105,3 +105,5 @@ fluent-plugin-buffered-stdout: |+
   Use built-in [out_stdout](https://docs.fluentd.org/v1.0/articles/out_stdout) instead of installing this plugin to print events to stdout.
 fluent-plugin-buffered-hipchat: |+
   Use [fluent-plugin-hipchat](https://github.com/fluent-plugins-nursery/fluent-plugin-hipchat), it provides buffering functionality.
+fluent-plugin-logfmt-parser: |+
+  Git repository has gone away.
