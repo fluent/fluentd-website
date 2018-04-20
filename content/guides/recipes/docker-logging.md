@@ -22,13 +22,13 @@ Create a simple file called in_docker.conf which contains the following entries:
 
 ```
 <source>
-  type forward
+  @type forward
   port 24224
   bind 0.0.0.0
 </source>
 
 <match *.*>
-  type stdout
+  @type stdout
 </match>
 ```
 
@@ -113,7 +113,7 @@ Filtered event:
 
 ### Additional Step 2: Concatenate multiple lines log messages
 
-Application log is stored into `"log"` field in the records. You can concatenate these logs by using [fluent-plugin-concat](https://github.com/okkez/fluent-plugin-concat) filter before send to destinations.
+Application log is stored into `"log"` field in the records. You can concatenate these logs by using [fluent-plugin-concat](https://github.com/fluent-plugins-nursery/fluent-plugin-concat) filter before send to destinations.
 
 ```
 <filter docker.**>
