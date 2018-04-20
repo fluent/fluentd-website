@@ -22,13 +22,13 @@ Create a simple file called in_docker.conf which contains the following entries:
 
 ```
 <source>
-  type forward
+  @type forward
   port 24224
   bind 0.0.0.0
 </source>
 
 <match *.*>
-  type stdout
+  @type stdout
 </match>
 ```
 
