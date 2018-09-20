@@ -244,7 +244,7 @@
       <br/>
 
       <h3>Fluentd (v0.12, old stable version)</h3>
-      <div>Fluentd v0.12 is available on Linux and Mac OSX. Also, Treasure Data packages it as Treasure Agent (td-agent) for RedHat/CentOS and Ubuntu/Debian and provides a binary for OSX.</div>
+      <div>Fluentd v0.12 is available on Linux and Mac OSX. Also, Treasure Data packages it as Treasure Agent (td-agent) for RedHat/CentOS and Ubuntu/Debian and provides a binary for OSX. td-agent 2.5 uses ruby 2.5 and td-agent 2.3 uses ruby 2.1</div>
       <br/>
       <table class="table table-bordered">
         <thead>
@@ -264,12 +264,12 @@
             </td>
             <td>2.6+ Linux kernel (64-bit & 32-bit)</td>
             <td>
-              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v2][:linux]%></span>
+              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v2][:linux]%>/2.3.6</span>
               <ul>
                 <li><a href="//docs.fluentd.org/v0.12/articles/install-by-rpm">Installation Guide</a></li>
                 <li>
-                  64-bit (<a href="https://td-agent-package-browser.herokuapp.com/2/redhat/7/x86_64">RHEL7</a>,
-                  <a href="https://td-agent-package-browser.herokuapp.com/2/redhat/6/x86_64">RHEL6</a>,
+                  64-bit (<a href="https://td-agent-package-browser.herokuapp.com/2.5/redhat/7/x86_64">RHEL7</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2.5/redhat/6/x86_64">RHEL6</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/2/redhat/5/x86_64">RHEL5</a>)
                 </li>
                 <li>
@@ -277,7 +277,7 @@
                   <a href="https://td-agent-package-browser.herokuapp.com/2/redhat/5/i386">RHEL5</a>)
                 </li>
                 <li>
-                  Amazon Linux (<a href="https://td-agent-package-browser.herokuapp.com/2/redhat/2016.03/x86_64">2016.03</a>, <a href="https://td-agent-package-browser.herokuapp.com/2/redhat/2016.09/x86_64">2016.09</a>)
+                  Amazon Linux (<a href="https://td-agent-package-browser.herokuapp.com/2/redhat/2017.03/x86_64">2017.03</a>, <a href="https://td-agent-package-browser.herokuapp.com/2/redhat/2017.09/x86_64">2017.09</a>)
                 </li>
               </ul>
             </td>
@@ -291,12 +291,13 @@
             </td>
             <td>2.6+ Linux kernel (64-bit & 32-bit)</td>
             <td>
-              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v2][:linux]%></span>
+              <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v2][:linux]%>/2.3.6</span>
               <ul>
                 <li><a href="//docs.fluentd.org/v0.12/articles/install-by-deb">Installation Guide</a></li>
                 <li>
-                  64-bit/amd64 (<a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/xenial/pool/contrib/t/td-agent">Xenial</a>,
-                  <a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/trusty/pool/contrib/t/td-agent">Trusty</a>,
+                  64-bit/amd64 (<a href="https://td-agent-package-browser.herokuapp.com/2.5/ubuntu/bionic/pool/contrib/t/td-agent">Bionic</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2.5/ubuntu/xenial/pool/contrib/t/td-agent">Xenial</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2.5/ubuntu/trusty/pool/contrib/t/td-agent">Trusty</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/precise/pool/contrib/t/td-agent">Precise</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/lucid/pool/contrib/t/td-agent">Lucid</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/2/debian/jessie/pool/contrib/t/td-agent">Jessie</a>,
@@ -318,7 +319,7 @@
                 MacOS X
               </center>
             </td>
-            <td>v2.1.4 for OSX 10.9 and 10.10.<br /> v2.3.0 for OSX 10.11</td>
+            <td>v2.1.4 for OSX 10.9 and 10.10.<br /> v2.3.5 for OSX 10.11</td>
             <td>
               <span style="font-style:bold">td-agent v<%=TD_AGENT_VERSIONS[:v2][:mac]%></span>
               <ul>
