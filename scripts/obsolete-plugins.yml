@@ -107,3 +107,5 @@ fluent-plugin-buffered-hipchat: |+
   Use [fluent-plugin-hipchat](https://github.com/fluent-plugins-nursery/fluent-plugin-hipchat), it provides buffering functionality.
 fluent-plugin-logfmt-parser: |+
   Git repository has gone away.
+fluent-plugin-filter-geo: |+
+  Git repository has gone away.
