@@ -109,3 +109,5 @@ fluent-plugin-logfmt-parser: |+
   Git repository has gone away.
 fluent-plugin-filter-geo: |+
   Git repository has gone away.
+fluent-plugin-logzio-ng: |+
+  Git repository has gone away.
