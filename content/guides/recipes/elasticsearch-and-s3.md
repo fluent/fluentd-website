@@ -12,7 +12,7 @@ This article shows how to
 3. Store the collected logs into Elasticsearch and S3.
 4. Visualize the data with Kibana in real-time.
 
-<img alt="fluentd-elasticsearch-s3-secure" src="/assets/img/recipes/elasticsearch-s3-fluentd.png"/>
+<img alt="fluentd-elasticsearch-s3-secure" src="/images/recipes/elasticsearch-s3-fluentd.png"/>
 
 ## Prerequisites
 

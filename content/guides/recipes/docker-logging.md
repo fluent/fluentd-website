@@ -2,7 +2,7 @@
 
 The following article describes how to implement an unified logging system for your [Docker](http://www.docker.com) containers. Any production application requires to register certain events or problems during runtime. The old fashion way is to write these messages to a log file, but that inherits certain problems specifically when we try to perform some analysis over the registers, or in the other side, if the application have multiple instances running, the scenario becomes even more complex.
 
-![](/assets/img/recipes/fluentd_docker.png)
+![](/images/recipes/fluentd_docker.png)
 
 On Docker v1.6, the concept of [logging drivers](https://docs.docker.com/reference/logging/overview/) was introduced, basically the Docker engine is aware about output interfaces that manage the application messages. For Docker v1.8, we have implemented a native [Fluentd logging driver](https://docs.docker.com/reference/logging/fluentd/), now you are able to have an unified and structured logging system with the simplicity and high performance [Fluentd](http://fluentd.org).
 
@@ -67,7 +67,7 @@ $ fluentd -c in_docker.conf
 
 By default, the Fluentd logging driver will try to find a local Fluentd instance  (step #2) listening for connections on the TCP port 24224, note that the container will not start if it cannot connect to the Fluentd instance.
 
-<img src="/assets/img/recipes/fluentd_docker_integrated.png" width=70%">
+<img src="/images/recipes/fluentd_docker_integrated.png" width=70%">
 
 The following command will run a base Ubuntu container and print some messages to the standard output, note that we have launched the container specifying the Fluentd logging driver:
 

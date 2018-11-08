@@ -3,7 +3,7 @@
 This article shows how to collect syslog data into [InfluxDB](http://github.com/influxdb/influxdb)
 using Fluentd.
 
-<img src="/assets/img/recipes/syslog-fluentd-influxdb.png" style="display:block"/>
+<img src="/images/recipes/syslog-fluentd-influxdb.png" style="display:block"/>
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ Then, go to localhost:8083 (or wherever you are hosting InfluxDB) to access Infl
 The default user/password are both "root". Once you log in, create a database called "test". This is
 where we will be storing syslog data.
 
-<img src="/assets/img/recipes/influxdb-create-db.png" style="display:block"/>
+<img src="/images/recipes/influxdb-create-db.png" style="display:block"/>
 
 If you prefer command line or cannot access port 8083 from your local machine,
 running the following command creates a database called "test".
@@ -113,7 +113,7 @@ Your syslog data should be flowing into InfluxDB every 10 seconds (this is confi
 
 Clicking on "Explore Data" brings up the query interface that *lets you write SQL queries against your log data.*
 
-<img src="/assets/img/recipes/influxdb-explore-data.png" style="display:block"/>
+<img src="/images/recipes/influxdb-explore-data.png" style="display:block"/>
 
 Here, I am counting the number of lines of syslog messages per facility/priority:
 
@@ -123,8 +123,8 @@ SELECT COUNT(ident) FROM /^system\./ GROUP BY time(1s)
 
 Click on "Execute Query" and you get a graph like this.
 
-<img src="/assets/img/recipes/influxdb-query.png" style="display:block"/>
+<img src="/images/recipes/influxdb-query.png" style="display:block"/>
 
 Here is another screenshot just for the `system.daemon.info` series.
 
-<img src="/assets/img/recipes/influxdb-query-2.png" style="display:block"/>
+<img src="/images/recipes/influxdb-query-2.png" style="display:block"/>
