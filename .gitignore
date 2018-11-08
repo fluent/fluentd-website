@@ -4,6 +4,7 @@
 *.pid
 .bundle
 bin
+/public/assets/
 vendor/cache
 vendor/bundle
 *~
