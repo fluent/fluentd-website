@@ -22,11 +22,7 @@
     <meta name="twitter:title" content="<%= @title.nil? ? "Fluentd | Open Source Data Collector" : "#{@title} | Fluentd" %>">
 
     <!-- CSS Global Compulsory-->
-    <%= css :libraries %>
-    <%= css :applications %>
-
-    <!-- CSS Theme -->
-    <link rel="stylesheet" href="/assets/css/themes/default.css" id="style_color">
+    <%= stylesheet_tag "application" %>
 
     <!-- Highlight.js https://highlightjs.org/usage/ -->
     <link rel="stylesheet" href="/highlight/style/default.css"/>
@@ -170,9 +166,7 @@
                 </span>
 
                 <!-- JS Global Compulsory -->
-                <%= js  :libraries %>
-                <script type="text/javascript" src="/assets/js/app.js"></script>
-                <script type="text/javascript" src="/assets/js/pages/index.js"></script>
+                <%= javascript_tag "application" %>
 
                 <!-- SwiftType: SaaS Site Seach -->
                 <script type="text/javascript">

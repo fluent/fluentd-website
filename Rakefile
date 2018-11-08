@@ -1,6 +1,9 @@
-require 'rubygems'
 require 'bundler'
 Bundler.setup
+
+require 'sinatra/asset_pipeline/task'
+require_relative './app'
+Sinatra::AssetPipeline::Task.define! Sinatra::Application
 
 task :server do
   if which('shotgun')

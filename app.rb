@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra/assetpack'
+require 'sinatra/asset_pipeline'
 require 'json'
 require 'time'
 require 'redis'
@@ -17,41 +17,13 @@ configure :production do
 end
 
 # Static Assets
-# @see http://ricostacruz.com/sinatra-assetpack/
-set :root, File.dirname(__FILE__)
-Sinatra.register Sinatra::AssetPack
-assets {
-  serve '/assets/js',      from: 'tmpl-assets/js'      # Optional
-  serve '/assets/css',     from: 'tmpl-assets/css'     # Optional
-  serve '/assets/img',     from: 'tmpl-assets/img'     # Optional
-  serve '/assets/plugins', from: 'tmpl-assets/plugins' # Optional
-  css :libraries, '/assets/css/base.css', [
-    '/assets/plugins/bootstrap/css/bootstrap.min.css',
-    '/assets/plugins/font-awesome/css/font-awesome.css',
-    '/assets/plugins/flexslider/flexslider.css',
-    '/assets/plugins/parallax-slider/css/parallax-slider.css',
-  ]
-  css :applications, '/assets/css/applications.css', [
-    '/assets/css/style.css',
-    '/assets/css/headers/header1.css',
-    '/assets/css/responsive.css',
-    '/assets/css/pages/page_clients.css',
-  ]
-  js :libraries, '/assets/plugins/libraries.js', [
-    '/assets/plugins/jquery-1.10.2.min.js',
-    '/assets/plugins/jquery-migrate-1.2.1.min.js',
-    '/assets/plugins/bootstrap/js/bootstrap.min.js',
-    '/assets/plugins/flexslider/jquery.flexslider-min.js',
-    '/assets/plugins/parallax-slider/js/modernizr.js',
-    '/assets/plugins/parallax-slider/js/jquery.cslider.js',
-    '/assets/plugins/hover-dropdown.min.js',
-    '/assets/plugins/back-to-top.js'
-  ]
-  js_compression :yui
-  css_compression :yui
-  prebuild true # only on production
-  expires 24*3600*7, :public
-}
+# @see https://github.com/kalasjocke/sinatra-asset-pipeline
+set :root, __dir__
+set :assets_precompile, %w(application.css application.js newsletter.css *.png *.jpg *.svg *.eot *.ttf *.woff *.woff2)
+set :assets_paths, %w(assets/css assets/js assets/plugins)
+set :assets_css_compressor, :yui
+set :assets_js_compressor, :yui
+Sinatra.register Sinatra::AssetPipeline
 
 MARKDOWN = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true, fenced_code_blocks: true)
 
