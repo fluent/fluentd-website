@@ -1,0 +1,11 @@
+//= require jquery-1.10.2.min.js
+//= require jquery-migrate-1.2.1.min.js
+//= require bootstrap/js/bootstrap.min.js
+//= require flexslider/jquery.flexslider-min.js
+//= require parallax-slider/js/modernizr.js
+//= require parallax-slider/js/jquery.cslider.js
+//= require hover-dropdown.min.js
+//= require back-to-top.js
+//= require app.js
+//= require pages/index.js
+//= require_self
