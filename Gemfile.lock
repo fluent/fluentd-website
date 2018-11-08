@@ -91,6 +91,8 @@ GEM
       multipart-post (~> 2.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
+    uglifier (3.2.0)
+      execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.5)
@@ -101,7 +103,6 @@ GEM
     unicorn-worker-killer (0.4.4)
       get_process_mem (~> 0)
       unicorn (>= 4, < 6)
-    yui-compressor (0.12.0)
 
 PLATFORMS
   ruby
@@ -114,15 +115,16 @@ DEPENDENCIES
   rake
   redcarpet
   redis
+  sass
   shotgun (~> 0.9)
   sinatra (~> 2.0)
   sinatra-asset-pipeline (~> 2.2.0)
   slugify
   test-unit
   twitter
+  uglifier
   unicorn (~> 5.4.0)
   unicorn-worker-killer (~> 0.4.4)
-  yui-compressor
 
 RUBY VERSION
    ruby 2.4.1p111
