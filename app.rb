@@ -19,7 +19,7 @@ end
 # Static Assets
 # @see https://github.com/kalasjocke/sinatra-asset-pipeline
 set :root, __dir__
-set :assets_precompile, %w(application.css application.js newsletter.css pages/lunr.min.js respond.js *.png *.jpg *.svg *.eot *.ttf *.woff *.woff2)
+set :assets_precompile, %w(application.css application.js newsletter.css pages/lunr.min.js respond.js)
 set :assets_paths, %w(assets/css assets/js assets/plugins)
 set :assets_css_compressor, :sass
 set :assets_js_compressor, :uglifier
