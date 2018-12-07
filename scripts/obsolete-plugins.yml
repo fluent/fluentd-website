@@ -111,3 +111,5 @@ fluent-plugin-filter-geo: |+
   Git repository has gone away.
 fluent-plugin-logzio-ng: |+
   Git repository has gone away.
+fluent-plugin-out-http-ext: |+
+  Use [fluent-plugin-out-http](https://github.com/fluent-plugins-nursery/fluent-plugin-out-http), it implements downstream plugin functionality.
