@@ -427,7 +427,7 @@ helpers do
     tags ||= ""
     author ||= "masa"
     title.gsub!(/^#+/, "")
-    return [title, MARKDOWN.render(content), tags.strip.split(/\W+/).map do |tag| tag.downcase end, author.strip]
+    return [title, MARKDOWN.render(content), tags.strip.split(/\s+/).map do |tag| tag.downcase end, author.strip]
   end
 
   def is_certified(plugin)
