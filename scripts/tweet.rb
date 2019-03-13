@@ -9,6 +9,10 @@ twitter_credentials = {
   access_secret: ENV['TW_ACCESS_SECRET']
 }
 
+if Time.now.wday.even?
+  exit
+end
+
 begin
   # extracting sitemapped URLs...
   sitemap_url = "http://www.fluentd.org/sitemap.xml"
