@@ -15,18 +15,17 @@ begin
   sitemap_xml = Nokogiri::XML(open(sitemap_url))
   urls = sitemap_xml.css("url loc").map { |x|
     x.text
-  }.select { |x| x !~ /blog|newsletter/ }
+  }.select { |x| x !~ /blog|newsletter|events|rss/ }
 
   # Some notable 3rd party stuff
   urls << 'https://docs.docker.com/engine/admin/logging/fluentd/' # Docker
   urls << 'http://forums.juniper.net/t5/Analytics/Open-Source-Universal-Telemetry-Collector-for-Junos/ba-p/288677' # Juniper Networks
-  urls << 'https://blogs.technet.microsoft.com/momteam/2015/11/03/announcing-linux-docker-container-management-with-oms/'
-  urls << 'http://logz.io/blog/elk-role-based-access-s3-fluentd/'
   urls << 'https://blog.minio.io/iot-data-storage-and-analysis-with-fluentd-minio-and-spark-26f183381183'
   urls << 'https://aws.amazon.com/blogs/aws/all-your-data-fluentd/'
-  urls << 'http://thenewstack.io/microsoft-contributing-fluentd/'
   urls << 'http://thenewstack.io/fluentd-offers-comprehensive-log-collection-cloud-microservices-world/'
-
+  urls << 'https://thenewstack.io/fluentds-role-as-a-data-collector-in-todays-cloud-native-world/'
+  urls << 'https://aws.amazon.com/blogs/compute/building-a-scalable-log-solution-aggregator-with-aws-fargate-fluentd-and-amazon-kinesis-data-firehose/'
+  urls << 'https://medium.com/redbox-techblog/building-an-open-data-platform-logging-with-fluentd-and-elasticsearch-4582de868398'
 
   # Randomly pick one
   # TODO: weight this based on priority
