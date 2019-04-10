@@ -72,7 +72,7 @@ By default, the Fluentd logging driver will try to find a local Fluentd instance
 The following command will run a base Ubuntu container and print some messages to the standard output, note that we have launched the container specifying the Fluentd logging driver:
 
 ```shell
-$ docker run --log-driver=fluentd ubuntu echo "Hello Fluentd!"
+$ docker run --log-driver=fluentd --log-opt tag="docker.{.ID}}" ubuntu echo 'Hello Fluentd!'
 Hello Fluentd!
 ```
 
@@ -144,29 +144,36 @@ Filtered events:
 The Fluentd logging driver support more options through the _--log-opt_ Docker command line argument:
 
 - fluentd-address
-- fluentd-tag
+- tag
+- fluentd-sub-second-precision
+
+There are popular options. See full list in [the official document](https://docs.docker.com/config/containers/logging/fluentd/).
 
 #### fluentd-address
 
 Specify an optional address for Fluentd, it allows to set the host and TCP port, e.g:
 
 ```
-$ docker run --log-driver=fluentd --log-opt fluentd-address=192.168.2.4:24225 ubuntu echo "..."
+$ docker run --log-driver=fluentd --log-opt fluentd-address=192.168.2.4:24225 ubuntu echo '...'
 ```
 
-#### fluentd-tag
+#### tag
 
-Tags are a major requirement on Fluentd, they allows to identify the incoming data and take routing decisions. By default the Fluentd logging driver uses the container\_id as a tag (64 character ID), you can change it value with the _fluentd-tag_ option as follows:
+Tags are a major requirement on Fluentd, they allows to identify the incoming data and take routing decisions. By default the Fluentd logging driver uses the container\_id as a tag (12 character ID), you can change it value with the _fluentd-tag_ option as follows:
 
 ```
-$ docker run --log-driver=fluentd --log-opt fluentd-tag=docker.my_new_tag ubuntu echo "..."
+$ docker run --log-driver=fluentd --log-opt tag=docker.my_new_tag ubuntu echo "..."
 ```
 
 Additionally this option allows to specify some internal variables: {{.ID}}, {{.FullID}} or {{.Name}}. e.g:
 
 ```
-$ docker run --log-driver=fluentd --log-opt fluentd-tag=docker.{{.ID}} ubuntu echo "..."
+$ docker run --log-driver=fluentd --log-opt tag=docker.{{.ID}} ubuntu echo "..."
 ```
+
+#### fluentd-sub-second-precision
+
+Generates event logs in nanosecond resolution for fluentd v1. The default is `false`.
 
 ## Production Environments
 
