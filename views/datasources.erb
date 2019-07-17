@@ -19,14 +19,14 @@
         <table style="width:100%;">
           <%
              [
-               ['Java', 'java.jpg', 'http://docs.fluentd.org/articles/java'],
-               ['Ruby', 'ruby.png', 'http://docs.fluentd.org/articles/ruby'],
+               ['Java', 'java.jpg', 'http://docs.fluentd.org/language-bindings/java'],
+               ['Ruby', 'ruby.png', 'http://docs.fluentd.org/language-bindings/ruby'],
                ['Ruby on Rails', 'rails.png', '/datasources/rails'],
-               ['Python', 'python.png', 'http://docs.fluentd.org/articles/python'],
-               ['PHP', 'php.png', 'http://docs.fluentd.org/articles/php'],
-               ['Perl', 'perl.png', 'http://docs.fluentd.org/articles/perl'],
-               ['Node.js', 'nodejs.png', 'http://docs.fluentd.org/articles/nodejs'],
-               ['Scala', 'scala.png', 'http://docs.fluentd.org/articles/scala'],
+               ['Python', 'python.png', 'http://docs.fluentd.org/language-bindings/python'],
+               ['PHP', 'php.png', 'http://docs.fluentd.org/language-bindings/php'],
+               ['Perl', 'perl.png', 'http://docs.fluentd.org/language-bindings/perl'],
+               ['Node.js', 'nodejs.png', 'http://docs.fluentd.org/language-bindings/nodejs'],
+               ['Scala', 'scala.png', 'http://docs.fluentd.org/language-bindings/scala'],
                ['.NET', 'dotnet.png', 'https://github.com/fluent/NLog.Targets.Fluentd'],
              ].each_slice(7) do |a|
           %>
@@ -52,13 +52,12 @@
         <table style="width:100%;">
           <%
              [
-               ['Syslog', 'syslog.jpg', 'http://docs.fluentd.org/articles/in_syslog'],
-               ['HTTP', 'http.png', 'http://docs.fluentd.org/articles/in_http'],
-               ['TCP', 'tcp.gif', 'http://docs.fluentd.org/articles/in_forward'],
-               ['UDP', 'udp.jpg', 'http://docs.fluentd.org/articles/in_udp'],
-               ['Unix Domain Socket', 'unix.gif', 'http://docs.fluentd.org/articles/in_uds'],
+               ['Syslog', 'syslog.jpg', 'http://docs.fluentd.org/input/syslog'],
+               ['HTTP', 'http.png', 'http://docs.fluentd.org/input/http'],
+               ['TCP', 'tcp.gif', 'http://docs.fluentd.org/input/forward'],
+               ['UDP', 'udp.jpg', 'http://docs.fluentd.org/input/in_udp'],
+               ['Unix Domain Socket', 'unix.gif', 'http://docs.fluentd.org/v/0.12/input/unix'],
                ['SNMP', 'snmp.png', 'https://github.com/iij/fluent-plugin-snmp'],
-               ['Scribe Protocol', 'scribe.png', '/datasources/scribe'],
                ['MQTT', 'mqtt.png', 'https://github.com/yuuna/fluent-plugin-mqtt'],
              ].each_slice(7) do |a|
           %>
@@ -84,7 +83,7 @@
         <table style="width:100%;">
           <%
              [
-               ['RasperryPi', 'raspi.png', 'http://docs.fluentd.org/articles/raspberrypi-cloud-data-logger'],
+               ['RasperryPi', 'raspi.png', 'http://docs.fluentd.org/how-to-guides/raspberrypi-cloud-data-logger'],
                [],
                [],
                [],
@@ -120,11 +119,11 @@
                ['MySQL Slow Query Log', 'mysql.png', '/datasources/mysqlslowquerylog'],
                ['PostgreSQL Slow Query Log', 'postgresql.png', 'https://github.com/choplin/fluent-plugin-postgresql'],
                ['Gluster FS', 'gluster.jpg', '/datasources/glusterfs-log'],
-               ['Kafka', 'kafka.png', 'https://github.com/htgc/fluent-plugin-kafka'],
+               ['Kafka', 'kafka.png', 'https://github.com/fluent/fluent-plugin-kafka'],
                ['Kestrel', 'kestrel.png', '/datasources/kestrel'],
                ['Munin', 'munin.png', 'https://github.com/y-ken/fluent-plugin-munin'],
                ['DStat', 'dstat.png', '/datasources/dstat'],
-               ['Windows Event Log', 'windows.jpg', 'http://docs.fluentd.org/articles/windows'],
+               ['Windows Event Log', 'windows.jpg', 'https://docs.fluentd.org/input/windows_eventlog'],
                ['Netflow', 'netflow.gif', 'https://github.com/repeatedly/fluent-plugin-netflow'],
                ['Postfix', 'postfix.gif', 'http://www.tipstuff.org/2014/01/Postfix-log-centralize-and-analysis-in-realtime-with-fluentd-elasticsearch-and-kibana.html'],
                ['AWS Cloud Watch', 'cloudwatch.png', 'https://github.com/yunomu/fluent-plugin-cloudwatch'],
