@@ -127,6 +127,11 @@ get '/download' do
   erb :download
 end
 
+get '/enterprise_services' do
+  @title = "Enterprise Services"
+  erb :enterprise_services
+end
+
 get '/centralized_application_logging' do
   @title = "Centralized Application Logging"
   erb :centralized_application_logging
