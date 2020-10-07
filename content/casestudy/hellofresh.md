@@ -1,7 +1,6 @@
 # HelloFresh logging platform serving multiple countries.
 
-TBD
-(should include short pargraph about HelloFresh & Logging Diagram) 
+HelloFresh is the leading global provider of fresh food at home. Our subscription-based meal kits offer "cook from scratch" meal plans with easy–to–follow–recipes and high quality, pre-portioned fresh ingredients, delivered straight to your door. Every week customers can choose from a great variety of recipes and plan their meals several weeks ahead by ordering through desktop or mobile app. HelloFresh operates in the U.S., the United Kingdom, Germany, the Netherlands, Belgium, Luxembourg, Australia, Austria, Switzerland, Canada, New Zealand, France, Sweden and Denmark. HelloFresh delivered 149 million meals to 4.18 million active customers worldwide in Q2 2020 (April 1 - June 30, 2020). HelloFresh was founded in Berlin in November 2011 and went public on the Frankfurt Stock Exchange in November 2017. HelloFresh has offices in New York, Berlin, London, Amsterdam, Sydney, Toronto, Auckland, Copenhagen and Paris. 
 
 
 ## The goal : provide proper visibility for everyone within HelloTech
