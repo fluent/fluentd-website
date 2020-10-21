@@ -99,6 +99,11 @@ AUTHORS = {
     'avatar_url' => 'https://avatars3.githubusercontent.com/u/230654?v=3&s=70',
     'desc' => 'Satoshi (a.k.a. Moris) (<a href="https://twitter.com/tagomoris">@tagomoris</a>) is a maintainer of Fluentd. He works on Fluentd, many Fluentd plugins, other OSS projects like msgpack-ruby, Norikra and so on, and distributed systems at <a href="http://www.treasuredata.com/">Treasure Data</a>.'
   },
+  'tk' => {
+    'name' => 'Tomonori Kubota',
+    'avatar_url' => 'https://avatars3.githubusercontent.com/kubotat',
+    'desc' => 'Tomonori (TK) is a solution engineer at <a href="https://www.ctc-america.com/">CTC America</a>. He works on the enterprise support for Fluentd and developed diagnosis tool for bringing efficiency in troubleshooting of Fluentd.'
+  },
 }
 
 #

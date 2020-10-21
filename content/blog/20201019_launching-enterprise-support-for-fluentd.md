@@ -14,4 +14,5 @@ Diagtool is a simple and powerful tool to make your troubleshooting process simp
  the Enterprise Support for Fluentd which enables running Fluentd in production with confidence by providing responsive support operated by our expert team.  
 Enterprise Support for Fluentd website : https://fluentd.ctc-america.com
 
-TAG: Fluentd Announcement 
+TAG: Fluentd Announcement
+AUTHOR: tk 
