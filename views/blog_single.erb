@@ -81,20 +81,6 @@
         <p><a href="/">Fluentd</a> is an open source data collector to unify log management.</p>
       </div>
 
-      <!-- End Tabs Widget -->
-
-        <div class="headline"><h2>Learn</h2></div>
-        <div class="margin-bottom-20">
-        <p>Want to learn the basics of Fluentd? Check out these pages.</p>
-        <ul class="list-unstyled">
-          <li><i class="icon-arrow-right color-green"></i><a href="/architecture">What is Fluentd?</a></li>
-          <li><i class="icon-arrow-right color-green"></i><a href="/why">Why use Fluentd?</a></li>
-          <li><i class="icon-arrow-right color-green"></i><a href="/testimonials">Who is using Fluentd?</a></li>
-          <li><i class="icon-arrow-right color-green"></i><a href="/blog/unified-logging-layer">Unified Logging Layer</a></li>
-          <li><i class="icon-arrow-right color-green"></i><a href="/faqs">FAQs</a></li>
-        </ul>
-      </div>
-
       <!-- Search Bar -->
       <!--
       <div class="headline headline-md"><h2>Search</h2></div>
@@ -115,6 +101,8 @@
         <% } %>
       </div>
       <!-- End Posts -->
+
+      <%= erb(:_right_menu, :layout => false) %>
 
       <!-- Socials -->
       <div class="headline headline-md"><h2>Follow Us!</h2></div>
