@@ -219,3 +219,6 @@ iv) Run sample script and confirm if same messages with “stdout“ are availab
 Now, upgrading steps are completed. Happy Logging!
 
 *This blog was originall written by [kubotat](https://github.com/kubotat) in the [Fluentd Subscription Network](https://fluentd.ctc-america.com/blog/how-to-upgrade-td-agent).*
+
+TAG: Fluentd td-agent
+AUTHOR: hisa-tanaka
