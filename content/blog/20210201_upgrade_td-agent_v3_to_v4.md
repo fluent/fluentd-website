@@ -15,28 +15,29 @@ In this post, I will show steps with plugins added on my own, **“fluent-plugin
 ```
 [root@fluent02 ~]# cat /etc/td-agent/td-agent.conf
 <source>
-        @type syslog
-        port 5140
-        bind 0.0.0.0
-        tag system
+  @type syslog
+  port 5140
+  bind 0.0.0.0
+  tag system
 </source>
 
 <match system.**>
-        @type copy
-        <store>
-                @type stdout
-        </store>
-        <store>
-                @type mongo
-                database rsyslog
-                collection system
-                host 127.0.0.1
-                port 27017
-        </store>
+  @type copy
+  <store>
+    @type stdout
+  </store>
+  <store>
+    @type mongo
+    database rsyslog
+    collection system
+    host 127.0.0.1
+    port 27017
+  </store>
 </match>
 ```
 
 ### 1. Review what plugins are installed together with td-agent v3.  
+
 ```
 [root@fluent02 ~]# td-agent-gem list | grep fluent-plugin*
     fluent-plugin-elasticsearch (4.0.9)
@@ -53,7 +54,8 @@ In this post, I will show steps with plugins added on my own, **“fluent-plugin
     fluent-plugin-webhdfs (1.2.5)
 ```
 
-You can also find installed plugins under “/opt/td-agent/embedded/lib/ruby/gems/2.4.0/gems/“ directories.
+You can also find installed plugins under `/opt/td-agent/embedded/lib/ruby/gems/2.4.0/gems/` directories.
+
 ```
 [root@fluent02 ~]# ll /opt/td-agent/embedded/lib/ruby/gems/2.4.0/gems/ | grep fluent-plugin*
 drwxrwxr-x. 5 root root 4096 Dec 2 06:17 fluent-plugin-elasticsearch-4.0.9
@@ -71,12 +73,15 @@ drwxrwxr-x. 3 root root 176 Dec 2 06:17 fluent-plugin-webhdfs-1.2.5
 ```
 
 ### 2. Stop td-agent v3 daemon.
+
 ```
 [root@fluent02 ~]# systemctl stop td-agent
 ```
+
 ### 3. Run installation script of td-agent v4.
 
 When RedHat, you can run following script.
+
 ```
 [root@fluent02 ~]# curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent4.sh | sh
 ```
@@ -84,6 +89,7 @@ When RedHat, you can run following script.
 You can find more information about the installation script in [Fluend Doc - Installation](https://docs.fluentd.org/installation).
 
 ### 4. Confirm if td-agent v4 is properly installed.
+
 ```
 [root@fluent02 ~]# yum info td-agent
 Installed Packages
@@ -102,11 +108,13 @@ Description : The stable distribution of Fluentd, called td-agent.
 ```
 
 ### 5. Reload td-agent daemon.
+
 ```
 [root@fluent02 ~]# systemctl daemon-reload
 ```
 
 ### 6. Check installed plugins. 
+
 ```
 [root@fluent02 ~]# td-agent-gem list | grep fluent-plugin*
     fluent-plugin-elasticsearch (4.1.1)
@@ -119,11 +127,12 @@ Description : The stable distribution of Fluentd, called td-agent.
     fluent-plugin-systemd (1.0.2)
     fluent-plugin-td (1.1.0)
     fluent-plugin-webhdfs (1.2.5)
- ```
+```
 
 You can see bundled plugins are upgraded as well but can not find plugins added on my own. In this post, added plugin was “fluent-plugin-mongo“ and it is not shown in installed list.
 
 ### 7. Install plugins added on my own.
+
 ```
 [root@fluent02 ~]# td-agent-gem install fluent-plugin-mongo
 
@@ -139,11 +148,11 @@ You can see bundled plugins are upgraded as well but can not find plugins added 
     fluent-plugin-systemd (1.0.2)
     fluent-plugin-td (1.1.0)
     fluent-plugin-webhdfs (1.2.5)
- ```
+```
  
  As for td-agent v4, “fluent-plugin-mongo“ was installed under “/opt/td-agent/lib/ruby/gems/2.7.0/gems/” directories.
  
- ```
+```
 [root@fluent02 ~]# ll /opt/td-agent/lib/ruby/gems/2.7.0/gems/ | grep fluent-plugin*
 drwxr-xr-x. 5 root root 4096 Dec 2 08:26 fluent-plugin-elasticsearch-4.1.1
 drwxr-xr-x. 3 root root 169 Dec 2 08:26 fluent-plugin-kafka-0.14.1
@@ -159,14 +168,17 @@ drwxr-xr-x. 3 root root 176 Dec 2 08:26 fluent-plugin-webhdfs-1.2.5
 ```
 
 ### 8. Start td-agent v4 daemon.
+
 ```
 [root@fluent02 ~]# systemctl start td-agent
 ```
 
 ### 9. Check if there are no error messages in tg-agent logs.
+
 ```
 [root@fluent02 ~]# tail -100f /var/log/td-agent/td-agent.log
 ```
+
 ### 10. As for my sample configuration, I restart “sshd“ service for instance and see messages are stored in MongoDB as expected. 
 
 i) Restart “sshd“ daemon.
