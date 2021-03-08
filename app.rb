@@ -62,7 +62,7 @@ TD_AGENT_VERSIONS = {
     gem_v10: "0.10.61",
     gem_v12: "0.12.43",
     gem_v14: "0.14.25",
-    'gem_v1.0': '1.12.0'
+    'gem_v1.0': '1.12.1'
   },
   :v2 => {
     linux: "2.5.0",
@@ -74,7 +74,7 @@ TD_AGENT_VERSIONS = {
     win: "3.8.1"
   },
   :v4 => {
-    linux: "4.0.1",
+    linux: "4.1.0",
     win: "4.0.1"
   },
   :bit => {
@@ -102,6 +102,11 @@ AUTHORS = {
     'name' => 'Satoshi Tagomori',
     'avatar_url' => 'https://avatars3.githubusercontent.com/u/230654?v=3&s=70',
     'desc' => 'Satoshi (a.k.a. Moris) (<a href="https://twitter.com/tagomoris">@tagomoris</a>) is a maintainer of Fluentd. He works on Fluentd, many Fluentd plugins, other OSS projects like msgpack-ruby, Norikra and so on, and distributed systems at <a href="http://www.treasuredata.com/">Treasure Data</a>.'
+  },
+  'clearcode' => {
+    'name' => 'ClearCode, Inc.',
+    'avatar_url' => 'https://avatars.githubusercontent.com/u/176515?v=3&s=70',
+    'desc' => '<a href="https://www.clear-code.com/">ClearCode, Inc.</a> is a software company specializing in the development of Free Software. We maintain Fluentd and its plugin ecosystem, and provide commercial support for them.'
   },
 }
 
