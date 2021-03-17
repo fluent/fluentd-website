@@ -96,7 +96,7 @@ Application log is stored into `"log"` field in the record. You can parse this l
   format json # apache2, nginx, etc...
   key_name log
   reserve_data true
-</filter
+</filter>
 ```
 
 Original event:
