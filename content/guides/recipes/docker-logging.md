@@ -72,7 +72,7 @@ By default, the Fluentd logging driver will try to find a local Fluentd instance
 The following command will run a base Ubuntu container and print some messages to the standard output, note that we have launched the container specifying the Fluentd logging driver:
 
 ```shell
-$ docker run --log-driver=fluentd --log-opt tag="docker.{.ID}}" ubuntu echo 'Hello Fluentd!'
+$ docker run --rm --log-driver=fluentd --log-opt tag="docker.{{.ID}}" ubuntu echo 'Hello Fluentd!'
 Hello Fluentd!
 ```
 
@@ -86,7 +86,7 @@ Now on the Fluentd output, you will see the incoming message from the container,
 
 At this point you will notice something interesting, the incoming messages have a timestamp, are tagged with the container_id and contains general information from the source container along the message, everything in JSON format.
 
-### Additional Step 1: Parse log message
+### Additional Use Case 1: Parse log message
 
 Application log is stored into `"log"` field in the record. You can parse this log by using [filter_parser](http://docs.fluentd.org/articles/filter_parser) filter before send to destinations.
 
@@ -96,7 +96,7 @@ Application log is stored into `"log"` field in the record. You can parse this l
   format json # apache2, nginx, etc...
   key_name log
   reserve_data true
-</filter
+</filter>
 ```
 
 Original event:
@@ -111,7 +111,7 @@ Filtered event:
 2015-09-01 15:10:40 -0600 docker.3fd8678d487e: {"source":"stdout","log":"{\"key\":\"value\"}","container_id":"3fd8678d487e540c7a303e1613101e746c5012f3317434eda93f24351c1928f7","container_name":"/angry_kalam","key":"value"}
 ```
 
-### Additional Step 2: Concatenate multiple lines log messages
+### Additional Use Case 2: Concatenate multiple lines log messages
 
 Application log is stored into `"log"` field in the records. You can concatenate these logs by using [fluent-plugin-concat](https://github.com/fluent-plugins-nursery/fluent-plugin-concat) filter before send to destinations.
 
@@ -154,7 +154,7 @@ There are popular options. See full list in [the official document](https://docs
 Specify an optional address for Fluentd, it allows to set the host and TCP port, e.g:
 
 ```
-$ docker run --log-driver=fluentd --log-opt fluentd-address=192.168.2.4:24225 ubuntu echo '...'
+$ docker run --rm --log-driver=fluentd --log-opt fluentd-address=192.168.2.4:24225 ubuntu echo '...'
 ```
 
 #### tag
@@ -162,13 +162,13 @@ $ docker run --log-driver=fluentd --log-opt fluentd-address=192.168.2.4:24225 ub
 Tags are a major requirement on Fluentd, they allows to identify the incoming data and take routing decisions. By default the Fluentd logging driver uses the container\_id as a tag (12 character ID), you can change it value with the _fluentd-tag_ option as follows:
 
 ```
-$ docker run --log-driver=fluentd --log-opt tag=docker.my_new_tag ubuntu echo "..."
+$ docker run --rm --log-driver=fluentd --log-opt tag=docker.my_new_tag ubuntu echo "..."
 ```
 
 Additionally this option allows to specify some internal variables: {{.ID}}, {{.FullID}} or {{.Name}}. e.g:
 
 ```
-$ docker run --log-driver=fluentd --log-opt tag=docker.{{.ID}} ubuntu echo "..."
+$ docker run --rm --log-driver=fluentd --log-opt tag=docker.{{.ID}} ubuntu echo "..."
 ```
 
 #### fluentd-sub-second-precision
