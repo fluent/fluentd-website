@@ -72,7 +72,7 @@ By default, the Fluentd logging driver will try to find a local Fluentd instance
 The following command will run a base Ubuntu container and print some messages to the standard output, note that we have launched the container specifying the Fluentd logging driver:
 
 ```shell
-$ docker run --log-driver=fluentd --log-opt tag="docker.{.ID}}" ubuntu echo 'Hello Fluentd!'
+$ docker run --log-driver=fluentd --log-opt tag="docker.{{.ID}}" ubuntu echo 'Hello Fluentd!'
 Hello Fluentd!
 ```
 
