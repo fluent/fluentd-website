@@ -75,7 +75,7 @@ TD_AGENT_VERSIONS = {
   },
   :v4 => {
     linux: "4.1.0",
-    win: "4.0.1"
+    win: "4.1.0"
   },
   :bit => {
     linux: "1.6.9"
