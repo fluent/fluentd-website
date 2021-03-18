@@ -4,8 +4,8 @@ source 'https://rubygems.org'
 ruby '2.6.6'
 
 # Framework
-gem 'sinatra', '1.4.8'
-gem 'sinatra-assetpack', '0.3.5', :require => 'sinatra/assetpack'
+gem 'sinatra', '~> 2.1.0'
+gem 'sinatra-asset-pipeline', '~> 2.2.1'
 gem 'jemalloc', '~> 1.0.1'
 gem 'redcarpet'
 gem 'slugify'
