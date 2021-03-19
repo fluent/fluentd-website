@@ -19,7 +19,7 @@ end
 # Static Assets
 # @see https://github.com/kalasjocke/sinatra-asset-pipeline
 set :root, __dir__
-set :assets_precompile, %w(application.css application.js newsletter.css)
+set :assets_precompile, %w(application.css application.js newsletter.css respond.js)
 set :assets_paths, %w(assets/css assets/js assets/plugins)
 set :assets_css_compressor, :yui
 set :assets_js_compressor, :yui
