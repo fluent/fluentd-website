@@ -9,11 +9,11 @@ Logging directly into MongoDB/HDFS/Elasticsearch is not highly recommended since
 <table>
     <tr>
         <td>
-            <img width="400px" src="/assets/img/datasources/synchronous_logging.png"/>
+            <img width="400px" src="/images/datasources/synchronous_logging.png"/>
         </td>
         <td width="50px"></td>
         <td>
-            <img width="400px" src="/assets/img/datasources/asynchronous_logging.png"/>
+            <img width="400px" src="/images/datasources/asynchronous_logging.png"/>
         </td>
     </tr>
 </table>

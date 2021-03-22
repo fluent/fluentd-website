@@ -1,0 +1,17 @@
+/*
+ * libraries
+ *= require bootstrap/css/bootstrap.min.css
+ *= require font-awesome/css/font-awesome.css
+ *= require flexslider/flexslider.css
+ *= require parallax-slider/css/parallax-slider.css
+ *
+ * applications
+ *= require app.css
+ *= require style.css
+ *= require headers/header1.css
+ *= require responsive.css
+ *= require pages/page_clients.css
+ *
+ *= require themes/default.css
+ *= require_self
+ */

@@ -37,7 +37,7 @@ header a svg {
 }
 
 .formwrapper .signup .column.left {
-  background: #0090ed url(../img/signup/signup-ground.jpg) 100% 100% / cover no-repeat;
+  background: #0090ed url(/images/signup/signup-ground.jpg) 100% 100% / cover no-repeat;
 }
 
 .formwrapper .signup .column h1 {
@@ -437,6 +437,6 @@ header a svg {
 @media (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 120dpi) {
   .formwrapper .signup .column.left {
-    background-image: url(../img/signup/signup-ground_2x.jpg);
+    background-image: url(/images/signup/signup-ground_2x.jpg);
   }
 }

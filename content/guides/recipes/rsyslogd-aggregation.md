@@ -6,7 +6,7 @@ Once aggregated into the central server (which is also running rsyslogd), the sy
 is periodically bulk loaded into various data backends like databases, search indexers
 and object storage systems.
 
-<img src="/assets/img/recipes/before-fluentd-rsyslogd.png"/>
+<img src="/images/recipes/before-fluentd-rsyslogd.png"/>
 
 The above architecture can be improved in a few ways:
 
@@ -20,7 +20,7 @@ no out-of-the-box way to do this with rsyslogd.
 
 By replacing the central rsyslogd aggregator with Fluentd addresses both 1. and 2.
 
-<img src="/assets/img/recipes/after-fluentd-rsyslogd.png"/>
+<img src="/images/recipes/after-fluentd-rsyslogd.png"/>
 
 1. Fluentd supports many data consumers out of the box. By installing an appropriate output plugin,
 one can add a new data source with a few configuration changes.

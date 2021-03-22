@@ -29,11 +29,7 @@
     <meta name="twitter:title" content="<%= @title.nil? ? "Fluentd | Open Source Data Collector" : "#{@title} | Fluentd" %>">
 
     <!-- CSS Global Compulsory-->
-    <%= css :libraries %>
-    <%= css :applications %>
-
-    <!-- CSS Theme -->
-    <link rel="stylesheet" href="/assets/css/themes/default.css" id="style_color">
+    <%= stylesheet_tag "application" %>
 
     <!-- Highlight.js https://highlightjs.org/usage/ -->
     <link rel="stylesheet" href="/highlight/style/default.css"/>
@@ -90,7 +86,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-              <img style="margin-top:-20px" id="logo-header" srcset="/assets/img/miscellany/fluentd-logo.png 1x, /assets/img/miscellany/fluentd-logo_2x.png 2x" src="/assets/img/miscellany/fluentd-logo.png" alt="Logo">
+              <img style="margin-top:-20px" id="logo-header" srcset="/images/miscellany/fluentd-logo.png 1x, /assets/img/miscellany/fluentd-logo_2x.png 2x" src="/assets/img/miscellany/fluentd-logo.png" alt="Logo">
             </a>
           </div>
 
@@ -180,9 +176,7 @@
                 </span>
 
                 <!-- JS Global Compulsory -->
-                <%= js  :libraries %>
-                <script type="text/javascript" src="/assets/js/app.js"></script>
-                <script type="text/javascript" src="/assets/js/pages/index.js"></script>
+                <%= javascript_tag "application" %>
 
                 <!-- SwiftType: SaaS Site Seach -->
                 <script type="text/javascript">
@@ -286,8 +280,8 @@
   </script>
 
   <!--[if lt IE 9]>
-      <script src="/assets/plugins/respond.js"></script>
-      <![endif]-->
+    <%= javascript_tag "respond" %>
+  <![endif]-->
 
   <%= erb(:_tracking_javascripts, :layout => false) %>
 
