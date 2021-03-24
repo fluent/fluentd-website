@@ -18,7 +18,8 @@ gem 'unicorn', '~> 5.4.0'
 gem 'unicorn-worker-killer', '~> 0.4.4'
 
 # Compressor
-gem 'yui-compressor', :require => 'yui/compressor'
+gem 'sassc'
+gem 'uglifier'
 
 # Addons
 gem 'newrelic_rpm', '~> 3.5.4'

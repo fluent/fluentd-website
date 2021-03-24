@@ -21,8 +21,8 @@ end
 set :root, __dir__
 set :assets_precompile, %w(application.css application.js newsletter.css pages/lunr.min.js respond.js)
 set :assets_paths, %w(assets/css assets/js assets/plugins)
-set :assets_css_compressor, :yui
-set :assets_js_compressor, :yui
+set :assets_css_compressor, :sass
+set :assets_js_compressor, :uglifier
 Sinatra.register Sinatra::AssetPipeline
 
 MARKDOWN = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true, fenced_code_blocks: true)
