@@ -15,8 +15,6 @@ GEM
     execjs (2.7.0)
     ffi (1.11.1)
     ffi (1.11.1-x86-mingw32)
-    get_process_mem (0.2.4)
-      ffi (~> 1.0)
     http (3.3.0)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -27,7 +25,6 @@ GEM
     http-form_data (2.1.1)
     http_parser.rb (0.6.0)
     jemalloc (1.0.1)
-    kgio (2.11.2)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
     mini_portile2 (2.5.0)
@@ -36,6 +33,7 @@ GEM
       ruby2_keywords (~> 0.0.1)
     naught (1.1.0)
     newrelic_rpm (3.5.8.72)
+    nio4r (2.5.7)
     nokogiri (1.11.0)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
@@ -43,11 +41,12 @@ GEM
       racc (~> 1.4)
     power_assert (1.1.5)
     public_suffix (3.1.1)
+    puma (5.2.2)
+      nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
-    raindrops (0.19.0)
     rake (12.3.3)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
@@ -103,12 +102,6 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
-    unicorn (5.4.1)
-      kgio (~> 2.6)
-      raindrops (~> 0.7)
-    unicorn-worker-killer (0.4.4)
-      get_process_mem (~> 0)
-      unicorn (>= 4, < 6)
 
 PLATFORMS
   ruby
@@ -118,6 +111,7 @@ DEPENDENCIES
   jemalloc (~> 1.0.1)
   newrelic_rpm (~> 3.5.4)
   nokogiri
+  puma
   rake
   redcarpet
   redis
@@ -129,8 +123,6 @@ DEPENDENCIES
   test-unit
   twitter
   uglifier
-  unicorn (~> 5.4.0)
-  unicorn-worker-killer (~> 0.4.4)
 
 RUBY VERSION
    ruby 2.6.6p146
