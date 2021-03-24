@@ -14,8 +14,7 @@ gem 'slugify'
 gem 'redis'
 
 # Webserver
-gem 'unicorn', '~> 5.4.0'
-gem 'unicorn-worker-killer', '~> 0.4.4'
+gem 'puma'
 
 # Compressor
 gem 'sassc'
