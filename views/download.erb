@@ -42,8 +42,16 @@
               <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v4][:linux]%></span>
               <ul>
                 <li>
+                  x86_64:
                   <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/8/x86_64">RHEL8</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/7/x86_64">RHEL7</a>
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/amazon/2/x86_64">Amazon Linux 2</a>
+                </li>
+                <li>
+                  aarch64:
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/8/aarch64">RHEL8</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/7/aarch64">RHEL7</a>
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/amazon/2/aarch64">Amazon Linux 2</a>
                 </li>
               </ul>
               <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:linux]%> (old stable)</span>
@@ -125,13 +133,19 @@
             </td>
             <td>OSX 10.11 or later</td>
             <td>
-              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:mac]%></span>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v4][:mac]%></span>
               <ul>
-                <li><a href="//docs.fluentd.org/v1.0/articles/install-by-dmg">Installation Guide</a></li>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/macosx">dmg repository</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:mac]%> (old stable)</span>
+              <ul>
                 <li>
                   <a href="https://td-agent-package-browser.herokuapp.com/3/macosx">dmg repository</a>
                 </li>
               </ul>
+              <a href="//docs.fluentd.org/v1.0/articles/install-by-dmg">Installation Guide</a>
               <br/>
               <br/>
             </td>
