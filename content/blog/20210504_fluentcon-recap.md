@@ -107,6 +107,4 @@ Platinum Sponsor : [**Fluentd Subscription Network**][17] by ITOCHU Techno-Solut
 [17]: https://fluentd.ctc-america.com
 
 TAG: Observability Fluentd FluentBit
-AUTHOR: [hisa-tanaka][18] 
-
-[18]: https://github.com/hisa-tanaka
+AUTHOR: hisa
