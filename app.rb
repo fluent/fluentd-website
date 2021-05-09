@@ -81,6 +81,11 @@ AUTHORS = {
     'avatar_url' => 'https://avatars.githubusercontent.com/u/176515?v=3&s=70',
     'desc' => '<a href="https://www.clear-code.com/">ClearCode, Inc.</a> is a software company specializing in the development of Free Software. We maintain Fluentd and its plugin ecosystem, and provide commercial support for them.'
   },
+    'hisa' => {
+    'name' => 'Hisa Tanaka',
+    'avatar_url' => 'https://avatars.githubusercontent.com/u/19581009?v-3&s=70',
+    'desc' => 'Hisa (<a href="https://twitter.com/hisatomot">@hisatomot</a>) is a maintainer of Fluentd. He works on developer marketing and everything related to Fluentd at <a href="http://www.ctc-america.com/">ITOCHU Techno-Solutions America, Inc.</a>, the global IT solution provider, specialized in hyperscale, cloud native and app dev technologies, providing commercial services around Fluentd and Fluent Bit.'
+  },
 }
 
 #
