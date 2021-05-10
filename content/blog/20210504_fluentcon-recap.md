@@ -34,6 +34,7 @@ We really felt the vendor neutral observability is getting more momentum and exc
 ### Thanks to the foundation and conference speakers and sponsors
 We would like to thank Cloud Native Computing Foundation and conference oganizer team for all the community effort making people meet and discuss in this challenging moment. We also thank all the amazing speakers and sponsors to support the 1st FluentCon.
 Here is the list of speakers and sponsors.
+
 1. [**Opening Remarks and Keynote**][2]
  - Martin Mao, CEO/Co-founder at Chronosphere
  - Anurag Gupta, Product Management at Calyptia
