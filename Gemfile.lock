@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.6.0)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     buftok (0.2.0)
     coffee-script (2.4.1)
       coffee-script-source
@@ -12,17 +12,22 @@ GEM
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
-    execjs (2.7.0)
-    ffi (1.11.1)
-    ffi (1.11.1-x86-mingw32)
-    http (3.3.0)
+    execjs (2.8.1)
+    ffi (1.15.1)
+    ffi (1.15.1-x86-mingw32)
+    ffi-compiler (1.0.1)
+      ffi (>= 1.0.0)
+      rake
+    http (4.4.1)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
-      http-form_data (~> 2.0)
-      http_parser.rb (~> 0.6.0)
+      http-form_data (~> 2.2)
+      http-parser (~> 1.2.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    http-form_data (2.1.1)
+    http-form_data (2.3.0)
+    http-parser (1.2.3)
+      ffi-compiler (>= 1.0, < 2.0)
     http_parser.rb (0.6.0)
     jemalloc (1.0.1)
     memoizable (0.4.2)
@@ -34,25 +39,25 @@ GEM
     naught (1.1.0)
     newrelic_rpm (3.5.8.72)
     nio4r (2.5.7)
-    nokogiri (1.11.4)
+    nokogiri (1.11.5)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
-    nokogiri (1.11.4-x86-mingw32)
+    nokogiri (1.11.5-x86-mingw32)
       racc (~> 1.4)
-    power_assert (1.1.5)
-    public_suffix (3.1.1)
-    puma (5.3.1)
+    power_assert (2.0.0)
+    public_suffix (4.0.6)
+    puma (5.3.2)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
     rake (12.3.3)
-    rb-fsevent (0.10.4)
+    rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     redcarpet (3.5.1)
-    redis (4.1.2)
+    redis (4.2.5)
     ruby2_keywords (0.0.4)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -82,15 +87,15 @@ GEM
       rack (> 1, < 3)
     sprockets-helpers (1.4.0)
       sprockets (>= 2.2)
-    test-unit (3.3.3)
+    test-unit (3.4.1)
       power_assert
     thread_safe (0.3.6)
     tilt (2.0.10)
-    twitter (6.2.0)
+    twitter (7.0.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
       equalizer (~> 0.0.11)
-      http (~> 3.0)
+      http (~> 4.0)
       http-form_data (~> 2.0)
       http_parser.rb (~> 0.6.0)
       memoizable (~> 0.4.0)
@@ -101,7 +106,8 @@ GEM
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.6)
+    unf_ext (0.0.7.7)
+    unf_ext (0.0.7.7-x86-mingw32)
 
 PLATFORMS
   ruby
@@ -125,7 +131,7 @@ DEPENDENCIES
   uglifier
 
 RUBY VERSION
-   ruby 2.6.6p146
+   ruby 2.6.7p197
 
 BUNDLED WITH
    1.17.3
