@@ -6,9 +6,9 @@ We have released v1.14.5. ChangeLog is [here](https://github.com/fluent/fluentd/
 
 This release is a maintenance release of v1.14 series.
 
-### `in_http`: Add support for "Application/x-ndjson"
+### `in_http`: Add support for "application/x-ndjson"
 
-In this release, `in_http` supports the new Content-Type "Application/x-ndjson".
+In this release, `in_http` supports the new Content-Type "application/x-ndjson".
 Its format is "ndjson", which is basically a list of JSON objects separated by "\n".
 
 Here is an example of the format.
