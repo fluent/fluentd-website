@@ -22,13 +22,13 @@ See [#3616](https://github.com/fluent/fluentd/pull/3616) for more information.
 
 ### Add support for the UCRT binary for Windows RubyInstaller 3.1
 
-RubyInstaller 3.1 has switched from C-Runtime to UCRT, and the ruby and gem
-platform has changed to `x64-mingw-ucrt`.
-Since the dependent gems were not released for the architecture, some of them
-could not be installed in the environment.
+RubyInstaller 3.1 has switched C-Runtime from MSVCRT to UCRT, and the ruby and
+gem platform has changed to `x64-mingw-ucrt`.
+There was a problem in this environment that Windows-specific dependent gems
+could not be installed because Fluentd for this architecture had not been released.
 
-Beginning with this release, they are now released for the architecture so that
-they are correctly installed in the environment.
+Beginning with this release, Fluentd for this architecture is also released
+and this problem is solved.
 
 See [#3613](https://github.com/fluent/fluentd/pull/3613) for more information.
 
