@@ -37,7 +37,7 @@ See [#3613](https://github.com/fluent/fluentd/pull/3613) for more information.
 There was a known issue the TLS handshake takes a long time or hangs when
 `out_forward` uses TLS transport, even though `connect_timeout` is specified.
 
-With this release, `connect_timeout` is now reliably applied to TLS tranport
+With this release, `connect_timeout` is now reliably applied to TLS transport
 and able to prevent hangs.
 
 See [#3601](https://github.com/fluent/fluentd/pull/3601) for more information.
@@ -45,7 +45,7 @@ See [#3601](https://github.com/fluent/fluentd/pull/3601) for more information.
 ### Miscellaneous fixes
 
 * Fix a bug of retrying once when `retry_max_times` is `0`. [#3608](https://github.com/fluent/fluentd/pull/3608)
-* Fix "invalid byte sequence is replaced" warning not to log out invalid characters. [#3596](https://github.com/fluent/fluentd/pull/3596)
+* Fix "invalid byte sequence is replaced" warning not to write out invalid characters. [#3596](https://github.com/fluent/fluentd/pull/3596)
 * Bump up required ServerEngine to v2.2.5. [#3599](https://github.com/fluent/fluentd/pull/3599)
 
 Enjoy logging!
