@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # https://devcenter.heroku.com/articles/ruby-support#supported-runtimes
-ruby '2.6.8'
+ruby '2.7.5'
 
 # Framework
 gem 'sinatra', '~> 2.1.0'
