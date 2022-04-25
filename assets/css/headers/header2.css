@@ -192,7 +192,7 @@
 
 /*Responsive @Media 
 ------------------------------------*/
-@media (min-width: 767px) {
+@media (min-width: 1199px) {
 	/*Navbar Collapse*/
 	.header .navbar-collapse {
 		padding: 0;
