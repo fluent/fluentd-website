@@ -44,6 +44,10 @@
 		margin-bottom: 60px;
 	}
 	/*End Spacea (Margin Bottom)*/
+
+	iframe {
+		max-width: 100%;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
