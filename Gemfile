@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '2.7.5'
 
 # Framework
-gem 'sinatra', '~> 2.1.0'
+gem 'sinatra', '~> 2.2.0'
 gem 'sinatra-asset-pipeline', '~> 2.2.1'
 gem 'jemalloc', '~> 1.0.1'
 gem 'redcarpet'
