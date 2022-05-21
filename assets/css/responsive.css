@@ -6,7 +6,16 @@
  * Website: http://htmlstream.com/preview/unify
 */
 
-/* Small devices (tablets, 768px and less) */
+@media (max-width: 1024px) {
+	.table {
+		overflow-y: hidden;
+		overflow-x: scroll;
+		display: block;
+	}
+}
+
+
+	/* Small devices (tablets, 768px and less) */
 @media (max-width: 768px) { 
 	/*Purchase Block*/
 	.purchase span {
