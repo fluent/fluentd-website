@@ -6,7 +6,6 @@ require 'net/https'
 require 'cgi'
 require 'erb'
 require 'yaml'
-require 'redis'
 
 def e(s)
   CGI.escape(s.to_s)
@@ -59,10 +58,11 @@ class Plugins
       end
     }
 
-    ENV["REDISTOGO_URL"] ||= 'redis://localhost:6379' # development
-    redis_uri = URI.parse(ENV["REDISTOGO_URL"])
-    redis = Redis.new(:host => redis_uri.host, :port => redis_uri.port, :password => redis_uri.password)
-    redis.set("plugins", plugins.to_json)
+    tmpdir = File.join(__dir__, "..", "tmp")
+    FileUtils.mkdir(tmpdir) unless File.exists?(tmpdir)
+    File.open(File.join(tmpdir, "plugins.json"), "w") do |file|
+      file.write(plugins.to_json)
+    end
   end
 
   OBSOLETE_PLUGINS = YAML.load_file(File.expand_path(File.join(__dir__, 'obsolete-plugins.yml')))

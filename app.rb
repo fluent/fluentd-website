@@ -2,7 +2,6 @@ require 'sinatra'
 require 'sinatra/asset_pipeline'
 require 'json'
 require 'time'
-require 'redis'
 require 'yaml'
 require 'redcarpet'
 require 'slugify'
@@ -286,11 +285,9 @@ get '/plugins' do
     "RDBMS" => 'mysql postgres vertica',
     "Search" => 'splunk elasticsearch sumologic'
   }
-  begin
-    redis_uri = URI.parse(ENV["REDISTOGO_URL"])
-    redis = Redis.new(:host => redis_uri.host, :port => redis_uri.port, :password => redis_uri.password)
-    @plugins = redis.get "plugins"
-  rescue
+  if File.exists?("tmp/plugins.json")
+    @plugins = File.new("tmp/plugins.json").read
+  else
     @plugins = File.new("scripts/plugins.json").read
   end
   @plugins = JSON.parse(@plugins).map{ |e| e.merge({'certified' => is_certified(e) ? "<center><a href='/faqs#certified'><img src='/images/certified.png'></a></center>" : ""}) }.to_json
@@ -301,11 +298,9 @@ FILTER_PLUGINS = ['fluent-plugin-parser', 'fluent-plugin-geoip', 'fluent-plugin-
 
 get '/plugins/all' do
   @title = "List of All Plugins"
-  begin
-    redis_uri = URI.parse(ENV["REDISTOGO_URL"])
-    redis = Redis.new(:host => redis_uri.host, :port => redis_uri.port, :password => redis_uri.password)
-    plugins = redis.get "plugins"
-  rescue
+  if File.exists?("tmp/plugins.json")
+    plugins = File.new("tmp/plugins.json").read
+  else
     plugins = File.new("scripts/plugins.json").read
   end
   all_plugins = JSON.parse(plugins)

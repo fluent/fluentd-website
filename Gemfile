@@ -10,9 +10,6 @@ gem 'jemalloc', '~> 1.0.1'
 gem 'redcarpet'
 gem 'slugify'
 
-# Backend
-gem 'redis'
-
 # Webserver
 gem 'puma'
 
