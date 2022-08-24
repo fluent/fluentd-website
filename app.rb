@@ -285,11 +285,7 @@ get '/plugins' do
     "RDBMS" => 'mysql postgres vertica',
     "Search" => 'splunk elasticsearch sumologic'
   }
-  if File.exists?("tmp/plugins.json")
-    @plugins = File.new("tmp/plugins.json").read
-  else
-    @plugins = File.new("scripts/plugins.json").read
-  end
+  @plugins = File.new("scripts/plugins.json").read
   @plugins = JSON.parse(@plugins).map{ |e| e.merge({'certified' => is_certified(e) ? "<center><a href='/faqs#certified'><img src='/images/certified.png'></a></center>" : ""}) }.to_json
   erb :plugins
 end
@@ -298,11 +294,7 @@ FILTER_PLUGINS = ['fluent-plugin-parser', 'fluent-plugin-geoip', 'fluent-plugin-
 
 get '/plugins/all' do
   @title = "List of All Plugins"
-  if File.exists?("tmp/plugins.json")
-    plugins = File.new("tmp/plugins.json").read
-  else
-    plugins = File.new("scripts/plugins.json").read
-  end
+  plugins = File.new("scripts/plugins.json").read
   all_plugins = JSON.parse(plugins)
   @plugins = []
   @obsolete_plugins = []
