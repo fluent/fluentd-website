@@ -58,9 +58,7 @@ class Plugins
       end
     }
 
-    tmpdir = File.join(__dir__, "..", "tmp")
-    FileUtils.mkdir(tmpdir) unless File.exists?(tmpdir)
-    File.open(File.join(tmpdir, "plugins.json"), "w") do |file|
+    File.open(File.join(__dir__, "plugins.json"), "w") do |file|
       file.write(plugins.to_json)
     end
   end
