@@ -1,0 +1,25 @@
+name: Update plugins
+
+on:
+  schedule:
+    - cron: '8 14 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-plugins:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+      - name: Update plugins.json
+        run: ruby scripts/plugins.rb
+      - name: Commit files
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}"@users.noreply.github.com
+          git add scripts/plugins.json
+          git commit -m "Update plugins.json"
+          git push origin master
