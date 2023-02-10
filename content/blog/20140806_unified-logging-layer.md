@@ -62,7 +62,7 @@ The Unified Logging Layer must be able to support new data inputs (e.g., new web
 
 To achieve this goal, the Unified Logging Layer should have a pluggable architecture into which new data inputs and outputs can be "plugged". Once a new data input is plugged in, no additional work should be required to send that data to all existing data outputs and vice versa.
 
-For those with a CS background, pluggable architecture reduces an O(M\*N) problem to an O(M+N) one: with M data inputs and N data outputs, there are M\*N possible paths for log data. However, with a (well-designed) pluggable architecture, only M+N plugins need to be written to support M\*N paths, and the cost of supporting a new data input or output is O(1) (= just writing a plugin for said input/ouput).
+For those with a CS background, pluggable architecture reduces an O(M\*N) problem to an O(M+N) one: with M data inputs and N data outputs, there are M\*N possible paths for log data. However, with a (well-designed) pluggable architecture, only M+N plugins need to be written to support M\*N paths, and the cost of supporting a new data input or output is O(1) (= just writing a plugin for said input/output).
 
 A strong emphasis on extensibility reduces the complexity of logging infrastructure and prevents the organization from accruing a large infrastructure debt.
 
