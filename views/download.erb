@@ -18,10 +18,16 @@
 
   <div class="row margin-bottom-20">
     <div class="col-md-9">
-      <h3>Fluentd (v1.0, current stable)</h3>
-      <div>Fluentd v1.0 is available on Linux, Mac OSX and Windows. Also, Fluentd is packaged by Calyptia and Treasure Data as Calyptia Fluentd (calyptia-fluentd) and Treasure Agent (td-agent) respectively. All packaged versions for RedHat/CentOS and Ubuntu/Debian and Windows are listed in the tables below</div>
+      <h3>Fluentd (v1, current stable)</h3>
+      <div>Fluentd v1 is available on Linux, Mac OSX and Windows. It's packaged by <a href="https://calyptia.com/">Calyptia</a> and <a href="https://www.treasuredata.com/">Treasure Data</a> respectively as:</div>
+      <ul>
+        <li><a href="#calyptia-fluentd">Calyptia Fluentd (calyptia-fluentd)</a></li>
+        <li><a href="#td-agent">Treasure Agent (td-agent)</a></li>
+      </ul>
+      <div>In addition, <a href="#other-distributions">Docker images, Kubernetes DaemonSet and Ruby gems</a> are also available from the community. </div>
+      <div>All packaged versions are listed in the tables below.</div>
       <br/>
-      <h4>Calyptia Fluentd</h4>
+      <h4><a name=calyptia-fluentd></a>Calyptia Fluentd</h4>
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -119,7 +125,7 @@
       </table>
       <br/>
 
-      <h4>Treasure Agent (td-agent)</h4>
+      <h4><a name=td-agent></a>Treasure Agent (td-agent)</h4>
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -253,6 +259,21 @@
               <br/>
             </td>
           </tr>
+        </tbody>
+      </table>
+      <br/>
+
+      <h4><a name=other-distributions></a>Other distributions</h4>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="20%">Platform</th>
+            <th width="30%">Platform Version</th>
+            <th width="50%">Package or Installer</th>
+          </tr>
+        </thead>
+        <tbody>
           <tr>
             <td>
               <center>
@@ -265,7 +286,6 @@
               <a href="https://hub.docker.com/r/fluent/fluentd/">Docker image at Docker Hub</a>
             </td>
           </tr>
-          <!--
           <tr>
             <td>
               <center>
@@ -275,10 +295,9 @@
             </td>
             <td>Kubernetes</td>
             <td>
-              <a href="https://hub.docker.com/r/fluent/fluentd-kubernetes-daemonset/">Kuberenetes DaemonSet for Fluentd</a>
+              <a href="https://hub.docker.com/r/fluent/fluentd-kubernetes-daemonset/">Kubernetes DaemonSet for Fluentd</a>
             </td>
           </tr>
-          -->
           <tr>
             <td>
               <center>
@@ -417,7 +436,7 @@
             </td>
             <td>Kubernetes</td>
             <td>
-              <a href="https://hub.docker.com/r/fluent/fluentd-kubernetes-daemonset/">Kuberenetes DaemonSet for Fluentd</a>
+              <a href="https://hub.docker.com/r/fluent/fluentd-kubernetes-daemonset/">Kubernetes DaemonSet for Fluentd</a>
             </td>
           </tr>
           <tr>
