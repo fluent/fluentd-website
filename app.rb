@@ -139,7 +139,7 @@ get '/guides' do
 end
 
 get '/guides/recipes/:type' do
-  pass if not File.exists? "content/guides/recipes/#{params[:type]}.md"
+  pass if not File.exist? "content/guides/recipes/#{params[:type]}.md"
   @title, @content = read_markdown("content/guides/recipes/#{params[:type]}.md")
   erb :solution_recipe
 end
@@ -176,7 +176,7 @@ get '/datasources' do
 end
 
 get '/datasources/:type' do
-  pass if not File.exists? "content/datasources/#{params[:type]}.md"
+  pass if not File.exist? "content/datasources/#{params[:type]}.md"
   @title, @content = read_markdown("content/datasources/#{params[:type]}.md")
   erb :datasource_how
 end
@@ -187,7 +187,7 @@ get '/dataoutputs' do
 end
 
 get '/dataoutputs/:type' do
-  pass if not File.exists? "content/dataoutputs/#{params[:type]}.md"
+  pass if not File.exist? "content/dataoutputs/#{params[:type]}.md"
   @title, @content = read_markdown("content/dataoutputs/#{params[:type]}.md")
   erb :dataoutput_how
 end
@@ -195,7 +195,7 @@ end
 get '/casestudy/:company' do
   @company = params[:company]
   path_to_file = "content/casestudy/#{@company}.md"
-  pass if not File.exists? path_to_file
+  pass if not File.exist? path_to_file
   @casestudy_title, body_content = File.new(path_to_file).read.split("\n", 2)
   @casestudy_title.gsub!(/^#+/, "")
   @title = @casestudy_title
