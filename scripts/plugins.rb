@@ -38,9 +38,10 @@ class Plugins
     http = Net::HTTP.new("rubygems.org", 443)
     http.use_ssl = true
     http.start do
-      gemlist.each do |gemname|
+      gemlist.each_with_index do |gemname, index|
         begin
           res = http.get("/api/v1/gems/#{e gemname}.json")
+          puts "fetch (#{index+1}/#{gemlist.size}) /api/v1/gems/#{e gemname}.json" if ENV["DEBUG"]
           plugins << JSON.parse(res.body)
         rescue => e
           puts "failed to get plugin info. Skip #{gemname} plugin. #{e.inspect}"
@@ -56,10 +57,23 @@ class Plugins
         p["obsolete"] = true
         p["note"] = OBSOLETE_PLUGINS[p["name"]]
       end
+   }
+
+    # shrink minimum information
+    plugins = plugins.map { |p|
+      {
+        obsolete: p["obsolete"],
+        note: p["note"],
+        name: p["name"],
+        info: p["info"],
+        authors: p["authors"],
+        version: p["version"],
+        downloads: p["downloads"]
+      }
     }
 
     File.open(File.join(__dir__, "plugins.json"), "w") do |file|
-      file.write(plugins.to_json)
+      file.write(JSON.pretty_generate(plugins))
     end
   end
 
