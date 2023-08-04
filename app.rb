@@ -113,6 +113,17 @@ get '/download' do
   erb :download
 end
 
+get '/download/td_agent' do
+  @title = "Download Treasure Agent"
+  # The content will be merged into fluent-package in the future
+  erb :download_fluent_package
+end
+
+get '/download/calyptia_fluentd' do
+  @title = "Download Calyptia Fluentd"
+  erb :download_calyptia_fluentd
+end
+
 get '/enterprise_services' do
   @title = "Enterprise Services"
   erb :enterprise_services
