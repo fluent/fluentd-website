@@ -72,8 +72,19 @@ class Plugins
       }
     }
 
-    File.open(File.join(__dir__, "plugins.json"), "w") do |file|
-      file.write(JSON.pretty_generate(plugins))
+    previous_plugins = YAML.load_file("plugins.json").collect { |plugin| plugin["name"] }
+    current_plugins = plugins.collect { |plugin| plugin[:name] }
+    # When the number of plugin is changed, update it.
+    deleted_plugins = previous_plugins - current_plugins
+    added_plugins = current_plugins - previous_plugins
+    if ENV["DEBUG"]
+      puts "added: #{added_plugins}"
+      puts "deleted: #{deleted_plugins}"
+    end
+    if added_plugins.size > 0 or deleted_plugins.size > 0
+      File.open(File.join(__dir__, "plugins.json"), "w") do |file|
+        file.write(JSON.pretty_generate(plugins))
+      end
     end
   end
 
