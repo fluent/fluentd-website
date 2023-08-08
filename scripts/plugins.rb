@@ -81,11 +81,17 @@ class Plugins
       puts "added: #{added_plugins}"
       puts "deleted: #{deleted_plugins}"
     end
-    if added_plugins.size > 0 or deleted_plugins.size > 0
+    if added_plugins.size > 0 or deleted_plugins.size > 0 or force_update?
       File.open(File.join(__dir__, "plugins.json"), "w") do |file|
         file.write(JSON.pretty_generate(plugins))
       end
     end
+  end
+
+  def self.force_update?
+    duration = Time.now.to_i - File.mtime("plugins.json").to_i
+    seconds_in_a_week = 60 * 60 * 24 * 7
+    duration > seconds_in_a_week
   end
 
   OBSOLETE_PLUGINS = YAML.load_file(File.expand_path(File.join(__dir__, 'obsolete-plugins.yml')))
