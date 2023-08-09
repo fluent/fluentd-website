@@ -54,6 +54,19 @@ TD_AGENT_VERSIONS = {
   }
 }
 
+FLUENT_PACKAGE_VERSIONS = {
+  :v5 => {
+    linux: "5.0.1",
+    mac: "5.0.1",
+    win: "5.0.1"
+  },
+  :v5_lts => {
+    linux: "5.0.1",
+    mac: "5.0.1",
+    win: "5.0.1"
+  },
+}
+
 AUTHORS = {
   'masa' => {
     'name' => "Masahiro Nakagawa",
@@ -114,8 +127,12 @@ get '/download' do
 end
 
 get '/download/td_agent' do
-  @title = "Download Treasure Agent"
-  # The content will be merged into fluent-package in the future
+  # The content will be merged into fluent-package.
+  redirect '/download/fluent_package', 301
+end
+
+get '/download/fluent_package' do
+  @title = "Download Fluent Package"
   erb :download_fluent_package
 end
 
