@@ -1,0 +1,280 @@
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Download Treasure Agent (td-agent)</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li><a href="/download">Download Fluentd</a></li>
+      <li class="active">Treasure Agent (td-agent)</li>
+    </ul>
+  </div><!--/container-->
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">
+  <div class="row portfolio-item margin-bottom-20">
+    <!-- Content Info -->
+    <!--
+    <div class="col-md-12 md-margin-bottom-20">
+    </div>
+    -->
+  </div><!--/row-->
+
+  <div class="row margin-bottom-20">
+    <div class="col-md-9">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="20%">Platform</th>
+            <th width="30%">Platform Version</th>
+            <th width="50%">Package or Installer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/icon_redhat.png" height="60px"><br/>
+                RHEL / CentOS / Amazon Linux
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v4][:linux]%></span>
+              <ul>
+                <li>
+                  x86_64:
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/9/x86_64">RHEL9</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/8/x86_64">RHEL8</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/7/x86_64">RHEL7</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/amazon/2/x86_64">Amazon Linux 2</a>
+                </li>
+                <li>
+                  aarch64:
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/9/aarch64">RHEL9</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/8/aarch64">RHEL8</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/7/aarch64">RHEL7</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/amazon/2/aarch64">Amazon Linux 2</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:linux]%> (old stable)</span>
+              <ul>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/redhat/7/x86_64">RHEL7</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/redhat/6/x86_64">RHEL6</a>
+                </li>
+              </ul>
+              <a href="https://docs.fluentd.org/v1.0/articles/install-by-rpm">Installation Guide</a><br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/icon_ubuntu.png" height="60px"><br/>
+                Ubuntu/Debian
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v4][:linux]%></span>
+              <ul>
+                <li>Ubuntu:
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/ubuntu/jammy/pool/contrib/t/td-agent">Jammy</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/ubuntu/focal/pool/contrib/t/td-agent">Focal</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/ubuntu/bionic/pool/contrib/t/td-agent">Bionic</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/ubuntu/xenial/pool/contrib/t/td-agent">Xenial</a>
+                </li>
+                <li>Debian:
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/debian/bullseye/pool/contrib/t/td-agent">Bullseye</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/debian/buster/pool/contrib/t/td-agent">Buster</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:linux]%> (old stable)</span>
+              <ul>
+                <li>Ubuntu:
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/ubuntu/bionic/pool/contrib/t/td-agent">Bionic</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/ubuntu/xenial/pool/contrib/t/td-agent">Xenial</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/ubuntu/trusty/pool/contrib/t/td-agent">Trusty</a>
+                </li>
+                <li>Debian:
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/debian/buster/pool/contrib/t/td-agent">Buster</a>
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/debian/stretch/pool/contrib/t/td-agent">Stretch</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/debian/jessie/pool/contrib/t/td-agent">Jessie</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/v1.0/articles/install-by-deb">Installation Guide</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/download-icons/windows-logo.png"><br/>
+                Windows
+              </center>
+            </td>
+            <td>Windows Server 2012+ (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v4][:win]%></span>
+              <ul>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/windows">msi repository</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:win]%> (old stable)</span>
+              <ul>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/windows">msi repository</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/v1.0/articles/install-by-msi">Installation Guide</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/download-icons/logo_mac.gif"><br/>
+                MacOS X
+              </center>
+            </td>
+            <td>OSX 10.11 or later</td>
+            <td>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v4][:mac]%></span>
+              <ul>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/macosx">dmg repository</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v3][:mac]%> (old stable)</span>
+              <ul>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/3/macosx">dmg repository</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/v1.0/articles/install-by-dmg">Installation Guide</a>
+              <br/>
+              <br/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+
+      <h3>Fluentd (v0.12, old stable version)</h3>
+      <div>Fluentd v0.12 is available on Linux and Mac OSX. Also, Treasure Data packages it as Treasure Agent (td-agent) for RedHat/CentOS and Ubuntu/Debian and provides a binary for OSX. td-agent 2.5 uses ruby 2.5 and td-agent 2.3 uses ruby 2.1</div>
+      <br/>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="20%">Platform</th>
+            <th width="30%">Platform Version</th>
+            <th width="50%">Package or Installer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/icon_redhat.png" height="60px"><br/>
+                RHEL / CentOS / Amazon Linux
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit & 32-bit)</td>
+            <td>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v2][:linux]%>/2.3.6</span>
+              <ul>
+                <li><a href="//docs.fluentd.org/v/0.12/articles/install-by-rpm">Installation Guide</a></li>
+                <li>
+                  64-bit (<a href="https://td-agent-package-browser.herokuapp.com/2.5/redhat/7/x86_64">RHEL7</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2.5/redhat/6/x86_64">RHEL6</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2/redhat/5/x86_64">RHEL5</a>)
+                </li>
+                <li>
+                  32-bit (<a href="https://td-agent-package-browser.herokuapp.com/2/redhat/6/i386">RHEL6</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2/redhat/5/i386">RHEL5</a>)
+                </li>
+                <li>
+                  Amazon Linux (<a href="https://td-agent-package-browser.herokuapp.com/2/redhat/2017.03/x86_64">2017.03</a>, <a href="https://td-agent-package-browser.herokuapp.com/2/redhat/2017.09/x86_64">2017.09</a>)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/icon_ubuntu.png" height="60px"><br/>
+                Ubuntu/Debian
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit & 32-bit)</td>
+            <td>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v2][:linux]%>/2.3.6</span>
+              <ul>
+                <li><a href="//docs.fluentd.org/v/0.12/articles/install-by-deb">Installation Guide</a></li>
+                <li>
+                  64-bit/amd64 (<a href="https://td-agent-package-browser.herokuapp.com/2.5/ubuntu/bionic/pool/contrib/t/td-agent">Bionic</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2.5/ubuntu/xenial/pool/contrib/t/td-agent">Xenial</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2.5/ubuntu/trusty/pool/contrib/t/td-agent">Trusty</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/precise/pool/contrib/t/td-agent">Precise</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/lucid/pool/contrib/t/td-agent">Lucid</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2/debian/jessie/pool/contrib/t/td-agent">Jessie</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2/debian/wheezy/pool/contrib/t/td-agent">Wheezy</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2/debian/squeeze/pool/contrib/t/td-agent">Squeeze</a>)
+                </li>
+                <li>
+                  32-bit/i386 (<a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/trusty/pool/contrib/t/td-agent">Trusty</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/precise/pool/contrib/t/td-agent">Precise</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/2/ubuntu/lucid/pool/contrib/t/td-agent">Lucid</a>)
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/download-icons/logo_mac.gif"><br/>
+                MacOS X
+              </center>
+            </td>
+            <td>v2.1.4 for OSX 10.9 and 10.10.<br /> v2.3.5 for OSX 10.11</td>
+            <td>
+              <span style="font-weight:bold">td-agent v<%=TD_AGENT_VERSIONS[:v2][:mac]%></span>
+              <ul>
+                <li><a href="//docs.fluentd.org/v/0.12/articles/install-by-dmg">Installation Guide</a></li>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/2/macosx">dmg repository</a>
+                </li>
+              </ul>
+              <br/>
+              <br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/download-icons/ruby.jpg"><br/>
+                Ruby<br/><br/>
+              </center>
+            </td>
+            <td>Ruby v2.1.0 and above</td>
+            <td>
+              <span style="font-weight:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:gem_v12]%> (old stable)</span>
+              <ul>
+                <li>
+                  <code>gem install fluentd -v '~> 0.12.0'</code><br/>
+                </li>
+              </ul>
+              <a href="http://docs.fluentd.org/v/0.12/articles/install-by-gem">Installation Guide</a> (* ruby expert-use only)<br/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+
+    </div><!--/col-md-9-->
+    <div class="col-md-3">
+      <%= erb(:_right_menu, :layout => false) %>
+    </div>
+  </div><!--/row-->
+</div><!--/container-->
+<!--=== End Content Part ===-->
