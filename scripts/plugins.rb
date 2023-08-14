@@ -72,7 +72,7 @@ class Plugins
       }
     }
 
-    previous_plugins = YAML.load_file("plugins.json").collect { |plugin| plugin["name"] }
+    previous_plugins = YAML.load_file(plugins_json).collect { |plugin| plugin["name"] }
     current_plugins = plugins.collect { |plugin| plugin[:name] }
     # When the number of plugin is changed, update it.
     deleted_plugins = previous_plugins - current_plugins
@@ -82,14 +82,18 @@ class Plugins
       puts "deleted: #{deleted_plugins}"
     end
     if added_plugins.size > 0 or deleted_plugins.size > 0 or force_update?
-      File.open(File.join(__dir__, "plugins.json"), "w") do |file|
+      File.open(plugins_json, "w") do |file|
         file.write(JSON.pretty_generate(plugins))
       end
     end
   end
 
+  def self.plugins_json
+    File.join(__dir__, "plugins.json")
+  end
+
   def self.force_update?
-    duration = Time.now.to_i - File.mtime("plugins.json").to_i
+    duration = Time.now.to_i - File.mtime(plugins_json).to_i
     seconds_in_a_week = 60 * 60 * 24 * 7
     duration > seconds_in_a_week
   end
