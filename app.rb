@@ -87,6 +87,8 @@ AUTHORS = {
   },
 }
 
+N_RECENT_POSTS=10
+
 #
 # Contents
 #
@@ -227,13 +229,13 @@ end
 get '/blog/' do
   @title = "Blog"
   @articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(5))
-  @recent_articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(5))
+  @recent_articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(N_RECENT_POSTS))
   erb :blog
 end
 
 get '/blog/feed.rss' do
   @title = "Blog RSS Feed"
-  @recent_articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(5))
+  @recent_articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(N_RECENT_POSTS))
   erb :rss, :layout => false
 end
 
@@ -254,7 +256,7 @@ get '/blog/:article' do
   pass if files.nil? || files.empty?
   @article = read_blog_article(files.first)
   @title = @article[:title]
-  @recent_articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(5))
+  @recent_articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(N_RECENT_POSTS))
   erb :blog_single
 end
 
@@ -263,7 +265,7 @@ get '/blog/tag/:tag' do
   urls = File.new("content/blog/tag/#{params[:tag]}").read.split("\n").sort.reverse.take(10)
   article_paths = urls.map do |url| "content#{url}.md" end
   @articles = read_blog_articles(article_paths)
-  @recent_articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(5))
+  @recent_articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(N_RECENT_POSTS))
   erb :blog
 end
 
