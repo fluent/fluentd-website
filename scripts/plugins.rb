@@ -6,6 +6,7 @@ require 'net/https'
 require 'cgi'
 require 'erb'
 require 'yaml'
+require 'time'
 
 def e(s)
   CGI.escape(s.to_s)
@@ -93,7 +94,8 @@ class Plugins
   end
 
   def self.force_update?
-    duration = Time.now.to_i - File.mtime(plugins_json).to_i
+    last_modified = Time.parse(`git log -1 --pretty="format:%ci" #{plugins_json}`)
+    duration = Time.now.to_i - last_modified.to_i
     seconds_in_a_week = 60 * 60 * 24 * 7
     duration > seconds_in_a_week
   end
