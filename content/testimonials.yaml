@@ -3,6 +3,10 @@
     quote: |
         "At Atlassian, we've been impressed by Fluentd and have chosen to use it in Atlassian Cloud's logging and analytics pipeline."
 -
+    company: PITS Global Data Recovery Services
+    quote: |
+        <a href="https://www.pitsdatarecovery.net/">PITS Global Data Recovery Services</a> is a leading data recovery center in the United States specializing in recovering data, including lost or damaged files, from hard drives, SSDs, RAID arrays, flash drives, and other storage media. Fluentd is used to handle highly-loaded internal infrastructure and provide reliable, fully-managed business solutions.
+-
     company: Microsoft
     quote: |
         <a href="https://www.microsoft.com/en-us/server-cloud/operations-management-suite/overview.aspx" style="text-decoration:underline">Operations Management Suite</a> <a href="http://blogs.technet.com/b/momteam/archive/2015/11/04/oms-agent-for-linux-now-available.aspx">uses</a> Fluentd: "The core of the agent uses an existing open source data aggregator called Fluentd.  Fluentd has hundreds of existing plugins, which will make it really easy for you to add new data sources."
