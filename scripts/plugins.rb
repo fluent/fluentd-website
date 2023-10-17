@@ -69,7 +69,8 @@ class Plugins
         info: p["info"],
         authors: p["authors"],
         version: p["version"],
-        downloads: p["downloads"]
+        downloads: p["downloads"],
+        homepage_uri: p["homepage_uri"]
       }
     }
 
