@@ -87,11 +87,39 @@ class Plugins
       File.open(plugins_json, "w") do |file|
         file.write(JSON.pretty_generate(plugins))
       end
+      write_commit_message(added_plugins, deleted_plugins)
     end
+  end
+
+  def self.commit_message_file
+    File.join(__dir__, "message.txt")
   end
 
   def self.plugins_json
     File.join(__dir__, "plugins.json")
+  end
+
+  def self.write_commit_message(added_plugins, deleted_plugins)
+    File.open(commit_message_file, "w") do |file|
+      messages = "Update plugins.json\n"
+      added_messages = ""
+      deleted_messages = ""
+      if added_plugins.size > 0
+        added_messages =<<~EOS
+
+            added plugins:
+              * #{added_plugins.join("\n  * ")}
+          EOS
+      end
+      if deleted_plugins.size > 0
+        deleted_messages =<<~EOS
+
+            deleted plugins:
+              * #{deleted_plugins.join("\n  * ")}
+          EOS
+      end
+      file.write(messages + added_messages + deleted_messages)
+    end
   end
 
   def self.force_update?
