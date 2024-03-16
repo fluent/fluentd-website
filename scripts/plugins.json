@@ -6,7 +6,7 @@
     "info": "Amazon S3 output plugin for Fluentd event collector",
     "authors": "Sadayuki Furuhashi, Masahiro Nakagawa",
     "version": "1.7.2",
-    "downloads": 111032297,
+    "downloads": 111137729,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-s3"
   },
   {
@@ -16,7 +16,7 @@
     "info": "Filter plugin to add Kubernetes metadata",
     "authors": "OpenShift Cluster Logging, Jimmi Dyson",
     "version": "3.4.0",
-    "downloads": 92887072,
+    "downloads": 92971002,
     "homepage_uri": "https://github.com/fabric8io/fluent-plugin-kubernetes_metadata_filter"
   },
   {
@@ -26,7 +26,7 @@
     "info": "Elasticsearch output plugin for Fluent event collector",
     "authors": "diogo, pitr, Hiroshi Hatake",
     "version": "5.4.3",
-    "downloads": 68183071,
+    "downloads": 68244312,
     "homepage_uri": "https://github.com/uken/fluent-plugin-elasticsearch"
   },
   {
@@ -36,7 +36,7 @@
     "info": "Filter plugin for modifying event record",
     "authors": "Masahiro Nakagawa",
     "version": "2.2.0",
-    "downloads": 58533244,
+    "downloads": 58599192,
     "homepage_uri": "https://github.com/repeatedly/fluent-plugin-record-modifier"
   },
   {
@@ -46,7 +46,7 @@
     "info": "Fluentd Output filter plugin. It has designed to rewrite tag like mod_rewrite. Re-emmit a record with rewrited tag when a value matches/unmatches with the regular expression. Also you can change a tag from apache log by domain, status-code(ex. 500 error), user-agent, request-uri, regex-backreference and so on with regular expression.",
     "authors": "Kentaro Yoshida",
     "version": "2.4.0",
-    "downloads": 52510149,
+    "downloads": 52569792,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-rewrite-tag-filter"
   },
   {
@@ -56,7 +56,7 @@
     "info": "Fluentd filter plugin to ignore messages",
     "authors": "Yuri Umezaki",
     "version": "2.0.0",
-    "downloads": 30352432,
+    "downloads": 30404984,
     "homepage_uri": "https://github.com/bungoume/fluent-plugin-ignore-filter"
   },
   {
@@ -66,7 +66,7 @@
     "info": "Fluentd output plugin that sends KPL style aggregated events to Amazon Kinesis.",
     "authors": "Atlassian",
     "version": "0.4.1",
-    "downloads": 29727159,
+    "downloads": 29761280,
     "homepage_uri": "https://github.com/atlassian/fluent-plugin-kinesis-aggregation"
   },
   {
@@ -76,7 +76,7 @@
     "info": "Output plugin to ship logs to a Grafana Loki server",
     "authors": "woodsaj, briangann, cyriltovena",
     "version": "1.2.20",
-    "downloads": 25554806,
+    "downloads": 25609230,
     "homepage_uri": "https://github.com/grafana/loki/"
   },
   {
@@ -86,7 +86,7 @@
     "info": "Fluentd plugin for Apache Kafka > 0.8",
     "authors": "Hidemasa Togashi, Masahiro Nakagawa",
     "version": "0.19.2",
-    "downloads": 24863065,
+    "downloads": 24896757,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-kafka"
   },
   {
@@ -96,7 +96,7 @@
     "info": "this is a Output plugin. Post to \"Amazon Elasticsearch Service\".",
     "authors": "atomita",
     "version": "2.4.1",
-    "downloads": 22576297,
+    "downloads": 22604347,
     "homepage_uri": "https://github.com/atomita/fluent-plugin-aws-elasticsearch-service"
   },
   {
@@ -106,7 +106,7 @@
     "info": "Google Cloud Pub/Sub input/output plugin for Fluentd event collector",
     "authors": "Yoshihiro MIYAI",
     "version": "1.6.0",
-    "downloads": 21949477,
+    "downloads": 21965920,
     "homepage_uri": "https://github.com/mia-0032/fluent-plugin-gcloud-pubsub-custom"
   },
   {
@@ -116,7 +116,7 @@
     "info": "A fluent plugin that collects metrics and exposes for Prometheus.",
     "authors": "Masahiro Sano",
     "version": "2.1.0",
-    "downloads": 21465939,
+    "downloads": 21513132,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-prometheus"
   },
   {
@@ -126,7 +126,7 @@
     "info": "Fluentd output plugin to add Amazon EC2 metadata fields to a event record",
     "authors": "SAKAMOTO Takumi",
     "version": "0.1.3",
-    "downloads": 20973424,
+    "downloads": 20991425,
     "homepage_uri": "https://github.com/takus/fluent-plugin-ec2-metadata"
   },
   {
@@ -136,7 +136,7 @@
     "info": "Fluentd plugin to support Logstash-inspired Grok format for parsing logs",
     "authors": "kiyoto, Kenji Okimoto",
     "version": "2.6.2",
-    "downloads": 18508025,
+    "downloads": 18522029,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-grok-parser"
   },
   {
@@ -146,7 +146,7 @@
     "info": "CloudWatch Logs Plugin for Fluentd",
     "authors": "Ryota Arai",
     "version": "0.14.3",
-    "downloads": 18266864,
+    "downloads": 18298912,
     "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-cloudwatch-logs"
   },
   {
@@ -156,7 +156,7 @@
     "info": "Opensearch output plugin for Fluent event collector",
     "authors": "Hiroshi Hatake",
     "version": "1.1.4",
-    "downloads": 15214286,
+    "downloads": 15241027,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-opensearch"
   },
   {
@@ -166,7 +166,7 @@
     "info": "A generic Fluentd output plugin to send logs to an HTTP endpoint",
     "authors": "Marica Odagaki",
     "version": "1.3.4",
-    "downloads": 11849816,
+    "downloads": 11869617,
     "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-out-http"
   },
   {
@@ -176,7 +176,7 @@
     "info": "Fluentd output plugin that sends events to Amazon Kinesis.",
     "authors": "Amazon Web Services",
     "version": "3.5.0",
-    "downloads": 11576447,
+    "downloads": 11585966,
     "homepage_uri": "https://github.com/awslabs/aws-fluent-plugin-kinesis"
   },
   {
@@ -186,7 +186,7 @@
     "info": "Fluentd Filter plugin to concat multiple event messages",
     "authors": "Kenji Okimoto",
     "version": "2.5.0",
-    "downloads": 11475354,
+    "downloads": 11481119,
     "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-concat"
   },
   {
@@ -196,7 +196,7 @@
     "info": "create sub-plugin dynamically per tags, with template configuration and parameters",
     "authors": "TAGOMORI Satoshi",
     "version": "0.3.3",
-    "downloads": 10571446,
+    "downloads": 10578143,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-forest"
   },
   {
@@ -206,7 +206,7 @@
     "info": "Sends FluentD events to New Relic",
     "authors": "New Relic Logging Team",
     "version": "1.2.3",
-    "downloads": 10239881,
+    "downloads": 10242711,
     "homepage_uri": "https://github.com/newrelic/newrelic-fluentd-output"
   },
   {
@@ -216,7 +216,7 @@
     "info": "Fluentd filter plugin to add geoip",
     "authors": "Yuri Umezaki",
     "version": "1.0.0",
-    "downloads": 9748282,
+    "downloads": 9761825,
     "homepage_uri": "https://github.com/bungoume/fluent-plugin-geoip-filter"
   },
   {
@@ -226,7 +226,7 @@
     "info": "A fluentd output plugin created by Splunk\n  that writes events to splunk indexers over HTTP Event Collector API.",
     "authors": "Splunk Inc.",
     "version": "1.3.3",
-    "downloads": 8433703,
+    "downloads": 8443330,
     "homepage_uri": "https://github.com/splunk/fluent-plugin-splunk-hec"
   },
   {
@@ -236,7 +236,7 @@
     "info": "Buffered fluentd output plugin to GELF (Graylog2).",
     "authors": "Alex Yamauchi, Eric Searcy",
     "version": "1.0.8",
-    "downloads": 7925861,
+    "downloads": 7929923,
     "homepage_uri": "https://github.com/bodhi-space/fluent-plugin-gelf-hs"
   },
   {
@@ -246,7 +246,7 @@
     "info": "MongoDB plugin for Fluentd",
     "authors": "Masahiro Nakagawa",
     "version": "1.6.0",
-    "downloads": 7720188,
+    "downloads": 7746800,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-mongo"
   },
   {
@@ -256,7 +256,7 @@
     "info": "Fluentd filter for throttling logs based on a configurable key.",
     "authors": "François-Xavier Bourlet",
     "version": "0.0.5",
-    "downloads": 7578150,
+    "downloads": 7578856,
     "homepage_uri": "https://github.com/rubrikinc/fluent-plugin-throttle"
   },
   {
@@ -266,7 +266,7 @@
     "info": "Datadog output plugin for Fluent event collector",
     "authors": "Datadog Solutions Team",
     "version": "0.14.2",
-    "downloads": 6821820,
+    "downloads": 6827714,
     "homepage_uri": "http://datadoghq.com"
   },
   {
@@ -276,7 +276,7 @@
     "info": "   Fluentd output plugin which detects exception stack traces in a stream of\n   JSON log messages and combines all single-line messages that belong to the\n   same stack trace into one multi-line message.\n   This is an official Google Ruby gem.\n",
     "authors": "Stackdriver Agents",
     "version": "0.0.15",
-    "downloads": 6790334,
+    "downloads": 6792838,
     "homepage_uri": "https://github.com/GoogleCloudPlatform/fluent-plugin-detect-exceptions"
   },
   {
@@ -286,7 +286,7 @@
     "info": "Tag-normaliser is a `fluentd` plugin to help re-tag logs with Kubernetes metadata. It uses special placeholders to change tag.",
     "authors": "Banzai Cloud",
     "version": "0.1.3",
-    "downloads": 6446387,
+    "downloads": 6472501,
     "homepage_uri": "https://github.com/banzaicloud/fluent-plugin-tag-normaliser"
   },
   {
@@ -296,7 +296,7 @@
     "info": "Multi format parser plugin for Fluentd",
     "authors": "Masahiro Nakagawa",
     "version": "1.1.0",
-    "downloads": 6012767,
+    "downloads": 6025561,
     "homepage_uri": "https://github.com/repeatedly/fluent-plugin-multi-format-parser"
   },
   {
@@ -306,7 +306,7 @@
     "info": "Fluentd plugin to add or replace fields of a event record",
     "authors": "Naotoshi Seo",
     "version": "0.9.1",
-    "downloads": 5665786,
+    "downloads": 5667903,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-record-reformer"
   },
   {
@@ -316,7 +316,7 @@
     "info": "This is copy of out_route.rb originally written by frsyuki",
     "authors": "TAGOMORI Satoshi, FURUHASHI Sadayuki",
     "version": "1.0.0",
-    "downloads": 5536672,
+    "downloads": 5543655,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-route"
   },
   {
@@ -326,7 +326,7 @@
     "info": "Fluentd output plugin. Rename keys which match given regular expressions, assign new tags and re-emit the records.",
     "authors": "Shunwen Hsiao, Julian Grinblat, Hiroshi Hatake",
     "version": "0.4.1",
-    "downloads": 5109715,
+    "downloads": 5113140,
     "homepage_uri": "https://github.com/shunwen/fluent-plugin-rename-key"
   },
   {
@@ -336,7 +336,7 @@
     "info": "Fluentd filter plugin to external ruby script",
     "authors": "SNakano",
     "version": "0.1.1",
-    "downloads": 4753867,
+    "downloads": 4757909,
     "homepage_uri": "https://github.com/SNakano/fluent-plugin-script"
   },
   {
@@ -346,7 +346,7 @@
     "info": "   Fluentd plugins for the Stackdriver Logging API, which will make logs\n   viewable in the Stackdriver Logs Viewer and can optionally store them\n   in Google Cloud Storage and/or BigQuery.\n   This is an official Google Ruby gem.\n",
     "authors": "Stackdriver Agents Team",
     "version": "0.13.1",
-    "downloads": 4697268,
+    "downloads": 4697534,
     "homepage_uri": "https://github.com/GoogleCloudPlatform/fluent-plugin-google-cloud"
   },
   {
@@ -356,7 +356,7 @@
     "info": "This is a fluentd input plugin. It reads logs from the systemd journal.",
     "authors": "Ed Robinson",
     "version": "1.0.5",
-    "downloads": 4542107,
+    "downloads": 4546707,
     "homepage_uri": "https://github.com/reevoo/fluent-plugin-systemd"
   },
   {
@@ -366,7 +366,7 @@
     "info": "   Fluentd output plugin which detects exception stack traces in a stream of\n   JSON log messages and combines all single-line messages that belong to the\n   same stack trace into one multi-line message.\n   This is Not an official Google Ruby gem. Added Multiworker to true\n",
     "authors": "Deloitte Agents",
     "version": "0.0.15",
-    "downloads": 4285180,
+    "downloads": 4285814,
     "homepage_uri": "https://github.com/GoogleCloudPlatform/fluent-plugin-group-exceptions"
   },
   {
@@ -376,7 +376,7 @@
     "info": "Message forwarding over SSL with authentication",
     "authors": "TAGOMORI Satoshi",
     "version": "0.4.5",
-    "downloads": 4003277,
+    "downloads": 4003982,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-secure-forward"
   },
   {
@@ -386,7 +386,7 @@
     "info": "CRI log format parser for Fluentd",
     "authors": "Masahiro Nakagawa",
     "version": "0.1.1",
-    "downloads": 3751240,
+    "downloads": 3765912,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-parser-cri"
   },
   {
@@ -396,7 +396,7 @@
     "info": "Output plugin to SumoLogic HTTP Endpoint",
     "authors": "Steven Adams, Frank Reno",
     "version": "1.9.0",
-    "downloads": 3726850,
+    "downloads": 3730772,
     "homepage_uri": "https://github.com/SumoLogic/fluentd-output-sumologic"
   },
   {
@@ -406,7 +406,7 @@
     "info": "A fluentd plugin to flatten nested hash structure as a flat record",
     "authors": "Masahiro Sano",
     "version": "0.5.1",
-    "downloads": 3540380,
+    "downloads": 3543743,
     "homepage_uri": "https://github.com/kazegusuri/fluent-plugin-flatten-hash"
   },
   {
@@ -416,7 +416,7 @@
     "info": "fluentd plugin to parse single field, or to combine log structure into single field",
     "authors": "TAGOMORI Satoshi",
     "version": "0.6.1",
-    "downloads": 3177259,
+    "downloads": 3177417,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-parser"
   },
   {
@@ -426,7 +426,7 @@
     "info": "Output plugin to ship logs to a Grafana Loki server",
     "authors": "woodsaj, briangann",
     "version": "0.0.1",
-    "downloads": 3009098,
+    "downloads": 3021045,
     "homepage_uri": "https://github.com/grafana/loki/"
   },
   {
@@ -436,7 +436,7 @@
     "info": "fluentd plugin to grep messages",
     "authors": "Naotoshi Seo",
     "version": "0.3.4",
-    "downloads": 2905171,
+    "downloads": 2906295,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-grep"
   },
   {
@@ -446,7 +446,7 @@
     "info": "Coralogix Fluentd plugin to send logs to Coralogix server.",
     "authors": "Royee Goldberg",
     "version": "1.0.9",
-    "downloads": 2627222,
+    "downloads": 2635438,
     "homepage_uri": "http://www.coralogix.com"
   },
   {
@@ -456,7 +456,7 @@
     "info": "de-dot field name for elasticsearch 2.x",
     "authors": "Tomoyuki Sugimura",
     "version": "1.0.0",
-    "downloads": 2604265,
+    "downloads": 2619213,
     "homepage_uri": "https://github.com/lunardial/fluent-plugin-dedot_filter"
   },
   {
@@ -466,7 +466,7 @@
     "info": "Fluentd Filter plugin to add information about geographical location of IP addresses with Maxmind GeoIP databases.",
     "authors": "Kentaro Yoshida",
     "version": "1.3.2",
-    "downloads": 2578830,
+    "downloads": 2580180,
     "homepage_uri": "https://github.com/y-ken/fluent-plugin-geoip"
   },
   {
@@ -476,7 +476,7 @@
     "info": "fluent Slack plugin",
     "authors": "Keisuke SOGAWA, Naotoshi Seo",
     "version": "0.6.7",
-    "downloads": 2511320,
+    "downloads": 2513401,
     "homepage_uri": "https://github.com/sowawa/fluent-plugin-slack"
   },
   {
@@ -486,7 +486,7 @@
     "info": "Fluentd plugin to store data on Google BigQuery, by load, or by stream inserts",
     "authors": "Naoya Ito, joker1007",
     "version": "3.1.0",
-    "downloads": 2343845,
+    "downloads": 2344136,
     "homepage_uri": "https://github.com/kaizenplatform/fluent-plugin-bigquery"
   },
   {
@@ -496,7 +496,7 @@
     "info": "Fluentd output plugin for remote syslog",
     "authors": "Richard Lee, Daijiro Fukuda",
     "version": "1.1.0",
-    "downloads": 2262150,
+    "downloads": 2265096,
     "homepage_uri": "https://github.com/dlackty/fluent-plugin-remote_syslog"
   },
   {
@@ -506,7 +506,7 @@
     "info": "fluentd plugin to pickup sample data from matched massages",
     "authors": "TAGOMORI Satoshi",
     "version": "1.2.0",
-    "downloads": 2218736,
+    "downloads": 2220294,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-sampling-filter"
   },
   {
@@ -516,7 +516,7 @@
     "info": "Fluentd pluging (fluent.org) for output to Logz.io (logz.io)",
     "authors": "Yury Kotov, Roi Rav-Hon, Arcadiy Ivanov, Miri Bar",
     "version": "0.2.2",
-    "downloads": 2165173,
+    "downloads": 2177551,
     "homepage_uri": "https://github.com/logzio/fluent-plugin-logzio"
   },
   {
@@ -526,7 +526,7 @@
     "info": "fluent plugin for rabbitmq (AMQP)",
     "authors": "NTT Communications",
     "version": "0.1.2",
-    "downloads": 2146827,
+    "downloads": 2147798,
     "homepage_uri": "https://github.com/nttcom/fluent-plugin-rabbitmq"
   },
   {
@@ -536,7 +536,7 @@
     "info": "Fluentd filter output plugin to anonymize records with HMAC of MD5/SHA1/SHA256/SHA384/SHA512 algorithms. This data masking plugin protects privacy data such as UserID, Email, Phone number, IPv4/IPv6 address and so on.",
     "authors": "Kentaro Yoshida",
     "version": "1.0.0",
-    "downloads": 1991813,
+    "downloads": 1991904,
     "homepage_uri": "https://github.com/y-ken/fluent-plugin-anonymizer"
   },
   {
@@ -546,7 +546,7 @@
     "info": "Parser plugin that serializes nested JSON attributes",
     "authors": "Yagnesh Mistry",
     "version": "0.0.4",
-    "downloads": 1914385,
+    "downloads": 1922308,
     "homepage_uri": "https://github.com/ysh7/fluent-plugin-serialize-nested-json"
   },
   {
@@ -556,7 +556,7 @@
     "info": "Fluent input plugin for MySQL slow query log file.",
     "authors": "Yuku Takahashi",
     "version": "0.0.9",
-    "downloads": 1598383,
+    "downloads": 1602595,
     "homepage_uri": "https://github.com/yuku-t/fluent-plugin-mysqlslowquery"
   },
   {
@@ -566,7 +566,7 @@
     "info": "Amazon SQS input/output plugin for Fluent event collector",
     "authors": "Yuri Odagiri",
     "version": "3.0.0",
-    "downloads": 1591552,
+    "downloads": 1592592,
     "homepage_uri": "https://github.com/ixixi/fluent-plugin-sqs"
   },
   {
@@ -576,7 +576,7 @@
     "info": "output plugin for Mail",
     "authors": "Yuichi UEMURA, Naotoshi Seo",
     "version": "0.3.0",
-    "downloads": 1541909,
+    "downloads": 1542460,
     "homepage_uri": "https://github.com/u-ichi/fluent-plugin-mail"
   },
   {
@@ -586,7 +586,7 @@
     "info": "Elastic beats plugin for Fluentd event collector",
     "authors": "Masahiro Nakagawa",
     "version": "1.1.0",
-    "downloads": 1494163,
+    "downloads": 1494642,
     "homepage_uri": "https://github.com/repeatedly/fluent-plugin-beats"
   },
   {
@@ -596,7 +596,7 @@
     "info": "Fluentd filter plugin to suppress same messages",
     "authors": "FUJIWARA Shunichiro",
     "version": "1.1.0",
-    "downloads": 1446952,
+    "downloads": 1447007,
     "homepage_uri": "https://github.com/fujiwara/fluent-plugin-suppress"
   },
   {
@@ -606,18 +606,8 @@
     "info": "A Fluentd filter plugin to cast record types",
     "authors": "Naotoshi Seo",
     "version": "0.0.3",
-    "downloads": 1421783,
+    "downloads": 1430335,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-filter_typecast"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-docker",
-    "info": "fluentd plugin to handle and format Docker logs.",
-    "authors": "Eduardo Silva",
-    "version": "0.1.0",
-    "downloads": 1392953,
-    "homepage_uri": "https://github.com/edsiper/fluent-plugin-docker"
   },
   {
     "obsolete": null,
@@ -626,7 +616,7 @@
     "info": "Azure Storage output plugin for Fluentd event collector",
     "authors": "Hidemasa Togashi",
     "version": "0.1.0",
-    "downloads": 1392507,
+    "downloads": 1404052,
     "homepage_uri": "https://github.com/htgc/fluent-plugin-azurestorage"
   },
   {
@@ -636,8 +626,18 @@
     "info": "fluentd plugin to parse single field, or to combine log structure into single field, and support multiline format",
     "authors": "Jerry Zhou",
     "version": "0.1.1",
-    "downloads": 1390319,
+    "downloads": 1395422,
     "homepage_uri": "https://github.com/quick-sort/fluent-plugin-multiline-parser"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-docker",
+    "info": "fluentd plugin to handle and format Docker logs.",
+    "authors": "Eduardo Silva",
+    "version": "0.1.0",
+    "downloads": 1392958,
+    "homepage_uri": "https://github.com/edsiper/fluent-plugin-docker"
   },
   {
     "obsolete": null,
@@ -646,7 +646,7 @@
     "info": "A GELF input plugin for fluentd",
     "authors": "Daniel Malon",
     "version": "0.3.2",
-    "downloads": 1342146,
+    "downloads": 1349966,
     "homepage_uri": "https://github.com/MerlinDMC/fluent-plugin-input-gelf"
   },
   {
@@ -656,7 +656,7 @@
     "info": "Fluentd plugin to count the number of matched messages, and emit if exceeds the threshold",
     "authors": "Naotoshi Seo",
     "version": "0.6.0",
-    "downloads": 1316969,
+    "downloads": 1317492,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-grepcounter"
   },
   {
@@ -666,7 +666,7 @@
     "info": "Splunk output plugin for Fluentd",
     "authors": "Yuki Ito, Masahiro Nakagawa",
     "version": "0.10.2",
-    "downloads": 1315503,
+    "downloads": 1316142,
     "homepage_uri": ""
   },
   {
@@ -676,7 +676,7 @@
     "info": "Fluentd filter plugin to spin entry with an array field into multiple entries.",
     "authors": "Tema Novikov",
     "version": "0.1.0",
-    "downloads": 1299719,
+    "downloads": 1300033,
     "homepage_uri": "https://github.com/temoon/fluent-plugin-array-spin"
   },
   {
@@ -686,7 +686,7 @@
     "info": "Output plugin for the Splunk HTTP Event Collector.",
     "authors": "Coen Meerbeek",
     "version": "2.3",
-    "downloads": 1126402,
+    "downloads": 1127205,
     "homepage_uri": "https://github.com/cmeerbeek/fluent-plugin-splunkhec"
   },
   {
@@ -696,7 +696,7 @@
     "info": "Redis(zset/set/list/string/publish) output plugin for Fluentd...",
     "authors": "moaikids, HANAI Tohru aka pokehanai",
     "version": "0.2.0",
-    "downloads": 1109081,
+    "downloads": 1113827,
     "homepage_uri": "https://github.com/pokehanai/fluent-plugin-redis-store"
   },
   {
@@ -706,7 +706,7 @@
     "info": "Plugin to counts messages/bytes that matches, per minutes/hours/days",
     "authors": "TAGOMORI Satoshi",
     "version": "1.3.0",
-    "downloads": 1099361,
+    "downloads": 1100452,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-flowcounter"
   },
   {
@@ -716,7 +716,7 @@
     "info": "Fluentd filter plugin to parse user-agent",
     "authors": "Yuri Umezaki",
     "version": "1.2.0",
-    "downloads": 1053432,
+    "downloads": 1054653,
     "homepage_uri": "https://github.com/bungoume/fluent-plugin-ua-parser"
   },
   {
@@ -726,7 +726,7 @@
     "info": "fluent filter plugin to ensure @timestamp is in proper format",
     "authors": "Richard Li",
     "version": "0.3.1",
-    "downloads": 1035863,
+    "downloads": 1035865,
     "homepage_uri": "https://github.com/ecwws/fluent-plugin-elasticsearch-timestamp-check"
   },
   {
@@ -736,18 +736,8 @@
     "info": "Fluent plugin to parse nginx error logs on v1.0 (td-agent3)",
     "authors": "Carlos Montiers A.",
     "version": "0.2.0",
-    "downloads": 929133,
+    "downloads": 929142,
     "homepage_uri": "https://github.com/carlos-montiers/fluent-plugin-nginx-error-multiline"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-azurestorage-gen2",
-    "info": "Azure Storage output plugin for Fluentd event collector",
-    "authors": "Oliver Szabo",
-    "version": "0.3.5",
-    "downloads": 925510,
-    "homepage_uri": "https://github.com/oleewere/fluent-plugin-azurestorage-gen2"
   },
   {
     "obsolete": null,
@@ -756,8 +746,18 @@
     "info": "Amazon ELB log input plugin for fluentd",
     "authors": "shinsaka",
     "version": "1.3.2",
-    "downloads": 925229,
+    "downloads": 926621,
     "homepage_uri": "https://github.com/shinsaka/fluent-plugin-elb-log"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-azurestorage-gen2",
+    "info": "Azure Storage output plugin for Fluentd event collector",
+    "authors": "Oliver Szabo",
+    "version": "0.3.5",
+    "downloads": 925653,
+    "homepage_uri": "https://github.com/oleewere/fluent-plugin-azurestorage-gen2"
   },
   {
     "obsolete": null,
@@ -766,7 +766,7 @@
     "info": "Fluentd redaction filter plugin for anonymize specific strings in text data.",
     "authors": "Oliver Szabo",
     "version": "0.1.3",
-    "downloads": 784616,
+    "downloads": 785102,
     "homepage_uri": "https://github.com/oleewere/fluent-plugin-redaction"
   },
   {
@@ -776,7 +776,7 @@
     "info": "Send Fluentd buffered logs to VMware Log Intelligence",
     "authors": "Alexander Blagoev, Chaur Wu",
     "version": "2.0.8",
-    "downloads": 754993,
+    "downloads": 759219,
     "homepage_uri": "http://github.com/vmware/fluent-plugin-vmware-log-intelligence"
   },
   {
@@ -786,7 +786,7 @@
     "info": "Fluentd plugin to filter if a specific key is present or not in event logs.",
     "authors": "Kohei Hasegawa",
     "version": "1.0.0",
-    "downloads": 736020,
+    "downloads": 736330,
     "homepage_uri": "https://github.com/banyan/fluent-plugin-filter_keys"
   },
   {
@@ -796,7 +796,7 @@
     "info": "FluentD output plugin to send messages via Syslog rfc5424.",
     "authors": "Pivotal",
     "version": "0.8.0",
-    "downloads": 724665,
+    "downloads": 724682,
     "homepage_uri": "https://github.com/cloudfoundry/fluent-plugin-syslog_rfc5424"
   },
   {
@@ -806,7 +806,7 @@
     "info": "Fluentd parser plugin that parses logfmt-style log entries",
     "authors": "Moriyoshi Koizumi &lt;mozo@mozo.jp&gt;",
     "version": "0.0.0",
-    "downloads": 711101,
+    "downloads": 723129,
     "homepage_uri": "https://github.com/moriyoshi/fluent-plugin-parser-logfmt"
   },
   {
@@ -816,7 +816,7 @@
     "info": "fluent-plungin-jq is a collection of fluentd plugins which uses the jq engine to transform or format fluentd events.",
     "authors": "Zhimin (Gimi) Liang",
     "version": "0.5.1",
-    "downloads": 706555,
+    "downloads": 706600,
     "homepage_uri": "https://github.com/Gimi/fluent-plugin-jq"
   },
   {
@@ -826,7 +826,7 @@
     "info": "For WebHDFS and HttpFs of Hadoop HDFS",
     "authors": "TAGOMORI Satoshi",
     "version": "1.5.0",
-    "downloads": 689040,
+    "downloads": 689083,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-webhdfs"
   },
   {
@@ -836,7 +836,7 @@
     "info": "Fluentd pluging (fluentd.org) for output to loggly (loggly.com)",
     "authors": "Patrik Antonsson",
     "version": "0.0.9",
-    "downloads": 659584,
+    "downloads": 659604,
     "homepage_uri": "https://github.com/patant/fluent-plugin-loggly"
   },
   {
@@ -846,7 +846,7 @@
     "info": "Label-Router helps routing log messages based on their labels and namespace tag in a Kubernetes environment.",
     "authors": "Banzai Cloud",
     "version": "0.2.10",
-    "downloads": 619316,
+    "downloads": 619324,
     "homepage_uri": "https://github.com/banzaicloud/fluent-plugin-label-router"
   },
   {
@@ -856,7 +856,7 @@
     "info": "Output filter plugin to retag",
     "authors": "Masahiro Yamauchi",
     "version": "0.1.1",
-    "downloads": 595034,
+    "downloads": 609221,
     "homepage_uri": "https://github.com/algas/fluent-plugin-retag"
   },
   {
@@ -866,7 +866,7 @@
     "info": "To count records with string fields by regexps (To count records with numbers, use numeric-counter)",
     "authors": "TAGOMORI Satoshi",
     "version": "1.0.0",
-    "downloads": 576081,
+    "downloads": 577051,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-datacounter"
   },
   {
@@ -876,7 +876,7 @@
     "info": "Multiprocess agent plugin for Fluentd event collector",
     "authors": "Sadayuki Furuhashi",
     "version": "0.2.2",
-    "downloads": 562601,
+    "downloads": 562769,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-multiprocess"
   },
   {
@@ -886,7 +886,7 @@
     "info": "Remote Syslog Output Fluentd plugin for papertrail",
     "authors": "Jonathan Lozinski, Alex Ouzounis, Chris Rust, Chris Erway",
     "version": "0.2.8",
-    "downloads": 557825,
+    "downloads": 557864,
     "homepage_uri": "https://github.com/solarwinds/fluent-plugin-papertrail"
   },
   {
@@ -896,7 +896,7 @@
     "info": "fluent plugin for string scrub.",
     "authors": "Noriaki Katayama",
     "version": "1.0.1",
-    "downloads": 530172,
+    "downloads": 531908,
     "homepage_uri": "https://github.com/kataring/fluent-plugin-string-scrub"
   },
   {
@@ -906,7 +906,7 @@
     "info": "fluentd output plugin to send metrics to Esty StatsD monitor",
     "authors": "Chris Song",
     "version": "1.0.3",
-    "downloads": 523477,
+    "downloads": 523971,
     "homepage_uri": "https://github.com/fakechris/fluent-plugin-statsd"
   },
   {
@@ -916,7 +916,7 @@
     "info": "fluentd plug-in for HTTP Health Check",
     "authors": "k63207",
     "version": "0.1.0",
-    "downloads": 517013,
+    "downloads": 517139,
     "homepage_uri": "https://github.com/k63207/fluent-plugin-http-healthcheck"
   },
   {
@@ -926,18 +926,8 @@
     "info": "Dstat Input plugin for Fluent event collector",
     "authors": "Shunsuke Mikami",
     "version": "1.0.0",
-    "downloads": 513139,
+    "downloads": 513142,
     "homepage_uri": "http://github.com/shun0102/fluent-plugin-dstat"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-record_splitter",
-    "info": "output split array plugin for fluentd",
-    "authors": "Yuri Odagiri",
-    "version": "0.2.1",
-    "downloads": 483894,
-    "homepage_uri": "https://github.com/ixixi/fluent-plugin-record_splitter"
   },
   {
     "obsolete": null,
@@ -946,8 +936,18 @@
     "info": "Converts fluentd log events into GELF format and sends them to Graylog",
     "authors": "Funding Circle",
     "version": "0.2.6",
-    "downloads": 482455,
+    "downloads": 487195,
     "homepage_uri": null
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-record_splitter",
+    "info": "output split array plugin for fluentd",
+    "authors": "Yuri Odagiri",
+    "version": "0.2.1",
+    "downloads": 483985,
+    "homepage_uri": "https://github.com/ixixi/fluent-plugin-record_splitter"
   },
   {
     "obsolete": null,
@@ -956,7 +956,7 @@
     "info": "Fluentd plugin to upload logs to Azure Storage append blobs.",
     "authors": "Microsoft Corporation",
     "version": "0.2.1",
-    "downloads": 479024,
+    "downloads": 479497,
     "homepage_uri": "https://github.com/Microsoft/fluent-plugin-azure-storage-append-blob"
   },
   {
@@ -966,7 +966,7 @@
     "info": "A mutate filter for Fluent which functions like Logstash.",
     "authors": "Jonathan Serafini",
     "version": "1.0.7",
-    "downloads": 464993,
+    "downloads": 465011,
     "homepage_uri": "https://github.com/JonathanSerafini/fluent-plugin-mutate_filter"
   },
   {
@@ -976,7 +976,7 @@
     "info": "for heartbeat monitoring of Fluentd processes",
     "authors": "TAGOMORI Satoshi",
     "version": "1.0.0",
-    "downloads": 454060,
+    "downloads": 454864,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-ping-message"
   },
   {
@@ -986,7 +986,7 @@
     "info": "A Fluentd input plugin for collecting Kubernetes objects, e.g. pods, namespaces, events, etc. by pulling or watching.",
     "authors": "Splunk Inc.",
     "version": "1.2.3",
-    "downloads": 448834,
+    "downloads": 449857,
     "homepage_uri": "https://github.com/splunk/fluent-plugin-kubernetes-objects"
   },
   {
@@ -996,7 +996,7 @@
     "info": "Fluent output filter plugin for parsing key/value fields in records",
     "authors": "Tomas Pokorny",
     "version": "0.1.2",
-    "downloads": 440751,
+    "downloads": 440764,
     "homepage_uri": "https://github.com/tomas-zemres/fluent-plugin-fields-parser"
   },
   {
@@ -1006,7 +1006,7 @@
     "info": "Input parser plugin which allows arbitrary transformation of input JSON",
     "authors": "Grayson Chao, Matthew Jourard",
     "version": "0.0.2",
-    "downloads": 438269,
+    "downloads": 438330,
     "homepage_uri": "https://github.com/mjourard/fluent-plugin-json-transform/"
   },
   {
@@ -1016,7 +1016,7 @@
     "info": "Treasure Data Cloud Data Service plugin for Fluentd",
     "authors": "Treasure Data, Inc.",
     "version": "1.2.0",
-    "downloads": 437592,
+    "downloads": 437640,
     "homepage_uri": "https://www.treasuredata.com/"
   },
   {
@@ -1026,18 +1026,8 @@
     "info": "Fluent plugin for Dogstatsd, that is statsd server for Datadog.",
     "authors": "Ryota Arai",
     "version": "0.0.6",
-    "downloads": 416005,
+    "downloads": 416155,
     "homepage_uri": "https://github.com/ryotarai/fluent-plugin-dogstatsd"
-  },
-  {
-    "obsolete": true,
-    "note": "Merged in in_tail in Fluentd v0.10.45. [fluent/fluentd#269](https://github.com/fluent/fluentd/issues/269)\n",
-    "name": "fluent-plugin-tail-multiline",
-    "info": "Extend tail plugin to support log with multiple line",
-    "authors": "Tomohisa Ota",
-    "version": "0.1.5",
-    "downloads": 408835,
-    "homepage_uri": "http://github.com/tomohisaota/fluent-plugin-tail-multiline"
   },
   {
     "obsolete": null,
@@ -1046,8 +1036,18 @@
     "info": "Dictionary based map filter for Fluentd",
     "authors": "Masahiro Nakagawa",
     "version": "0.1.1",
-    "downloads": 399994,
+    "downloads": 413681,
     "homepage_uri": "https://github.com/repeatedly/fluent-plugin-dict-map"
+  },
+  {
+    "obsolete": true,
+    "note": "Merged in in_tail in Fluentd v0.10.45. [fluent/fluentd#269](https://github.com/fluent/fluentd/issues/269)\n",
+    "name": "fluent-plugin-tail-multiline",
+    "info": "Extend tail plugin to support log with multiple line",
+    "authors": "Tomohisa Ota",
+    "version": "0.1.5",
+    "downloads": 408844,
+    "homepage_uri": "http://github.com/tomohisaota/fluent-plugin-tail-multiline"
   },
   {
     "obsolete": null,
@@ -1056,7 +1056,7 @@
     "info": "generate hash(md5/sha1/sha256/sha512) value",
     "authors": "m.takemi",
     "version": "1.1",
-    "downloads": 387583,
+    "downloads": 387807,
     "homepage_uri": "https://qos.dev7.net/~masafumi/"
   },
   {
@@ -1066,7 +1066,7 @@
     "info": "Parser plugin that parses JSON attributes with JSON strings in them",
     "authors": "Gavin M. Roy",
     "version": "0.1.4",
-    "downloads": 380831,
+    "downloads": 380841,
     "homepage_uri": "https://github.com/gmr/fluent-plugin-json-in-json"
   },
   {
@@ -1076,7 +1076,7 @@
     "info": "Google Cloud Storage output plugin for Fluentd",
     "authors": "Daichi HIRATA",
     "version": "0.4.4",
-    "downloads": 378087,
+    "downloads": 379657,
     "homepage_uri": "https://github.com/daichirata/fluent-plugin-gcs"
   },
   {
@@ -1086,7 +1086,7 @@
     "info": "Simple output filter",
     "authors": "Muddy Dixon",
     "version": "0.1.0",
-    "downloads": 375541,
+    "downloads": 375955,
     "homepage_uri": "https://github.com/muddydixon/fluent-plugin-filter"
   },
   {
@@ -1096,18 +1096,8 @@
     "info": "Fluentd plugin to rewrite tags/values along with pattern matching and re-emit them.",
     "authors": "Kentaro Kuribayashi",
     "version": "0.1.1",
-    "downloads": 363165,
+    "downloads": 363629,
     "homepage_uri": "http://github.com/kentaro/fluent-plugin-rewrite"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-buffer-lightening",
-    "info": "Fluentd memory buffer plugin with many types of chunk limits",
-    "authors": "TAGOMORI Satoshi",
-    "version": "0.0.2",
-    "downloads": 359189,
-    "homepage_uri": "https://github.com/tagomoris/fluent-plugin-buffer-lightening"
   },
   {
     "obsolete": null,
@@ -1116,8 +1106,18 @@
     "info": "Fluentd plugin to calculate min/max/avg/Xpercentile values, and emit these data as message",
     "authors": "TAGOMORI Satoshi",
     "version": "1.0.3",
-    "downloads": 358513,
+    "downloads": 359369,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-numeric-monitor"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-buffer-lightening",
+    "info": "Fluentd memory buffer plugin with many types of chunk limits",
+    "authors": "TAGOMORI Satoshi",
+    "version": "0.0.2",
+    "downloads": 359191,
+    "homepage_uri": "https://github.com/tagomoris/fluent-plugin-buffer-lightening"
   },
   {
     "obsolete": null,
@@ -1126,7 +1126,7 @@
     "info": "Filter plugin to add Docker metadata",
     "authors": "Jimmi Dyson",
     "version": "0.1.3",
-    "downloads": 353905,
+    "downloads": 353980,
     "homepage_uri": "https://github.com/fabric8io/fluent-plugin-docker_metadata_filter"
   },
   {
@@ -1136,7 +1136,7 @@
     "info": "A Fluentd output plugin to send logs to Grafana Loki",
     "authors": "Edan Shahmoon",
     "version": "0.3.0",
-    "downloads": 345188,
+    "downloads": 345229,
     "homepage_uri": "https://github.com/eeddaann/fluent-plugin-loki"
   },
   {
@@ -1146,7 +1146,7 @@
     "info": "Fluentd plugin to re-emit messages avoiding infinity match loop",
     "authors": "Naotoshi Seo",
     "version": "0.3.2",
-    "downloads": 330319,
+    "downloads": 330359,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-reemit"
   },
   {
@@ -1166,7 +1166,7 @@
     "info": "This gem will forward output from fluentd to Barito-Flow",
     "authors": "BaritoLog",
     "version": "0.3.5",
-    "downloads": 312959,
+    "downloads": 313106,
     "homepage_uri": "https://github.com/BaritoLog/Barito-Fluent-Plugin"
   },
   {
@@ -1186,7 +1186,7 @@
     "info": "InfluxDB output plugin for Fluentd",
     "authors": "Masahiro Nakagawa, FangLi",
     "version": "2.0.0",
-    "downloads": 308585,
+    "downloads": 309635,
     "homepage_uri": "https://github.com/fangli/fluent-plugin-influxdb"
   },
   {
@@ -1196,7 +1196,7 @@
     "info": "SQL input/output plugin for Fluentd event collector",
     "authors": "Sadayuki Furuhashi",
     "version": "2.3.1",
-    "downloads": 277089,
+    "downloads": 277194,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-sql"
   },
   {
@@ -1216,7 +1216,7 @@
     "info": "fluent-plugin-auto-typecast-filter",
     "authors": "Shotaro Chiba",
     "version": "0.3.2",
-    "downloads": 255379,
+    "downloads": 255380,
     "homepage_uri": "https://github.com/s5o-c/fluent-plugin-auto-typecast-filter"
   },
   {
@@ -1226,7 +1226,7 @@
     "info": "Azure Log Analytics output plugin for Fluentd",
     "authors": "Yoichi Kawasaki",
     "version": "0.7.0",
-    "downloads": 251686,
+    "downloads": 251735,
     "homepage_uri": "http://github.com/yokawasa/fluent-plugin-azure-loganalytics"
   },
   {
@@ -1236,7 +1236,7 @@
     "info": "Fluentd out_copy extension",
     "authors": "Naotoshi Seo",
     "version": "0.1.0",
-    "downloads": 251260,
+    "downloads": 251348,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-copy_ex"
   },
   {
@@ -1246,7 +1246,7 @@
     "info": "Fluentd Plugin for Supplying Output to LogDNA.",
     "authors": "LogDNA, Inc.",
     "version": "0.4.0",
-    "downloads": 251138,
+    "downloads": 251143,
     "homepage_uri": "https://github.com/logdna/fluent-plugin-logdna"
   },
   {
@@ -1256,7 +1256,7 @@
     "info": "fluentd output plugin for post to teams",
     "authors": "nyamairi",
     "version": "1.1.0",
-    "downloads": 242984,
+    "downloads": 244742,
     "homepage_uri": "https://github.com/nyamairi/fluent-plugin-teams"
   },
   {
@@ -1266,7 +1266,7 @@
     "info": "This plugin provides directives for loop extraction",
     "authors": "TAGOMORI Satoshi",
     "version": "1.0.1",
-    "downloads": 230337,
+    "downloads": 230356,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-config-expander"
   },
   {
@@ -1276,7 +1276,7 @@
     "info": "A Fluentd filter plugin to filter empty keys",
     "authors": "Al-waleed Shihadeh",
     "version": "0.0.4",
-    "downloads": 225960,
+    "downloads": 226792,
     "homepage_uri": "https://github.com/wshihadeh/fluent-plugin-filter_empty_keys.git"
   },
   {
@@ -1286,7 +1286,7 @@
     "info": "alternative implementation of out_file, with various configurations",
     "authors": "TAGOMORI Satoshi",
     "version": "0.2.2",
-    "downloads": 225231,
+    "downloads": 225250,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-file-alternative"
   },
   {
@@ -1296,7 +1296,7 @@
     "info": "This rubygem does not have a description or summary.",
     "authors": "Masahiro Nakagawa",
     "version": "1.0.0",
-    "downloads": 222130,
+    "downloads": 222132,
     "homepage_uri": "http://www.treasuredata.com/"
   },
   {
@@ -1306,7 +1306,7 @@
     "info": "Fluentd filter plugin to split array",
     "authors": "SNakano",
     "version": "0.1.1",
-    "downloads": 220982,
+    "downloads": 221102,
     "homepage_uri": "https://github.com/SNakano/fluent-plugin-split-array"
   },
   {
@@ -1326,7 +1326,7 @@
     "info": "fluent plugin to insert on PostgreSQL",
     "authors": "TAGOMORI Satoshi, Diogo Terror, pitr",
     "version": "0.1.0",
-    "downloads": 205052,
+    "downloads": 206801,
     "homepage_uri": "https://github.com/uken/fluent-plugin-postgres"
   },
   {
@@ -1336,7 +1336,7 @@
     "info": "Fluentd parser plugin to parse key value pairs",
     "authors": "kiyoto",
     "version": "1.0.0",
-    "downloads": 200166,
+    "downloads": 200201,
     "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-kv-parser"
   },
   {
@@ -1346,7 +1346,7 @@
     "info": "Output filter plugin to add messages",
     "authors": "yu yamada",
     "version": "0.0.7",
-    "downloads": 190443,
+    "downloads": 190444,
     "homepage_uri": "https://github.com/yu-yamada/fluent-plugin-add"
   },
   {
@@ -1356,7 +1356,7 @@
     "info": "Extended tail input plugin",
     "authors": "Yoshihisa Tanaka",
     "version": "0.1.1",
-    "downloads": 189777,
+    "downloads": 189787,
     "homepage_uri": "https://github.com/yosisa/fluent-plugin-tail-ex"
   },
   {
@@ -1366,7 +1366,7 @@
     "info": "Fluentd output plugin for Azure Event Hubs",
     "authors": "Hidemasa Togashi, Toddy Mladenov, Justin Seely, Chih Hsiang Hsu",
     "version": "0.0.9",
-    "downloads": 185794,
+    "downloads": 185890,
     "homepage_uri": "https://github.com/ChihSeanHsu/fluent-plugin-azureeventhubs-batched"
   },
   {
@@ -1376,7 +1376,7 @@
     "info": "This is a Fluentd plugin to parse uri and query string in log messages.",
     "authors": "Daichi HIRATA",
     "version": "0.3.0",
-    "downloads": 185751,
+    "downloads": 185761,
     "homepage_uri": "https://github.com/daichirata/fluent-plugin-uri-parser"
   },
   {
@@ -1386,7 +1386,7 @@
     "info": "Fluentd input/output plugin to handle Facebook scribed thrift protocol",
     "authors": "Kazuki Ohta, TAGOMORI Satoshi",
     "version": "1.0.0",
-    "downloads": 182674,
+    "downloads": 182686,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-scribe"
   },
   {
@@ -1406,7 +1406,7 @@
     "info": "Output filter plugin to add Kubernetes metadata",
     "authors": "Jimmi Dyson",
     "version": "0.3.1",
-    "downloads": 180085,
+    "downloads": 180098,
     "homepage_uri": "https://github.com/fabric8io/fluent-plugin-kubernetes"
   },
   {
@@ -1426,7 +1426,7 @@
     "info": "Simple Fluentd Plugin to count number of messages and outputs to log",
     "authors": "Naotoshi Seo",
     "version": "0.1.0",
-    "downloads": 171695,
+    "downloads": 171700,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-flowcounter-simple"
   },
   {
@@ -1436,7 +1436,7 @@
     "info": "fluent-plugin-map is the non-buffered plugin that can convert an event log to different event log(s).  ",
     "authors": "Kohei Tomita, Hiroshi Hatake, Kenji Okomoto",
     "version": "0.3.0",
-    "downloads": 166992,
+    "downloads": 166993,
     "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-map"
   },
   {
@@ -1446,7 +1446,7 @@
     "info": "fluent plugin for rabbitmq (AMQP)",
     "authors": "NTT Communications",
     "version": "0.1",
-    "downloads": 162968,
+    "downloads": 162969,
     "homepage_uri": "https://github.com/nttcom/fluent-plugin-rabbitmq"
   },
   {
@@ -1456,7 +1456,7 @@
     "info": "fluent plugin to send metrics to mackerel.io",
     "authors": "tksmd, hatz48, stanaka, Songmu",
     "version": "1.1.0",
-    "downloads": 162800,
+    "downloads": 162815,
     "homepage_uri": "https://github.com/mackerelio/fluent-plugin-mackerel"
   },
   {
@@ -1466,7 +1466,7 @@
     "info": "Fluentd output plugin to send logs to an HTTP endpoint",
     "authors": "Konstantin",
     "version": "1.1.0",
-    "downloads": 161873,
+    "downloads": 161930,
     "homepage_uri": "https://github.com/soylent/fluent-plugin-http"
   },
   {
@@ -1476,7 +1476,7 @@
     "info": "Fluentd Parser plugin to parse XML rendered windows event log.",
     "authors": "Hiroshi Hatake, Masahiro Nakagawa",
     "version": "0.2.7",
-    "downloads": 156038,
+    "downloads": 156191,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-parser-winevt_xml"
   },
   {
@@ -1486,7 +1486,7 @@
     "info": "Fluentd output plugin for Azure Application Insights.",
     "authors": "Microsoft Corporation",
     "version": "0.2.4",
-    "downloads": 153721,
+    "downloads": 153726,
     "homepage_uri": "https://github.com/Microsoft/fluent-plugin-application-insights"
   },
   {
@@ -1496,7 +1496,7 @@
     "info": "Filter plugin to ensure data is in the ViaQ common data model",
     "authors": "Rich Megginson",
     "version": "0.0.22",
-    "downloads": 153049,
+    "downloads": 153069,
     "homepage_uri": "https://github.com/ViaQ/fluent-plugin-viaq_data_model"
   },
   {
@@ -1506,7 +1506,7 @@
     "info": "typecast output plugin for fluentd",
     "authors": "MORIYA Taro",
     "version": "0.2.0",
-    "downloads": 152044,
+    "downloads": 152046,
     "homepage_uri": "http://github.com/tarom/fluent-plugin-typecast"
   },
   {
@@ -1516,7 +1516,7 @@
     "info": "Netflow plugin for Fluentd",
     "authors": "Masahiro Nakagawa",
     "version": "1.1.0",
-    "downloads": 149852,
+    "downloads": 150659,
     "homepage_uri": "https://github.com/repeatedly/fluent-plugin-netflow"
   },
   {
@@ -1526,7 +1526,7 @@
     "info": "Fluentd in_tail extension to add `path` field",
     "authors": "szhem, Naotoshi Seo",
     "version": "0.1.0",
-    "downloads": 149816,
+    "downloads": 149819,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-tail_path"
   },
   {
@@ -1536,7 +1536,7 @@
     "info": "Fluend output plugin to forward logs to VMware Aria Operations For Logs",
     "authors": "Vishal Mohite, Chris Todd, Samvel Israelyan",
     "version": "1.4.2",
-    "downloads": 148319,
+    "downloads": 148328,
     "homepage_uri": "https://github.com/vmware/fluent-plugin-vmware-loginsight"
   },
   {
@@ -1546,7 +1546,7 @@
     "info": "Fluentd Free formatter plugin, Use sprintf.",
     "authors": "Hiroshi Toyama",
     "version": "0.1.0",
-    "downloads": 147181,
+    "downloads": 147260,
     "homepage_uri": "https://github.com/toyama0919/fluent-plugin-formatter_sprintf"
   },
   {
@@ -1556,7 +1556,7 @@
     "info": "AMQP output plugin for Fluent",
     "authors": "Augusto Becciu, Juan Manuel Barreneche",
     "version": "0.2.0",
-    "downloads": 144846,
+    "downloads": 144848,
     "homepage_uri": "https://github.com/restorando/fluent-plugin-amqp"
   },
   {
@@ -1566,7 +1566,7 @@
     "info": "Fluentd Input plugin to read windows event log.",
     "authors": "okahashi117, Hiroshi Hatake, Masahiro Nakagawa",
     "version": "0.8.3",
-    "downloads": 137173,
+    "downloads": 137178,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-windows-eventlog"
   },
   {
@@ -1576,7 +1576,7 @@
     "info": "fluent plugin to insert mysql as json(single column) or insert statement",
     "authors": "TAGOMORI Satoshi, Toyama Hiroshi",
     "version": "0.3.4",
-    "downloads": 135441,
+    "downloads": 135457,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-mysql"
   },
   {
@@ -1596,7 +1596,7 @@
     "info": "Fluent parser plugin for Elasticsearch slow query and slow indexing log files.",
     "authors": "Boguslaw Mista",
     "version": "1.1.0",
-    "downloads": 128734,
+    "downloads": 128735,
     "homepage_uri": "https://github.com/iaintshine/fluent-plugin-esslowquery"
   },
   {
@@ -1606,7 +1606,7 @@
     "info": "Fluentd output plugin for Amazon Kinesis Firehose.",
     "authors": "Genki Sugawara",
     "version": "0.1.1",
-    "downloads": 128080,
+    "downloads": 128099,
     "homepage_uri": "https://github.com/winebarrel/fluent-plugin-kinesis-firehose"
   },
   {
@@ -1616,18 +1616,8 @@
     "info": "Input plugin for AWS CloudWatch.",
     "authors": "Yusuke Nomura, kenjiskywalker, FUJIWARA Shunichiro",
     "version": "2.1.1",
-    "downloads": 128058,
+    "downloads": 128062,
     "homepage_uri": "https://github.com/yunomu/fluent-plugin-cloudwatch"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-alertmanager",
-    "info": "fluent-plugin-alertmanager",
-    "authors": "Keiji Yoshida",
-    "version": "0.1.2",
-    "downloads": 116814,
-    "homepage_uri": "https://github.com/keijiyoshida/fluent-plugin-alertmanager"
   },
   {
     "obsolete": null,
@@ -1636,8 +1626,18 @@
     "info": "fluentd output filter plugin to send metrics to Esty StatsD",
     "authors": "James Ward, Chris Song",
     "version": "1.4.2",
-    "downloads": 116534,
+    "downloads": 117033,
     "homepage_uri": "https://github.com/imnotjames/fluent-plugin-statsd"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-alertmanager",
+    "info": "fluent-plugin-alertmanager",
+    "authors": "Keiji Yoshida",
+    "version": "0.1.2",
+    "downloads": 116815,
+    "homepage_uri": "https://github.com/keijiyoshida/fluent-plugin-alertmanager"
   },
   {
     "obsolete": null,
@@ -1656,7 +1656,7 @@
     "info": "CouchDB output plugin for Fluentd event collector",
     "authors": "Yuri Odagiri",
     "version": "0.9.1",
-    "downloads": 113843,
+    "downloads": 113858,
     "homepage_uri": "http://github.com/ixixi/fluent-plugin-couch"
   },
   {
@@ -1666,7 +1666,7 @@
     "info": "add uuid to record",
     "authors": "chaeyk",
     "version": "0.1",
-    "downloads": 111272,
+    "downloads": 111599,
     "homepage_uri": "https://github.com/chaeyk/fluent-plugin-add-uuid"
   },
   {
@@ -1686,7 +1686,7 @@
     "info": "\"this is just our exclusive plugin for the special purpose\"",
     "authors": "minwoo lee",
     "version": "0.1.62",
-    "downloads": 110044,
+    "downloads": 110110,
     "homepage_uri": "https://rubygems.org/gems/fluent-plugin-text_to_json"
   },
   {
@@ -1706,7 +1706,7 @@
     "info": "AMQP input/output plugin for fluentd",
     "authors": "Hiromi Ishii, Team Giraffi, HiganWorks LLC, Toby Jackson",
     "version": "0.14.0",
-    "downloads": 107865,
+    "downloads": 107872,
     "homepage_uri": "http://github.com/giraffi/fluent-plugin-amqp"
   },
   {
@@ -1716,7 +1716,7 @@
     "info": "OpenStack Storage Service (Swift) plugin for Fluentd",
     "authors": "brissenden",
     "version": "2.0.1",
-    "downloads": 107441,
+    "downloads": 107483,
     "homepage_uri": "https://github.com/jnsolutions/fluent-plugin-openstack"
   },
   {
@@ -1726,7 +1726,7 @@
     "info": "A Fluentd plugin that gathers response code metrics from the deis router and reports them to a graphite database.",
     "authors": "Matt Knox",
     "version": "0.2.2",
-    "downloads": 106917,
+    "downloads": 106927,
     "homepage_uri": "http://github.com/OrbotixInc/fluent-plugin-deis-graphite"
   },
   {
@@ -1736,7 +1736,7 @@
     "info": "Fluentd input plugin that responses with HTTP status 200. Can be used for elb healthcheck.",
     "authors": "Junjie Chen",
     "version": "0.0.5",
-    "downloads": 104990,
+    "downloads": 104993,
     "homepage_uri": "https://github.com/Jackyjjc/fluent-plugin-http-heartbeat"
   },
   {
@@ -1746,7 +1746,7 @@
     "info": "Output filter plugin to convert to a flat structure the JSON that is nest",
     "authors": "Fukui ReTu",
     "version": "0.0.5",
-    "downloads": 104908,
+    "downloads": 104914,
     "homepage_uri": "https://github.com/fukuiretu/fluent-plugin-json-nest2flat"
   },
   {
@@ -1776,7 +1776,7 @@
     "info": "The input plugin of fluentd to pull log from rest api",
     "authors": "filepang",
     "version": "0.8.3",
-    "downloads": 102151,
+    "downloads": 102161,
     "homepage_uri": "https://github.com/HatsuneMiku3939/fluent-plugin-http-pull"
   },
   {
@@ -1786,7 +1786,7 @@
     "info": "Parser plugin that parses JSON attributes with JSON strings in them",
     "authors": "Gavin M. Roy, Arcadiy Ivanov, Alik Khilazhev",
     "version": "1.0.2",
-    "downloads": 100296,
+    "downloads": 100417,
     "homepage_uri": "https://github.com/alikhil/fluent-plugin-json-in-json"
   },
   {
@@ -1796,7 +1796,7 @@
     "info": "Input parser for records which require minor text processing before they can be parsed as JSON",
     "authors": "Alex Yamauchi",
     "version": "2.0.2",
-    "downloads": 99740,
+    "downloads": 99750,
     "homepage_uri": "https://github.com/bodhi-space/fluent-plugin-jsonish"
   },
   {
@@ -1806,7 +1806,7 @@
     "info": "\n                            We can't add record has nil value which target repeated mode column to google bigquery.\n                            So this plugin add empty array if record has nil value or don't have key and value which target repeated mode column.\n                          ",
     "authors": "Hirokazu Hata",
     "version": "0.0.2",
-    "downloads": 96498,
+    "downloads": 96501,
     "homepage_uri": ""
   },
   {
@@ -1816,7 +1816,7 @@
     "info": "Fluent filter plugin for adding GeoIP data to record. Supports the new Maxmind v2 database formats.",
     "authors": "Minoru Osuka",
     "version": "1.0.0",
-    "downloads": 93927,
+    "downloads": 93928,
     "homepage_uri": "https://github.com/mosuka/fluent-plugin-filter-geoip"
   },
   {
@@ -1826,7 +1826,7 @@
     "info": "A fluent plugin for prometheus pushgateway",
     "authors": "Yuta Iwama",
     "version": "0.1.1",
-    "downloads": 91673,
+    "downloads": 91687,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-prometheus_pushgateway"
   },
   {
@@ -1836,7 +1836,7 @@
     "info": "Fluentd output plugin that sends aggregated errors/exception events to Sentry. Sentry is a event logging and aggregation platform.",
     "authors": "Kentaro Yoshida",
     "version": "0.0.5",
-    "downloads": 90202,
+    "downloads": 90221,
     "homepage_uri": "https://github.com/y-ken/fluent-plugin-sentry"
   },
   {
@@ -1846,7 +1846,7 @@
     "info": "Fluentd JSON filter plugin with JSON Pointer Support (RFC-6901) to pinpoint elements.",
     "authors": "Azeem Sajid",
     "version": "0.2.0",
-    "downloads": 89288,
+    "downloads": 89298,
     "homepage_uri": "https://github.com/iamAzeem/fluent-plugin-json"
   },
   {
@@ -1856,18 +1856,8 @@
     "info": "Fluentd Filter Plugin to parse linux's audit log.",
     "authors": "winebarrel",
     "version": "0.1.2",
-    "downloads": 88390,
+    "downloads": 88512,
     "homepage_uri": "https://github.com/winebarrel/fluent-plugin-filter-parse-audit-log"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-amazon_sns",
-    "info": "Fluent output plugin to send to Amazon SNS",
-    "authors": "Tatsuhiko Miyagawa",
-    "version": "0.1.0",
-    "downloads": 86914,
-    "homepage_uri": "https://github.com/miyagawa/fluent-plugin-amazon_sns"
   },
   {
     "obsolete": null,
@@ -1876,8 +1866,18 @@
     "info": "Created to replace and add missing functionality to the fluent-plugin-netflow fluentd plugin.",
     "authors": "Yves Desharnaus",
     "version": "1.3.0",
-    "downloads": 86443,
+    "downloads": 87242,
     "homepage_uri": "https://github.com/yvesbd/fluent-plugin-netflowipfix"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-amazon_sns",
+    "info": "Fluent output plugin to send to Amazon SNS",
+    "authors": "Tatsuhiko Miyagawa",
+    "version": "0.1.0",
+    "downloads": 86959,
+    "homepage_uri": "https://github.com/miyagawa/fluent-plugin-amazon_sns"
   },
   {
     "obsolete": null,
@@ -1886,7 +1886,7 @@
     "info": "Output data plugin to Zabbix",
     "authors": "FUJIWARA Shunichiro",
     "version": "0.3.1",
-    "downloads": 85526,
+    "downloads": 85535,
     "homepage_uri": "https://github.com/fujiwara/fluent-plugin-zabbix"
   },
   {
@@ -1906,7 +1906,7 @@
     "info": "For GrowthForecast, see http://kazeburo.github.com/GrowthForecast/",
     "authors": "TAGOMORI Satoshi",
     "version": "1.0.1",
-    "downloads": 83564,
+    "downloads": 83565,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-growthforecast"
   },
   {
@@ -1926,7 +1926,7 @@
     "info": "Sends log data collected by fluentd to Scalyr (http://www.scalyr.com)",
     "authors": "Imron Alston",
     "version": "0.8.17",
-    "downloads": 82309,
+    "downloads": 82321,
     "homepage_uri": "https://github.com/scalyr/scalyr-fluentd"
   },
   {
@@ -1946,7 +1946,7 @@
     "info": "Amazon SNS output plugin for Fluent event collector",
     "authors": "Yuri Odagiri",
     "version": "3.2.0",
-    "downloads": 80776,
+    "downloads": 80805,
     "homepage_uri": "https://github.com/ixixi/fluent-plugin-sns"
   },
   {
@@ -1956,7 +1956,7 @@
     "info": "Fluentd input plugin for AWS ELB Access Logs.",
     "authors": "Genki Sugawara",
     "version": "0.6.1",
-    "downloads": 79367,
+    "downloads": 79369,
     "homepage_uri": "https://github.com/winebarrel/fluent-plugin-elb-access-log"
   },
   {
@@ -1966,7 +1966,7 @@
     "info": "Fluentd plugin to upload logs to Azure Storage append blobs. Fork of https://github.com/microsoft/fluent-plugin-azure-storage-append-blob",
     "authors": "Jonas-Taha El Sesiy",
     "version": "0.7.0",
-    "downloads": 77840,
+    "downloads": 78498,
     "homepage_uri": "https://github.com/elsesiy/fluent-plugin-azure-storage-append-blob-lts"
   },
   {
@@ -1976,7 +1976,7 @@
     "info": "fluentd input/output plugin for mqtt broker",
     "authors": "Toyokazu Akiyama",
     "version": "0.5.0",
-    "downloads": 77454,
+    "downloads": 77473,
     "homepage_uri": "https://github.com/toyokazu/fluent-plugin-mqtt-io"
   },
   {
@@ -1996,7 +1996,7 @@
     "info": "common event format(CEF) parser plugin for fluentd",
     "authors": "Tomoyuki Sugimura",
     "version": "1.0.0",
-    "downloads": 74557,
+    "downloads": 74560,
     "homepage_uri": "https://github.com/lunardial/fluent-plugin-parser_cef"
   },
   {
@@ -2006,7 +2006,7 @@
     "info": "Azure DocumentDB output plugin for Fluentd",
     "authors": "Yoichi Kawasaki",
     "version": "0.3.1",
-    "downloads": 74024,
+    "downloads": 74062,
     "homepage_uri": "http://github.com/yokawasa/fluent-plugin-documentdb"
   },
   {
@@ -2016,7 +2016,7 @@
     "info": "fluentd plugin for Amazon RDS for PostgreSQL log input",
     "authors": "shinsaka",
     "version": "0.5.0",
-    "downloads": 73056,
+    "downloads": 73059,
     "homepage_uri": "https://github.com/shinsaka/fluent-plugin-rds-pgsql-log"
   },
   {
@@ -2026,7 +2026,7 @@
     "info": "Redis output plugin for Fluent",
     "authors": "Yuki Nishijima, Hiroshi Hatake, Kenji Okimoto",
     "version": "0.3.5",
-    "downloads": 69916,
+    "downloads": 69919,
     "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-redis"
   },
   {
@@ -2056,7 +2056,7 @@
     "info": "FluentD plugin to extract logs from Kubernetes clusters, enrich and ship to Sumo logic.",
     "authors": "Sumo Logic",
     "version": "2.4.2",
-    "downloads": 62428,
+    "downloads": 62438,
     "homepage_uri": "https://github.com/SumoLogic/fluentd-kubernetes-sumologic"
   },
   {
@@ -2066,7 +2066,7 @@
     "info": "Amazon DynamoDB output plugin for Fluent event collector",
     "authors": "Takashi Matsuno, Sadayuki Furuhashi, CaDs",
     "version": "0.0.5",
-    "downloads": 62096,
+    "downloads": 62101,
     "homepage_uri": "https://github.com/kumapon/fluent-plugin-dynamodb-drc"
   },
   {
@@ -2076,7 +2076,7 @@
     "info": "fluentd output filter plugin to parse the docker config.json related to a container log file.",
     "authors": "Alex Hornung",
     "version": "0.2.3",
-    "downloads": 60946,
+    "downloads": 60948,
     "homepage_uri": "https://github.com/bwalex/fluent-plugin-docker-format"
   },
   {
@@ -2086,7 +2086,7 @@
     "info": "Syslog TLS output plugin with formatting support, for Fluentd",
     "authors": "thomas morgan",
     "version": "2.1.0",
-    "downloads": 60764,
+    "downloads": 60836,
     "homepage_uri": "https://github.com/zarqman/fluent-plugin-syslog-tls"
   },
   {
@@ -2096,7 +2096,7 @@
     "info": "Fluentd input plugin to track insert/update/delete event from MySQL database server. Not only that, it could multiple table replication and generate nested document for Elasticsearch/Solr. It's comming support replicate to another RDB/noSQL.",
     "authors": "Kentaro Yoshida",
     "version": "1.0.3",
-    "downloads": 60593,
+    "downloads": 60596,
     "homepage_uri": "https://github.com/y-ken/fluent-plugin-mysql-replicator"
   },
   {
@@ -2106,7 +2106,7 @@
     "info": "Fluentd Filter plugin to validate incoming records against a json schema.  It is thought that this would be helpful for maintaing a consistent record database.",
     "authors": "Anthony Johnson",
     "version": "0.0.3",
-    "downloads": 60277,
+    "downloads": 60279,
     "homepage_uri": "https://github.com/ansoni/fluent-plugin-json-schema-filter"
   },
   {
@@ -2136,7 +2136,7 @@
     "info": "A buffered output plugin for Fluentd and InfluxDB 2",
     "authors": "Jakub Bednar",
     "version": "1.10.0",
-    "downloads": 57606,
+    "downloads": 57609,
     "homepage_uri": "https://github.com/influxdata/influxdb-plugin-fluent"
   },
   {
@@ -2146,7 +2146,7 @@
     "info": "JFrog SIEM fluent input plugin will send the SIEM events from JFrog Xray to Fluentd which can then be delivered to whatever output plugin specified",
     "authors": "Mahitha Byreddy, Sudhindra Rao, Giridharan Ramasamy",
     "version": "2.0.7",
-    "downloads": 57103,
+    "downloads": 57140,
     "homepage_uri": "https://github.com/jfrog/fluent-plugin-jfrog-siem"
   },
   {
@@ -2176,7 +2176,7 @@
     "info": "DNS based service discovery plugin for Fluentd",
     "authors": "Masahiro Nakagawa",
     "version": "0.1.0",
-    "downloads": 55122,
+    "downloads": 55126,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-sd-dns"
   },
   {
@@ -2196,7 +2196,7 @@
     "info": "There are two usages. 1) Store data into Groonga. 2) Implement Groonga replication system. See documentation for details.",
     "authors": "Kouhei Sutou",
     "version": "1.2.3",
-    "downloads": 53703,
+    "downloads": 53704,
     "homepage_uri": "https://github.com/groonga/fluent-plugin-groonga"
   },
   {
@@ -2216,7 +2216,7 @@
     "info": "Monitoring Fluentd via Calyptia Cloud",
     "authors": "Hiroshi Hatake",
     "version": "0.1.3",
-    "downloads": 51896,
+    "downloads": 51901,
     "homepage_uri": "https://github.com/calyptia/fluent-plugin-calyptia-monitoring"
   },
   {
@@ -2236,7 +2236,7 @@
     "info": "   Fork of fluent-plugin-detect-exceptions to include the preceding ERROR log line with a stack trace.\n",
     "authors": "Paul Boocock",
     "version": "0.0.3",
-    "downloads": 50294,
+    "downloads": 50302,
     "homepage_uri": null
   },
   {
@@ -2246,7 +2246,7 @@
     "info": "nats plugin for fluentd, an event collector",
     "authors": "Eduardo Aceituno",
     "version": "1.1.0",
-    "downloads": 50209,
+    "downloads": 50255,
     "homepage_uri": "https://github.com/achied/fluent-plugin-nats"
   },
   {
@@ -2266,7 +2266,7 @@
     "info": "Sumologic Cloud Syslog output plugin for Fluent event collector",
     "authors": "Acquia Engineering",
     "version": "1.1.0",
-    "downloads": 47635,
+    "downloads": 47641,
     "homepage_uri": "https://github.com/acquia/fluent-plugin-sumologic-cloud-syslog"
   },
   {
@@ -2276,7 +2276,7 @@
     "info": "Splunk output plugin (HTTP Event Collector) for Fluentd event collector",
     "authors": "Bryce Chidester",
     "version": "0.3.0",
-    "downloads": 47157,
+    "downloads": 47189,
     "homepage_uri": "https://github.com/brycied00d/fluent-plugin-splunk-http-eventcollector"
   },
   {
@@ -2306,7 +2306,7 @@
     "info": "fluent plugin mysql bulk insert is high performance and on duplicate key update respond.",
     "authors": "Hiroshi Toyama",
     "version": "0.0.8",
-    "downloads": 46493,
+    "downloads": 46494,
     "homepage_uri": "https://github.com/toyama0919/fluent-plugin-mysql-bulk"
   },
   {
@@ -2316,7 +2316,7 @@
     "info": "parsing by Project Woothee. See https://github.com/woothee/woothee ",
     "authors": "TAGOMORI Satoshi",
     "version": "1.0.0",
-    "downloads": 45945,
+    "downloads": 45958,
     "homepage_uri": "https://github.com/woothee/fluent-plugin-woothee"
   },
   {
@@ -2326,7 +2326,7 @@
     "info": "The fluent-plugin-sanitzer is Fluentd filter plugin to sanitize sensitive information with custom rules. The fluent-plugin-sanitzer provides not only options to sanitize values with custom regular expression and keywords but also build-in options which allows users to easily sanitize IP addresses and hostnames in complex messages.",
     "authors": "TK Kubota",
     "version": "0.1.3",
-    "downloads": 45924,
+    "downloads": 45957,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-sanitizer"
   },
   {
@@ -2336,7 +2336,7 @@
     "info": "Logentries output plugin for Fluent event collector",
     "authors": "Woorank",
     "version": "0.2.10",
-    "downloads": 45880,
+    "downloads": 45885,
     "homepage_uri": "https://github.com/Woorank/fluent-plugin-logentries"
   },
   {
@@ -2346,7 +2346,7 @@
     "info": "Fluentd Input plugin to parse /var/log/wtmp,/var/run/utmp",
     "authors": "Kentaro Hayashi",
     "version": "0.5.0",
-    "downloads": 45861,
+    "downloads": 45879,
     "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-utmpx"
   },
   {
@@ -2356,7 +2356,7 @@
     "info": "Fluentd input plugin for MacOS unified log",
     "authors": "Petr Langr",
     "version": "0.0.3",
-    "downloads": 45816,
+    "downloads": 45848,
     "homepage_uri": "https://github.com/loggly/fluent-plugin-macos-log"
   },
   {
@@ -2366,7 +2366,7 @@
     "info": "Input plugin to snmp",
     "authors": "hiro-su",
     "version": "0.0.9",
-    "downloads": 44587,
+    "downloads": 44601,
     "homepage_uri": null
   },
   {
@@ -2376,7 +2376,7 @@
     "info": "A fluentd output plugin to filter keywords from messages",
     "authors": "Shun Yanaura",
     "version": "0.7.5",
-    "downloads": 44331,
+    "downloads": 44333,
     "homepage_uri": "https://github.com/yanana/fluent-plugin-filter-list"
   },
   {
@@ -2386,7 +2386,7 @@
     "info": "Fluentd output plugin for remote syslog, specific to kubernetes logs",
     "authors": "George Goh",
     "version": "0.3.6",
-    "downloads": 43836,
+    "downloads": 43846,
     "homepage_uri": "https://github.com/georgegoh/fluent-plugin-kubernetes_remote_syslog"
   },
   {
@@ -2396,7 +2396,7 @@
     "info": "Filter Plugin to create a new record containing the values converted by Ruby script.",
     "authors": "Genki Sugawara",
     "version": "0.1.4",
-    "downloads": 43780,
+    "downloads": 43801,
     "homepage_uri": "https://github.com/winebarrel/fluent-plugin-filter-record-map"
   },
   {
@@ -2406,7 +2406,7 @@
     "info": "Output to PostgreSQL database which has a hstore extension",
     "authors": "WAKAYAMA Shirou",
     "version": "0.2.9",
-    "downloads": 43659,
+    "downloads": 43660,
     "homepage_uri": "https://github.com/shirou/fluent-plugin-pghstore"
   },
   {
@@ -2416,7 +2416,7 @@
     "info": "fluentd input plugin for mqtt server",
     "authors": "Yuuna Kurita",
     "version": "0.0.9",
-    "downloads": 43173,
+    "downloads": 43176,
     "homepage_uri": "http://github.com/yuuna/fluent-plugin-mqtt"
   },
   {
@@ -2426,7 +2426,7 @@
     "info": "Fluentd plugin to filter records without essential keys",
     "authors": "Trickey",
     "version": "0.0.1",
-    "downloads": 42803,
+    "downloads": 42804,
     "homepage_uri": "https://github.com/TrickyMonkey/fluent-plugin-has-keys"
   },
   {
@@ -2446,7 +2446,7 @@
     "info": "Fluentd plugin to convert ips to latitude/longitude pairs for publication on a specified pubnub channel",
     "authors": "Sean Dick, Change.org",
     "version": "0.0.4.6",
-    "downloads": 42540,
+    "downloads": 42542,
     "homepage_uri": "https://github.com/seanmdick/fluent-plugin-geoblipper"
   },
   {
@@ -2466,7 +2466,7 @@
     "info": "CMetrics context using metrics plugin for Fluentd.",
     "authors": "Hiroshi Hatake",
     "version": "0.1.2",
-    "downloads": 41356,
+    "downloads": 41360,
     "homepage_uri": "https://github.com/calyptia/fluent-plugin-metrics-cmetrics"
   },
   {
@@ -2476,7 +2476,7 @@
     "info": "Fluentd Plugin for converting JFrog Artifactory, Xray generated metrics (Prometheus Exposition Format) to target observability platform format (Splunk HEC, New Relic, Elastic)",
     "authors": "MahithaB, VasukiN, giri-vsr",
     "version": "0.2.6",
-    "downloads": 41206,
+    "downloads": 41239,
     "homepage_uri": "https://github.com/jfrog/jfrog-fluentd-plugins/tree/main/fluent-plugin-jfrog-metrics"
   },
   {
@@ -2506,7 +2506,7 @@
     "info": "Output plugin for streaming logs out to a remote syslog",
     "authors": "Andrea Spoldi",
     "version": "1.1",
-    "downloads": 40886,
+    "downloads": 40889,
     "homepage_uri": "https://github.com/docebo/fluent-plugin-remote-syslog"
   },
   {
@@ -2516,7 +2516,7 @@
     "info": "A fluentd plugin to pretty print json with color to stdout",
     "authors": "Masahiro Sano",
     "version": "0.2.0",
-    "downloads": 40563,
+    "downloads": 40596,
     "homepage_uri": "https://github.com/sabottenda/fluent-plugin-stdout-pp"
   },
   {
@@ -2526,7 +2526,7 @@
     "info": "Fluent output plugin for Cassandra via Datastax Ruby Driver for Apache Cassandra",
     "authors": "Yaroslav Lukyanov",
     "version": "1.0.0",
-    "downloads": 40302,
+    "downloads": 40306,
     "homepage_uri": "https://github.com/CSharpRU/fluent-plugin-cassandra-driver"
   },
   {
@@ -2556,7 +2556,7 @@
     "info": "jolokia input plugin",
     "authors": "Hidenori Suzuki",
     "version": "0.0.5",
-    "downloads": 39469,
+    "downloads": 39646,
     "homepage_uri": "https://github.com/niyonmaruz/fluent-plugin-jmx/blob/master/README.md"
   },
   {
@@ -2566,7 +2566,7 @@
     "info": "Fluentd Output Plugin for PostgreSQL JSON Type.",
     "authors": "OKUNO Akihiro",
     "version": "1.0.2",
-    "downloads": 38986,
+    "downloads": 39002,
     "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-pgjson"
   },
   {
@@ -2576,7 +2576,7 @@
     "info": "fluentd filter plugin to insert unique id into the message",
     "authors": "Kamome Shido",
     "version": "1.1.0",
-    "downloads": 38181,
+    "downloads": 38182,
     "homepage_uri": "https://github.com/shidokamo/fluent-plugin-insert-id"
   },
   {
@@ -2606,7 +2606,7 @@
     "info": "Fluentd plugin to keep forwarding to a node",
     "authors": "Naotoshi Seo",
     "version": "0.1.8",
-    "downloads": 37770,
+    "downloads": 37781,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-keep-forward"
   },
   {
@@ -2616,7 +2616,7 @@
     "info": "detect anomal sequential input casually",
     "authors": "Muddy Dixon",
     "version": "0.1.7",
-    "downloads": 37549,
+    "downloads": 37550,
     "homepage_uri": "https://github.com/muddydixon/fluent-plugin-anomalydetect"
   },
   {
@@ -2626,8 +2626,18 @@
     "info": "Fluentd plugin to extract values for nested key paths and re-emit them as flat tag/record pairs.",
     "authors": "Kentaro Kuribayashi",
     "version": "0.1.1",
-    "downloads": 37364,
+    "downloads": 37379,
     "homepage_uri": "http://github.com/kentaro/fluent-plugin-flatten"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-lm-logs",
+    "info": "This output plugin sends fluentd records to the configured LogicMonitor account.",
+    "authors": "LogicMonitor",
+    "version": "1.2.0",
+    "downloads": 36739,
+    "homepage_uri": "https://www.logicmonitor.com"
   },
   {
     "obsolete": null,
@@ -2636,7 +2646,7 @@
     "info": "Fluentd output plugin for Honeycomb.io",
     "authors": "The Honeycomb.io Team",
     "version": "0.8.2",
-    "downloads": 36364,
+    "downloads": 36369,
     "homepage_uri": "https://github.com/honeycombio/fluent-plugin-honeycomb"
   },
   {
@@ -2648,16 +2658,6 @@
     "version": "1.0.0",
     "downloads": 36271,
     "homepage_uri": "https://github.com/yyuu/fluent-plugin-chef-api"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-lm-logs",
-    "info": "This output plugin sends fluentd records to the configured LogicMonitor account.",
-    "authors": "LogicMonitor",
-    "version": "1.2.0",
-    "downloads": 36262,
-    "homepage_uri": "https://www.logicmonitor.com"
   },
   {
     "obsolete": null,
@@ -2676,7 +2676,7 @@
     "info": "Fluent plugin to output to DynamoDB.",
     "authors": "Genki Sugawara",
     "version": "0.1.5",
-    "downloads": 35770,
+    "downloads": 35786,
     "homepage_uri": "https://github.com/winebarrel/fluent-plugin-dynamodb-alt"
   },
   {
@@ -2726,7 +2726,7 @@
     "info": "Cloudwatch put metric plugin for fluentd.",
     "authors": "joker1007",
     "version": "0.2.2",
-    "downloads": 33956,
+    "downloads": 33970,
     "homepage_uri": "https://github.com/joker1007/fluent-plugin-cloudwatch-put"
   },
   {
@@ -2736,7 +2736,7 @@
     "info": "Fluentd filter plugin to obfuscate email addresses",
     "authors": "JamesJJ",
     "version": "0.0.6",
-    "downloads": 33586,
+    "downloads": 33611,
     "homepage_uri": "https://github.com/JamesJJ/fluent-plugin-email-obfuscate"
   },
   {
@@ -2756,7 +2756,7 @@
     "info": "Fluent filter for XML that just converts specified fields with XML to hashes",
     "authors": "Yaroslav Lukyanov",
     "version": "0.0.20",
-    "downloads": 33269,
+    "downloads": 33273,
     "homepage_uri": "https://github.com/CSharpRU/fluent-plugin-xml-simple-filter"
   },
   {
@@ -2766,7 +2766,7 @@
     "info": "loomsystems output plugin for Fluentd - enabling the transfer of fluentd events trough a secured ssl tcp connection",
     "authors": "doron yehuda at loomsystems dev team",
     "version": "0.0.1",
-    "downloads": 33038,
+    "downloads": 33052,
     "homepage_uri": "https://www.loomsystems.com"
   },
   {
@@ -2776,7 +2776,7 @@
     "info": "Send logging information in JSON format via TCP to an instance of Graylog",
     "authors": "Funding Circle",
     "version": "1.0.2",
-    "downloads": 33003,
+    "downloads": 33014,
     "homepage_uri": null
   },
   {
@@ -2786,7 +2786,7 @@
     "info": "Fluentd output plugin for Dogstatsd.",
     "authors": "Kosuke Miyawaki",
     "version": "0.0.4",
-    "downloads": 32948,
+    "downloads": 32984,
     "homepage_uri": "https://github.com/kikusu/fluent-plugin-datadog-statsd"
   },
   {
@@ -2816,7 +2816,7 @@
     "info": "fluentd output plugin to send metrics to graphite",
     "authors": "Satoshi SUZUKI",
     "version": "0.0.7",
-    "downloads": 32165,
+    "downloads": 32166,
     "homepage_uri": "https://github.com/studio3104/fluent-plugin-graphite"
   },
   {
@@ -2836,7 +2836,7 @@
     "info": "Fluentd Plugin for sending metrics to the respective log-vendor",
     "authors": "MahithaB",
     "version": "0.1.4",
-    "downloads": 31775,
+    "downloads": 31793,
     "homepage_uri": "https://github.com/jfrog/jfrog-fluentd-plugins/tree/main/fluent-plugin-jfrog-send-metrics"
   },
   {
@@ -2856,7 +2856,7 @@
     "info": "   Fluentd output plugin which detects exception stack traces in a stream of\n   JSON log messages and combines all single-line messages that belong to the\n   same stack trace into one multi-line message.\n   This is Not an official Google Ruby gem. Added Multiworker to true\n",
     "authors": "Deloitte Agents",
     "version": "0.0.13",
-    "downloads": 31667,
+    "downloads": 31669,
     "homepage_uri": "https://github.com/GoogleCloudPlatform/fluent-plugin-detect-exceptions"
   },
   {
@@ -2866,7 +2866,7 @@
     "info": "Filter plugin to add AWS ECS metadata",
     "authors": "Joseph Hughes",
     "version": "0.1.2",
-    "downloads": 31594,
+    "downloads": 31597,
     "homepage_uri": "https://github.com/joshughes/fluent-plugin-ecs-filter"
   },
   {
@@ -2876,7 +2876,7 @@
     "info": "Fluentd output plugin that sends events to Amazon Kinesis Firehose.",
     "authors": "Amazon Web Services",
     "version": "0.0.11",
-    "downloads": 31458,
+    "downloads": 31459,
     "homepage_uri": null
   },
   {
@@ -2896,7 +2896,7 @@
     "info": "Amazon DynamoDB output plugin for Fluent event collector",
     "authors": "Takashi Matsuno",
     "version": "0.2.0",
-    "downloads": 30935,
+    "downloads": 30953,
     "homepage_uri": "https://github.com/gonsuke/fluent-plugin-dynamodb"
   },
   {
@@ -2916,7 +2916,7 @@
     "info": "Fluentd out plugin for store to Google Cloud Storage",
     "authors": "Hideki Matsuoka",
     "version": "0.1.12",
-    "downloads": 30410,
+    "downloads": 30411,
     "homepage_uri": "https://github.com/matsuokah/fluent-plugin-google-cloud-storage-out"
   },
   {
@@ -2966,7 +2966,7 @@
     "info": "fluentd plugins to work with PostgreSQL CSV logs",
     "authors": "stanhu",
     "version": "0.8.2",
-    "downloads": 30024,
+    "downloads": 30045,
     "homepage_uri": "https://gitlab.com/gitlab-org/fluent-plugins/fluent-plugin-postgresql-csvlog"
   },
   {
@@ -2976,7 +2976,7 @@
     "info": "   Fluentd output plugin for the Datadog Log Intake API, which will make\n   logs viewable in the Datadog's log viewer.\n",
     "authors": "Yusuke KUOKA",
     "version": "0.1.0",
-    "downloads": 29965,
+    "downloads": 29984,
     "homepage_uri": "https://github.com/mumoshu/fluent-plugin-datadog-log"
   },
   {
@@ -2986,7 +2986,7 @@
     "info": "Filter plugin to add Docker metadata for use with Elasticsearch",
     "authors": "Jimmi Dyson, Hiroshi Hatake, Zsolt Fekete",
     "version": "0.2.1",
-    "downloads": 29852,
+    "downloads": 29903,
     "homepage_uri": "https://github.com/zsoltf/fluent-plugin-docker_metadata_elastic_filter"
   },
   {
@@ -3046,7 +3046,7 @@
     "info": "Logit output plugin for Fluentd",
     "authors": "Logit",
     "version": "0.3.0",
-    "downloads": 29127,
+    "downloads": 29128,
     "homepage_uri": "https://github.com/logit-io/fluent-plugin-logit"
   },
   {
@@ -3066,7 +3066,7 @@
     "info": "parsing by referer-parser. See: https://github.com/snowplow/referer-parser",
     "authors": "HARUYAMA Seigo",
     "version": "0.1.1",
-    "downloads": 29073,
+    "downloads": 29074,
     "homepage_uri": "https://github.com/haruyama/fluent-plugin-referer-parser"
   },
   {
@@ -3076,7 +3076,7 @@
     "info": "A fluentd output plugin for sending logs to the Dynatrace Generic log ingest API v2",
     "authors": "Dynatrace Open Source Engineering",
     "version": "0.2.0",
-    "downloads": 28756,
+    "downloads": 28766,
     "homepage_uri": "https://github.com/dynatrace-oss/fluent-plugin-dynatrace"
   },
   {
@@ -3096,7 +3096,7 @@
     "info": "Fluent filter plugin for parsing key/value fields in records",
     "authors": "Matt DeBoer",
     "version": "0.1.1",
-    "downloads": 28410,
+    "downloads": 28418,
     "homepage_uri": "https://github.com/matt-deboer/fluent-plugin-kvp-filter"
   },
   {
@@ -3136,7 +3136,7 @@
     "info": "A fluent plugin that includes a syslog parser that handles both rfc3164 and rfc5424 formats ",
     "authors": "Kevin Scheunemann",
     "version": "0.1.2",
-    "downloads": 27554,
+    "downloads": 27562,
     "homepage_uri": "https://github.com/athenahealth/fluent-plugin-newsyslog"
   },
   {
@@ -3146,7 +3146,7 @@
     "info": "Fluentd filter plugin to split a record into multiple records with key/value pair.",
     "authors": "Masahiro Sano, Michael Adams",
     "version": "0.12.1",
-    "downloads": 27251,
+    "downloads": 27252,
     "homepage_uri": "https://github.com/unquietwiki/fluent-plugin-split_record"
   },
   {
@@ -3156,7 +3156,7 @@
     "info": "Output filter plugin to calculate messages that matches specified conditions",
     "authors": "Muddy Dixon",
     "version": "0.0.6",
-    "downloads": 27220,
+    "downloads": 27228,
     "homepage_uri": "https://github.com/muddydixon/fluent-plugin-datacalculator"
   },
   {
@@ -3166,7 +3166,7 @@
     "info": "fluent input plugin use aws-sdk sqs poller to receive messages",
     "authors": "Richard Li",
     "version": "0.3.0",
-    "downloads": 27130,
+    "downloads": 27192,
     "homepage_uri": "https://github.com/ecwws/fluent-plugin-sqs-poll"
   },
   {
@@ -3176,7 +3176,7 @@
     "info": "fluentd xml parser plugin",
     "authors": "Toyokazu Akiyama, Brendan McGrath",
     "version": "1.0.0",
-    "downloads": 27121,
+    "downloads": 27127,
     "homepage_uri": "http://github.com/toyokazu/fluent-plugin-xml-parser"
   },
   {
@@ -3186,7 +3186,7 @@
     "info": "Fluentd plugin to calcucate statistics in messages",
     "authors": "Naotoshi Seo",
     "version": "0.2.0",
-    "downloads": 26906,
+    "downloads": 26907,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-calc"
   },
   {
@@ -3226,7 +3226,7 @@
     "info": "Output plugin for IRC",
     "authors": "OKUNO Akihiro",
     "version": "0.1.0",
-    "downloads": 26117,
+    "downloads": 26119,
     "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-irc"
   },
   {
@@ -3256,18 +3256,8 @@
     "info": "Fluentd syslog output plugin",
     "authors": "Aaron Collins",
     "version": "0.1.18",
-    "downloads": 25847,
+    "downloads": 25854,
     "homepage_uri": "https://github.com/analogrithems/fluent-plugin-syslog"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-lambda",
-    "info": "Output plugin for AWS Lambda.",
-    "authors": "Genki Sugawara",
-    "version": "0.2.1",
-    "downloads": 25790,
-    "homepage_uri": "https://github.com/winebarrel/fluent-plugin-lambda"
   },
   {
     "obsolete": null,
@@ -3276,8 +3266,18 @@
     "info": "Oracle Observability FluentD Plugins : Logging output plugin for OCI logging",
     "authors": "OCI Observability Team",
     "version": "1.0.12",
-    "downloads": 25761,
+    "downloads": 25814,
     "homepage_uri": "https://docs.cloud.oracle.com/en-us/iaas/Content/Logging/Concepts/loggingoverview.htm"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-lambda",
+    "info": "Output plugin for AWS Lambda.",
+    "authors": "Genki Sugawara",
+    "version": "0.2.1",
+    "downloads": 25795,
+    "homepage_uri": "https://github.com/winebarrel/fluent-plugin-lambda"
   },
   {
     "obsolete": null,
@@ -3286,7 +3286,7 @@
     "info": "Output filter plugin for Grassland",
     "authors": "Ripplation Inc.",
     "version": "0.2.1",
-    "downloads": 25734,
+    "downloads": 25735,
     "homepage_uri": "http://www.ripplation.co.jp"
   },
   {
@@ -3296,7 +3296,7 @@
     "info": "Fluentd Output eval filter plugin.",
     "authors": "Yuzuki Masaru",
     "version": "0.1.0",
-    "downloads": 25705,
+    "downloads": 25707,
     "homepage_uri": "https://github.com/ephemeralsnow/fluent-plugin-eval-filter"
   },
   {
@@ -3306,7 +3306,7 @@
     "info": "Fluentd output plugin for Vertica using json parser.",
     "authors": "Josef Janda",
     "version": "0.0.8",
-    "downloads": 25577,
+    "downloads": 25586,
     "homepage_uri": null
   },
   {
@@ -3476,7 +3476,7 @@
     "info": "A Fluentd filter plugin to parse key value items",
     "authors": "Al-waleed Shihadeh",
     "version": "0.0.9",
-    "downloads": 22710,
+    "downloads": 22747,
     "homepage_uri": "https://github.com/wshihadeh/fluent-plugin-filter-kv-parser.git"
   },
   {
@@ -3496,7 +3496,7 @@
     "info": "A fluentd plugin that enhances existing non-buffered output plugin as buffered plugin.",
     "authors": "Masahiro Sano",
     "version": "0.0.2",
-    "downloads": 22495,
+    "downloads": 22496,
     "homepage_uri": "https://github.com/sabottenda/fluent-plugin-bufferize"
   },
   {
@@ -3506,7 +3506,7 @@
     "info": "sprintf output file plugin for Fluentd.",
     "authors": "Hiroshi Toyama",
     "version": "0.0.7",
-    "downloads": 22483,
+    "downloads": 22485,
     "homepage_uri": "https://github.com/toyama0919/fluent-plugin-file-sprintf/"
   },
   {
@@ -3516,7 +3516,7 @@
     "info": "fluentd plugin to json parse single field, or to combine log structure into single field",
     "authors": "anarcher",
     "version": "0.0.3",
-    "downloads": 22404,
+    "downloads": 22414,
     "homepage_uri": "https://github.com/anarcher/fluent-plugin-json-parser"
   },
   {
@@ -3526,7 +3526,7 @@
     "info": "Fluentd input plugin for JavaVM gc.log.",
     "authors": "Shinji Tanaka",
     "version": "0.0.4",
-    "downloads": 22341,
+    "downloads": 22345,
     "homepage_uri": "https://github.com/stanaka/fluent-plugin-jvm-gclog"
   },
   {
@@ -3556,7 +3556,7 @@
     "info": "Combine inputs data and make histogram which helps to detect a hotspot.",
     "authors": "Yusuke SHIMIZU",
     "version": "0.2.4",
-    "downloads": 22190,
+    "downloads": 22191,
     "homepage_uri": "https://github.com/karahiyo/fluent-plugin-histogram"
   },
   {
@@ -3586,7 +3586,7 @@
     "info": "A fluentd input plugin that collects node and container metrics from a kubernetes cluster.",
     "authors": "Splunk Inc.",
     "version": "1.2.3",
-    "downloads": 22057,
+    "downloads": 22073,
     "homepage_uri": "https://github.com/splunk/fluent-plugin-kubernetes-metrics"
   },
   {
@@ -3596,7 +3596,7 @@
     "info": "Avro formatter plugin for Fluentd",
     "authors": "Shun Takebayashi",
     "version": "1.1.1",
-    "downloads": 22014,
+    "downloads": 22018,
     "homepage_uri": "https://github.com/takebayashi/fluent-plugin-avro"
   },
   {
@@ -3606,7 +3606,7 @@
     "info": "Fluentd plugin to cat files and move them.",
     "authors": "Civitaspo(takahiro.nakayama), Naotoshi Seo",
     "version": "0.2.0",
-    "downloads": 21656,
+    "downloads": 21659,
     "homepage_uri": "https://github.com/civitaspo/fluent-plugin-cat-sweep"
   },
   {
@@ -3676,7 +3676,7 @@
     "info": "Fluentd websocket output plugin which can output JSON string or MessagePack binary to the clients.",
     "authors": "Tetsu Izawa (@moccos)",
     "version": "0.1.8",
-    "downloads": 20945,
+    "downloads": 20946,
     "homepage_uri": "https://github.com/moccos/fluent-plugin-websocket"
   },
   {
@@ -3686,7 +3686,7 @@
     "info": "Filter aggregtation plugin for Fluent",
     "authors": "superguillen",
     "version": "1.0.9",
-    "downloads": 20836,
+    "downloads": 20838,
     "homepage_uri": "https://github.com/superguillen/fluent-plugin-aggregate"
   },
   {
@@ -3696,7 +3696,7 @@
     "info": "Fluentd output plugin to forward data to Wendelin system",
     "authors": "Nexedians",
     "version": "0.5",
-    "downloads": 20792,
+    "downloads": 20799,
     "homepage_uri": "https://lab.nexedi.com/nexedi/fluent-plugin-wendelin"
   },
   {
@@ -3716,7 +3716,7 @@
     "info": "Fluentd plugin to measure elapsed time to process messages",
     "authors": "Naotoshi Seo",
     "version": "0.0.8",
-    "downloads": 20532,
+    "downloads": 20539,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-elapsed-time"
   },
   {
@@ -3736,7 +3736,7 @@
     "info": "Droonga (distributed Groonga) plugin for Fluent event collector",
     "authors": "Droonga Project",
     "version": "1.0.1",
-    "downloads": 19997,
+    "downloads": 19998,
     "homepage_uri": "https://github.com/droonga/fluent-plugin-droonga"
   },
   {
@@ -3786,7 +3786,7 @@
     "info": "fluentd output to sqlite3",
     "authors": "Tomotaka Sakuma, Hiroshi Hatake",
     "version": "1.0.2",
-    "downloads": 19252,
+    "downloads": 19260,
     "homepage_uri": "https://github.com/cosmo0920/fluent-plugin-sqlite3.git"
   },
   {
@@ -3796,7 +3796,7 @@
     "info": "Use kubernetes labels to set log level dynamically.",
     "authors": "yaron-idan",
     "version": "0.2.4",
-    "downloads": 19182,
+    "downloads": 19192,
     "homepage_uri": "https://github.com/Soluto/fluent-plugin-kubernetes-log-level"
   },
   {
@@ -3816,7 +3816,7 @@
     "info": "A fluentd input plugin that collects node and container metrics from a kubernetes cluster via kubeapiserver API.",
     "authors": "Splunk Inc.",
     "version": "1.2.3",
-    "downloads": 18915,
+    "downloads": 18917,
     "homepage_uri": "https://github.com/splunk/fluent-plugin-k8s-metrics-agg"
   },
   {
@@ -3846,7 +3846,7 @@
     "info": "Fluentd output filter plugin for serialize record.",
     "authors": "IKUTA Masahito",
     "version": "0.1.0",
-    "downloads": 18691,
+    "downloads": 18694,
     "homepage_uri": "http://github.com/cooldaemon/fluent-plugin-record-serializer"
   },
   {
@@ -3856,7 +3856,7 @@
     "info": "A filter plugin to decode base64 encoded fields",
     "authors": "Daniel Malon",
     "version": "0.2.0",
-    "downloads": 18671,
+    "downloads": 18674,
     "homepage_uri": "https://github.com/MerlinDMC/fluent-plugin-filter-base64-decode"
   },
   {
@@ -3866,7 +3866,7 @@
     "info": "sFlow v2 / v4 / v5 input plugin for Fluentd supporting many packet formats",
     "authors": "Shintaro Kojima",
     "version": "0.3.3",
-    "downloads": 18634,
+    "downloads": 18638,
     "homepage_uri": "https://github.com/codeout/fluent-plugin-sflow"
   },
   {
@@ -3876,7 +3876,7 @@
     "info": "Output Split String Plugin for fluentd",
     "authors": "Hiroshi Toyama",
     "version": "0.1.0",
-    "downloads": 18511,
+    "downloads": 18517,
     "homepage_uri": "https://github.com/toyama0919/fluent-plugin-split"
   },
   {
@@ -3896,7 +3896,7 @@
     "info": "Fluentd input plugin for Munin node.",
     "authors": "Genki Sugawara",
     "version": "0.1.7",
-    "downloads": 18399,
+    "downloads": 18400,
     "homepage_uri": "https://github.com/winebarrel/fluent-plugin-munin-node"
   },
   {
@@ -3926,7 +3926,7 @@
     "info": "This plugin should be able to parse Kubernetes `klog` format with contexts, or other KV based formats",
     "authors": "Sebastian Podjasek",
     "version": "0.1.0",
-    "downloads": 18135,
+    "downloads": 18138,
     "homepage_uri": "https://github.com/inway/fluent-plugin-kubernetes-parser"
   },
   {
@@ -3936,7 +3936,7 @@
     "info": "Sidekiq plugin for Fluentd",
     "authors": "Alex Scarborough",
     "version": "0.1.0",
-    "downloads": 18022,
+    "downloads": 18028,
     "homepage_uri": "https://github.com/GoCarrot/fluent-plugin-sidekiq"
   },
   {
@@ -3986,7 +3986,7 @@
     "info": "fluentd input/output plugin for kestrel queue.",
     "authors": "Junichiro Takagi",
     "version": "0.2.2",
-    "downloads": 17801,
+    "downloads": 17809,
     "homepage_uri": "http://github.com/tjun/fluent-plugin-kestrel"
   },
   {
@@ -4036,7 +4036,7 @@
     "info": "Fluentd output plugin for XMPP(Jabber) protocol",
     "authors": "todesking",
     "version": "0.4.0",
-    "downloads": 17411,
+    "downloads": 17418,
     "homepage_uri": "https://github.com/todesking/fluent-plugin-jabber"
   },
   {
@@ -4056,7 +4056,7 @@
     "info": "Fluentd Input plugin to collect continual process information via ps command or PowerShell pwsh command for Linux/osx/Windows. It is useful for cron/barch process monitoring.",
     "authors": "Kentaro Yoshida",
     "version": "0.2.0",
-    "downloads": 17356,
+    "downloads": 17357,
     "homepage_uri": "https://github.com/y-ken/fluent-plugin-watch-process"
   },
   {
@@ -4066,7 +4066,7 @@
     "info": "Logmatic output plugin for Fluent event collector",
     "authors": "Logmatic support team",
     "version": "0.9.2",
-    "downloads": 17203,
+    "downloads": 17210,
     "homepage_uri": "http://logmatic.io"
   },
   {
@@ -4146,7 +4146,7 @@
     "info": "Fluentd plugin for reading events from stdin",
     "authors": "Masahiro Nakagawa",
     "version": "0.1.2",
-    "downloads": 16477,
+    "downloads": 16478,
     "homepage_uri": "https://github.com/repeatedly/fluent-plugin-stdin"
   },
   {
@@ -4156,7 +4156,7 @@
     "info": "It is the input plugin of fluentd which collects the condition of Java VM.",
     "authors": "MasayukiMiyake",
     "version": "0.1.5",
-    "downloads": 16182,
+    "downloads": 16186,
     "homepage_uri": "https://github.com/MasayukiMiyake97/fluent-plugin-jvmwatcher.git"
   },
   {
@@ -4176,7 +4176,7 @@
     "info": "Fluentd plugin to output same file",
     "authors": "Yuri Umezaki",
     "version": "0.0.3",
-    "downloads": 16134,
+    "downloads": 16135,
     "homepage_uri": "https://github.com/bungoume/fluent-plugin-samefile"
   },
   {
@@ -4186,7 +4186,7 @@
     "info": "fluentd plugin for datadog event",
     "authors": "Yohei Kawahara(inokappa)",
     "version": "0.1.6",
-    "downloads": 16114,
+    "downloads": 16115,
     "homepage_uri": "https://github.com/inokappa/fluent-plugin-datadog_event"
   },
   {
@@ -4206,7 +4206,7 @@
     "info": "Fluentd memory buffer plugin with many types of chunk limits",
     "authors": "Gergo Sulymosi",
     "version": "0.1.6",
-    "downloads": 15999,
+    "downloads": 16000,
     "homepage_uri": "https://github.com/trekdemo/fluent-plugin-buffer-event_limited"
   },
   {
@@ -4216,7 +4216,7 @@
     "info": "Fluentd input plugin to read binary files based on in_tail",
     "authors": "Klaus Wölfel",
     "version": "0.3",
-    "downloads": 15634,
+    "downloads": 15642,
     "homepage_uri": "https://lab.nexedi.com/klaus/fluent-plugin-bin"
   },
   {
@@ -4226,7 +4226,7 @@
     "info": "Send fluent buffered logs to an http endpoint",
     "authors": "Alexander Blagoev",
     "version": "0.0.1",
-    "downloads": 15481,
+    "downloads": 15482,
     "homepage_uri": "http://github.com/ablagoev/fluent-plugin-out-http-buffered"
   },
   {
@@ -4236,7 +4236,7 @@
     "info": "Fluent output plugin to Airbrake(Errbit) by fluent-logger",
     "authors": "Shuichi Ohsawa",
     "version": "0.1.0",
-    "downloads": 15455,
+    "downloads": 15456,
     "homepage_uri": "https://github.com/ohsawa0515/fluent-plugin-airbrake-logger"
   },
   {
@@ -4266,7 +4266,7 @@
     "info": "sentry output plugin for Fluentd",
     "authors": "Yuto Suzuki",
     "version": "0.1.8",
-    "downloads": 15109,
+    "downloads": 15110,
     "homepage_uri": "https://github.com/mocyuto/fluent-plugin-raven"
   },
   {
@@ -4286,7 +4286,7 @@
     "info": "Fluentd plugin to measure elapsed time to process messages",
     "authors": "Naotoshi Seo",
     "version": "0.2.1",
-    "downloads": 15044,
+    "downloads": 15049,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-measure_time"
   },
   {
@@ -4326,7 +4326,7 @@
     "info": "Fluentd Output filter plugin.",
     "authors": "Shota Kuwahara",
     "version": "1.0.4",
-    "downloads": 14854,
+    "downloads": 14855,
     "homepage_uri": "https://github.com/skuwa229/fluent-plugin-path2tag"
   },
   {
@@ -4366,7 +4366,7 @@
     "info": "fluentd plugin to derive rate",
     "authors": "Nobuhiro Nikushi",
     "version": "0.0.4",
-    "downloads": 14488,
+    "downloads": 14492,
     "homepage_uri": "https://github.com/niku4i/fluent-plugin-derive"
   },
   {
@@ -4486,7 +4486,7 @@
     "info": "Resque enqueue plugin",
     "authors": "Yuichi Tateno",
     "version": "0.3.0",
-    "downloads": 13904,
+    "downloads": 13908,
     "homepage_uri": "https://github.com/hotchpotch/fluent-plugin-resque"
   },
   {
@@ -4516,7 +4516,7 @@
     "info": "Input plugin for Fluentd for Juniper devices telemetry data streaming : Jvision / analyticsd etc ..",
     "authors": "Damien Garros",
     "version": "0.3.0",
-    "downloads": 13855,
+    "downloads": 13860,
     "homepage_uri": "https://github.com/JNPRAutomate/fluentd-plugin-juniper-telemetry"
   },
   {
@@ -4546,7 +4546,7 @@
     "info": "OCI Logging Analytics Fluentd output plugin for ingesting the collected log events to OCI Logging Analytics.",
     "authors": "Oracle, OCI Observability: Logging Analytics",
     "version": "2.0.6",
-    "downloads": 13633,
+    "downloads": 13656,
     "homepage_uri": null
   },
   {
@@ -4606,7 +4606,7 @@
     "info": "Fluent Filter plugin for encrypting and decrypting messages using JSON Web Token technology (JSON Web Encryption, JSON Web Signature and JSON Web Key)",
     "authors": "Toyokazu Akiyama",
     "version": "0.1.0",
-    "downloads": 13065,
+    "downloads": 13071,
     "homepage_uri": "https://github.com/toyokazu/fluent-plugin-jwt-filter"
   },
   {
@@ -4616,7 +4616,7 @@
     "info": "Logentries output plugin for Fluent event collector",
     "authors": "bigwheel",
     "version": "0.2.13",
-    "downloads": 13017,
+    "downloads": 13023,
     "homepage_uri": "https://github.com/bigwheel/fluent-plugin-logentries"
   },
   {
@@ -4692,22 +4692,22 @@
   {
     "obsolete": null,
     "note": null,
+    "name": "fluent-plugin-kubernetes_metadata_input",
+    "info": "Input plugin to collect Kubernetes metadata",
+    "authors": "Anton Sherkhonov",
+    "version": "0.21.11",
+    "downloads": 12599,
+    "homepage_uri": "https://github.com/t0ffel/fluent-plugin-kubernetes_metadata_input"
+  },
+  {
+    "obsolete": null,
+    "note": null,
     "name": "fluent-plugin-parse_multiple_value_query",
     "info": "Fluentd plugin to parse query string with rails format",
     "authors": "Hirokazu Hata",
     "version": "2.0.0",
     "downloads": 12597,
     "homepage_uri": ""
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-kubernetes_metadata_input",
-    "info": "Input plugin to collect Kubernetes metadata",
-    "authors": "Anton Sherkhonov",
-    "version": "0.21.11",
-    "downloads": 12595,
-    "homepage_uri": "https://github.com/t0ffel/fluent-plugin-kubernetes_metadata_input"
   },
   {
     "obsolete": null,
@@ -4736,7 +4736,7 @@
     "info": "Fluentd plugin to concat MySQL slowquerylog.",
     "authors": "Satoshi SUZUKI",
     "version": "0.0.3",
-    "downloads": 12495,
+    "downloads": 12496,
     "homepage_uri": "https://github.com/studio3104/fluent-plugin-mysqlslowquerylog"
   },
   {
@@ -4766,7 +4766,7 @@
     "info": "fluentd plugin for parse FortiGate log",
     "authors": "Yoshinori TERAOKA",
     "version": "0.2.1",
-    "downloads": 12368,
+    "downloads": 12369,
     "homepage_uri": "https://github.com/yteraoka/fluent-plugin-fortigate-log-parser"
   },
   {
@@ -4796,7 +4796,7 @@
     "info": "Fluentd plugin for cmetrics format handling.",
     "authors": "Hiroshi Hatake",
     "version": "0.2.0",
-    "downloads": 12328,
+    "downloads": 12329,
     "homepage_uri": "https://github.com/calyptia/fluent-plugin-cmetrics"
   },
   {
@@ -4906,8 +4906,18 @@
     "info": "Fluentd plugin to transform go-audit log and make it easy to be handled by modern log aggregators.",
     "authors": "haccht",
     "version": "0.1.2",
-    "downloads": 12132,
+    "downloads": 12140,
     "homepage_uri": "https://github.com/haccht/fluent-plugin-go-audit-parser"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-kvp-parser",
+    "info": "Fluentd parser plugin to parse key value pairs",
+    "authors": "mosuka",
+    "version": "0.0.6",
+    "downloads": 12132,
+    "homepage_uri": "https://github.com/mosuka/fluent-plugin-kvp-parser"
   },
   {
     "obsolete": null,
@@ -4922,12 +4932,12 @@
   {
     "obsolete": null,
     "note": null,
-    "name": "fluent-plugin-kvp-parser",
-    "info": "Fluentd parser plugin to parse key value pairs",
-    "authors": "mosuka",
-    "version": "0.0.6",
-    "downloads": 12123,
-    "homepage_uri": "https://github.com/mosuka/fluent-plugin-kvp-parser"
+    "name": "fluent-plugin-filter-split",
+    "info": "It works as record splitter in filter stage.",
+    "authors": "Kentaro Hayashi",
+    "version": "0.1.0",
+    "downloads": 12085,
+    "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-filter-split"
   },
   {
     "obsolete": null,
@@ -4936,7 +4946,7 @@
     "info": "Fluentd plugin",
     "authors": "moaikids",
     "version": "0.0.2",
-    "downloads": 12046,
+    "downloads": 12048,
     "homepage_uri": "https://github.com/moaikids/fluent-plugin-jsonbucket"
   },
   {
@@ -4946,7 +4956,7 @@
     "info": "Airbrake (Python) plugin for Fluentd",
     "authors": "Moriyoshi Koizumi",
     "version": "0.2",
-    "downloads": 12038,
+    "downloads": 12043,
     "homepage_uri": "https://github.com/moriyoshi/fluent-plugin-airbrake-python"
   },
   {
@@ -4966,7 +4976,7 @@
     "info": "Fluentd Input plugin to replay alert notification for PagerDuty API.",
     "authors": "Kentaro Yoshida",
     "version": "0.1.0",
-    "downloads": 11931,
+    "downloads": 11934,
     "homepage_uri": "https://github.com/y-ken/fluent-plugin-pagerduty"
   },
   {
@@ -4992,21 +5002,11 @@
   {
     "obsolete": null,
     "note": null,
-    "name": "fluent-plugin-filter-split",
-    "info": "It works as record splitter in filter stage.",
-    "authors": "Kentaro Hayashi",
-    "version": "0.1.0",
-    "downloads": 11864,
-    "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-filter-split"
-  },
-  {
-    "obsolete": null,
-    "note": null,
     "name": "fluent-plugin-lazy-json-parser",
     "info": "fluentd plugin to json parse single field if possible or simply forward the data if impossible. Can also combine log structure into single field",
     "authors": "mathpl",
     "version": "0.0.4",
-    "downloads": 11854,
+    "downloads": 11858,
     "homepage_uri": "https://github.com/mathpl/fluent-plugin-lazy-json-parser"
   },
   {
@@ -5026,7 +5026,7 @@
     "info": "Fluentd formatter plugin for formatting record to pretty json.",
     "authors": "Yoshihiro MIYAI",
     "version": "1.0.0",
-    "downloads": 11766,
+    "downloads": 11769,
     "homepage_uri": "https://github.com/mia-0032/fluent-plugin-formatter_pretty_json"
   },
   {
@@ -5046,7 +5046,7 @@
     "info": "Filter Plugin to convert the hash record to records of key-value pairs.",
     "authors": "Genki Sugawara",
     "version": "0.1.2",
-    "downloads": 11607,
+    "downloads": 11613,
     "homepage_uri": "https://github.com/winebarrel/fluent-plugin-filter-object-flatten"
   },
   {
@@ -5076,7 +5076,7 @@
     "info": "A plugin for the Fluentd event collection agent that provides Google Cloud Pub/Sub support",
     "authors": "pivelpin",
     "version": "0.6.0",
-    "downloads": 11477,
+    "downloads": 11478,
     "homepage_uri": "https://github.com/guardsight/fluent-plugin-gsvsoc_pubsub"
   },
   {
@@ -5096,7 +5096,7 @@
     "info": "This input plugin allows you to collect incoming events over UDP instead of TCP",
     "authors": "Abhishek Parolkar",
     "version": "0.0.1",
-    "downloads": 11402,
+    "downloads": 11405,
     "homepage_uri": "https://github.com/parolkar/fluent-plugin-udp"
   },
   {
@@ -5126,7 +5126,7 @@
     "info": "Fluentd plugin which serves Kibana within fluentd process",
     "authors": "OKUNO Akihiro",
     "version": "0.0.2",
-    "downloads": 11224,
+    "downloads": 11226,
     "homepage_uri": "https://github.com/choplin/fluent-plugin-kibana-server"
   },
   {
@@ -5176,7 +5176,7 @@
     "info": "jstat input plugin for Fluent event collector",
     "authors": "wukawa",
     "version": "0.0.3",
-    "downloads": 10993,
+    "downloads": 10996,
     "homepage_uri": "https://github.com/wyukawa/fluent-plugin-jstat"
   },
   {
@@ -5186,7 +5186,7 @@
     "info": "Emits dummy data to do bench marks and other tests",
     "authors": "TAGOMORI Satoshi",
     "version": "0.0.3",
-    "downloads": 10957,
+    "downloads": 10959,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-dummydata-producer"
   },
   {
@@ -5206,7 +5206,7 @@
     "info": "CloudWatch Logs Plugin for Fluentd",
     "authors": "Mit Naria",
     "version": "0.1.0",
-    "downloads": 10903,
+    "downloads": 10904,
     "homepage_uri": "https://github.com/foxtrot9/fluent-plugin-cloudwatch-logs"
   },
   {
@@ -5246,7 +5246,7 @@
     "info": "Fluentd plugin to measure latency until receiving the messages",
     "authors": "Naotoshi Seo",
     "version": "0.0.3",
-    "downloads": 10841,
+    "downloads": 10845,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-latency"
   },
   {
@@ -5256,7 +5256,7 @@
     "info": "generate hash(md5/sha1/sha256/sha512) value",
     "authors": "Labou77Code",
     "version": "1.1.0",
-    "downloads": 10821,
+    "downloads": 10834,
     "homepage_uri": "https://github.com/Labou77Code/fluent-plugin-genhashvalue-alt"
   },
   {
@@ -5306,7 +5306,7 @@
     "info": "Fluent plugin, IP address resolv and rewrite.",
     "authors": "Kohei MATSUSHITA",
     "version": "0.0.3",
-    "downloads": 10631,
+    "downloads": 10632,
     "homepage_uri": "https://github.com/ma2shita/fluent-plugin-resolv"
   },
   {
@@ -5336,7 +5336,7 @@
     "info": "Fluentd input plugin, source from GREE community",
     "authors": "todesking",
     "version": "0.0.3",
-    "downloads": 10457,
+    "downloads": 10459,
     "homepage_uri": "https://github.com/todesking/fluent-plugin-gree_community"
   },
   {
@@ -5346,7 +5346,7 @@
     "info": "Rackspace Cloud Files output plugin for Fluent event collector",
     "authors": "Brint O'Hearn",
     "version": "0.0.4",
-    "downloads": 10351,
+    "downloads": 10352,
     "homepage_uri": "https://github.com/brint/fluent-plugin-rackspace-cloud-files"
   },
   {
@@ -5366,7 +5366,7 @@
     "info": "fluent plugin for sumologic",
     "authors": "memorycraft, adambom",
     "version": "0.1.0",
-    "downloads": 10310,
+    "downloads": 10315,
     "homepage_uri": "https://github.com/adambom/fluent-plugin-sumologic"
   },
   {
@@ -5406,7 +5406,7 @@
     "info": "AMQP Qpid input plugin for fluentd",
     "authors": "Anton Sherkhonov",
     "version": "0.0.6",
-    "downloads": 10185,
+    "downloads": 10186,
     "homepage_uri": "https://github.com/t0ffel/fluent-plugin-amq"
   },
   {
@@ -5426,7 +5426,7 @@
     "info": "Converts the protocol name protocol number.",
     "authors": "Tokyo Home SOC",
     "version": "0.0.6",
-    "downloads": 10111,
+    "downloads": 10112,
     "homepage_uri": "https://github.com/airforon/fluent-plugin-protocols-filter"
   },
   {
@@ -5456,7 +5456,7 @@
     "info": "Fluentd input plugin, source from Mixi community",
     "authors": "todesking",
     "version": "0.0.3",
-    "downloads": 10059,
+    "downloads": 10061,
     "homepage_uri": "https://github.com/todesking/fluent-plugin-mixi_community"
   },
   {
@@ -5606,7 +5606,7 @@
     "info": "See README at https://github.com/ninadpage/fluent-plugin-parser-maybejson/.",
     "authors": "Ninad Page",
     "version": "1.0.0",
-    "downloads": 9576,
+    "downloads": 9611,
     "homepage_uri": "https://github.com/ninadpage/fluent-plugin-parser-maybejson/"
   },
   {
@@ -5646,7 +5646,7 @@
     "info": "This rubygem does not have a description or summary.",
     "authors": "Alexey Panaetov",
     "version": "0.0.5",
-    "downloads": 9493,
+    "downloads": 9494,
     "homepage_uri": ""
   },
   {
@@ -5676,7 +5676,7 @@
     "info": "Run the sub-matcher created from accepted json data",
     "authors": "Uchio KONDO",
     "version": "0.1.0",
-    "downloads": 9446,
+    "downloads": 9450,
     "homepage_uri": "https://github.com/udzura/fluent-plugin-json_expander"
   },
   {
@@ -5686,7 +5686,7 @@
     "info": "Aliyun oss output plugin for Fluentd event collector",
     "authors": "sjtubreeze",
     "version": "0.0.2",
-    "downloads": 9435,
+    "downloads": 9438,
     "homepage_uri": "https://github.com/jicong/fluent-plugin-oss"
   },
   {
@@ -5716,7 +5716,7 @@
     "info": "A fluentd output plugin for sending logs to Kafka REST Proxy",
     "authors": "dobachi",
     "version": "0.1.1.2",
-    "downloads": 9315,
+    "downloads": 9323,
     "homepage_uri": "https://github.com/dobachi/fluent-plugin-out-kafka-rest"
   },
   {
@@ -5756,7 +5756,7 @@
     "info": "This fluentd output plugin sends data as files, to HTTP servers which provides features for file uploaders.",
     "authors": "TAGOMORI Satoshi",
     "version": "0.1.3",
-    "downloads": 9249,
+    "downloads": 9250,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-http_file_upload"
   },
   {
@@ -5836,7 +5836,7 @@
     "info": "Fluentd plugin for filtering / picking desired keys.",
     "authors": "Carlos Donderis",
     "version": "0.0.3",
-    "downloads": 8919,
+    "downloads": 8922,
     "homepage_uri": "http://github.com/cads/fluent-plugin-key-picker"
   },
   {
@@ -5866,7 +5866,7 @@
     "info": "Insert data to cassandra plugin for fluentd (Use INSERT JSON).",
     "authors": "joker1007",
     "version": "0.2.0",
-    "downloads": 8881,
+    "downloads": 8886,
     "homepage_uri": "https://github.com/joker1007/fluent-plugin-cassandra-json"
   },
   {
@@ -5876,7 +5876,7 @@
     "info": "Fluentd output plugin for remote syslog. This is meant for processing kubernetes annotated messages.",
     "authors": "Richard Lee, Jakub Kvita",
     "version": "0.4.0",
-    "downloads": 8877,
+    "downloads": 8885,
     "homepage_uri": "https://github.com/kvitajakub/fluent-plugin-kubernetes_tagged_remote_syslog"
   },
   {
@@ -5926,7 +5926,7 @@
     "info": "This rubygem does not have a description or summary.",
     "authors": "Yuki Ito",
     "version": "0.1.1",
-    "downloads": 8824,
+    "downloads": 8825,
     "homepage_uri": ""
   },
   {
@@ -5936,7 +5936,7 @@
     "info": "parser of heroku syslog format",
     "authors": "ymurata",
     "version": "0.5.0",
-    "downloads": 8807,
+    "downloads": 8808,
     "homepage_uri": "https://github.com/ymurata/fluent-plugin-heroku-parser"
   },
   {
@@ -5986,7 +5986,7 @@
     "info": "Fluentd plugin for Apache Zookeeper",
     "authors": "Anton Tikhomirov",
     "version": "0.1.2",
-    "downloads": 8696,
+    "downloads": 8697,
     "homepage_uri": "https://github.com/antonshi/fluent-plugin-zookeeper"
   },
   {
@@ -6008,6 +6008,16 @@
     "version": "0.1.0",
     "downloads": 8677,
     "homepage_uri": "https://github.com/meganemura/fluent-plugin-midi"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-pull_forward",
+    "info": "Fluentd plugin that store data to be forwarded, and send these when client(input plugin) requests it, over HTTPS and authentication",
+    "authors": "TAGOMORI Satoshi",
+    "version": "0.0.2",
+    "downloads": 8673,
+    "homepage_uri": "https://github.com/tagomoris/fluent-plugin-pull_forward"
   },
   {
     "obsolete": null,
@@ -6036,8 +6046,18 @@
     "info": "fluent plugin to insert Aerospike.",
     "authors": "kadzuya",
     "version": "0.0.4",
-    "downloads": 8650,
+    "downloads": 8652,
     "homepage_uri": "http://github.com/kadzuya/fluent-plugin-aerospike-cluster"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-out-file-with-fix-path",
+    "info": "FLuentd plugin for SNMP Traps... WIP",
+    "authors": "fetaro",
+    "version": "0.1.0",
+    "downloads": 8641,
+    "homepage_uri": "https://github.com/fetaro/fluent-plugin-out-file-with-fix-path.git"
   },
   {
     "obsolete": null,
@@ -6048,16 +6068,6 @@
     "version": "0.2.9",
     "downloads": 8641,
     "homepage_uri": "https://github.com/renderinc/fluent-plugin-redis-store"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-out-file-with-fix-path",
-    "info": "FLuentd plugin for SNMP Traps... WIP",
-    "authors": "fetaro",
-    "version": "0.1.0",
-    "downloads": 8640,
-    "homepage_uri": "https://github.com/fetaro/fluent-plugin-out-file-with-fix-path.git"
   },
   {
     "obsolete": null,
@@ -6086,7 +6096,7 @@
     "info": "This filter plugin filters fluentd records in gcp to the configured LogicMonitor account.",
     "authors": "LogicMonitor",
     "version": "1.0.8",
-    "downloads": 8470,
+    "downloads": 8474,
     "homepage_uri": "https://www.logicmonitor.com"
   },
   {
@@ -6096,7 +6106,7 @@
     "info": "Fluentd plugin to parse systemd journal export format.",
     "authors": "Emil Renner Berthing",
     "version": "0.1.1",
-    "downloads": 8451,
+    "downloads": 8454,
     "homepage_uri": "https://github.com/One-com/fluent-plugin-journal-parser"
   },
   {
@@ -6106,7 +6116,7 @@
     "info": "Avro parser plugin for Fluentd",
     "authors": "Hiroshi Hatake, Kentaro Hayashi",
     "version": "0.3.1",
-    "downloads": 8434,
+    "downloads": 8438,
     "homepage_uri": "https://github.com/fluent-plugins-nerysery/fluent-plugin-parser-avro"
   },
   {
@@ -6126,7 +6136,7 @@
     "info": "Versatile filtering plugin",
     "authors": "Genki Sugawara",
     "version": "0.1.0",
-    "downloads": 8398,
+    "downloads": 8399,
     "homepage_uri": "https://bitbucket.org/winebarrel/fluent-plugin-buffered-filter"
   },
   {
@@ -6186,7 +6196,7 @@
     "info": "Input plugin for Fluent using MessagePack-RPC",
     "authors": "Nobuyuki Kubota",
     "version": "0.3.0",
-    "downloads": 8286,
+    "downloads": 8288,
     "homepage_uri": "https://github.com/fluent/fluent-plugin-msgpack-rpc"
   },
   {
@@ -6206,7 +6216,7 @@
     "info": "Fluentd Output plugin to make a call with Pushover API.",
     "authors": "Jan Karásek",
     "version": "1.0.0",
-    "downloads": 8240,
+    "downloads": 8241,
     "homepage_uri": "https://github.com/hkar/fluent-plugin-pushover"
   },
   {
@@ -6226,7 +6236,7 @@
     "info": "Apply the value of the specified field to part of the path.",
     "authors": "Masayasu Yamamoto",
     "version": "0.2.1",
-    "downloads": 8152,
+    "downloads": 8155,
     "homepage_uri": "https://github.com/msysyamamoto/fluent-plugin-parameterized-path"
   },
   {
@@ -6282,6 +6292,16 @@
   {
     "obsolete": null,
     "note": null,
+    "name": "fluent-plugin-kube-events-timestamp",
+    "info": "fluent filter plugin to map multiple timestamps into an additional one",
+    "authors": "Banzai Cloud",
+    "version": "0.1.3",
+    "downloads": 8092,
+    "homepage_uri": "https://github.com/banzaicloud/fluentd-filter-kube-events-timestamp"
+  },
+  {
+    "obsolete": null,
+    "note": null,
     "name": "fluent-plugin-to_s",
     "info": "Plugin that adds whole record to to_s field",
     "authors": "airtoxin",
@@ -6292,21 +6312,11 @@
   {
     "obsolete": null,
     "note": null,
-    "name": "fluent-plugin-kube-events-timestamp",
-    "info": "fluent filter plugin to map multiple timestamps into an additional one",
-    "authors": "Banzai Cloud",
-    "version": "0.1.3",
-    "downloads": 8086,
-    "homepage_uri": "https://github.com/banzaicloud/fluentd-filter-kube-events-timestamp"
-  },
-  {
-    "obsolete": null,
-    "note": null,
     "name": "fluent-plugin-azuremonitormetrics",
     "info": "Input plugin for Azure Monitor Metrics.",
     "authors": "Ilana Kantorov",
     "version": "0.0.4",
-    "downloads": 8070,
+    "downloads": 8080,
     "homepage_uri": "https://github.com/Azure/fluent-plugin-azuremonitormetrics"
   },
   {
@@ -6316,7 +6326,7 @@
     "info": "Fluentd plugin to input/output event track data to mixpanel",
     "authors": "zhron4x",
     "version": "0.0.13",
-    "downloads": 8032,
+    "downloads": 8033,
     "homepage_uri": "https://github.com/zhron4x/fluent-plugin-mixpanel-enchanced"
   },
   {
@@ -6346,7 +6356,7 @@
     "info": "Plugin that adds whole record to to_s field, json format",
     "authors": "dixen",
     "version": "0.0.3",
-    "downloads": 7934,
+    "downloads": 7937,
     "homepage_uri": "https://github.com/dixentw/fluent-plugin-to_s"
   },
   {
@@ -6426,7 +6436,7 @@
     "info": "A Fluentd plugin to split fluentd events into multiple records",
     "authors": "Al-waleed Shihadeh",
     "version": "0.0.1",
-    "downloads": 7632,
+    "downloads": 7634,
     "homepage_uri": "https://github.com/wshihadeh/fluent-plugin-record-splitter.git"
   },
   {
@@ -6436,7 +6446,7 @@
     "info": "Sndacs output plugin for Fluent event collector",
     "authors": "Sparkle",
     "version": "0.0.3",
-    "downloads": 7628,
+    "downloads": 7629,
     "homepage_uri": "https://github.com/sparkle/fluent-plugin-sndacs"
   },
   {
@@ -6446,7 +6456,7 @@
     "info": "A Fluentd output plugin for sending Kivera proxy logs to the Kivera log ingestion service",
     "authors": "Tyler Matheson",
     "version": "1.0.3",
-    "downloads": 7595,
+    "downloads": 7608,
     "homepage_uri": "https://github.com/kivera-io/fluent-plugin-out-kivera"
   },
   {
@@ -6466,7 +6476,7 @@
     "info": "Fluentd output plugin for Azure Log Analytics",
     "authors": "Mark Simms",
     "version": "0.2.0",
-    "downloads": 7562,
+    "downloads": 7564,
     "homepage_uri": "http://www.github.com/mabsimms/fluent-plugin-azureoms"
   },
   {
@@ -6486,7 +6496,7 @@
     "info": "Fluentd plugin to send deis-router metricsto influxdb through kafka",
     "authors": "Guilherme Souza",
     "version": "0.2.2",
-    "downloads": 7534,
+    "downloads": 7538,
     "homepage_uri": "https://github.com/topfreegames/fluent-plugin-deis-kafka"
   },
   {
@@ -6516,7 +6526,7 @@
     "info": "Fluentd plugin to serve ElasticSearch as a subprocess",
     "authors": "kiyoto",
     "version": "0.0.2",
-    "downloads": 7481,
+    "downloads": 7482,
     "homepage_uri": "https://github.com/kiyioto/fluent-plugin-embedded-elasticsearch"
   },
   {
@@ -6546,7 +6556,7 @@
     "info": "FLuentd plugin for SNMP Traps... WIP",
     "authors": "Alex Pena",
     "version": "0.0.1",
-    "downloads": 7421,
+    "downloads": 7424,
     "homepage_uri": "https://github.com/Bigel0w/fluent-plugin-snmptrap"
   },
   {
@@ -6556,7 +6566,7 @@
     "info": "filtreing access log",
     "authors": "kkaneko",
     "version": "0.0.2",
-    "downloads": 7417,
+    "downloads": 7418,
     "homepage_uri": "https://github.com/kenjikaneko/fluent-plugin-access"
   },
   {
@@ -6586,7 +6596,7 @@
     "info": "Fluentd plugin to insert into Microsoft SQL Server.",
     "authors": "Hidemasa Togashi",
     "version": "0.0.2",
-    "downloads": 7326,
+    "downloads": 7331,
     "homepage_uri": "http://github.com/htgc/fluent-plugin-mssql/fork"
   },
   {
@@ -6596,7 +6606,7 @@
     "info": "A fluentd input plugin that collects node and container metrics from a kubernetes cluster.",
     "authors": "hbrewster",
     "version": "1.2.7",
-    "downloads": 7319,
+    "downloads": 7325,
     "homepage_uri": "https://github.com/splunk/fluent-plugin-kubernetes-metrics"
   },
   {
@@ -6606,7 +6616,7 @@
     "info": "Fluentd output plugin to buffer logs as json arrays to a url",
     "authors": "Jay OConnor",
     "version": "0.0.1",
-    "downloads": 7297,
+    "downloads": 7298,
     "homepage_uri": "https://github.com/jdoconnor/fluentd_https_out"
   },
   {
@@ -6646,7 +6656,7 @@
     "info": "Fluent::ExtractJsonFilter is a fluentd plugin extracts single JSON object from record.",
     "authors": "neguse",
     "version": "0.1.1",
-    "downloads": 7243,
+    "downloads": 7246,
     "homepage_uri": "https://github.com/neguse/fluent-plugin-extract-json"
   },
   {
@@ -6676,7 +6686,7 @@
     "info": "A Fluentd parser plugin to extract attributes from XML data",
     "authors": "Rémy DUTHU",
     "version": "0.1.4",
-    "downloads": 7218,
+    "downloads": 7225,
     "homepage_uri": "https://github.com/remyduthu/fluent-plugin-xml"
   },
   {
@@ -6716,7 +6726,7 @@
     "info": "Output filter plugin for Amazon Kinesis",
     "authors": "Genki Sugawara",
     "version": "0.0.2",
-    "downloads": 7176,
+    "downloads": 7178,
     "homepage_uri": "https://bitbucket.org/winebarrel/fluent-plugin-kinesis-alt"
   },
   {
@@ -6736,7 +6746,7 @@
     "info": "fluent output plugin publishing logs to redis pub/sub",
     "authors": "Daisuke Murase",
     "version": "0.1.1",
-    "downloads": 7146,
+    "downloads": 7147,
     "homepage_uri": "https://github.com/typester/fluent-plugin-redis-publish"
   },
   {
@@ -6766,7 +6776,7 @@
     "info": "Fluentd out_stdout extension",
     "authors": "Naotoshi Seo",
     "version": "0.0.1",
-    "downloads": 7020,
+    "downloads": 7024,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-stdout_ex"
   },
   {
@@ -6816,7 +6826,7 @@
     "info": "Fluentd plugin derive metrics from log buffer chunks and submit to various metrics backends",
     "authors": "Alex Yamauchi",
     "version": "0.0.4",
-    "downloads": 6972,
+    "downloads": 6973,
     "homepage_uri": "https://github.com/hotschedules/fluent-plugin-buffered-metrics"
   },
   {
@@ -6826,7 +6836,7 @@
     "info": "Fluentd input plugin to probe network latency and keepalive, similar to smokeping",
     "authors": "Yuichi UEMURA",
     "version": "0.1.0",
-    "downloads": 6956,
+    "downloads": 6958,
     "homepage_uri": "https://github.com/u-ichi/fluent-plugin-network-probe"
   },
   {
@@ -6836,7 +6846,7 @@
     "info": "You can detect slow query in real time by using this plugin.",
     "authors": "Kouhei Sutou",
     "version": "1.0.2",
-    "downloads": 6942,
+    "downloads": 6943,
     "homepage_uri": "https://github.com/groonga/fluent-plugin-groonga-query-log"
   },
   {
@@ -6856,7 +6866,7 @@
     "info": "This plugin converts data of specified fields, by encrypting using AES and base64 encoding for encrypted values",
     "authors": "TAGOMORI Satoshi",
     "version": "0.1.1",
-    "downloads": 6935,
+    "downloads": 6936,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-encrypt"
   },
   {
@@ -6876,7 +6886,7 @@
     "info": "json-api plugin for Fluentd",
     "authors": "Freddie Fujiwara",
     "version": "0.0.2",
-    "downloads": 6887,
+    "downloads": 6889,
     "homepage_uri": "http://github.com/freddiefujiwara/fluent-plugin-json-api"
   },
   {
@@ -6892,21 +6902,11 @@
   {
     "obsolete": null,
     "note": null,
-    "name": "fluent-plugin-pull_forward",
-    "info": "Fluentd plugin that store data to be forwarded, and send these when client(input plugin) requests it, over HTTPS and authentication",
-    "authors": "TAGOMORI Satoshi",
-    "version": "0.0.2",
-    "downloads": 6828,
-    "homepage_uri": "https://github.com/tagomoris/fluent-plugin-pull_forward"
-  },
-  {
-    "obsolete": null,
-    "note": null,
     "name": "fluent-plugin-aes-forward",
     "info": "fluent plugin aes forward",
     "authors": "Keiji Matsuzaki",
     "version": "0.0.2",
-    "downloads": 6818,
+    "downloads": 6820,
     "homepage_uri": "https://github.com/aiming/fluent-plugin-aes-forward"
   },
   {
@@ -6916,7 +6916,7 @@
     "info": "Event driven udp input plugin for fluentd",
     "authors": "Alexander Blagoev",
     "version": "0.0.2",
-    "downloads": 6805,
+    "downloads": 6806,
     "homepage_uri": "https://github.com/ablagoev/fluent-plugin-in-udp-event"
   },
   {
@@ -6936,7 +6936,7 @@
     "info": "Jubatus output plugin for fluentd",
     "authors": "MATSUMOTO Katsuyoshi",
     "version": "0.0.2",
-    "downloads": 6775,
+    "downloads": 6777,
     "homepage_uri": "https://github.com/katsyoshi/fluent-plugin-jubatus"
   },
   {
@@ -6956,7 +6956,7 @@
     "info": "Fluentd STDOUT output plugin with buffering, for buffer plugin tests only",
     "authors": "TAGOMORI Satoshi",
     "version": "0.0.2",
-    "downloads": 6715,
+    "downloads": 6717,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-buffered-stdout"
   },
   {
@@ -6976,7 +6976,7 @@
     "info": "Fluent plugin to filter based on Kubernetes annotations",
     "authors": "Delivery Engineering",
     "version": "1.0.6",
-    "downloads": 6636,
+    "downloads": 6637,
     "homepage_uri": "https://github.com/redbubble/fluent-plugin-annotation-filter"
   },
   {
@@ -6986,7 +6986,7 @@
     "info": "This plugin allows you to send messages to mattermost in case of errors",
     "authors": "Pierluigi Minardi",
     "version": "0.2.2",
-    "downloads": 6627,
+    "downloads": 6629,
     "homepage_uri": "https://github.com/levigo-systems/fluent-plugin-mattermost"
   },
   {
@@ -7036,7 +7036,7 @@
     "info": "Fluentd plugin to tail files and add the file path to the message",
     "authors": "Jacob Wirth",
     "version": "0.0.2",
-    "downloads": 6553,
+    "downloads": 6554,
     "homepage_uri": "https://github.com/xthexder/fluent-plugin-tailpath"
   },
   {
@@ -7072,22 +7072,22 @@
   {
     "obsolete": null,
     "note": null,
+    "name": "fluent-plugin-keyvalue-parser",
+    "info": "Fluentd parser plugin for key-value formatted logs.",
+    "authors": "Arun M J",
+    "version": "0.1.4",
+    "downloads": 6427,
+    "homepage_uri": "https://github.com/arunmj/fluent-plugin-keyvalue-parser"
+  },
+  {
+    "obsolete": null,
+    "note": null,
     "name": "fluent-plugin-netflow-multiplier",
     "info": "Fluentd filter plugin to multiply sampled netflow counters by sampling rate. It finds counters and sampling rate field in each netflow and calculate into other counter fields.",
     "authors": "Shintaro Kojima",
     "version": "0.1.1",
     "downloads": 6427,
     "homepage_uri": "https://github.com/codeout/fluent-plugin-netflow-multiplier"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-keyvalue-parser",
-    "info": "Fluentd parser plugin for key-value formatted logs.",
-    "authors": "Arun M J",
-    "version": "0.1.4",
-    "downloads": 6426,
-    "homepage_uri": "https://github.com/arunmj/fluent-plugin-keyvalue-parser"
   },
   {
     "obsolete": null,
@@ -7126,7 +7126,7 @@
     "info": "Output filter plugin to rewrite Collectd JSON output to flat json",
     "authors": "Manoj Sharma",
     "version": "0.1.1",
-    "downloads": 6386,
+    "downloads": 6388,
     "homepage_uri": "https://github.com/CiscoZeus/fluent-plugin-collectd-unroll"
   },
   {
@@ -7182,6 +7182,16 @@
   {
     "obsolete": null,
     "note": null,
+    "name": "fluent-plugin-buffer-pullpool",
+    "info": "Alternative file buffer plugin to store data to wait to be pulled by plugin",
+    "authors": "TAGOMORI Satoshi",
+    "version": "0.0.1",
+    "downloads": 6273,
+    "homepage_uri": "https://github.com/tagomoris/fluent-plugin-buffer-pullpool"
+  },
+  {
+    "obsolete": null,
+    "note": null,
     "name": "fluent-plugin-switch",
     "info": "Fluentd filter plugin to categozie events, similar to switch statement in PLs",
     "authors": "Arash Vatanpoor",
@@ -7196,7 +7206,7 @@
     "info": "Add metadata to docker logs by asking kubelet api",
     "authors": "Michael Grosser",
     "version": "0.1.0",
-    "downloads": 6254,
+    "downloads": 6255,
     "homepage_uri": "https://github.com/grosser/fluent-plugin-kubelet_metadata"
   },
   {
@@ -7216,7 +7226,7 @@
     "info": "Plugin to send records to logentries",
     "authors": "larte",
     "version": "0.2.0",
-    "downloads": 6241,
+    "downloads": 6242,
     "homepage_uri": "https://github.com/larte/fluent-plugin-logentries_ssl"
   },
   {
@@ -7226,7 +7236,7 @@
     "info": "Fluentd output plugin for Zulip powerful open source group chat.",
     "authors": "Kenji Okimoto",
     "version": "0.3.0",
-    "downloads": 6176,
+    "downloads": 6177,
     "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-zulip"
   },
   {
@@ -7246,7 +7256,7 @@
     "info": "Amazon Redshift output plugin for Fluentd (updated by Kwarter)",
     "authors": "Masashi Miyazaki, Daniel Koepke",
     "version": "0.0.3",
-    "downloads": 6167,
+    "downloads": 6168,
     "homepage_uri": "https://github.com/kwarter/fluent-plugin-redshift"
   },
   {
@@ -7256,7 +7266,7 @@
     "info": "Fluentd plugin for parsing auditd logs",
     "authors": "Josef Karasek",
     "version": "0.1.4",
-    "downloads": 6161,
+    "downloads": 6162,
     "homepage_uri": "https://github.com/viaq/fluent-plugin-audit_log_parser"
   },
   {
@@ -7276,7 +7286,7 @@
     "info": "executes external programs with cron syntax.",
     "authors": "Hiroshi Toyama",
     "version": "0.0.3",
-    "downloads": 6132,
+    "downloads": 6133,
     "homepage_uri": "https://github.com/toyama0919/fluent-plugin-exec_cron"
   },
   {
@@ -7336,7 +7346,7 @@
     "info": "This rubygem does not have a description or summary.",
     "authors": "Alexey Panaetov",
     "version": "0.0.6",
-    "downloads": 5985,
+    "downloads": 5986,
     "homepage_uri": ""
   },
   {
@@ -7348,6 +7358,16 @@
     "version": "0.3.2",
     "downloads": 5953,
     "homepage_uri": "https://github.com/dustinblackman/fluent-plugin-gcs"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-devo",
+    "info": "Syslog TLS output plugin with formatting support, for Fluentd",
+    "authors": "Devo Inc.",
+    "version": "1.0.0",
+    "downloads": 5937,
+    "homepage_uri": "https://github.com/DevoInc/fluent-plugin-devo"
   },
   {
     "obsolete": null,
@@ -7386,7 +7406,7 @@
     "info": "Fluentd input plugin for MySQL slow query log table on Amazon RDS.",
     "authors": "Satoshi Matsumoto",
     "version": "0.3.0",
-    "downloads": 5910,
+    "downloads": 5911,
     "homepage_uri": "https://github.com/kaorimatz/fluent-plugin-rds-mysql-slow-log"
   },
   {
@@ -7396,7 +7416,7 @@
     "info": "To count records with string fields by regexps (To count records with numbers, use numeric-counter)",
     "authors": "yusuke yamatani ",
     "version": "0.0.2",
-    "downloads": 5903,
+    "downloads": 5905,
     "homepage_uri": "https://github.com/yusukeyamatani/fluent-plugin-in-kinesis"
   },
   {
@@ -7418,16 +7438,6 @@
     "version": "0.1.2",
     "downloads": 5894,
     "homepage_uri": "https://github.com/ksss/fluent-plugin-postgres-bulk"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-devo",
-    "info": "Syslog TLS output plugin with formatting support, for Fluentd",
-    "authors": "Devo Inc.",
-    "version": "1.0.0",
-    "downloads": 5893,
-    "homepage_uri": "https://github.com/DevoInc/fluent-plugin-devo"
   },
   {
     "obsolete": null,
@@ -7456,7 +7466,7 @@
     "info": "Streams Fluentd logs to the Timber.io logging service.",
     "authors": "Timber.io",
     "version": "2.0.0",
-    "downloads": 5857,
+    "downloads": 5858,
     "homepage_uri": "https://github.com/timberio/fluent-plugin-timber"
   },
   {
@@ -7506,7 +7516,7 @@
     "info": "Output kuromoji analysis Plugin for fluentd",
     "authors": "Hiroshi Toyama",
     "version": "0.0.2",
-    "downloads": 5780,
+    "downloads": 5782,
     "homepage_uri": "https://github.com/toyama0919/fluent-plugin-kuromoji"
   },
   {
@@ -7526,7 +7536,7 @@
     "info": "Redis(zset/set/list/string/publish) output plugin for Fluentd...",
     "authors": "moaikids, HANAI Tohru aka pokehanai",
     "version": "0.1.3",
-    "downloads": 5774,
+    "downloads": 5775,
     "homepage_uri": "https://github.com/hao7860286/fluent-plugin-redis-store-liu"
   },
   {
@@ -7536,7 +7546,7 @@
     "info": "Fluentd output plugin which adds timestamp field to record in various formats.",
     "authors": "Masaki Matsushita",
     "version": "0.0.1",
-    "downloads": 5766,
+    "downloads": 5769,
     "homepage_uri": "https://github.com/Glasssaga/fluent-plugin-timestamper"
   },
   {
@@ -7566,7 +7576,7 @@
     "info": "A Fluentd filter plugin to convert ' ' to \" \" (line feed)",
     "authors": "Naotoshi Seo",
     "version": "0.0.2",
-    "downloads": 5712,
+    "downloads": 5713,
     "homepage_uri": "https://github.com/sonots/fluent-plugin-filter_linefeeder"
   },
   {
@@ -7586,8 +7596,18 @@
     "info": "fluentd HTTP Input Plugin for Protocol Buffers with Single and Batch Messages Support",
     "authors": "Azeem Sajid",
     "version": "0.3.1",
-    "downloads": 5641,
+    "downloads": 5651,
     "homepage_uri": "https://github.com/iamAzeem/fluent-plugin-protobuf-http"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-elasticsearch2",
+    "info": "%Elasticsearch output plugin for Fluent event collector",
+    "authors": "diogo, pitr",
+    "version": "3.5.7",
+    "downloads": 5609,
+    "homepage_uri": "https://github.com/uken/fluent-plugin-elasticsearch2"
   },
   {
     "obsolete": null,
@@ -7598,16 +7618,6 @@
     "version": "0.0.3",
     "downloads": 5608,
     "homepage_uri": ""
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-elasticsearch2",
-    "info": "%Elasticsearch output plugin for Fluent event collector",
-    "authors": "diogo, pitr",
-    "version": "3.5.7",
-    "downloads": 5608,
-    "homepage_uri": "https://github.com/uken/fluent-plugin-elasticsearch2"
   },
   {
     "obsolete": null,
@@ -7696,7 +7706,7 @@
     "info": "Fluentd plugin fo HAProxy info and stats",
     "authors": "Yohei Kawahara",
     "version": "0.1.1",
-    "downloads": 5509,
+    "downloads": 5511,
     "homepage_uri": ""
   },
   {
@@ -7706,7 +7716,7 @@
     "info": "fluentd/td-agent filter plugin to parse multi format message.",
     "authors": "msysh",
     "version": "0.0.2",
-    "downloads": 5503,
+    "downloads": 5510,
     "homepage_uri": "https://blog.msysh.me"
   },
   {
@@ -7746,7 +7756,7 @@
     "info": "Protobuf parser for Fluentd.",
     "authors": "Hiroshi Hatake",
     "version": "0.1.2",
-    "downloads": 5430,
+    "downloads": 5431,
     "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-parser-protobuf"
   },
   {
@@ -7816,7 +7826,7 @@
     "info": "Rewrite tags of messages sent by AWS firelens for easy handling.",
     "authors": "FUJIWARA Shunichiro",
     "version": "0.2.0",
-    "downloads": 5328,
+    "downloads": 5329,
     "homepage_uri": "https://github.com/fujiwara/fluent-plugin-firelens-tag-filter"
   },
   {
@@ -7832,22 +7842,22 @@
   {
     "obsolete": null,
     "note": null,
+    "name": "fluent-plugin-filter-kubernetes_typecast",
+    "info": "A plugin to allow records to be typecasted based on kubernetes annotations",
+    "authors": "Lee Spottiswood",
+    "version": "0.1.4",
+    "downloads": 5321,
+    "homepage_uri": "https://github.com/ukfast/fluent-plugin-filter-kubernetes_typecast"
+  },
+  {
+    "obsolete": null,
+    "note": null,
     "name": "fluent-plugin-csv-with-header",
     "info": "CSV parser with header plugin for Fluent",
     "authors": "John-Lin",
     "version": "0.1.1",
     "downloads": 5319,
     "homepage_uri": "https://github.com/John-Lin/fluent-plugin-csv-with-header"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-filter-kubernetes_typecast",
-    "info": "A plugin to allow records to be typecasted based on kubernetes annotations",
-    "authors": "Lee Spottiswood",
-    "version": "0.1.4",
-    "downloads": 5315,
-    "homepage_uri": "https://github.com/ukfast/fluent-plugin-filter-kubernetes_typecast"
   },
   {
     "obsolete": null,
@@ -7876,7 +7886,7 @@
     "info": "This plugin reduces the size of JSON records if they exceed a specified limit.",
     "authors": "Mykola Panin",
     "version": "0.1.31",
-    "downloads": 5288,
+    "downloads": 5290,
     "homepage_uri": "http://example.com/fluent-plugin-json-size-limit"
   },
   {
@@ -7896,7 +7906,7 @@
     "info": "Fluent output plugin to handle output directory by source host using events tag.",
     "authors": "taka84u9",
     "version": "0.0.1",
-    "downloads": 5228,
+    "downloads": 5229,
     "homepage_uri": "https://github.com/taka84u9/fluent-plugin-tagfile"
   },
   {
@@ -7926,7 +7936,7 @@
     "info": "A fluentd plugin to send Yo",
     "authors": "Uchio KONDO",
     "version": "0.0.1",
-    "downloads": 5141,
+    "downloads": 5145,
     "homepage_uri": "https://github.com/udzura/fluent-plugin-yo"
   },
   {
@@ -7946,7 +7956,7 @@
     "info": "Streams Fluentd logs to the Logtail.com logging service.",
     "authors": "Logtail.com",
     "version": "0.2.0",
-    "downloads": 5063,
+    "downloads": 5064,
     "homepage_uri": "https://github.com/logtail/fluent-plugin-logtail"
   },
   {
@@ -8016,7 +8026,7 @@
     "info": "Input parser plugin which allows arbitrary transformation of input JSON",
     "authors": "Grayson Chao, Yevhen Fabizhevskyi",
     "version": "0.1.3",
-    "downloads": 4851,
+    "downloads": 4854,
     "homepage_uri": "https://github.com/fabasoad/fluent-plugin-json-transform_ex"
   },
   {
@@ -8066,7 +8076,7 @@
     "info": "Filter plugin to add Kubernetes metadata",
     "authors": "Jimmi Dyson",
     "version": "0.24.1",
-    "downloads": 4755,
+    "downloads": 4761,
     "homepage_uri": "https://github.com/fabric8io/fluent-plugin-kubernetes_metadata_filter"
   },
   {
@@ -8086,7 +8096,7 @@
     "info": "Fluentd output plugin to store data on Google Sheets.",
     "authors": "Fumiaki MATSUSHIMA",
     "version": "0.2.0",
-    "downloads": 4687,
+    "downloads": 4689,
     "homepage_uri": "https://github.com/mtsmfm/fluent-plugin-google-sheets"
   },
   {
@@ -8096,7 +8106,7 @@
     "info": "Google Cloud Storage output plugin for the Fluent.",
     "authors": "Tatsuo Ikeda",
     "version": "0.3.2",
-    "downloads": 4680,
+    "downloads": 4682,
     "homepage_uri": "https://github.com/ikeikeikeike/fluent-plugin-gstore"
   },
   {
@@ -8116,7 +8126,7 @@
     "info": "Aliyun OSS plugin for Fluentd event collector",
     "authors": "Jinhu Wu",
     "version": "0.0.1",
-    "downloads": 4668,
+    "downloads": 4671,
     "homepage_uri": "https://github.com/aliyun/fluent-plugin-oss"
   },
   {
@@ -8176,7 +8186,7 @@
     "info": "Filter plugin for looking up a json object out of a record",
     "authors": "Micah Hausler",
     "version": "0.1.0",
-    "downloads": 4594,
+    "downloads": 4595,
     "homepage_uri": "https://github.com/skuid/fluent-plugin-json-lookup"
   },
   {
@@ -8202,22 +8212,22 @@
   {
     "obsolete": null,
     "note": null,
-    "name": "fluent-plugin-https-client",
-    "info": "A generic Fluentd output plugin to send records to HTTP / HTTPS endpoint, with SSL, Proxy, and Header implementation",
-    "authors": "Arash Vatanpoor",
-    "version": "0.0.2",
-    "downloads": 4582,
-    "homepage_uri": "https://github.com/a-venture/fluent-plugin-https-client"
-  },
-  {
-    "obsolete": null,
-    "note": null,
     "name": "fluent-plugin-envoy-parser",
     "info": "Fluentd parser plugin to parse standard Envoy Proxy access logs",
     "authors": "salrashid123",
     "version": "0.0.6",
-    "downloads": 4581,
+    "downloads": 4584,
     "homepage_uri": "https://github.com/salrashid123/fluent-plugin-envoy-parser"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-https-client",
+    "info": "A generic Fluentd output plugin to send records to HTTP / HTTPS endpoint, with SSL, Proxy, and Header implementation",
+    "authors": "Arash Vatanpoor",
+    "version": "0.0.2",
+    "downloads": 4583,
+    "homepage_uri": "https://github.com/a-venture/fluent-plugin-https-client"
   },
   {
     "obsolete": null,
@@ -8226,7 +8236,7 @@
     "info": "reckoner-cdp output plugin for Fluentd",
     "authors": "katsuhito123",
     "version": "0.1.3",
-    "downloads": 4566,
+    "downloads": 4567,
     "homepage_uri": "https://github.com/3-shake/fluent-plugin-reckoner-cdp"
   },
   {
@@ -8266,7 +8276,7 @@
     "info": "A streaming JSON input plugin for fluentd",
     "authors": "Daniel Malon",
     "version": "0.1.1",
-    "downloads": 4479,
+    "downloads": 4481,
     "homepage_uri": "https://github.com/MerlinDMC/fluent-plugin-input-jsonstream"
   },
   {
@@ -8326,18 +8336,8 @@
     "info": "A no frills fluentd buffered plugin to write to microsoft sql server",
     "authors": "u89012",
     "version": "0.0.8",
-    "downloads": 4417,
+    "downloads": 4418,
     "homepage_uri": "http://github.com/u89012/fluent-plugin-mssql2"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-buffer-pullpool",
-    "info": "Alternative file buffer plugin to store data to wait to be pulled by plugin",
-    "authors": "TAGOMORI Satoshi",
-    "version": "0.0.1",
-    "downloads": 4414,
-    "homepage_uri": "https://github.com/tagomoris/fluent-plugin-buffer-pullpool"
   },
   {
     "obsolete": null,
@@ -8366,7 +8366,7 @@
     "info": "kanicounter",
     "authors": "tatsuhito",
     "version": "0.0.1",
-    "downloads": 4396,
+    "downloads": 4397,
     "homepage_uri": "https://github.com/TatsuhitoMuramatsu/fluent-plugin-kanicounter"
   },
   {
@@ -8406,7 +8406,7 @@
     "info": "fluentd parser plugin to flatten nested json objects",
     "authors": "Al-waleed Shihadeh",
     "version": "0.0.2",
-    "downloads": 4360,
+    "downloads": 4362,
     "homepage_uri": "https://github.com/shihadeh/fluent-plugin-to-simple-json-parser"
   },
   {
@@ -8466,7 +8466,7 @@
     "info": "Leftronic output plugin for Fluentd.",
     "authors": "toyama0919",
     "version": "0.0.4",
-    "downloads": 4326,
+    "downloads": 4327,
     "homepage_uri": "https://github.com/toyama0919/fluent-plugin-leftronic/"
   },
   {
@@ -8476,7 +8476,7 @@
     "info": "Fork A GELF input plugin for fluentd",
     "authors": "Nikolay Ostroushko",
     "version": "0.3.5",
-    "downloads": 4320,
+    "downloads": 4322,
     "homepage_uri": "https://github.com/koxx009/fluent-plugin-input-gelf-kolyunya"
   },
   {
@@ -8546,7 +8546,7 @@
     "info": "Filter plugin to add Kubernetes metadata",
     "authors": "Xiangqian Wang",
     "version": "0.0.9",
-    "downloads": 4256,
+    "downloads": 4258,
     "homepage_uri": ""
   },
   {
@@ -8556,7 +8556,7 @@
     "info": "Parse mixed type of logs (JSON, Rails, fmtlogs, ...)",
     "authors": "Camille Meulien",
     "version": "1.1.0",
-    "downloads": 4252,
+    "downloads": 4253,
     "homepage_uri": "https://github.com/openware/fluent-plugin-filter-logs"
   },
   {
@@ -8566,7 +8566,7 @@
     "info": "fluent plugin to drain heroku http",
     "authors": "Platform Delivery",
     "version": "0.0.2",
-    "downloads": 4234,
+    "downloads": 4236,
     "homepage_uri": "https://github.com/ApplauseOSS/fluent-plugin-heroku-http"
   },
   {
@@ -8586,7 +8586,7 @@
     "info": "Fluentd plugin to normalize SQL queries",
     "authors": "Genta Kamitani",
     "version": "0.0.2",
-    "downloads": 4222,
+    "downloads": 4223,
     "homepage_uri": "https://github.com/genkami/fluent-plugin-query-fingerprint"
   },
   {
@@ -8596,7 +8596,7 @@
     "info": "redis-pubsub plugin for Fluentd",
     "authors": "Freddie Fujiwara",
     "version": "0.0.1",
-    "downloads": 4207,
+    "downloads": 4208,
     "homepage_uri": "http://github.com/freddiefujiwara/fluent-plugin-redis-pubsub"
   },
   {
@@ -8686,7 +8686,7 @@
     "info": "Fluentd plugin to put the tag records in the data.",
     "authors": "Fukui Masayuki",
     "version": "0.0.1",
-    "downloads": 4151,
+    "downloads": 4152,
     "homepage_uri": "https://github.com/msfukui/fluent-plugin-tagdata"
   },
   {
@@ -8696,7 +8696,7 @@
     "info": "Fluentd plugin to count online users. It's based on Redis and the sorted set data type.",
     "authors": "Yuyang Lan",
     "version": "0.0.1",
-    "downloads": 4147,
+    "downloads": 4148,
     "homepage_uri": "https://github.com/lanyuyang/fluent-plugin-onlineuser"
   },
   {
@@ -8726,7 +8726,7 @@
     "info": "fluent buffered HipChat plugin",
     "authors": "Keisuke SOGAWA",
     "version": "0.2.0",
-    "downloads": 4116,
+    "downloads": 4117,
     "homepage_uri": "https://github.com/sowawa/fluent-plugin-buffered-hipchat"
   },
   {
@@ -8736,7 +8736,7 @@
     "info": "This plugin use a tcp socket to send events in another socket server",
     "authors": "Fabricio Archanjo Fonseca",
     "version": "0.1.1",
-    "downloads": 4099,
+    "downloads": 4103,
     "homepage_uri": "https://github.com/farchanjo"
   },
   {
@@ -8746,7 +8746,7 @@
     "info": "Fluentd plugin to filter old records",
     "authors": "autopp",
     "version": "0.1.0",
-    "downloads": 4099,
+    "downloads": 4100,
     "homepage_uri": "https://github.com/autopp/fluent-plugin-time-filter"
   },
   {
@@ -8756,7 +8756,7 @@
     "info": "Forked from https://github.com/ixixi/fluent-plugin-sqs (hopefully temporarily)",
     "authors": "Yuri Odagiri, JamesJJ",
     "version": "3.1.1",
-    "downloads": 4093,
+    "downloads": 4095,
     "homepage_uri": "https://github.com/jamesjj/fluent-plugin-sqs"
   },
   {
@@ -8766,7 +8766,7 @@
     "info": "Fluentd plugin to save json metrics in OpenTSDB",
     "authors": "Dmytro Vedetskyi",
     "version": "0.0.2",
-    "downloads": 4089,
+    "downloads": 4091,
     "homepage_uri": "https://github.com/helli0n/fluent-plugin-jopentsdb"
   },
   {
@@ -8812,6 +8812,16 @@
   {
     "obsolete": null,
     "note": null,
+    "name": "fluent-plugin-syslog-tls-long-timeout",
+    "info": "Syslog TLS output plugin with formatting support, for Fluentd",
+    "authors": "thomas morgan, lukasz stanik",
+    "version": "2.0.0",
+    "downloads": 4059,
+    "homepage_uri": "https://github.com/zarqman/fluent-plugin-syslog-tls"
+  },
+  {
+    "obsolete": null,
+    "note": null,
     "name": "fluent-plugin-sumologic-carsonoid",
     "info": "fluent plugin for sumologic",
     "authors": "memorycraft, carsonoid",
@@ -8822,21 +8832,11 @@
   {
     "obsolete": null,
     "note": null,
-    "name": "fluent-plugin-syslog-tls-long-timeout",
-    "info": "Syslog TLS output plugin with formatting support, for Fluentd",
-    "authors": "thomas morgan, lukasz stanik",
-    "version": "2.0.0",
-    "downloads": 4058,
-    "homepage_uri": "https://github.com/zarqman/fluent-plugin-syslog-tls"
-  },
-  {
-    "obsolete": null,
-    "note": null,
     "name": "fluent-plugin-juniper-telemetry_tech-mocha",
     "info": "Input plugin for Fluentd for Juniper devices telemetry data streaming : Jvision / analyticsd etc ..",
     "authors": "Tech Mocha",
     "version": "0.4.2",
-    "downloads": 4048,
+    "downloads": 4050,
     "homepage_uri": "https://github.com/tech-mocha/fluentd-plugin-juniper-telemetry"
   },
   {
@@ -8846,7 +8846,7 @@
     "info": "Fluentd doesn't guarantee message order but you may keep message order.",
     "authors": "Project Hatohol",
     "version": "1.0.0",
-    "downloads": 4044,
+    "downloads": 4045,
     "homepage_uri": "https://github.com/project-hatohol/fluent-plugin-sort"
   },
   {
@@ -8866,7 +8866,7 @@
     "info": "Fluentd filter plugin to shift the timezone of an event using the value of a field on that event.",
     "authors": "Anders Ingemann",
     "version": "0.0.2",
-    "downloads": 4033,
+    "downloads": 4034,
     "homepage_uri": "https://github.com/orbit-online/fluent-plugin-set-timezone"
   },
   {
@@ -8876,7 +8876,7 @@
     "info": "sidekiq metric collector plugin for fluentd.",
     "authors": "joker1007",
     "version": "0.1.2",
-    "downloads": 4023,
+    "downloads": 4024,
     "homepage_uri": "https://github.com/joker1007/fluent-plugin-sidekiq_metric"
   },
   {
@@ -8926,7 +8926,7 @@
     "info": "FedMsg subscriber plugin for fluentd",
     "authors": "Anton Sherkhonov",
     "version": "0.0.2",
-    "downloads": 3978,
+    "downloads": 3979,
     "homepage_uri": ""
   },
   {
@@ -8952,6 +8952,16 @@
   {
     "obsolete": null,
     "note": null,
+    "name": "fluent-plugin-tcp-client",
+    "info": "Fluentd output plugin for persistent TCP connections",
+    "authors": "Bryan Richardson",
+    "version": "0.1.0",
+    "downloads": 3960,
+    "homepage_uri": "https://github.com/activeshadow/fluent-plugin-tcp-client"
+  },
+  {
+    "obsolete": null,
+    "note": null,
     "name": "fluent-plugin-data-rejecter",
     "info": "Fluent plugin Output filer to reject key pair",
     "authors": "Hirotaka Tajiri",
@@ -8972,21 +8982,11 @@
   {
     "obsolete": null,
     "note": null,
-    "name": "fluent-plugin-tcp-client",
-    "info": "Fluentd output plugin for persistent TCP connections",
-    "authors": "Bryan Richardson",
-    "version": "0.1.0",
-    "downloads": 3957,
-    "homepage_uri": "https://github.com/activeshadow/fluent-plugin-tcp-client"
-  },
-  {
-    "obsolete": null,
-    "note": null,
     "name": "fluent-plugin-tcp-output",
     "info": "Output plugin to TCP Socket",
     "authors": "Jonathan Glanz",
     "version": "1.0.1",
-    "downloads": 3927,
+    "downloads": 3930,
     "homepage_uri": "https://github.com/densebrain/fluent-plugin-tcp-output"
   },
   {
@@ -9066,7 +9066,7 @@
     "info": "Fluentd plugin to run ruby one line of script",
     "authors": "bash0C7",
     "version": "0.0.2",
-    "downloads": 3843,
+    "downloads": 3844,
     "homepage_uri": "https://github.com/bash0C7/fluent-plugin-ruby_one_liner"
   },
   {
@@ -9096,7 +9096,7 @@
     "info": "Output plugin to save image file from massages attribute value",
     "authors": "bash0C7",
     "version": "0.0.1",
-    "downloads": 3804,
+    "downloads": 3806,
     "homepage_uri": "https://github.com/bash0C7/fluent-plugin-imagefile"
   },
   {
@@ -9126,7 +9126,7 @@
     "info": "You can integrated log monitoring system with Hatohol",
     "authors": "Project Hatohol",
     "version": "1.0.0",
-    "downloads": 3771,
+    "downloads": 3772,
     "homepage_uri": "https://github.com/project-hatohol/fluent-plugin-hatohol"
   },
   {
@@ -9146,7 +9146,7 @@
     "info": "A fluentd filter plugin to inject id getting from katsubushi.",
     "authors": "FUJIWARA Shunichiro",
     "version": "0.1.0",
-    "downloads": 3765,
+    "downloads": 3766,
     "homepage_uri": "https://github.com/fujiwara/fluent-plugin-katsubushi"
   },
   {
@@ -9346,7 +9346,7 @@
     "info": "MessagePack parser for Fluentd",
     "authors": "Tomás Rojas",
     "version": "0.1.0",
-    "downloads": 3615,
+    "downloads": 3616,
     "homepage_uri": "https://github.com/bitex-la/fluent-plugin-msgpack-parser"
   },
   {
@@ -9356,7 +9356,7 @@
     "info": "Fluent BufferedOutput plugin for Aerospike",
     "authors": "Hatayama Hideharu",
     "version": "0.0.0",
-    "downloads": 3612,
+    "downloads": 3613,
     "homepage_uri": "https://bitbucket.org/hidepiy/fluent-plugin-aerospike"
   },
   {
@@ -9376,7 +9376,7 @@
     "info": "Resque output plugin for fluent event collector. Has extra features like buffering and setting a worker class in the config.",
     "authors": "Hsiu-Fan Wang, Yuichi Tateno",
     "version": "1.0.0",
-    "downloads": 3600,
+    "downloads": 3601,
     "homepage_uri": "https://github.com/hfwang/fluent-plugin-buffered-resque"
   },
   {
@@ -9452,22 +9452,22 @@
   {
     "obsolete": null,
     "note": null,
+    "name": "fluent-plugin-syslog-gobi-tls",
+    "info": "Syslog TLS output plugin with formatting support, for Fluentd",
+    "authors": "thomas morgan",
+    "version": "2.1.27",
+    "downloads": 3513,
+    "homepage_uri": "https://github.com/zarqman/fluent-plugin-syslog-tls"
+  },
+  {
+    "obsolete": null,
+    "note": null,
     "name": "fluent-plugin-gimbal-out-http",
     "info": "A generic Fluentd output plugin to send logs to an HTTP endpoint forked from fluent-plugin-out-http",
     "authors": "Marica Odagaki",
     "version": "1.1.5",
     "downloads": 3511,
     "homepage_uri": "https://github.com/PaeDae/fluent-plugin-gimbal-out-http"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-syslog-gobi-tls",
-    "info": "Syslog TLS output plugin with formatting support, for Fluentd",
-    "authors": "thomas morgan",
-    "version": "2.1.27",
-    "downloads": 3509,
-    "homepage_uri": "https://github.com/zarqman/fluent-plugin-syslog-tls"
   },
   {
     "obsolete": null,
@@ -9486,7 +9486,7 @@
     "info": "Fluentd plugin to store data into 5Rocks",
     "authors": "hokuts",
     "version": "0.0.1",
-    "downloads": 3501,
+    "downloads": 3502,
     "homepage_uri": ""
   },
   {
@@ -9496,7 +9496,7 @@
     "info": "input plugin for gathering factor",
     "authors": "Yuki Kuwabara",
     "version": "1.0.0",
-    "downloads": 3487,
+    "downloads": 3488,
     "homepage_uri": "https://github.com/eramuk/fluent-plugin-factor"
   },
   {
@@ -9526,7 +9526,7 @@
     "info": "Fluentd plugins for gRPC",
     "authors": "Myungjae Won",
     "version": "0.0.2",
-    "downloads": 3422,
+    "downloads": 3439,
     "homepage_uri": "https://github.com/breadmj/fluent-plugin-grpc"
   },
   {
@@ -9586,7 +9586,7 @@
     "info": "Sends log data collected by fluentd to Scalyr (http://www.scalyr.com)",
     "authors": "Imron Alston",
     "version": "1.0.8.8",
-    "downloads": 3389,
+    "downloads": 3390,
     "homepage_uri": "https://github.com/scalyr/scalyr-fluentd"
   },
   {
@@ -9636,7 +9636,7 @@
     "info": "Parser plugin for fluent that parses log attributes within JSON LOGS for JSON-in-JSON ",
     "authors": "David Kong",
     "version": "0.2.2",
-    "downloads": 3337,
+    "downloads": 3338,
     "homepage_uri": "https://github.com/kongkers/fluent-plugin-docker-json"
   },
   {
@@ -9646,7 +9646,7 @@
     "info": "Parser plugin that parses JSON attributes with JSON strings in them",
     "authors": "Ryan Dyer",
     "version": "0.2.1",
-    "downloads": 3333,
+    "downloads": 3334,
     "homepage_uri": "https://github.com/ryan-dyer-sp/fluent-plugin-json-in-json"
   },
   {
@@ -9656,7 +9656,7 @@
     "info": "fluent plugin for Json serialize",
     "authors": "Zaki_XL",
     "version": "0.0.4",
-    "downloads": 3324,
+    "downloads": 3325,
     "homepage_uri": "http://need4answer.blogspot.jp/"
   },
   {
@@ -9726,7 +9726,7 @@
     "info": "Filter Plugin to create a new record containing the values converted by jq.",
     "authors": "Genki Sugawara",
     "version": "0.1.0",
-    "downloads": 3249,
+    "downloads": 3251,
     "homepage_uri": "https://github.com/winebarrel/fluent-plugin-filter-jq"
   },
   {
@@ -9736,7 +9736,7 @@
     "info": "Fluentd Parser plugin for RabbitMQ Trace log in JSON format.",
     "authors": "Max Riveiro",
     "version": "0.1.0",
-    "downloads": 3249,
+    "downloads": 3250,
     "homepage_uri": "https://github.com/kavu/fluent-plugin-rabbitmq-json-trace-parser"
   },
   {
@@ -9756,7 +9756,7 @@
     "info": "Amazon SQS input/output plugin for Fluent event collector",
     "authors": "Nao Akechi",
     "version": "0.1.0",
-    "downloads": 3224,
+    "downloads": 3225,
     "homepage_uri": "https://github.com/nakc/fluent-plugin-sqs"
   },
   {
@@ -9766,7 +9766,7 @@
     "info": "Secure tcp input plugin for Fluent event collector",
     "authors": "Bohumil Cervenka",
     "version": "0.1.1",
-    "downloads": 3212,
+    "downloads": 3224,
     "homepage_uri": "https://github.com/SilverDragon135/fluent-plugin-in-secure-tcp"
   },
   {
@@ -9826,7 +9826,7 @@
     "info": "AWS CloudFront log input plugin for fluentd. Upstream appears to be unmaintained.",
     "authors": "kubihee, lenfree, kjwierenga",
     "version": "0.2.0",
-    "downloads": 3097,
+    "downloads": 3121,
     "homepage_uri": "https://github.com/kjwierenga/fluent-plugin-cloudfront-log-optimized"
   },
   {
@@ -9866,7 +9866,7 @@
     "info": "Fluentd filter plugin to split an event into multiple events",
     "authors": "Bryan Richardson",
     "version": "0.1.0",
-    "downloads": 3071,
+    "downloads": 3072,
     "homepage_uri": "https://github.com/activeshadow/fluent-plugin-split-event"
   },
   {
@@ -9906,7 +9906,7 @@
     "info": "Fluentd websocket output plugin which can output JSON string or MessagePack binary to the clients.",
     "authors": "IZAWA Tetsu (@moccos)",
     "version": "0.1.8",
-    "downloads": 3038,
+    "downloads": 3042,
     "homepage_uri": "https://github.com/mikeatlas/fluent-plugin-websocket-ruby-1.9"
   },
   {
@@ -9966,7 +9966,7 @@
     "info": "select some conditions",
     "authors": "wally",
     "version": "0.2.0",
-    "downloads": 2923,
+    "downloads": 2924,
     "homepage_uri": "https://github.com/NumaoLab/multi-condition-selector"
   },
   {
@@ -9986,7 +9986,7 @@
     "info": "Fluentd formatter plugin by avro_turf.",
     "authors": "joker1007",
     "version": "0.2.0",
-    "downloads": 2901,
+    "downloads": 2904,
     "homepage_uri": "https://github.com/joker1007/fluent-plugin-avro_turf"
   },
   {
@@ -10026,7 +10026,7 @@
     "info": "Plugin to manage file as a global block in opposition to a line or multiline block as with in_tail.",
     "authors": "Thomas Tych",
     "version": "0.2.1",
-    "downloads": 2850,
+    "downloads": 2851,
     "homepage_uri": "https://gitlab.com/ttych/fluent-plugin-input-static-file"
   },
   {
@@ -10036,7 +10036,7 @@
     "info": "fluentd parser plugin to flatten nested json objects",
     "authors": "Al-waleed Shihadeh",
     "version": "0.0.1",
-    "downloads": 2839,
+    "downloads": 2840,
     "homepage_uri": "https://github.com/shihadeh/fluent-plugin-to-flat-json-parser"
   },
   {
@@ -10086,7 +10086,7 @@
     "info": "Fluent output plugin for flattening a json field",
     "authors": "Manoj Sharma",
     "version": "0.1.1",
-    "downloads": 2801,
+    "downloads": 2802,
     "homepage_uri": "https://github.com/CiscoZeus/fluent-plugin-field-flatten-json"
   },
   {
@@ -10152,6 +10152,16 @@
   {
     "obsolete": null,
     "note": null,
+    "name": "fluent-plugin-prometheus-thread",
+    "info": "A td-agent plugin that collects metrics and exposes for Prometheus.",
+    "authors": "Masahiro Sano, James Harlow",
+    "version": "0.1.3",
+    "downloads": 2742,
+    "homepage_uri": "https://github.com/hythloday/fluent-plugin-prometheus"
+  },
+  {
+    "obsolete": null,
+    "note": null,
     "name": "fluent-plugin-azure-storage-table",
     "info": "Fluentd plugin to add event record into Azure Tables Storage. This plugin is only for internal purpose and isn't for general usage",
     "authors": "Donny Xia",
@@ -10172,16 +10182,6 @@
   {
     "obsolete": null,
     "note": null,
-    "name": "fluent-plugin-prometheus-thread",
-    "info": "A td-agent plugin that collects metrics and exposes for Prometheus.",
-    "authors": "Masahiro Sano, James Harlow",
-    "version": "0.1.3",
-    "downloads": 2741,
-    "homepage_uri": "https://github.com/hythloday/fluent-plugin-prometheus"
-  },
-  {
-    "obsolete": null,
-    "note": null,
     "name": "fluent-plugin-rds-slowlog-patched-encoding",
     "info": "Amazon RDS slow_log input plugin for Fluent event collector",
     "authors": "kenjiskywalker, winebarrel",
@@ -10196,7 +10196,7 @@
     "info": "Fluentd Input plugin to receive data from UNIX domain socket. This is a client version of the default `unix` input plugin.",
     "authors": "daipom",
     "version": "1.0.0",
-    "downloads": 2729,
+    "downloads": 2730,
     "homepage_uri": "https://github.com/daipom/fluent-plugin-unix-client"
   },
   {
@@ -10236,7 +10236,7 @@
     "info": "Output plugin to Zebrium HTTP LOG COLLECTOR SERVER",
     "authors": "Zebrium, Inc",
     "version": "1.60.1",
-    "downloads": 2685,
+    "downloads": 2689,
     "homepage_uri": "https://github.com/Zebrium/fluentd-output-zebrium"
   },
   {
@@ -10326,7 +10326,7 @@
     "info": "fluentd parser plugin to flatten nested json objects",
     "authors": "Al-waleed Shihadeh",
     "version": "0.0.3",
-    "downloads": 2600,
+    "downloads": 2602,
     "homepage_uri": "https://github.com/shihadeh/fluent-plugin-simple-json-parser"
   },
   {
@@ -10356,8 +10356,18 @@
     "info": "CloudFoundry log parser for Fluentd",
     "authors": "Matteias Collet",
     "version": "1.0.0",
-    "downloads": 2573,
+    "downloads": 2574,
     "homepage_uri": "https://github.com/bitpatty/fluent-plugin-parser-cloudfoundry-syslog"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-simplefile",
+    "info": "This rubygem does not have a description or summary.",
+    "authors": "Alexey Panaetov",
+    "version": "0.0.7",
+    "downloads": 2546,
+    "homepage_uri": ""
   },
   {
     "obsolete": null,
@@ -10368,16 +10378,6 @@
     "version": "0.2.11",
     "downloads": 2544,
     "homepage_uri": "https://github.com/stridespark/fluent-plugin-logentries"
-  },
-  {
-    "obsolete": null,
-    "note": null,
-    "name": "fluent-plugin-simplefile",
-    "info": "This rubygem does not have a description or summary.",
-    "authors": "Alexey Panaetov",
-    "version": "0.0.7",
-    "downloads": 2544,
-    "homepage_uri": ""
   },
   {
     "obsolete": null,
@@ -10486,8 +10486,18 @@
     "info": "\"this is just our exclusive plugin for the special purpose\"",
     "authors": "minwoo lee",
     "version": "0.0.1",
-    "downloads": 2458,
+    "downloads": 2459,
     "homepage_uri": "https://rubygems.org/gems/fluent-plugin-ilm_text_to_json"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-amqp-sboagibm",
+    "info": "AMQP input/output plugin for fluentd",
+    "authors": "Hiromi Ishii, Team Giraffi, HiganWorks LLC, Toby Jackson",
+    "version": "0.21.0",
+    "downloads": 2439,
+    "homepage_uri": "https://github.com/sboagibm/fluent-plugin-amqp"
   },
   {
     "obsolete": null,
@@ -10502,21 +10512,11 @@
   {
     "obsolete": null,
     "note": null,
-    "name": "fluent-plugin-amqp-sboagibm",
-    "info": "AMQP input/output plugin for fluentd",
-    "authors": "Hiromi Ishii, Team Giraffi, HiganWorks LLC, Toby Jackson",
-    "version": "0.21.0",
-    "downloads": 2438,
-    "homepage_uri": "https://github.com/sboagibm/fluent-plugin-amqp"
-  },
-  {
-    "obsolete": null,
-    "note": null,
     "name": "fluent-plugin-azure-storage-tables",
     "info": "Fluent plugin to add event record into Azure Tables Storage.",
     "authors": "Donny Xia",
     "version": "0.0.1",
-    "downloads": 2433,
+    "downloads": 2434,
     "homepage_uri": "https://github.com/Shell32-Natsu/fluent-plugin-azuretables"
   },
   {
@@ -10586,7 +10586,7 @@
     "info": "Splunk output plugin (HTTP Event Collector) for Fluentd event collector",
     "authors": "Naomi Stern",
     "version": "0.0.1",
-    "downloads": 2354,
+    "downloads": 2355,
     "homepage_uri": "https://github.com/brycied00d/fluent-plugin-splunk-http-eventcollector"
   },
   {
@@ -10616,7 +10616,7 @@
     "info": "Elasticsearch output plugin for Fluent event collector with small modification from Dext",
     "authors": "diogo, pitr, Hiroshi Hatake, mihailgmihaylov",
     "version": "5.0.2",
-    "downloads": 2320,
+    "downloads": 2321,
     "homepage_uri": "https://github.com/wbrefvem/fluent-plugin-elasticsearch"
   },
   {
@@ -10736,7 +10736,7 @@
     "info": "Filter plugin to add Kubernetes metadata",
     "authors": "Stan Kwong",
     "version": "2.6.1",
-    "downloads": 2237,
+    "downloads": 2239,
     "homepage_uri": "https://github.com/fabric8io/fluent-plugin-kubernetes_metadata_filter"
   },
   {
@@ -10816,7 +10816,7 @@
     "info": "fluent plugin to insert mysql as json(single column) or insert statement",
     "authors": "TAGOMORI Satoshi, Toyama Hiroshi, Alex Scarborough",
     "version": "0.3.8",
-    "downloads": 2170,
+    "downloads": 2172,
     "homepage_uri": "https://github.com/GoCarrot/fluent-plugin-mysql"
   },
   {
@@ -10896,7 +10896,7 @@
     "info": "A Fluentd plugin to aggregate events based on a common field key",
     "authors": "Adam Hart",
     "version": "0.1.0",
-    "downloads": 2122,
+    "downloads": 2123,
     "homepage_uri": "https://github.com/adam-hart/fluent-plugin-event-collector"
   },
   {
@@ -10946,7 +10946,7 @@
     "info": "fluentd plugin to check ssl endpoint",
     "authors": "Thomas Tych",
     "version": "2.3.0",
-    "downloads": 2057,
+    "downloads": 2060,
     "homepage_uri": "https://gitlab.com/ttych/fluent-plugin-ssl-check"
   },
   {
@@ -10966,7 +10966,7 @@
     "info": "This plugin converts data of specified fields, by encrypting using AES and base64 encoding for encrypted values",
     "authors": "TAGOMORI Satoshi",
     "version": "0.1.8",
-    "downloads": 2048,
+    "downloads": 2052,
     "homepage_uri": "https://github.com/tagomoris/fluent-plugin-encrypt"
   },
   {
@@ -11006,7 +11006,7 @@
     "info": "fluent plugin for collect journal logs by open journal files.",
     "authors": "dengbo",
     "version": "1.0.0",
-    "downloads": 2015,
+    "downloads": 2016,
     "homepage_uri": "https://github.com/xidiandb/fluentd-plugin-journal"
   },
   {
@@ -11036,7 +11036,7 @@
     "info": "fluentd plugin to do data enrichment with redis.",
     "authors": "Thomas Tych",
     "version": "1.0.2",
-    "downloads": 1976,
+    "downloads": 1977,
     "homepage_uri": "https://gitlab.com/ttych/fluent-plugin-redis-enrichment"
   },
   {
@@ -11086,7 +11086,7 @@
     "info": "Input plugin for Fluent, reads from TCP socket",
     "authors": "superguillen",
     "version": "0.0.1",
-    "downloads": 1862,
+    "downloads": 1865,
     "homepage_uri": "https://github.com/superguillen/fluent-plugin-tcp_socket_client"
   },
   {
@@ -11096,7 +11096,7 @@
     "info": "Output file with header.",
     "authors": "pomcho555",
     "version": "0.1.0",
-    "downloads": 1813,
+    "downloads": 1814,
     "homepage_uri": "https://github.com/pomcho555/fluent-plugin-file-with-header"
   },
   {
@@ -11116,7 +11116,7 @@
     "info": "Amazon Redshift output plugin for Fluentd",
     "authors": "Ertugrul Yilmaz",
     "version": "0.4.1",
-    "downloads": 1724,
+    "downloads": 1725,
     "homepage_uri": "https://github.com/ertugrulyilmaz/fluent-plugin-redshift-out"
   },
   {
@@ -11136,7 +11136,7 @@
     "info": "Force encoding speficic fields",
     "authors": "okkez",
     "version": "0.1.0",
-    "downloads": 1682,
+    "downloads": 1683,
     "homepage_uri": "https://github.com/okkez/fluent-plugin-force-encoding"
   },
   {
@@ -11176,7 +11176,7 @@
     "info": "Fluentd plugin to collect debug information",
     "authors": "Fukuda Daijiro, Fujimoto Seiji",
     "version": "1.0.1",
-    "downloads": 1562,
+    "downloads": 1564,
     "homepage_uri": "https://github.com/fluent-plugins-nursery/fluent-plugin-sigdump"
   },
   {
@@ -11186,7 +11186,7 @@
     "info": "Fluentd plugin to insert data into BigQuery",
     "authors": "gumigumi4f",
     "version": "0.2.3",
-    "downloads": 1534,
+    "downloads": 1536,
     "homepage_uri": "https://github.com/gumigumi4f/fluent-plugin-bigquery-storage-write"
   },
   {
@@ -11226,7 +11226,7 @@
     "info": "Fluent filter plugin for adding GeoIP data to record. Supports the new Maxmind v2 database formats.",
     "authors": "imcotop SOC",
     "version": "0.1.4",
-    "downloads": 1406,
+    "downloads": 1408,
     "homepage_uri": "https://github.com/OlehPalanskyi/fluent-plugin-filter-geoip2"
   },
   {
@@ -11246,7 +11246,7 @@
     "info": "This Fluentd plugin takes array values from a specified field and creates separate records for each array element.",
     "authors": "pcoffmanjr",
     "version": "0.1.5",
-    "downloads": 1246,
+    "downloads": 1279,
     "homepage_uri": "https://github.com/FluentdSubscriptionNetwork/fluent-plugin-array-splitter"
   },
   {
@@ -11286,7 +11286,7 @@
     "info": "Parser for Fortigate logs.",
     "authors": "Rene Lehmann",
     "version": "1.0.1",
-    "downloads": 1033,
+    "downloads": 1034,
     "homepage_uri": "https://github.com/GEBITSolutions/fluent-plugin-fortigate-logs-parser"
   },
   {
@@ -11296,7 +11296,7 @@
     "info": "CRI log format parser for Fluentd",
     "authors": "Nicholas",
     "version": "0.1.2",
-    "downloads": 988,
+    "downloads": 989,
     "homepage_uri": "https://github.com/lizhongit/fluent-plugin-parser-cri"
   },
   {
@@ -11446,7 +11446,7 @@
     "info": "Input Plugin for Fluentd.",
     "authors": "yinqiwei",
     "version": "0.1.2",
-    "downloads": 537,
+    "downloads": 538,
     "homepage_uri": "https://github.com/meimeitou/fluent-plugin-sdns-api"
   },
   {
@@ -11476,7 +11476,7 @@
     "info": "A fluentd output plugin for sending logs to the Dynatrace Generic log ingest API v2",
     "authors": "Dynatrace Open Source Engineering",
     "version": "0.2.45",
-    "downloads": 502,
+    "downloads": 504,
     "homepage_uri": "https://github.com/dynatrace-oss/fluent-plugin-dynatrace"
   },
   {
@@ -11526,7 +11526,7 @@
     "info": "Fluentd plugin to collect Docker container stats",
     "authors": "James Ma",
     "version": "1.0.1",
-    "downloads": 352,
+    "downloads": 355,
     "homepage_uri": "https://github.com/jamesmawm/fluent-plugin-docker-stats"
   },
   {
@@ -11576,7 +11576,7 @@
     "info": "fluentd plugin to extract status from kafka cluster",
     "authors": "Thomas Tych",
     "version": "0.2.1",
-    "downloads": 303,
+    "downloads": 306,
     "homepage_uri": null
   },
   {
@@ -11586,7 +11586,7 @@
     "info": "Message splitter filter for Fluentd",
     "authors": "Matteias Collet",
     "version": "0.1.0",
-    "downloads": 271,
+    "downloads": 273,
     "homepage_uri": "https://github.com/bitpatty/fluent-plugin-filter-split-message"
   },
   {
@@ -11608,6 +11608,16 @@
     "version": "0.1.0",
     "downloads": 258,
     "homepage_uri": "https://github.com/skenderidis/fluent-plugin-nginx-nap-split"
+  },
+  {
+    "obsolete": null,
+    "note": null,
+    "name": "fluent-plugin-input-opensearch",
+    "info": "Opensearch output plugin for Fluent event collector",
+    "authors": "ImCotop",
+    "version": "1.1.4.16",
+    "downloads": 255,
+    "homepage_uri": null
   },
   {
     "obsolete": null,
@@ -11646,7 +11656,7 @@
     "info": "fluentd plugin to generate elasticsearch cluster stats events.",
     "authors": "Thomas Tych",
     "version": "0.1.0",
-    "downloads": 53,
+    "downloads": 112,
     "homepage_uri": null
   }
 ]
