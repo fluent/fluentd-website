@@ -33,7 +33,7 @@ TD_AGENT_VERSIONS = {
     gem_v10: "0.10.61",
     gem_v12: "0.12.43",
     gem_v14: "0.14.25",
-    'gem_v1.0': '1.16.3'
+    'gem_v1.0': '1.16.5'
   },
   :v2 => {
     linux: "2.5.0",
@@ -56,13 +56,13 @@ TD_AGENT_VERSIONS = {
 
 FLUENT_PACKAGE_VERSIONS = {
   :v5 => {
-    linux: "5.0.2",
-    mac: "5.0.2",
+    linux: "5.0.3",
+    mac: "5.0.3",
     win: "5.0.2"
   },
   :v5_lts => {
-    linux: "5.0.2",
-    mac: "5.0.2",
+    linux: "5.0.3",
+    mac: "5.0.3",
     win: "5.0.2"
   },
 }
