@@ -17,7 +17,7 @@ As significant slow starting service and crash issues during startup on Windows 
 * msi: fixed wrong environment path for Fluent Package Prompt ([#606](https://github.com/fluent/fluent-package-builder/pull/606))
   * It breaks fluent-diagtool behavior to launch fluent-gem correctly.
 * msi: removed unnecessary path delimiter ([#607](https://github.com/fluent/fluent-package-builder/pull/607))
-  * It doesn't cause any problem yet, but it should treat `%~dp0~ correctly.
+  * It doesn't cause any problem yet, but it should treat `%~dp0` correctly.
 * rpm: fixed to take over enabled state of systemd service from td-agent v4 ([#613](https://github.com/fluent/fluent-package-builder/pull/613))
 * deb rpm: fixed to quote target files correctly not to cause migration failures ([#615](https://github.com/fluent/fluent-package-builder/pull/615))
 * msi: added a patch for RubyInstaller to avoid crash on start up ([#620](https://github.com/fluent/fluent-package-builder/pull/620))
