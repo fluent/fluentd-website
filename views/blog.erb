@@ -81,6 +81,15 @@
       -->
       <!-- End Search Bar -->
 
+      <!-- Topics -->
+      <div class="posts margin-bottom-20">
+        <div class="headline headline-md"><h2>Announcement Topics</h2></div>
+        <% @recent_reminder.each { |a| %>
+        <p><%= a[:date] %>: <a href="/blog/<%= a[:url] %>"><%= a[:title] %></a></p>
+        <% } %>
+      </div>
+      <!-- End Topics -->
+
       <!-- Posts -->
       <div class="posts margin-bottom-20">
         <div class="headline headline-md"><h2>Recent Posts</h2></div>
