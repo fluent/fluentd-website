@@ -287,5 +287,5 @@ Now, upgrading steps are completed. Happy Logging!
 WARNING: Currently we have no plan to officially support dmg version of `fluent-package` yet.
 It is just modified to be a minimally buildable state, it is for testing purpose only.
 
-TAG: Fluentd td-agent fluent-package Announcement
+TAG: Fluentd td-agent fluent-package Announcement reminder
 AUTHOR: clearcode

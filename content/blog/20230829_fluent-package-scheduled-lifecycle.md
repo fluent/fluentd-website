@@ -108,5 +108,5 @@ gantt
 
 Happy logging!
 
-TAG: Fluentd fluent-package Announcement
+TAG: Fluentd fluent-package Announcement reminder
 AUTHOR: clearcode

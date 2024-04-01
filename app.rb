@@ -247,6 +247,9 @@ get '/blog/' do
   @title = "Blog"
   @articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(5))
   @recent_articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(N_RECENT_POSTS))
+  @recent_reminder = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse).select do |article|
+    article[:tags].include?("reminder")
+  end
   erb :blog
 end
 
@@ -274,6 +277,9 @@ get '/blog/:article' do
   @article = read_blog_article(files.first)
   @title = @article[:title]
   @recent_articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(N_RECENT_POSTS))
+  @recent_reminder = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse).select do |article|
+    article[:tags].include?("reminder")
+  end
   erb :blog_single
 end
 
@@ -283,6 +289,9 @@ get '/blog/tag/:tag' do
   article_paths = urls.map do |url| "content#{url}.md" end
   @articles = read_blog_articles(article_paths)
   @recent_articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(N_RECENT_POSTS))
+  @recent_reminder = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse).select do |article|
+    article[:tags].include?("reminder")
+  end
   erb :blog
 end
 

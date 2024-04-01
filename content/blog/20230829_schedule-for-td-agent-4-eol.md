@@ -26,7 +26,7 @@ There is a good article to do it.
 
 Follow the above instructions.
 
-TAG: Fluentd td-agent Announcement
+TAG: Fluentd td-agent Announcement reminder
 AUTHOR: clearcode
 
 
