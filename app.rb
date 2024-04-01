@@ -58,12 +58,12 @@ FLUENT_PACKAGE_VERSIONS = {
   :v5 => {
     linux: "5.0.3",
     mac: "5.0.3",
-    win: "5.0.2"
+    win: "5.0.3"
   },
   :v5_lts => {
     linux: "5.0.3",
     mac: "5.0.3",
-    win: "5.0.2"
+    win: "5.0.3"
   },
 }
 
