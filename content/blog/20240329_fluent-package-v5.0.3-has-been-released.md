@@ -11,7 +11,9 @@ As significant slow starting service and crash issues during startup on Windows 
 ### Changes from fluent-package v5.0.2
 
 * Update fluentd to [1.16.5](https://github.com/fluent/fluentd/releases/tag/v1.16.5).
-  See [Fluentd v1.16.5 has been released](/blog/fluentd-v1.16.5-has-been-released) blog article about details.
+  See the following blog articles about details.
+  * [Fluentd v1.16.4 has been released](fluentd-v1.16.4-have-been-released)
+  * [Fluentd v1.16.5 has been released](fluentd-v1.16.5-have-been-released)
 * Update bundled plugins
   * e.g. fluent-diagtool v1.0.5. It supports to collect list of plugins on Windows.
 * msi: fixed wrong environment path for Fluent Package Prompt ([#606](https://github.com/fluent/fluent-package-builder/pull/606))
