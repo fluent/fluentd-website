@@ -155,3 +155,9 @@
         <a href="https://www.twilio.com/">Twilio</a>, the leading cloud communications platform, provides building blocks to add messaging, voice, and video in your web and mobile applications. At Twilio, we use Fluentd to forward billions of logs messages per day from our instances in Amazon AWS to Google's BigQuery service.
         <br/><br/>
         Having operated Fluentd on thousands of production instances for the past several months, we are very happy with Fluentd's reliability, flexibility, and performance. It has proven to be one of the more dependable parts of our log aggregation solution.
+-
+    company: Elastisys
+    quote: |
+        <a href="https://elastisys.com/">Elastisys</a>, founded in 2011 and based in Sweden, specializes in cloud native technologies. We offer a cloud native Kubernetes platform, optimized for security and compliance with EU regulations for software critical to our society. Our solutions enable customers to accelerate innovation, reduce costs, and enhance security using our leading cloud native technology and expertise.
+        <br/>
+        We utilize Fluentd as part of our offering to provide our customers with out of the box logging for Kubernetes environments. 
