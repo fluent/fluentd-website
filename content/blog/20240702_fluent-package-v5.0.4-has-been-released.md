@@ -21,7 +21,7 @@ As bundled Ruby was updated to 3.2.4 and implemented a foolproof not to launch d
 
 ### Fixed to prevent launching Fluentd wrongly if the service is already running
 
-In this release, foolproof mechanism was implemented to prevent launching Fluentd wrongly if the service is already running.
+In this release, a foolproof mechanism was implemented to prevent launching Fluentd wrongly if the service is already running.
 
 As you know, you can check the version of Fluentd with `fluentd --version`, but there is a case that `fluentd -v` is executed wrongly to 
 do it.
