@@ -26,7 +26,7 @@ In this release, a foolproof mechanism was implemented to prevent launching Flue
 As you know, you can check the version of Fluentd with `fluentd --version`, but there is a case that `fluentd -v` is executed wrongly to 
 do it.
 
-When already running Fluentd as a service, `fluentd -v` launches duplicated Fluentd instance with same fluentd configuration.
+When already running Fluentd as a service, `fluentd -v` launches a duplicated Fluentd instance with the same fluentd configuration.
 If you launch duplicated Fluentd instance, it causes the corruption of processing Fluentd buffer.
 To prevent such a situation, a foolproof was implemented now.
 
