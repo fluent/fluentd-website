@@ -6,7 +6,7 @@ We have released fluent-package [v5.0.4](https://github.com/fluent/fluent-packag
 fluent-package is a stable distribution package of Fluentd. (successor of td-agent v4)
 
 This is a maintenance release of v5.0.x LTS series.
-As bundled Ruby was updated to 3.2.4 and implemented a foolproof not to launch duplicated Fluentd instance, we recommend upgrading to fluent-package v5.0.4!
+As bundled Ruby was updated to 3.2.4 and a foolproof mechanism was implemented to prevent launching duplicated Fluentd instances, we recommend upgrading to fluent-package v5.0.4!
 
 ### Changes from fluent-package v5.0.3
 
