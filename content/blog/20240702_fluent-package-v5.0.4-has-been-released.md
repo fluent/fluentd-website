@@ -75,7 +75,7 @@ On Linux:
 
 ### About next LTS schedule
 
-We plan to ship next LTS version of fluent-package v5.0.5 on Oct, 2024.
+We plan to ship the next LTS version of fluent-package v5.0.5 on Oct, 2024.
 The content of updates are still in T.B.D.
 
 ### About td-agent v4.5.2 and v4.5.3 (Windows)
