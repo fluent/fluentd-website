@@ -67,11 +67,13 @@ On Windows:
 * `--dry-run`
 * `--reg-winsvc`
 * `--reg-winsvc-fluentdopt`
+* `--show-plugin-config`
 
 On Linux:
 
 * `-c` (`--config`)
 * `--dry-run`
+* `--show-plugin-config`
 
 ### About next LTS schedule
 
