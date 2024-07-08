@@ -82,13 +82,13 @@ The content of updates are still in T.B.D.
 
 ### About td-agent v4.5.2 and v4.5.3 (Windows)
 
-As it was already announced [Drop schedule announcement about EOL of Treasure Agent (td-agent) 4](https://www.fluentd.org/blog/schedule-for-td-agent-4-eol), td-agent v4 was reached EOL in Dec, 2023.
+As it was already announced [Drop schedule announcement about EOL of Treasure Agent (td-agent) 4](schedule-for-td-agent-4-eol), td-agent v4 was reached EOL in Dec, 2023.
 
 There is a exceptional maintenance release for v4.5.3 on Windows because there was a crash bug during startup on Windows. It was backported fix from fluent-package v5 as
 it is critical in some case.
 
 We strongly recommend migrating from td-agent v4 to fluent-package v5 (LTS).
-See [Upgrade to fluent-package v5](http://localhost:9395/blog/upgrade-td-agent-v4-to-v5)
+See [Upgrade to fluent-package v5](upgrade-td-agent-v4-to-v5)
 
 ### Download
 
