@@ -46,7 +46,7 @@
             <td>
               <center>
                 <img src="/images/icon_redhat.png" height="60px"><br/>
-                RHEL / CentOS / Amazon Linux
+                RHEL / Amazon Linux
               </center>
             </td>
             <td>2.6+ Linux kernel (64-bit)</td>
@@ -57,7 +57,6 @@
                   x86_64:
                   <a href="https://td-agent-package-browser.herokuapp.com/lts/5/redhat/9/x86_64">RHEL9</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/lts/5/redhat/8/x86_64">RHEL8</a>,
-                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/redhat/7/x86_64">RHEL7</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/lts/5/amazon/2/x86_64">Amazon Linux 2</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/lts/5/amazon/2023/x86_64">Amazon Linux 2023</a>
                 </li>
@@ -65,7 +64,6 @@
                   aarch64:
                   <a href="https://td-agent-package-browser.herokuapp.com/lts/5/redhat/9/aarch64">RHEL9</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/lts/5/redhat/8/aarch64">RHEL8</a>,
-                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/redhat/7/aarch64">RHEL7</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/lts/5/amazon/2/aarch64">Amazon Linux 2</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/lts/5/amazon/2023/aarch64">Amazon Linux 2023</a>
                 </li>
@@ -76,7 +74,6 @@
                   x86_64:
                   <a href="https://td-agent-package-browser.herokuapp.com/5/redhat/9/x86_64">RHEL9</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/5/redhat/8/x86_64">RHEL8</a>,
-                  <a href="https://td-agent-package-browser.herokuapp.com/5/redhat/7/x86_64">RHEL7</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/5/amazon/2/x86_64">Amazon Linux 2</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/5/amazon/2023/x86_64">Amazon Linux 2023</a>
                 </li>
@@ -84,12 +81,12 @@
                   aarch64:
                   <a href="https://td-agent-package-browser.herokuapp.com/5/redhat/9/aarch64">RHEL9</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/5/redhat/8/aarch64">RHEL8</a>,
-                  <a href="https://td-agent-package-browser.herokuapp.com/5/redhat/7/aarch64">RHEL7</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/5/amazon/2/aarch64">Amazon Linux 2</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/5/amazon/2023/aarch64">Amazon Linux 2023</a>
                 </li>
               </ul>
-              <a href="https://docs.fluentd.org/v1.0/articles/install-by-rpm">Installation Guide</a><br>
+	      <a href="https://docs.fluentd.org/v1.0/articles/install-by-rpm">Installation Guide</a><br>
+              <p>NOTE: As CentOS 7 had reached EOL, dropped support for RHEL7/CentOS since v5.0.4.</p>
             </td>
           </tr>
           <tr>
@@ -104,6 +101,7 @@
               <span style="font-weight:bold">fluent-package LTS v<%=FLUENT_PACKAGE_VERSIONS[:v5_lts][:linux]%></span>
               <ul>
                 <li>Ubuntu:
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/ubuntu/noble/pool/contrib/f/fluent-package">Noble</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/lts/5/ubuntu/jammy/pool/contrib/f/fluent-package">Jammy</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/lts/5/ubuntu/focal/pool/contrib/f/fluent-package">Focal</a>
                 </li>
@@ -115,6 +113,7 @@
               <span style="font-weight:bold">fluent-package v<%=FLUENT_PACKAGE_VERSIONS[:v5][:linux]%></span>
               <ul>
                 <li>Ubuntu:
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/ubuntu/noble/pool/contrib/f/fluent-package">Noble</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/5/ubuntu/jammy/pool/contrib/f/fluent-package">Jammy</a>,
                   <a href="https://td-agent-package-browser.herokuapp.com/5/ubuntu/focal/pool/contrib/f/fluent-package">Focal</a>
                 </li>
