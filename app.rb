@@ -56,9 +56,9 @@ TD_AGENT_VERSIONS = {
 
 FLUENT_PACKAGE_VERSIONS = {
   :v5 => {
-    linux: "5.0.4",
-    mac: "5.0.4",
-    win: "5.0.4"
+    linux: "5.1.0",
+    mac: "5.1.0",
+    win: "5.1.0"
   },
   :v5_lts => {
     linux: "5.0.4",
