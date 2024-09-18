@@ -18,6 +18,10 @@ As you know, already stepping down maintenance activity, new minor update for td
 
 Thus, we recommend using fluent-package v5 for new deployment :)
 
+<div markdown="span" class="alert alert-danger" role="alert">
+<b>UPDATE:</b> Treasure Agent (td-agent) v4 was not supported anymore. The last td-agent release version are: v4.5.2 for Linux, v4.5.3 for Windows.
+</div>
+
 ## How to migrate to Fluent Package v5
 
 There is a good article to do it.
