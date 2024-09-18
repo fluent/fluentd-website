@@ -35,12 +35,12 @@ As significant slow starting service and crash issues during startup on Windows 
 We plan to ship next LTS version of fluent-package v5.0.4 on June, 2024.
 The content of updates are still in T.B.D.
 
-### About td-agent v4.5.2 and v4.5.3 (Windows)
+### End of support for td-agent v4, let's migrate to fluent-package
 
 As it was already announced [Drop schedule announcement about EOL of Treasure Agent (td-agent) 4](schedule-for-td-agent-4-eol), td-agent v4 was reached EOL in Dec, 2023.
 
-There is a exceptional maintenance release for v4.5.3 on Windows because there was a crash bug during startup on Windows. It was backported fix from fluent-package v5 as
-it is critical in some case.
+After reached EOL, td-agent v4.5.3 on Windows was released because there was a crash bug during startup on Windows. It was backported fix from fluent-package v5 as
+it is critical in some case. Even though this was a exceptional maintenance release, but there is no change to the fact that we already stopped maintaining td-agent v4.
 
 We strongly recommend migrating from td-agent v4 to fluent-package v5 (LTS).
 See [Upgrade to fluent-package v5](upgrade-td-agent-v4-to-v5)
