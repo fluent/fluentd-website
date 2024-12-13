@@ -5,7 +5,7 @@ Hi users!
 We have released fluent-package [v5.1.0](https://github.com/fluent/fluent-package-builder/releases/tag/v5.1.0).
 fluent-package is a stable distribution package of Fluentd. (successor of td-agent v4)
 
-This is a maintenance release of v5.x series.
+This release is a new release of v5.1 series.
 Bundled ruby version was upgraded to 3.2.5 and fluentd v1.17.0 was shipped!
 
 ### Changes from fluent-package v5.0.4
