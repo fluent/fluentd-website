@@ -17,9 +17,9 @@ $ bundle exec rake server
     ```
     TAG: tag1 tag2 tag3
     ```
-- Then, before you push to master, make sure you run
+- Before you push to master, make sure you run
     ```
-    ruby scripts/generate_tags.rb
+    bundle exec rake update_tags
     ```
 
 This must be the world's most sophisticated blog system.
