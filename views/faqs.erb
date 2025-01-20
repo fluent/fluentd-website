@@ -20,24 +20,24 @@
       </div>
       <br/>
 
-      <div class="headline"><h4>What are the differences between td-agent and Fluentd?</h4></div>
-      <p>Here's the differences. In one word, td-agent is a stable distribution package of Fluentd.</p>
+      <div class="headline"><h4>What are the differences between fluent-package and Fluentd?</h4></div>
+      <p>Here's the differences. In one word, fluent-package is a stable distribution package of Fluentd.</p>
       <div>
         <table border="1px" style="margin: 10px;">
           <tr>
             <th width="25%"></th>
             <th width="30%">Fluentd</th>
-            <th width="45%">td-agent</th>
+            <th width="45%">fluent-package</th>
           </tr>
           <tr>
             <td>QA/Support</td>
             <td>Community-driven</td>
-            <td>QAed by <a href="/treasuredata">Treasure Data, Inc</a> maintainers<br/>Support available for Treasure Data customers</td>
+            <td>QAed by Fluentd maintainers</td>
           </tr>
           <tr>
             <td>Installation</td>
             <td><a href="https://docs.fluentd.org/installation/install-by-gem" rel="noreferrer">Ruby gems</a> or <a href="https://docs.fluentd.org/installation/install-from-source" rel="noreferrer">source code</a></td>
-            <td><a href="https://docs.fluentd.org/installation/install-by-rpm" rel="noreferrer">RPM</a> / <a href="https://docs.fluentd.org/installation/install-by-deb" rel="noreferrer">DEB</a> / <a href="https://docs.fluentd.org/installation/install-by-dmg" rel="noreferrer">DMG</a> / <a href="https://docs.fluentd.org/installation/install-by-msi" rel="noreferrer">MSI</a> packages</td>
+            <td><a href="https://docs.fluentd.org/installation/install-by-rpm" rel="noreferrer">RPM</a> / <a href="https://docs.fluentd.org/installation/install-by-deb" rel="noreferrer">DEB</a> / <a href="https://docs.fluentd.org/installation/install-by-msi" rel="noreferrer">MSI</a> packages</td>
           </tr>
           <tr>
             <td>Configuration</td>
@@ -47,17 +47,12 @@
           <tr>
             <td>Adding 3rd party <a href="http://www.fluentd.org/plugin/" rel="noreferrer">plugins</a></td>
             <td>$ fluent-gem install fluent-plugin-xx</td>
-            <td>$ /usr/sbin/td-agent-gem install fluent-plugin-xx</td>
+            <td>$ /usr/sbin/fluent-gem install fluent-plugin-xx</td>
           </tr>
           <tr>
-            <td>/etc/init.d/ scripts</td>
-            <td>No (the user needs to write shell script to set it up)</td>
-            <td>Yes (shipped with .deb and .rpm)</td>
-          </tr>
-          <tr>
-            <td>Chef recipe</td>
-            <td>No</td>
-            <td><a href="http://docs.fluentd.org/articles/install-by-chef">Yes</a></td>
+            <td>Daemon (Service) support</td>
+            <td>No (the user needs to manage by yourself to set it up)</td>
+            <td>Yes. It ships fluentd service file for systemd. (on Windows, registered as a Windows service)</td>
           </tr>
           <tr>
             <td>Memory allocator</td>
@@ -65,15 +60,17 @@
             <td>Optimized (jemalloc)</td>
           </tr>
         </table>
+	NOTE: td-agent had reached EOL. Migrate to fluent-package (Successor of td-agent). See <a href="http://localhost:9395/blog/upgrade-td-agent-v4-to-v5">Upgrade to fluent-package v5</a>.
       </div>
       <br/>
 
-      <div class="headline"><h4>Should I use td-agent or the Fluentd gem?</h4></div>
+      <div class="headline"><h4>Should I use fluent-package or the Fluentd gem?</h4></div>
       <div>
-        <b>td-agent prioritizes stability over new features</b>.
+        fluent-package has two release channels - Normal release and Long Term Support (LTS) version.
+        <b>fluent-package (LTS) prioritizes stability over new features</b>.
         If you wish to control Fluentd features and updates on your own, using the Fluentd gem is recommended.
-        If you are using Fluentd for the first time or are using it in a large scale environment, using td-agent is recommended.
-        A new version of td-agent is released every 2 or 3 months.
+        If you are using Fluentd for the first time or are using it in a large scale environment, using fluent-package (LTS) is recommended.
+	A new version of fluent-package (LTS) is released every 3 or 4 months.
       </div>
       <br/>
 
@@ -135,7 +132,7 @@
           </tr>
           <tr>
             <td>Plugins</td>
-            <td>More than 650 plugins available</td>
+            <td>More than 1100 plugins available</td>
             <td>Around 30 plugins available</td>
           </tr>
           <tr>
@@ -167,7 +164,7 @@
           The plugins marked as `Certified` are developed by either <a href="https://github.com/fluent/fluentd/graphs/contributors">Fluentd core committers</a> or companies who made the commercial commitment to Fluentd project.
         </p>
         <p>
-          Since we made it really easy to develop plugins, we have 500+ more plugins and started hearing from people saying it's hard to figure out which plugins are ready to use in production. That's why we introduced this system.
+          Since we made it really easy to develop plugins, we have 1100+ more plugins and started hearing from people saying it's hard to figure out which plugins are ready to use in production. That's why we introduced this system.
         </p>
         <p>
           Of course a lot of `Not Certified` plugins are also used by wide veriety of people, but this mark will help you at least navigate through core plugins.
