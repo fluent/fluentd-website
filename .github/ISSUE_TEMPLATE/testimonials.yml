@@ -1,4 +1,5 @@
 name: Feedback your Fluentd use-case/testimonial
+title: "[Use-Case] ...."
 description: Feedback your Fluentd use-case/testimonial, How do you use Fluentd in your service?
 labels: "use-case"
 body:
@@ -9,31 +10,34 @@ body:
         If you use Fluentd implicitly in your services and simply not published yet,
         Please consider to feedback us! Your use-case helps to spread Fluentd!
         See current testimonials in https://www.fluentd.org/testimonials.
-  - type: textarea
-    id: caption
+  - type: input
+    id: user
     attributes:
       label: What is your service or company name which use Fluentd?
-      description: Descripbe your service name or company name. See https://www.fluentd.org/testimonials in details.
+      description: Descripbe your service name or company name. Used as ALT text in https://www.fluentd.org/testimonials
+      placeholder: Tell us your service or company name here
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: image
     attributes:
-      label: What is your service or company logo? (optional)
-      description: Descripbe URI to your service or company logo which is accessible publicly.
+      label: What is your service or company logo URI?
+      description: Descripbe official URI to your service or company logo which is accessible publicly. Used as link image in https://www.fluentd.org/testimonials
+      placeholder: Tell us your service or company logo URI here
     validations:
       required: false
   - type: textarea
     id: testimonial
     attributes:
       label: What is your service or company and How do you use Fluentd in your service or company?
-      description: Write the actual use-case about Fluentd.
+      description: Write the actual use-case about Fluentd. Used as description in https://www.fluentd.org/testimonials
+      value: "Our service/company is ... and we use Fluentd in https://..."
     validations:
       required: true
   - type: textarea
     id: addtional-context
     attributes:
-      label: Additional context
-      description: Add any other context about your use-case/testimonial.
+      label: Additional information (optional)
+      description: Add any other context about your use-case/testimonial. (This field will not be published in https://www.fluentd.org/testimonials)
     validations:
       required: false
