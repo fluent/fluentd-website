@@ -19,6 +19,14 @@ body:
     validations:
       required: true
   - type: input
+    id: url
+    attributes:
+      label: What is your service or company website URL which use Fluentd?
+      description: Descripbe your service or company website URL. Used as link in https://www.fluentd.org/testimonials
+      placeholder: Tell us your service or company URL here
+    validations:
+      required: true
+  - type: input
     id: image
     attributes:
       label: What is your service or company logo URI?
