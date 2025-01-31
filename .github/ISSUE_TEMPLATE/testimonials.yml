@@ -10,6 +10,8 @@ body:
         If you use Fluentd implicitly in your services and simply not published yet,
         Please consider to feedback us! Your use-case helps to spread Fluentd!
         See current testimonials in https://www.fluentd.org/testimonials.
+
+        (NOTE: If you fill in this form in Japanese, Fluentd team will translate it and publish. 日本語でフィードバックした場合は、Fluentdチームがいい感じに翻訳して掲載します)
   - type: input
     id: user
     attributes:
