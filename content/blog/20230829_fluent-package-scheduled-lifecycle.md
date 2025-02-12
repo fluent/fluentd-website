@@ -94,7 +94,7 @@ gantt
 <th style='background-color: #eee'>End of life</th>
 </tr>
 <tr>
-<td>v4.5.1</td>
+<td>v4.5.1 (*)</td>
 <td>Aug, 2023</td>
 <td>Dec, 2023</td>
 </tr>
@@ -109,6 +109,8 @@ gantt
 <td>T.B.D.</td>
 </tr>
 </table>
+
+\* td-agent v4, including v4.5.2 and v4.5.3, has reached End of life at the end of December 2023.
 
 Happy logging!
 
