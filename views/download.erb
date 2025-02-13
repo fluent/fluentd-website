@@ -44,8 +44,7 @@
         <thead>
           <tr>
             <th width="20%">Platform</th>
-            <th width="30%">Platform Version</th>
-            <th width="50%">Package or Installer</th>
+            <th width="80%">Package or Installer</th>
           </tr>
         </thead>
         <tbody>
@@ -56,7 +55,6 @@
                 Container
               </center>
             </td>
-            <td>Docker</td>
             <td>
               <a href="https://hub.docker.com/r/fluent/fluentd/">Docker image at Docker Hub</a>
             </td>
@@ -68,7 +66,6 @@
                 Container Orchestration
               </center>
             </td>
-            <td>Kubernetes</td>
             <td>
               <a href="https://hub.docker.com/r/fluent/fluentd-kubernetes-daemonset/">Kubernetes DaemonSet for Fluentd</a>
             </td>
@@ -80,15 +77,8 @@
                 Ruby
               </center>
             </td>
-            <td>Ruby v2.6.0 and above</td>
             <td>
-              <span style="font-weight:bold">Fluentd v<%=TD_AGENT_VERSIONS[:v1][:'gem_v1.0']%> (current stable. recommend for production)</span>
-              <ul>
-                <li>
-                  <code>gem install fluentd</code><br/>
-                </li>
-              </ul>
-              <a href="//docs.fluentd.org/v1.0/articles/install-by-gem">Installation Guide</a> (* ruby expert-use only)<br/>
+              <a href="//docs.fluentd.org/v1.0/articles/install-by-gem">Install by Ruby Gem</a> (* ruby expert-use only)<br/>
             </td>
           </tr>
         </tbody>
