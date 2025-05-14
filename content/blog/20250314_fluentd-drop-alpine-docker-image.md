@@ -42,5 +42,5 @@ For such a purpose, shorter v1.19 or v1.19.x tag will be available in the future
 
 Happy logging!
 
-TAG: Fluentd fluent-package Announcement
+TAG: Fluentd Docker Announcement
 AUTHOR: clearcode
