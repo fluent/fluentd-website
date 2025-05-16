@@ -1,0 +1,27 @@
+name: Check tag files
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+permissions:
+  contents: read
+
+jobs:
+  tags:
+    runs-on: ubuntu-latest
+
+    name: Check tag files
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2.4
+          bundler-cache: true
+      - name: Check tag files are properly updated
+        run: |
+          bundle exec rake update_tags
+          git diff --quiet
