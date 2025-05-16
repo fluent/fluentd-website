@@ -24,4 +24,4 @@ jobs:
       - name: Check tag files are properly updated
         run: |
           bundle exec rake update_tags
-          git diff --quiet
+          git --no-pager diff --exit-code
