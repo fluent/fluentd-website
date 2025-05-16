@@ -3,7 +3,7 @@
 Hi users!
 
 We had launched `fluent-package` v5 series last year, recently shipped [v5.0.4](/blog/fluent-package-v5.0.4-has-been-released) in LTS release channel and
-[v5.1.0](http://localhost:9395/blog/fluent-package-v5.1.0-has-been-released) in normal release channel.
+[v5.1.0](/blog/fluent-package-v5.1.0-has-been-released) in normal release channel.
 
 In this blog article, we explains the planned next major updates - v6.0.0.
 
