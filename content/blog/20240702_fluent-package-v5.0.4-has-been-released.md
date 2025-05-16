@@ -75,12 +75,18 @@ On Linux:
 * `--dry-run`
 * `--show-plugin-config`
 
-### About next LTS schedule
+### Download
+
+Please see [the download page](/download/fluent_package).
+
+### Announcement
+
+#### About next LTS schedule
 
 We plan to ship the next LTS version of fluent-package v5.0.5 on Oct, 2024.
 The content of updates are still in T.B.D.
 
-### End of support for td-agent v4, let's migrate to fluent-package
+#### End of support for td-agent v4, let's migrate to fluent-package
 
 As it was already announced [Drop schedule announcement about EOL of Treasure Agent (td-agent) 4](schedule-for-td-agent-4-eol), td-agent v4 was reached EOL in Dec, 2023.
 
@@ -89,10 +95,6 @@ it is critical in some case. Even though this was a exceptional maintenance rele
 
 We strongly recommend migrating from td-agent v4 to fluent-package v5 (LTS).
 See [Upgrade to fluent-package v5](upgrade-td-agent-v4-to-v5)
-
-### Download
-
-Please see [the download page](/download/fluent_package).
 
 TAG: Fluentd fluent-package Announcement
 AUTHOR: clearcode

@@ -141,6 +141,8 @@ Please refer to [#713](https://github.com/fluent/fluent-package-builder/pull/713
 ## Download
 Please see [the download page](/download/fluent_package).
 
+## Announcement
+
 ### About next LTS schedule
 We plan to ship the next LTS version of fluent-package v5.0.6 on March, 2025.
 The content of updates are still in T.B.D.
