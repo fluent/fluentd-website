@@ -34,6 +34,8 @@ The issue was fixed in fluent-plugin-elasticsearch v5.4.4 and bundled into fluen
 
 Please see [the download page](/download/fluent_package).
 
+## Announcement
+
 ### About next LTS schedule
 
 We plan to ship the next LTS version of fluent-package v5.0.8 on September, 2025.
@@ -49,7 +51,7 @@ it is critical in some case. Even though this was a exceptional maintenance rele
 We strongly recommend migrating from td-agent v4 to fluent-package v5 (LTS).
 See [Upgrade to fluent-package v5](upgrade-td-agent-v4-to-v5)
 
-## Announcement
+### Follow us on X
 
 We have been posting information about Fluentd in Japanese on [@fluentd_jp](https://x.com/fluentd_jp).
 We would appreciate it if you followed the X account.
