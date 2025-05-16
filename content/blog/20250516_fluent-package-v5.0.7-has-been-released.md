@@ -14,6 +14,8 @@ We recommend upgrading to fluent-package v5.0.7!
 
 * Update bundled ruby to 3.2.8
 * Update bundled Fluentd to v1.16.9
+  * [Fluentd v1.16.8 has been released](fluentd-v1.16.8-has-been-released)
+  * [Fluentd v1.16.9 has been released](fluentd-v1.16.9-has-been-released)
 * Update bundled gems overall
 * Update bundled openssl gem to 3.3.0 due to support FIPS
 * Fix memory leaks when exception was raised frequently with fluent-plugin-elasticsearch
