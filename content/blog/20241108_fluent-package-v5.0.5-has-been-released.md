@@ -49,6 +49,8 @@ That release fixed SIGABORT error with inconsistency of memory allocator handlin
 
 Please see [the download page](/download/fluent_package).
 
+### Announcement
+
 #### About next LTS schedule
 
 We plan to ship the next LTS version of fluent-package v5.0.6 on March, 2025.

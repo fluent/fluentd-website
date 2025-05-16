@@ -48,6 +48,8 @@ See [Fluentd v1.16.7 has been released](fluentd-v1.16.7-has-been-released) blog 
 
 Please see [the download page](/download/fluent_package).
 
+## Announcement
+
 ### About next LTS schedule
 
 We plan to ship the next LTS version of fluent-package v5.0.7 on June, 2025.

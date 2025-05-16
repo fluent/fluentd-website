@@ -37,6 +37,8 @@ from this release, v5.1.x will be shipped in normal release channel. v5.0.x will
 
 Please see [the download page](/download/fluent_package).
 
+### Announcement
+
 #### About next LTS schedule
 
 We plan to ship the next LTS version of fluent-package v5.0.5 on Oct, 2024.
