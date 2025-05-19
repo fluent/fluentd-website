@@ -27,21 +27,23 @@ As significant `in_tail` bugs (wrongly stopping tailing logs) were fixed in late
     when the package was upgraded from td-agent v4.
     This change makes reinstall/downgrade friendly.
 
-### About next LTS schedule
+### Download
+
+Please see [the download page](/download/fluent_package).
+
+### Announcement
+
+#### About next LTS schedule
 
 We plan to ship next LTS version of fluent-package v5.0.3 on Feb, 2024.
 The content of updates are still in T.B.D.
 
-### About td-agent v4.5.2
+#### About td-agent v4.5.2
 
 This is a exceptional maintenance release of v4.5.x series.
 Fluentd was updated to 1.16.3 because it contains significant bug fixes about `in_tail`.
 Note that td-agent will not be updated anymore.
 See [Drop schedule announcement about EOL of Treasure Agent (td-agent) 4](https://www.fluentd.org/blog/schedule-for-td-agent-4-eol).
-
-### Download
-
-Please see [the download page](/download/fluent_package).
 
 TAG: Fluentd fluent-package Announcement
 AUTHOR: clearcode
