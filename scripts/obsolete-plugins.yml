@@ -113,3 +113,157 @@ fluent-plugin-logzio-ng: |+
   Git repository has gone away.
 fluent-plugin-out-http-ext: |+
   Use [fluent-plugin-out-http](https://github.com/fluent-plugins-nursery/fluent-plugin-out-http), it implements downstream plugin functionality.
+fluent-plugin-azure-storage-append-blob: |+
+  Unmaintained since 2021-02-02.
+fluent-plugin-mutate_filter: |+
+  Unmaintained since 2019-09-13.
+fluent-plugin-json-in-json: |+
+  Unmaintained since 2024-10-15.
+fluent-plugin-docker_metadata_filter: |+
+  Unmaintained since 2025-06-05.
+fluent-plugin-timescaledb: |+
+  Unmaintained since 2024-06-25.
+fluent-plugin-dd: |+
+  Unmaintained since 2024-08-12.
+fluent-plugin-td-monitoring: |+
+  Unmaintained since 2023-07-03.
+fluent-plugin-azuremonitorlog: |+
+  Unmaintained since 2020-12-20.
+fluent-plugin-application-insights: |+
+  Unmaintained since 2023-11-16.
+fluent-plugin-viaq_data_model: |+
+  Unmaintained since 2020-10-02.
+fluent-plugin-cloudwatch-ingest: |+
+  Unmaintained since 2020-12-30.
+fluent-plugin-filter-parse-audit-log: |+
+  Unmaintained since 2022-04-03.
+fluent-plugin-amqp: |+
+  Unmaintained since 2024-06-11.
+fluent-plugin-deis-graphite: |+
+  Unmaintained since 2018-05-31.
+fluent-plugin-json-nest2flat: |+
+  Unmaintained since 2020-06-26.
+fluent-plugin-filter-geoip: |+
+  Unmaintained since 2020-04-24.
+fluent-plugin-nais: |+
+  Unmaintained since 2023-05-30.
+fluent-plugin-calyptia-monitoring: |+
+  Unmaintained since 2024-02-01.
+fluent-plugin-output-solr: |+
+  Unmaintained since 2020-04-24.
+fluent-plugin-kubernetes_sumologic: |+
+  Unmaintained since 2021-02-05.
+fluent-plugin-rollbar: |+
+  Unmaintained since 2020-05-19.
+fluent-plugin-split-by-size: |+
+  Unmaintained since 2024-11-23.
+fluent-plugin-sumologic-cloud-syslog: |+
+  Unmaintained since 2023-03-03.
+fluent-plugin-splunk-http-eventcollector: |+
+  Unmaintained since 2020-03-21.
+fluent-plugin-filter-record-map: |+
+  Unmaintained since 2023-11-24.
+fluent-plugin-aliyun-odps: |+
+  Unmaintained since 2023-02-08.
+fluent-plugin-honeycomb: |+
+  Unmaintained since 2022-05-18.
+fluent-plugin-dynamodb-alt: |+
+  Unmaintained since 2020-08-11.
+fluent-plugin-loggly-syslog: |+
+  Unmaintained since 2023-08-28.
+fluent-plugin-zabbix-agent: |+
+  Unmaintained since 2024-08-19.
+fluent-plugin-eventcounter: |+
+  Unmaintained since 2025-03-18.
+fluent-plugin-newsyslog: |+
+  Unmaintained since 2022-05-04.
+fluent-plugin-amplitude: |+
+  Unmaintained since 2024-02-02.
+fluent-plugin-lambda: |+
+  Unmaintained since 2023-10-12.
+fluent-plugin-histogram: |+
+  Unmaintained since 2022-04-05.
+fluent-plugin-redis_list_poller: |+
+  Unmaintained since 2019-09-13.
+fluent-plugin-tail-ex-rotate: |+
+  Unmaintained since 2022-09-26.
+fluent-plugin-viki: |+
+  Unmaintained since 2024-02-22.
+fluent-plugin-juniper-telemetry: |+
+  Unmaintained since 2024-07-19.
+fluent-plugin-filter-object-flatten: |+
+  Unmaintained since 2024-08-19.
+fluent-plugin-kvp-parser: |+
+  Unmaintained since 2020-05-01.
+fluent-plugin-idobata: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-statsite: |+
+  Unmaintained since 2023-05-19.
+fluent-plugin-kube-events-timestamp: |+
+  Unmaintained since 2023-02-15.
+fluent-plugin-riak: |+
+  Unmaintained since 2020-05-12.
+fluent-plugin-protocols-filter: |+
+  Unmaintained since 2020-10-13.
+fluent-plugin-azuremonitormetrics: |+
+  Unmaintained since 2020-12-20.
+fluent-plugin-explode_filter: |+
+  Unmaintained since 2019-09-13.
+fluent-plugin-record-sort: |+
+  Unmaintained since 2020-12-30.
+fluent-plugin-viaq_docker_audit_log_parser: |+
+  Unmaintained since 2023-10-05.
+fluent-plugin-xymon: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-combiner: |+
+  Unmaintained since 2022-04-05.
+fluent-plugin-resolv-filter: |+
+  Unmaintained since 2020-10-13.
+fluent-plugin-splunkapi-ssln: |+
+  Unmaintained since 2023-01-27.
+fluent-plugin-slackrtm: |+
+  Unmaintained since 2020-04-22.
+fluent-plugin-wire-protocol-compat: |+
+  Unmaintained since 2022-05-20.
+fluent-plugin-http_forward: |+
+  Unmaintained since 2019-09-13.
+fluent-plugin-json-transform_ex: |+
+  Unmaintained since 2020-03-19.
+fluent-plugin-query-fingerprint: |+
+  Unmaintained since 2025-03-28.
+fluent-plugin-heroku-http: |+
+  Unmaintained since 2023-07-07.
+fluent-plugin-http-list: |+
+  Unmaintained since 2019-10-26.
+fluent-plugin-stathat: |+
+  Unmaintained since 2022-02-16.
+fluent-plugin-zoomdata: |+
+  Unmaintained since 2020-03-27.
+fluent-plugin-dashing: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-clouderametrics: |+
+  Unmaintained since 2023-11-17.
+fluent-plugin-ruby_one_liner: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-config_reloader: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-tumblr: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-imagefile: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-rewriteimage: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-msgpack-parser: |+
+  Unmaintained since 2022-05-20.
+fluent-plugin-filter-jq: |+
+  Unmaintained since 2024-08-19.
+fluent-plugin-filter-twitterurl: |+
+  Unmaintained since 2020-10-13.
+fluent-plugin-test: |+
+  Unmaintained since 2019-09-13.
+fluent-plugin-splunk-http-eventcollector-memb: |+
+  Unmaintained since 2020-03-21.
+fluent-plugin-splunk-http-eventcollector-test: |+
+  Unmaintained since 2020-03-21.
+fluent-plugin-arango: |+
+  Unmaintained since 2022-08-09.
