@@ -113,3 +113,673 @@ fluent-plugin-logzio-ng: |+
   Git repository has gone away.
 fluent-plugin-out-http-ext: |+
   Use [fluent-plugin-out-http](https://github.com/fluent-plugins-nursery/fluent-plugin-out-http), it implements downstream plugin functionality.
+fluent-plugin-grafana-loki: |+
+  Git repository has gone away.
+fluent-plugin-grafana-loki-licence-fix: |+
+  Git repository has gone away.
+fluent-plugin-coralogix: |+
+  Git repository has gone away.
+fluent-plugin-group-exceptions: |+
+  Git repository has gone away.
+fluent-plugin-multiline-parser: |+
+  Git repository has gone away.
+fluent-plugin-gelf: |+
+  Git repository has gone away.
+fluent-plugin-azure-storage-append-blob: |+
+  Unmaintained since 2021-02-02.
+fluent-plugin-mutate_filter: |+
+  Unmaintained since 2019-09-13.
+fluent-plugin-json-in-json: |+
+  Unmaintained since 2024-10-15.
+fluent-plugin-docker_metadata_filter: |+
+  Unmaintained since 2025-06-05.
+fluent-plugin-timescaledb: |+
+  Unmaintained since 2024-06-25.
+fluent-plugin-dd: |+
+  Unmaintained since 2024-08-12.
+fluent-plugin-td-monitoring: |+
+  Unmaintained since 2023-07-03.
+fluent-plugin-azuremonitorlog: |+
+  Unmaintained since 2020-12-20.
+fluent-plugin-application-insights: |+
+  Unmaintained since 2023-11-16.
+fluent-plugin-viaq_data_model: |+
+  Unmaintained since 2020-10-02.
+fluent-plugin-cloudwatch-ingest: |+
+  Unmaintained since 2020-12-30.
+fluent-plugin-text_to_json: |+
+  Git repository has gone away.
+fluent-plugin-filter-parse-audit-log: |+
+  Unmaintained since 2022-04-03.
+fluent-plugin-amqp: |+
+  Unmaintained since 2024-06-11.
+fluent-plugin-deis-graphite: |+
+  Git repository has gone away.Unmaintained since 2018-05-31.
+fluent-plugin-json-nest2flat: |+
+  Unmaintained since 2020-06-26.
+fluent-plugin-filter-geoip: |+
+  Unmaintained since 2020-04-24.
+fluent-plugin-nais: |+
+  Unmaintained since 2023-05-30.
+fluent-plugin-calyptia-monitoring: |+
+  Unmaintained since 2024-02-01.
+fluent-plugin-mysql-appender: |+
+  Git repository has gone away.
+fluent-plugin-output-solr: |+
+  Unmaintained since 2020-04-24.
+fluent-plugin-kafka-enchanced: |+
+  Git repository has gone away.
+fluent-plugin-kubernetes_sumologic: |+
+  Unmaintained since 2021-02-05.
+fluent-plugin-ilm_hbase: |+
+  Git repository has gone away.
+fluent-plugin-redshift: |+
+  Git repository has gone away.
+fluent-plugin-rollbar: |+
+  Unmaintained since 2020-05-19.
+fluent-plugin-split-by-size: |+
+  Unmaintained since 2024-11-23.
+fluent-plugin-detect-exceptions-with-error: |+
+  Git repository has gone away.
+fluent-plugin-jfrog-metrics: |+
+  Git repository has gone away.
+fluent-plugin-sumologic-cloud-syslog: |+
+  Unmaintained since 2023-03-03.
+fluent-plugin-splunk-http-eventcollector: |+
+  Unmaintained since 2020-03-21.
+fluent-plugin-logentries: |+
+  Git repository has gone away.
+fluent-plugin-filter-record-map: |+
+  Unmaintained since 2023-11-24.
+fluent-plugin-aws-sqs: |+
+  Git repository has gone away.
+fluent-plugin-aliyun-odps: |+
+  Unmaintained since 2023-02-08.
+fluent-plugin-honeycomb: |+
+  Unmaintained since 2022-05-18.
+fluent-plugin-jfrog-send-metrics: |+
+  Git repository has gone away.
+fluent-plugin-dynamodb-alt: |+
+  Unmaintained since 2020-08-11.
+fluent-plugin-cadvisor: |+
+  Git repository has gone away.
+fluent-plugin-graylog: |+
+  Git repository has gone away.
+fluent-plugin-light-core: |+
+  Git repository has gone away.
+fluent-plugin-loomsystems: |+
+  Git repository has gone away.
+fluent-plugin-loggly-syslog: |+
+  Unmaintained since 2023-08-28.
+fluent-plugin-remote_syslog_tcp: |+
+  Git repository has gone away.
+fluent-plugin-multi-exceptions: |+
+  Git repository has gone away.
+fluent-plugin-zabbix-agent: |+
+  Unmaintained since 2024-08-19.
+fluent-plugin-append-kubernetes-annotations-to-tag: |+
+  Git repository has gone away.
+fluent-plugin-seq: |+
+  Git repository has gone away.
+fluent-plugin-eventcounter: |+
+  Unmaintained since 2025-03-18.
+fluent-plugin-verticajson: |+
+  Git repository has gone away.
+fluent-plugin-newsyslog: |+
+  Unmaintained since 2022-05-04.
+fluent-plugin-forward-aws: |+
+  Git repository has gone away.
+fluent-plugin-amplitude: |+
+  Unmaintained since 2024-02-02.
+fluent-plugin-oci-logging: |+
+  Git repository has gone away.
+fluent-plugin-grassland: |+
+  Git repository has gone away.
+fluent-plugin-lambda: |+
+  Unmaintained since 2023-10-12.
+fluent-plugin-cloudwatch_ya: |+
+  Git repository has gone away.
+fluent-plugin-couchbase: |+
+  Git repository has gone away.
+fluent-plugin-wendelin: |+
+  Git repository has gone away.
+fluent-plugin-time_parser: |+
+  Git repository has gone away.
+fluent-plugin-histogram: |+
+  Unmaintained since 2022-04-05.
+fluent-plugin-cloud-feeds: |+
+  Git repository has gone away.
+fluent-plugin-pi: |+
+  Git repository has gone away.
+fluent-plugin-nostat: |+
+  Git repository has gone away.
+fluent-plugin-record-serializer: |+
+  Git repository has gone away.
+fluent-plugin-cassandra-cql: |+
+  Git repository has gone away.
+fluent-plugin-logmatic: |+
+  Git repository has gone away.
+fluent-plugin-bin: |+
+  Git repository has gone away.
+fluent-plugin-redis_list_poller: |+
+  Unmaintained since 2019-09-13.
+fluent-plugin-unit-time-filter: |+
+  Git repository has gone away.
+fluent-plugin-dockergelf: |+
+  Git repository has gone away.
+fluent-plugin-oci-logging-analytics: |+
+  Git repository has gone away.
+fluent-plugin-out-http-buffered: |+
+  Git repository has gone away.
+fluent-plugin-tail-ex-rotate: |+
+  Unmaintained since 2022-09-26.
+fluent-plugin-records-merger: |+
+  Git repository has gone away.
+fluent-plugin-viki: |+
+  Unmaintained since 2024-02-22.
+fluent-plugin-juniper-telemetry: |+
+  Unmaintained since 2024-07-19.
+fluent-plugin-datadog-np: |+
+  Git repository has gone away.
+fluent-plugin-unique-counter: |+
+  Git repository has gone away.
+fluent-plugin-timestream: |+
+  Git repository has gone away.
+fluent-plugin-docker_hostname: |+
+  Git repository has gone away.
+fluent-plugin-filter-object-flatten: |+
+  Unmaintained since 2024-08-19.
+fluent-plugin-gimbal-tranquility: |+
+  Git repository has gone away.
+fluent-plugin-kvp-parser: |+
+  Unmaintained since 2020-05-01.
+fluent-plugin-idobata: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-mobile-carrier: |+
+  Git repository has gone away.
+fluent-plugin-couch-sharded: |+
+  Git repository has gone away.
+fluent-plugin-statsite: |+
+  Unmaintained since 2023-05-19.
+fluent-plugin-loggly-anno: |+
+  Git repository has gone away.
+fluent-plugin-gelf-cg: |+
+  Git repository has gone away.
+fluent-plugin-azuresearch: |+
+  Git repository has gone away.
+fluent-plugin-kube-events-timestamp: |+
+  Unmaintained since 2023-02-15.
+fluent-plugin-conditional_filter: |+
+  Git repository has gone away.
+fluent-plugin-riak: |+
+  Unmaintained since 2020-05-12.
+fluent-plugin-snowplow: |+
+  Git repository has gone away.
+fluent-plugin-protocols-filter: |+
+  Unmaintained since 2020-10-13.
+fluent-plugin-input-opensearch: |+
+  Git repository has gone away.
+fluent-plugin-oui-filter: |+
+  Git repository has gone away.
+fluent-plugin-azuremonitormetrics: |+
+  Unmaintained since 2020-12-20.
+fluent-plugin-mule: |+
+  Git repository has gone away.
+fluent-plugin-lm-logs-gcp: |+
+  Git repository has gone away.
+fluent-plugin-dynamic-logzio: |+
+  Git repository has gone away.
+fluent-plugin-mongokpi: |+
+  Git repository has gone away.
+fluent-plugin-twittersearch: |+
+  Git repository has gone away.
+fluent-plugin-explode_filter: |+
+  Unmaintained since 2019-09-13.
+fluent-plugin-out_rawtcp: |+
+  Git repository has gone away.
+fluent-plugin-fluent-plugin-json-size-limit: |+
+  Git repository has gone away.
+fluent-plugin-mageshlogs: |+
+  Git repository has gone away.
+fluent-plugin-http-record-modifier: |+
+  Git repository has gone away.
+fluent-plugin-redis-render: |+
+  Git repository has gone away.
+fluent-plugin-heroku-parser: |+
+  Git repository has gone away.
+fluent-plugin-key-picker: |+
+  Git repository has gone away.
+fluent-plugin-azurefunctions: |+
+  Git repository has gone away.
+fluent-plugin-aerospike-cluster: |+
+  Git repository has gone away.
+fluent-plugin-cassandra: |+
+  Git repository has gone away.
+fluent-plugin-replace: |+
+  Git repository has gone away.
+fluent-plugin-syslog-d: |+
+  Git repository has gone away.
+fluent-plugin-geovis: |+
+  Git repository has gone away.
+fluent-plugin-say: |+
+  Git repository has gone away.
+fluent-plugin-record-sort: |+
+  Unmaintained since 2020-12-30.
+fluent-plugin-buffered-filter: |+
+  Git repository has gone away.
+fluent-plugin-newrelictransform: |+
+  Git repository has gone away.
+fluent-plugin-mysql-status: |+
+  Git repository has gone away.
+fluent-plugin-containiq: |+
+  Git repository has gone away.
+fluent-plugin-viaq_docker_audit_log_parser: |+
+  Unmaintained since 2023-10-05.
+fluent-plugin-mssql: |+
+  Git repository has gone away.
+fluent-plugin-azureoms: |+
+  Git repository has gone away.
+fluent-plugin-sndacs: |+
+  Git repository has gone away.
+fluent-plugin-gcloud-pubsub-custom-subscriber: |+
+  Git repository has gone away.
+fluent-plugin-pgdist: |+
+  Git repository has gone away.
+fluent-plugin-postgresql_csv: |+
+  Git repository has gone away.
+fluent-plugin-buffered-metrics: |+
+  Git repository has gone away.
+fluent-plugin-finagle: |+
+  Git repository has gone away.
+fluent-plugin-multi-type-parser: |+
+  Git repository has gone away.
+fluent-plugin-xymon: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-combiner: |+
+  Unmaintained since 2022-04-05.
+fluent-plugin-json-api: |+
+  Git repository has gone away.
+fluent-plugin-resolv-filter: |+
+  Unmaintained since 2020-10-13.
+fluent-plugin-splunkapi-ssln: |+
+  Unmaintained since 2023-01-27.
+fluent-plugin-librato: |+
+  Git repository has gone away.
+fluent-plugin-switch: |+
+  Git repository has gone away.
+fluent-plugin-sql-enchanced: |+
+  Git repository has gone away.
+fluent-plugin-riak2: |+
+  Git repository has gone away.
+fluent-plugin-timber: |+
+  Git repository has gone away.
+fluent-plugin-sentry-http: |+
+  Git repository has gone away.
+fluent-plugin-dockerid2name: |+
+  Git repository has gone away.
+fluent-plugin-elasticsearch2: |+
+  Git repository has gone away.
+fluent-plugin-slackrtm: |+
+  Unmaintained since 2020-04-22.
+fluent-plugin-clickhouse-output: |+
+  Git repository has gone away.
+fluent-plugin-diskusage: |+
+  Git repository has gone away.
+fluent-plugin-ncmb: |+
+  Git repository has gone away.
+fluent-plugin-currency: |+
+  Git repository has gone away.
+fluent-plugin-archagent: |+
+  Git repository has gone away.
+fluent-plugin-bcdb: |+
+  Git repository has gone away.
+fluent-plugin-simple-to-hash: |+
+  Git repository has gone away.
+fluent-plugin-in_elb_healthcheck: |+
+  Git repository has gone away.
+fluent-plugin-wire-protocol-compat: |+
+  Unmaintained since 2022-05-20.
+fluent-plugin-sekoia-io: |+
+  Git repository has gone away.
+fluent-plugin-http_forward: |+
+  Unmaintained since 2019-09-13.
+fluent-plugin-json-transform_ex: |+
+  Unmaintained since 2020-03-19.
+fluent-plugin-mongo-typed: |+
+  Git repository has gone away.
+fluent-plugin-tcp-output: |+
+  Git repository has gone away.
+fluent-plugin-reckoner-cdp: |+
+  Git repository has gone away.
+fluent-plugin-clickhouse: |+
+  Git repository has gone away.
+fluent-plugin-solr: |+
+  Git repository has gone away.
+fluent-plugin-https-client: |+
+  Git repository has gone away.
+fluent-plugin-datahub: |+
+  Git repository has gone away.
+fluent-plugin-delayed: |+
+  Git repository has gone away.
+fluent-plugin-monolog-influxdb: |+
+  Git repository has gone away.
+fluent-plugin-redislist: |+
+  Git repository has gone away.
+fluent-plugin-redis-url-tracker: |+
+  Git repository has gone away.
+fluent-plugin-to-simple-json-parser: |+
+  Git repository has gone away.
+fluent-plugin-sqlquery-ssh: |+
+  Git repository has gone away.
+fluent-plugin-condition-checker: |+
+  Git repository has gone away.
+fluent-plugin-arvancloud: |+
+  Git repository has gone away.
+fluent-plugin-query-fingerprint: |+
+  Unmaintained since 2025-03-28.
+fluent-plugin-mssql2: |+
+  Git repository has gone away.
+fluent-plugin-heroku-http: |+
+  Unmaintained since 2023-07-07.
+fluent-plugin-detect-memb-exceptions: |+
+  Git repository has gone away.
+fluent-plugin-vertica: |+
+  Git repository has gone away.
+fluent-plugin-hato: |+
+  Git repository has gone away.
+fluent-plugin-grpc: |+
+  Git repository has gone away.
+fluent-plugin-http-list: |+
+  Unmaintained since 2019-10-26.
+fluent-plugin-redis-pubsub: |+
+  Git repository has gone away.
+fluent-plugin-collectd-influxdb: |+
+  Git repository has gone away.
+fluent-plugin-juniper-telemetry_tech-mocha: |+
+  Git repository has gone away.
+fluent-plugin-in_http_healthcheck: |+
+  Git repository has gone away.
+fluent-plugin-stathat: |+
+  Unmaintained since 2022-02-16.
+fluent-plugin-onlineuser: |+
+  Git repository has gone away.
+fluent-plugin-redis-store-dtdream: |+
+  Git repository has gone away.
+fluent-plugin-zoomdata: |+
+  Unmaintained since 2020-03-27.
+fluent-plugin-dashing: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-redoop: |+
+  Git repository has gone away.
+fluent-plugin-elasticsearch-cluster: |+
+  Git repository has gone away.
+fluent-plugin-clouderametrics: |+
+  Git repository has gone away.
+fluent-plugin-time-sliced-filter: |+
+  Git repository has gone away.
+fluent-plugin-elastic-log: |+
+  Git repository has gone away.
+fluent-plugin-ruby_one_liner: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-config_reloader: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-mecab: |+
+  Git repository has gone away.
+fluent-plugin-tumblr: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-imagefile: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-rewriteimage: |+
+  Unmaintained since 2020-03-22.
+fluent-plugin-mssql22: |+
+  Git repository has gone away.
+fluent-plugin-syslog-tls-with-backoff-test: |+
+  Git repository has gone away.
+fluent-plugin-dag: |+
+  Git repository has gone away.
+fluent-plugin-chriak2: |+
+  Git repository has gone away.
+fluent-plugin-gelf-best: |+
+  Git repository has gone away.
+fluent-plugin-msgpack-parser: |+
+  Unmaintained since 2022-05-20.
+fluent-plugin-aerospike: |+
+  Git repository has gone away.
+fluent-plugin-ssl-check: |+
+  Git repository has gone away.
+fluent-plugin-vertica-query: |+
+  Git repository has gone away.
+fluent-plugin-filecounts: |+
+  Git repository has gone away.
+fluent-plugin-docker_image_name: |+
+  Git repository has gone away.
+fluent-plugin-with-extra-fields-parser: |+
+  Git repository has gone away.
+fluent-plugin-secure-tcp: |+
+  Git repository has gone away.
+fluent-plugin-docker-json: |+
+  Git repository has gone away.
+fluent-plugin-magesh: |+
+  Git repository has gone away.
+fluent-plugin-webhook-mackerel: |+
+  Git repository has gone away.
+fluent-plugin-json_serializer: |+
+  Git repository has gone away.
+fluent-plugin-input-static-file: |+
+  Git repository has gone away.
+fluent-plugin-elasticsearch-check-size: |+
+  Git repository has gone away.
+fluent-plugin-filter-jq: |+
+  Unmaintained since 2024-08-19.
+fluent-plugin-out_apache_log_format: |+
+  Git repository has gone away.
+fluent-plugin-sqs-check-size: |+
+  Git repository has gone away.
+fluent-plugin-clickhouse-compatible-with-monitor: |+
+  Git repository has gone away.
+fluent-plugin-multi-condition-selector: |+
+  Git repository has gone away.
+fluent-plugin-downcase-keys: |+
+  Git repository has gone away.
+fluent-plugin-uri-cma-parser: |+
+  Git repository has gone away.
+fluent-plugin-to-flat-json-parser: |+
+  Git repository has gone away.
+fluent-plugin-fw1_loggrabber_parser: |+
+  Git repository has gone away.
+fluent-plugin-filter-twitterurl: |+
+  Unmaintained since 2020-10-13.
+fluent-plugin-redis-enrichment: |+
+  Git repository has gone away.
+fluent-plugin-ceph: |+
+  Git repository has gone away.
+fluent-plugin-mongostat: |+
+  Git repository has gone away.
+fluent-plugin-out-http-ext-ignore-ssl-errors: |+
+  Git repository has gone away.
+fluent-plugin-simple-json-parser: |+
+  Git repository has gone away.
+fluent-plugin-out-upsolver: |+
+  Git repository has gone away.
+fluent-plugin-ilm_text_to_json: |+
+  Git repository has gone away.
+fluent-plugin-test: |+
+  Unmaintained since 2019-09-13.
+fluent-plugin-detect-ft-memb-exceptions: |+
+  Git repository has gone away.
+fluent-plugin-splunk-http-eventcollector-memb: |+
+  Unmaintained since 2020-03-21.
+fluent-plugin-coralogix_logger: |+
+  Git repository has gone away.
+fluent-plugin-redfish-alerts: |+
+  Git repository has gone away.
+fluent-plugin-prometheus-pull: |+
+  Git repository has gone away.
+fluent-plugin-formatreport: |+
+  Git repository has gone away.
+fluent-plugin-traildb: |+
+  Git repository has gone away.
+fluent-plugin-flatten-types: |+
+  Git repository has gone away.
+fluent-plugin-splunk-http-eventcollector-test: |+
+  Unmaintained since 2020-03-21.
+fluent-plugin-tcp_output: |+
+  Git repository has gone away.
+fluent-plugin-synerex: |+
+  Git repository has gone away.
+fluent-plugin-bos: |+
+  Git repository has gone away.
+fluent-plugin-pearson-aws-elasticsearch-service: |+
+  Git repository has gone away.
+fluent-plugin-remote-syslog-cg: |+
+  Git repository has gone away.
+fluent-plugin-d: |+
+  Git repository has gone away.
+fluent-plugin-chouse: |+
+  Git repository has gone away.
+fluent-plugin-cmdaa-stat: |+
+  Git repository has gone away.
+fluent-plugin-avro_deluxe: |+
+  Git repository has gone away.
+fluent-plugin-split-string: |+
+  Git repository has gone away.
+fluent-plugin-uuid2podname: |+
+  Git repository has gone away.
+fluent-plugin-sentry-ex: |+
+  Git repository has gone away.
+fluent-plugin-confluent-avro: |+
+  Git repository has gone away.
+fluent-plugin-perf-tools: |+
+  Git repository has gone away.
+fluent-plugin-geoip-kk: |+
+  Git repository has gone away.
+fluent-plugin-http-client: |+
+  Git repository has gone away.
+fluent-plugin-syslog-tls-with-backoff: |+
+  Git repository has gone away.
+fluent-plugin-clickhouse-json-format-output: |+
+  Git repository has gone away.
+fluent-plugin-elasticsearch-stats: |+
+  Git repository has gone away.
+fluent-plugin-google-cloud-logging-on-prem: |+
+  Git repository has gone away.
+fluent-plugin-unwinddata: |+
+  Git repository has gone away.
+fluent-plugin-openlineage: |+
+  Git repository has gone away.
+fluent-plugin-gelf-best-test: |+
+  Git repository has gone away.
+fluent-plugin-openlineage-light: |+
+  Git repository has gone away.
+fluent-plugin-record-demux: |+
+  Git repository has gone away.
+fluent-plugin-proc-info: |+
+  Git repository has gone away.
+fluent-plugin-json-size-limit: |+
+  Git repository has gone away.
+fluent-plugin-oci-logging-fluentd-v1.15: |+
+  Git repository has gone away.
+fluent-plugin-vadimberezniker-gcp: |+
+  Git repository has gone away.
+fluent-plugin-quota-throttle: |+
+  Git repository has gone away.
+fluent-plugin-kafka-status: |+
+  Git repository has gone away.
+fluent-plugin-json-by-name: |+
+  Git repository has gone away.
+fluent-plugin-rabbitmq-sklenar: |+
+  Git repository has gone away.
+fluent-plugin-ddl-redis-store: |+
+  Git repository has gone away.
+fluent-plugin-natsslv: |+
+  Git repository has gone away.
+fluent-plugin-vmware-aria-log-intelligence: |+
+  Git repository has gone away.
+fluent-plugin-gelf-test: |+
+  Git repository has gone away.
+fluent-plugin-diss-nats: |+
+  Git repository has gone away.
+fluent-plugin-logfire: |+
+  Git repository has gone away.
+fluent-plugin-wh-kubernetes_metadata_filter: |+
+  Git repository has gone away.
+fluent-plugin-nginx-nap-split: |+
+  Git repository has gone away.
+fluent-plugin-ldap-client: |+
+  Git repository has gone away.
+fluent-plugin-rabbitmq-pbk: |+
+  Git repository has gone away.
+fluent-plugin-time-cutoff: |+
+  Git repository has gone away.
+fluent-plugin-nuopenlineage-light: |+
+  Git repository has gone away.
+fluent-plugin-pg-query: |+
+  Git repository has gone away.
+fluent-plugin-arango-http-api: |+
+  Git repository has gone away.
+fluent-plugin-splunk-enterprise: |+
+  Git repository has gone away.
+fluent-plugin-add_empty_array: |+
+  Git repository has gone away.
+fluent-plugin-monolog: |+
+  Git repository has gone away.
+fluent-plugin-parse_cookie: |+
+  Git repository has gone away.
+fluent-plugin-http-status: |+
+  Git repository has gone away.
+fluent-plugin-parse_multiple_value_query: |+
+  Git repository has gone away.
+fluent-plugin-zmq-pub: |+
+  Git repository has gone away.
+fluent-plugin-std-formatter: |+
+  Git repository has gone away.
+fluent-plugin-buffer-ephemeral: |+
+  Git repository has gone away.
+fluent-plugin-redeliver: |+
+  Git repository has gone away.
+fluent-plugin-container_logs_filter: |+
+  Git repository has gone away.
+fluent-plugin-nicorepo: |+
+  Git repository has gone away.
+fluent-plugin-elasticsearch-ruby: |+
+  Git repository has gone away.
+fluent-plugin-convert-value-to-sha: |+
+  Git repository has gone away.
+fluent-plugin-straight-file: |+
+  Git repository has gone away.
+fluent-plugin-decode_location: |+
+  Git repository has gone away.
+fluent-plugin-haproxy_stats: |+
+  Git repository has gone away.
+fluent-plugin-arango: |+
+  Git repository has gone away.
+fluent-plugin-tcl_kubernetes_metadata_filter: |+
+  Git repository has gone away.
+fluent-plugin-fedmsg: |+
+  Git repository has gone away.
+fluent-plugin-tailer: |+
+  Git repository has gone away.
+fluent-plugin-tag-ignore: |+
+  Git repository has gone away.
+fluent-plugin-arduino: |+
+  Git repository has gone away.
+fluent-plugin-rtf-dash: |+
+  Git repository has gone away.
+fluent-plugin-inline-classifier: |+
+  Git repository has gone away.
+fluent-plugin-ohai: |+
+  Git repository has gone away.
+fluent-plugin-formatter_linebyline: |+
+  Git repository has gone away.
+fluent-plugin-5rocks: |+
+  Git repository has gone away.
+fluent-plugin-sqlinput-statefileins3: |+
+  Git repository has gone away.
+fluent-plugin-mysqlrecord: |+
+  Git repository has gone away.
+fluent-plugin-fetchpodname: |+
+  Git repository has gone away.
+fluent-plugin-simplefile: |+
+  Git repository has gone away.
+fluent-plugin-kubernetes_metadata_filter_splunk: |+
+  Git repository has gone away.
