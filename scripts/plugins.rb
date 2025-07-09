@@ -109,7 +109,7 @@ class Plugins
         next
       end
       if p[:homepage_uri] and not p[:homepage_uri].empty?
-        if not uri_alive?(p[:homepage_uri])
+        unless uri_alive?(p[:homepage_uri])
           p[:obsolete] = true
           p[:note] = "Can't access the homepage."
         end
