@@ -86,7 +86,7 @@ The plugins will be automatically reinstalled if needed if your environment has 
 For more details, please refer to "Automate Plugin Install for Update on Demand".
 
 #### **manual**
-You can use this approach if you prefer to manage plugins manually or if your environment does not have offline connection.
+You can use this approach if you prefer to manage plugins manually or if your environment does not have online connection.
 If the service was active before the update, it will not restart automatically with this configuration.
 You need to restart the service manually.
 
