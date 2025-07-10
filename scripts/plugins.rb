@@ -7,13 +7,25 @@ require 'cgi'
 require 'erb'
 require 'yaml'
 require 'time'
+require "optparse"
+require 'open-uri'
 
 def e(s)
   CGI.escape(s.to_s)
 end
 
+def parse_command_line
+  options = {}
+  parser = OptionParser.new
+  parser.on("--force-update", "Force update for debugging.") do
+    options[:force_update] = true
+  end
+  parser.parse!
+  options
+end
+
 class Plugins
-  def self.update
+  def self.update(force_update: false)
 
     rpipe, wpipe = IO.pipe
     pid = Process.fork do
@@ -52,14 +64,6 @@ class Plugins
 
     plugins = plugins.sort_by { |pl| -pl['downloads'] }
 
-    # Mark obsolete plugins
-    plugins.each { |p|
-      if OBSOLETE_PLUGINS.key?(p["name"])
-        p["obsolete"] = true
-        p["note"] = OBSOLETE_PLUGINS[p["name"]]
-      end
-   }
-
     # shrink minimum information
     plugins = plugins.map { |p|
       {
@@ -84,12 +88,47 @@ class Plugins
       puts "added: #{added_plugins}"
       puts "deleted: #{deleted_plugins}"
     end
-    if added_plugins.size > 0 or deleted_plugins.size > 0 or force_update?
+    if force_update or need_update?
+      mark_obsolete(plugins)
       File.open(plugins_json, "w") do |file|
         file.write(JSON.pretty_generate(plugins))
       end
       write_commit_message(added_plugins, deleted_plugins)
     end
+  end
+
+  def self.need_update?
+    added_plugins.size > 0 or deleted_plugins.size > 0 or has_been_a_week?
+  end
+
+  def self.mark_obsolete(plugins)
+    plugins.each { |p|
+      if OBSOLETE_PLUGINS.key?(p[:name])
+        p[:obsolete] = true
+        p[:note] = OBSOLETE_PLUGINS[p[:name]]
+        next
+      end
+      if p[:homepage_uri] and not p[:homepage_uri].empty?
+        unless uri_alive?(p[:homepage_uri])
+          p[:obsolete] = true
+          p[:note] = "Can't access the homepage."
+        end
+      end
+    }
+  end
+
+  def self.uri_alive?(uri)
+    OpenURI.open_uri(uri, read_timeout: 5) { |f|
+      status_code = f.status[0].to_i
+      if status_code >= 400
+        puts "#{uri} is dead: #{status_code}" if ENV["DEBUG"]
+        return false
+      end
+    }
+    true
+  rescue => e
+    puts "#{uri} error: #{e.inspect}" if ENV["DEBUG"]
+    return false
   end
 
   def self.commit_message_file
@@ -123,7 +162,7 @@ class Plugins
     end
   end
 
-  def self.force_update?
+  def self.has_been_a_week?
     last_modified = Time.parse(`git log -1 --pretty="format:%ci" #{plugins_json}`)
     duration = Time.now.to_i - last_modified.to_i
     seconds_in_a_week = 60 * 60 * 24 * 7
@@ -133,4 +172,4 @@ class Plugins
   OBSOLETE_PLUGINS = YAML.load_file(File.expand_path(File.join(__dir__, 'obsolete-plugins.yml')))
 end
 
-Plugins.update
+Plugins.update(**parse_command_line)
