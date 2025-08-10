@@ -88,7 +88,7 @@ class Plugins
       puts "added: #{added_plugins}"
       puts "deleted: #{deleted_plugins}"
     end
-    if force_update or need_update?
+    if force_update or need_update?(added_plugins, deleted_plugins)
       mark_obsolete(plugins)
       File.open(plugins_json, "w") do |file|
         file.write(JSON.pretty_generate(plugins))
@@ -97,7 +97,7 @@ class Plugins
     end
   end
 
-  def self.need_update?
+  def self.need_update?(added_plugins, deleted_plugins)
     added_plugins.size > 0 or deleted_plugins.size > 0 or has_been_a_week?
   end
 
