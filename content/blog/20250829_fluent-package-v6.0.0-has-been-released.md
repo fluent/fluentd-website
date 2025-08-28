@@ -109,7 +109,7 @@ We've improved the system to preserve auto-start configuration and Windows servi
 This eliminates the need for reconfiguration that was previously required during updates.
 
 In addition, manually installed plugins still need to be reinstalled when updating an LTS version.
-Starting from this release, when updating further in the future, plugins will be automatically reinstalled during updates (Windows not supported).
+Starting from this release, plugins will be automatically reinstalled during future updates when using the zero-downtime update feature (Windows not supported).
 This will make future updates easier.
 
 ## Other Improvements and Fixes
