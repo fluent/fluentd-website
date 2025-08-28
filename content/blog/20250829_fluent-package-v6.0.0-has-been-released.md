@@ -47,7 +47,7 @@ This makes the following new features available:
 
 * Major new features and improvements in Fluentd v1.19.0
   * Improved fault tolerance and simplified recovery
-    * Buffer evacuation when retry limits are exceeded
+    * [Buffer evacuation when retry limits are exceeded](https://docs.fluentd.org/buffer#handling-successive-failures)
       * Data that exceeded retry limits is automatically evacuated, making it easy to resend later.
     * Enhanced buffer corruption detection
       * If buffer files are corrupted due to forced shutdown, they are automatically evacuated, improving safe restarts.
