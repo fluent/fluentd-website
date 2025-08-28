@@ -24,7 +24,7 @@ Therefore, there are two advantages for long-term stable operations:
 * You can prepare systematically for the next major update
   * Since the support period is announced in advance, you know when the next major update will occur
 
-For detailed support schedule information, please see the [official announcement](https://www.fluentd.org/blog/fluent-package-v6-scheduled-lifecycle).
+For detailed support schedule information, please see [Scheduled support lifecycle announcement about Fluent Package v6](/blog/fluent-package-v6-scheduled-lifecycle).
 
 ## Major new features and improvements
 This release includes many improvements for long-term stable operations.
