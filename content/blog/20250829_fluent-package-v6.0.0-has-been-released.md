@@ -69,9 +69,10 @@ For more detailed changes since v1.16, see:
 Starting from v6 LTS, zero-downtime updates are available.
 This feature allows you to safely execute configuration file reloading and Fluentd restarts with zero downtime (Windows not supported).
 
-For more details, see the following article and try out this feature:
+For more details, see the following articles and try out this feature:
 
-* [fluent-package v5.2.0 has been released](https://www.fluentd.org/blog/fluent-package-v5.2.0-has-been-released)
+* [Zero-downtime restart](https://docs.fluentd.org/deployment/zero-downtime-restart)
+* [Zero-downtime update](/blog/fluent-package-v5.2.0-has-been-released)
 
 ### Refreshed platform support
 Fluent Package v6 supports the following platforms:
