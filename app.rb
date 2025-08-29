@@ -314,7 +314,7 @@ get '/plugins' do
     "Filter" => 'filter grep modifier replace geoip parse',
     "Google Cloud Platform" => 'google bigquery',
     "Internet of Things" => 'mqtt',
-    "Monitoring" => "growthforecast graphite monitor librato zabbix",
+    "Monitoring" => "growthforecast graphite monitor librato zabbix opentelemetry",
     "Notifications" => "slack irc ikachan hipchat twilio",
     "NoSQL" => 'riak couch mongo couchbase rethink influxdb',
     "Online Processing" => 'norikra anomaly',
@@ -411,7 +411,7 @@ growthforecast ping-message ikachan twilio mongo influxdb norikra mysql mysql-re
 elasticsearch secure-forward forest rewrite scribe flowcounter flowcounter-simple datacounter flatten
 grepcounter numeric-counter mail multiprocess slack metricsense extract_query_params notifier keep-forward
 twitter munin hash-forward route groupcounter sql netflow elapsed-time stats-notifier copy_ex beats
-numeric-monitor kafka).map { |name| "fluent-plugin-#{name}"}
+numeric-monitor kafka opentelemetry).map { |name| "fluent-plugin-#{name}"}
 
 helpers do
   def read_blog_articles(markdown_files)
