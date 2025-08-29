@@ -62,6 +62,14 @@ FLUENT_PACKAGE_VERSIONS = {
     linux: "5.0.7",
     win: "5.0.7"
   },
+  :v6 => {
+    linux: "6.0.0",
+    win: "6.0.0"
+  },
+  :v6_lts => {
+    linux: "6.0.0",
+    win: "6.0.0"
+  },
 }
 
 AUTHORS = {

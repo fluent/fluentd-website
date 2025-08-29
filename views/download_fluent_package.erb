@@ -24,7 +24,7 @@
   <div class="row margin-bottom-20">
     <div class="col-md-9">
 
-      <h4><a name=fluent-package></a>Fluent Package (fluent-package)</h4>
+      <h3><a name=fluent-package></a>Fluent Package (fluent-package)</h3>
       <p>Fluent Package (fluent-package), formerly known as Treasure Agent (td-agent). There are two channels:</p>
       <ul>
         <li>Normal release</li>
@@ -32,6 +32,128 @@
       </ul>
       <p>We ship normal release in rapid release development style. You can use the latest feature of Fluentd.</p>
       <p>On the other, Long Term Support (LTS) is a more conservative maintenance version which will not introduce a new feature. It only applies teeny updates such as security or bug fixes. We recommend the LTS channel for enterprise services.</p>
+
+      <h4><a name=fluent-package></a>Fluent Package v6 (fluent-package)</h4>
+      <p>LTS for v6 will be supported until Dec, 2027. Please see <a href="/blog/fluent-package-v6-scheduled-lifecycle">Scheduled support lifecycle announcement about Fluent Package</a> for more details.</p>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="20%">Platform</th>
+            <th width="30%">Platform Version</th>
+            <th width="50%">Package or Installer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/icon_redhat.png" height="60px"><br/>
+                RHEL / Amazon Linux
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">fluent-package LTS v<%=FLUENT_PACKAGE_VERSIONS[:v6_lts][:linux]%></span>
+              <ul>
+                <li>
+                  x86_64:
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/redhat/10/x86_64/index.html">RHEL10</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/redhat/9/x86_64/index.html">RHEL9</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/redhat/8/x86_64/index.html">RHEL8</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/amazon/2023/x86_64/index.html">Amazon Linux 2023</a>
+                </li>
+                <li>
+                  aarch64:
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/redhat/10/aarch64/index.html">RHEL9</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/redhat/9/aarch64/index.html">RHEL9</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/redhat/8/aarch64/index.html">RHEL8</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/amazon/2023/aarch64/index.html">Amazon Linux 2023</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">fluent-package v<%=FLUENT_PACKAGE_VERSIONS[:v6][:linux]%></span>
+              <ul>
+                <li>
+                  x86_64:
+                  <a href="https://fluentd.cdn.cncf.io/6/redhat/10/x86_64/index.html">RHEL10</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/redhat/9/x86_64/index.html">RHEL9</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/redhat/8/x86_64/index.html">RHEL8</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/amazon/2023/x86_64/index.html">Amazon Linux 2023</a>
+                </li>
+                <li>
+                  aarch64:
+                  <a href="https://fluentd.cdn.cncf.io/6/redhat/9/aarch64/index.html">RHEL9</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/redhat/8/aarch64/index.html">RHEL8</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/amazon/2023/aarch64/index.html">Amazon Linux 2023</a>
+                </li>
+              </ul>
+              <a href="https://docs.fluentd.org/installation/install-fluent-package/install-by-rpm-fluent-package">Installation Guide</a><br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/icon_ubuntu.png" height="60px"><br/>
+                Ubuntu/Debian
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">fluent-package LTS v<%=FLUENT_PACKAGE_VERSIONS[:v6_lts][:linux]%></span>
+              <ul>
+                <li>Ubuntu:
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/ubuntu/noble/pool/contrib/f/fluent-package/index.html">Noble</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/ubuntu/jammy/pool/contrib/f/fluent-package/index.html">Jammy</a>,
+                </li>
+                <li>Debian:
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/debian/trixie/pool/contrib/f/fluent-package/index.html">Trixie</a>
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/debian/bookworm/pool/contrib/f/fluent-package/index.html">Bookworm</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">fluent-package v<%=FLUENT_PACKAGE_VERSIONS[:v6][:linux]%></span>
+              <ul>
+                <li>Ubuntu:
+                  <a href="https://fluentd.cdn.cncf.io/6/ubuntu/noble/pool/contrib/f/fluent-package/index.html">Noble</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/ubuntu/jammy/pool/contrib/f/fluent-package/index.html">Jammy</a>,
+                </li>
+                <li>Debian:
+                  <a href="https://fluentd.cdn.cncf.io/6/debian/trixie/pool/contrib/f/fluent-package/index.html">Trixie</a>
+                  <a href="https://fluentd.cdn.cncf.io/6/debian/bookworm/pool/contrib/f/fluent-package/index.html">Bookworm</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/installation/install-fluent-package/install-by-deb-fluent-package">Installation Guide</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="/images/download-icons/windows-logo.png"><br/>
+                Windows
+              </center>
+            </td>
+            <td>Windows Server 2016+ (64-bit)<br/>Windows 10+ (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">fluent-package LTS v<%=FLUENT_PACKAGE_VERSIONS[:v6_lts][:win]%></span>
+              <ul>
+                <li>
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/windows/index.html">msi repository</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">fluent-package v<%=FLUENT_PACKAGE_VERSIONS[:v6][:win]%></span>
+              <ul>
+                <li>
+                  <a href="https://fluentd.cdn.cncf.io/6/windows/index.html">msi repository</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/installation/install-fluent-package/install-by-msi-fluent-package">Installation Guide</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>If you could not access <a href="https://fluentd.cdn.cncf.io">https://fluentd.cdn.cncf.io</a>, try to use <a href="https://td-agent-package-browser.herokuapp.com">https://td-agent-package-browser.herokuapp.com</a>.</p>
+      <br/>
+
+      <h4><a name=fluent-package></a>Fluent Package v5 (fluent-package)</h4>
+
       <p>LTS for v5 will be supported until Dec, 2025. Please see <a href="/blog/fluent-package-v6-scheduled-lifecycle">Scheduled support lifecycle announcement about Fluent Package</a> for more details.</p>
       <table class="table table-bordered">
         <thead>
