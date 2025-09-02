@@ -1,0 +1,42 @@
+<style>
+  .post-list{list-style:none;padding:0}
+  .post-item{margin:0 0 12px 0}
+  .post-date{display:inline-block;width:9em;opacity:.7}
+  .post-title{font-weight:600}
+  .post-tags .tag{margin-left:.35em;opacity:.8}
+  .pager{margin-top:20px;display:flex;gap:12px;align-items:center}
+  .pager .page{opacity:.7}
+</style>
+
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Blog archive</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li class="active">Blog archive</li>
+    </ul>
+  </div><!--/container-->
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<div class="container">
+  <ul class="post-list">
+    <% posts.each do |p| %>
+      <li class="post-item">
+        <span class="post-date"><%= p[:date].strftime("%Y-%m-%d") %></span>
+        <a class="post-title" href="<%= p[:url] %>"><%= p[:title] %></a>
+      </li>
+    <% end %>
+  </ul>
+
+  <nav class="pager">
+    <% if page > 1 %>
+      <a class="prev" href="?page=<%= page - 1 %>">&laquo; Newer</a>
+    <% end %>
+    <span class="page">Page <%= page %> / <%= total_pages %></span>
+    <% if page < total_pages %>
+      <a class="next" href="?page=<%= page + 1 %>">Older &raquo;</a>
+    <% end %>
+  </nav>
+</div>
