@@ -1,9 +1,4 @@
 <style>
-  .post-list{list-style:none;padding:0}
-  .post-item{margin:0 0 12px 0}
-  .post-date{display:inline-block;width:9em;opacity:.7}
-  .post-title{font-weight:600}
-  .post-tags .tag{margin-left:.35em;opacity:.8}
   .pager{margin-top:20px;display:flex;gap:12px;align-items:center}
   .pager .page{opacity:.7}
 </style>
@@ -21,14 +16,9 @@
 <!--=== End Breadcrumbs ===-->
 
 <div class="container">
-  <ul class="post-list">
-    <% posts.each do |p| %>
-      <li class="post-item">
-        <span class="post-date"><%= p[:date].strftime("%Y-%m-%d") %></span>
-        <a class="post-title" href="<%= p[:url] %>"><%= p[:title] %></a>
-      </li>
-    <% end %>
-  </ul>
+  <% posts.each do |p| %>
+    <p><%= p[:date].strftime("%Y-%m-%d") %>: <a href="<%= p[:url] %>"><%= p[:title] %></a></p>
+  <% end %>
 
   <nav class="pager">
     <% if page > 1 %>
