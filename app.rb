@@ -112,14 +112,14 @@ def blog_posts_all
     .reverse
     .filter_map do |path|
       if m = path.match(%r{/content/blog/(\d{4})(\d{2})(\d{2})_(.+)\.md$})
-        y, mo, d, url = m.captures
+        y, mo, d, article = m.captures
         title = begin
           first = File.open(path, &:readline)
           first.sub(/^#\s*/, '').strip
         end
         {
           date: Date.new(y.to_i, mo.to_i, d.to_i),
-          url:  "/blog/#{url}",
+          url:  "/blog/#{article}",
           title: title,
         }
       end
