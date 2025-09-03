@@ -97,6 +97,9 @@
         <% @recent_articles.each { |a| %>
         <p><%= a[:date] %>: <a href="/blog/<%= a[:url] %>"><%= a[:title] %></a></p>
         <% } %>
+        <div class="blog-archive">
+          <a href="/blog/archive/" class="archive-link">View Full Archive</a>
+        </div>
       </div>
       <!-- End Posts -->
 

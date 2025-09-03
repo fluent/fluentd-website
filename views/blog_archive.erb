@@ -1,0 +1,17 @@
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Blog archive</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li class="active">Blog archive</li>
+    </ul>
+  </div><!--/container-->
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<div class="container">
+  <% posts.each do |p| %>
+    <p><%= p[:date].strftime("%Y-%m-%d") %>: <a href="<%= p[:url] %>"><%= p[:title] %></a></p>
+  <% end %>
+</div>

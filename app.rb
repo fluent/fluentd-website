@@ -5,6 +5,7 @@ require 'time'
 require 'yaml'
 require 'redcarpet'
 require 'slugify'
+require 'date'
 
 # Settings
 set :app_file, __FILE__
@@ -104,6 +105,27 @@ AUTHORS = {
     'desc' => 'Hisa (<a href="https://twitter.com/hisatomot">@hisatomot</a>) is a maintainer of Fluentd. He works on developer marketing and everything related to Fluentd at <a href="http://www.ctc-america.com/">ITOCHU Techno-Solutions America, Inc.</a>, the global IT solution provider, specialized in hyperscale, cloud native and app dev technologies, providing commercial services around Fluentd and Fluent Bit.'
   },
 }
+
+def blog_posts_all
+  Dir.glob(File.join(settings.root, "content/blog/*.md"))
+    .sort
+    .reverse
+    .filter_map do |path|
+      if m = path.match(%r{/content/blog/(\d{4})(\d{2})(\d{2})_(.+)\.md$})
+        y, mo, d, article = m.captures
+        title = begin
+          first = File.open(path, &:readline)
+          first.sub(/^#\s*/, '').strip
+        end
+        {
+          date: Date.new(y.to_i, mo.to_i, d.to_i),
+          url:  "/blog/#{article}",
+          title: title,
+        }
+      end
+    end
+end
+
 
 N_RECENT_POSTS=10
 
@@ -263,6 +285,15 @@ get '/blog/feed.rss' do
   @recent_articles = read_blog_articles(Dir.glob("content/blog/*.md").sort.reverse.take(N_RECENT_POSTS))
   erb :rss, :layout => false
 end
+
+get '/blog/archive' do
+  redirect '/blog/archive/', 301
+end
+
+get '/blog/archive/' do
+  erb :blog_archive, locals: { posts: blog_posts_all }
+end
+
 
 get '/newsletter' do
   @title = "Sign up for Fluentd Newsletter"

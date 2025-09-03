@@ -1,22 +1,22 @@
-## FluentCon 2021 Recap & Updates
+# FluentCon 2021 Recap & Updates
 
 We’ve just had a series of amazing sessions from leaders and friends in the Fluentd & Fluent Bit community from Chronosphere, Calyptia, Nieman and Marcus, Cisco, Microsoft, Amazon, SAP,  Zendesk and many community members & attendees from all over the world. There were variety of use cases, production challenges and solutions, performance optimization with great benchmark results at scale. Hope you enjoyed the conference and here are some notes for your review. 
 
-### 1st FluentCon co-located with KubeCon
+## 1st FluentCon co-located with KubeCon
 
 1st FluentCon, co-located with KubeCon Europe, had a variety of topics covered starting from Fluentd & Fluent Bit updates including native metrics support and followed by great talks. 
 
-### Observability for operation at scale
+## Observability for operation at scale
 We really felt the vendor neutral observability is getting more momentum and exciting activities in "Tracing", "Metrics" and "Logs" are coming together to bring the operation at scale to the next level. 
 
-### Fluentd and Fluent Bit Updates
+## Fluentd and Fluent Bit Updates
 1. **Fluentd turns 10 in June!** Happy 10th birthday!
 2. Fluent Bit is being deployed **over 2 million times a day**.
 3. **Conrainer deployments** are **10x higher** than package deployments.
 4. New release of **Fluent Bit 1.7** and **Fluentd 1.12**
  - Fluent Bit multi-workers, new SSL library, and improved I/O disk performance (**Available now!**)
 
-### More Transparency, Accessibility and Neutrality for Observability
+## More Transparency, Accessibility and Neutrality for Observability
 1. New ways to engage the community with [**https://discuss.fluentd.org**][1]
 
 [1]: https://discuss.fluentd.org
@@ -27,11 +27,11 @@ We really felt the vendor neutral observability is getting more momentum and exc
  - Stream Processor support to Extract Metrics from Log data (Coming soon)
  - Support for Open Telemetry Protocol (OLTP) (Coming later this year.)
  
-### Simpler Plugin Development 
+## Simpler Plugin Development 
 1. New **WebAssembly** integration with Fluent Bit (Coming later this year.)
 2. Write plugins the language you want. Keep the blazing fast performance.
  
-### Thanks to the foundation and conference speakers and sponsors
+## Thanks to the foundation and conference speakers and sponsors
 We would like to thank Cloud Native Computing Foundation and conference oganizer team for all the community effort making people meet and discuss in this challenging moment. We also thank all the amazing speakers and sponsors to support the 1st FluentCon.
 Here is the list of speakers and sponsors.
 
