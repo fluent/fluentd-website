@@ -1,8 +1,3 @@
-<style>
-  .pager{margin-top:20px;display:flex;gap:12px;align-items:center}
-  .pager .page{opacity:.7}
-</style>
-
 <!--=== Breadcrumbs ===-->
 <div class="breadcrumbs margin-bottom-40">
   <div class="container">
@@ -19,14 +14,4 @@
   <% posts.each do |p| %>
     <p><%= p[:date].strftime("%Y-%m-%d") %>: <a href="<%= p[:url] %>"><%= p[:title] %></a></p>
   <% end %>
-
-  <nav class="pager">
-    <% if page > 1 %>
-      <a class="prev" href="?page=<%= page - 1 %>">&laquo; Newer</a>
-    <% end %>
-    <span class="page">Page <%= page %> / <%= total_pages %></span>
-    <% if page < total_pages %>
-      <a class="next" href="?page=<%= page + 1 %>">Older &raquo;</a>
-    <% end %>
-  </nav>
 </div>

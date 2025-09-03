@@ -286,19 +286,12 @@ get '/blog/feed.rss' do
   erb :rss, :layout => false
 end
 
-BLOG_ARTICLE_PER_PAGE = 20
-
 get '/blog/archive' do
   redirect '/blog/archive/', 301
 end
 
 get '/blog/archive/' do
-  page = params[:page].to_i
-  page = 1 if page < 1
-  posts = blog_posts_all
-  total_pages = (posts.size.to_f / BLOG_ARTICLE_PER_PAGE).ceil
-  slice = posts.slice((page - 1) * BLOG_ARTICLE_PER_PAGE, BLOG_ARTICLE_PER_PAGE) || []
-  erb :blog_archive, locals: { posts: slice, page: page, total_pages: total_pages }
+  erb :blog_archive, locals: { posts: blog_posts_all }
 end
 
 
