@@ -48,7 +48,7 @@ The following section shows the list of manually installed plugins:
 (...)
 ```
 
-In this example, the only manually installed plugins are `fluent-plugin-remote_syslog`.
+In this example, the only manually installed plugin is `fluent-plugin-remote_syslog`.
 The list is also saved to a file:
 
 
