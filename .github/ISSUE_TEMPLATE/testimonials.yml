@@ -31,9 +31,9 @@ body:
   - type: input
     id: image
     attributes:
-      label: What is your service or company logo URI?
-      description: Descripbe official URI to your service or company logo which is accessible publicly. Used as link image in https://www.fluentd.org/testimonials
-      placeholder: Tell us your service or company logo URI here
+      label: What is your service or company logo URI? (PNG format is preferred)
+      description: Descripbe official URI to your service or company logo (PNG) which is accessible publicly. Used as link image in https://www.fluentd.org/testimonials
+      placeholder: Tell us your service or company logo URI here (PNG)
     validations:
       required: false
   - type: textarea
