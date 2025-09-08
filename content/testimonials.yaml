@@ -160,4 +160,8 @@
     quote: |
         <a href="https://elastisys.com/">Elastisys</a>, founded in 2011 and based in Sweden, specializes in cloud native technologies. We offer a cloud native Kubernetes platform, optimized for security and compliance with EU regulations for software critical to our society. Our solutions enable customers to accelerate innovation, reduce costs, and enhance security using our leading cloud native technology and expertise.
         <br/>
-        We utilize Fluentd as part of our offering to provide our customers with out of the box logging for Kubernetes environments. 
+        We utilize Fluentd as part of our offering to provide our customers with out of the box logging for Kubernetes environments.
+-
+    company: Sophotech
+    quote: |
+        <a href="https://sopho.tech/">Sophotech</a>, At Sophotech we rely on Fluentd to streamline log collection across our systems, ensuring consistent, reliable observability at scale. Its flexibility and ease of integration allow us to simplify operations and focus on delivering value, while reducing the overhead traditionally associated with managing logs.
