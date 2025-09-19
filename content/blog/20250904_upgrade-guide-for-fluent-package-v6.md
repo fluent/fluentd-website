@@ -20,7 +20,8 @@ As an example, you can upgrade with the following steps:
 3. Back up registry settings (Windows only)
 4. Install Fluent Package v6 LTS
 5. Reinstall plugins
-6. Restart the Fluentd service
+6. Fix the config if using `/etc/fluent/conf.d/` directory on the user side
+7. Restart the Fluentd service
 
 Below are details for each step.
 
@@ -111,7 +112,38 @@ Example:
 $ sudo fluent-gem install fluent-plugin-remote_syslog
 ```
 
-### 6. Restart the Fluentd service
+### 6. Fix the config if using `/etc/fluent/conf.d/` directory on the user side
+
+Starting from Fluent Package v6, config files in `/etc/fluent/conf.d/` are automatically loaded by default.
+
+If you have manually created and used this directory in a previous version, the config files in that directory will be loaded twice.
+
+In v6.0.0, the Linux packages (RPM and DEB) include the following config files by default:
+
+* `/etc/fluent/conf.d/obsolete_plugins.conf`
+* `/etc/fluent/conf.d/update_notifier.conf`
+
+Any other config files in this directory are considered to have been placed manually by the user side.
+
+In this case, you can prevent duplicate loading by disabling the automatic loading feature.
+This can be done by setting [config\_include\_dir](https://docs.fluentd.org/deployment/system-config#config_include_dir) as follows:
+
+```
+<system>
+  config_include_dir ""
+</system>
+```
+
+Disabling this feature will stop the following new features introduced in v6, but it will not affect Fluentd’s core operations:
+
+* `fluent-plugin-obsolete-plugins`
+  * Notifies in logs if any plugins considered as obsolete by the community are being used.
+* `fluent-package-update-notifier`
+  * Checks for the availability of new versions and notifies in logs.
+
+If you want to take advantage of these new features and the auto-loading features, of course you can alternatively relocate your config files to a different directory.
+
+### 7. Restart the Fluentd service
 Restart the Fluentd service(s) you stopped in step 2.
 If multiple services exist, start them in the order from aggregators to forwarders.
 
