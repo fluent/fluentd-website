@@ -31,7 +31,7 @@ For details, please see the [Ruby 3.2.9 release notes](https://github.com/ruby/r
 Fluentd v1.16.10 includes the following fixes:
 
 * Server plugin helper: Fixed an issue where connections might not be properly closed when Fluentd shuts down.
-  * When [flush_at_shutdown](https://docs.fluentd.org/configuration/buffer-section#flushing-parameters) is enabled, Fluentd should flush all buffered data before stopping, unless output fails. However, buffer files sometimes remained after shutdown. The remaining buffer files are loaded on the next startup.
+  * When [flush\_at\_shutdown](https://docs.fluentd.org/configuration/buffer-section#flushing-parameters) is enabled, Fluentd should flush all buffered data before stopping, unless output fails. However, buffer files sometimes remained after shutdown. The remaining buffer files are loaded on the next startup.
 
 ### Fixed an issue where Fluentd’s temporary directory could be deleted by tmpfiles.d
 
