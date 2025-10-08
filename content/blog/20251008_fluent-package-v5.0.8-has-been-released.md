@@ -8,7 +8,6 @@ Fluent Package is a stable distribution package of Fluentd. (successor of td-age
 This is a maintenance release of v5.0.x LTS series.
 Bundled Fluentd was updated to 1.16.10.
 
-We recommend upgrading to fluent-package v5.0.8!
 
 ## Fluent Package v5.0.8
 
