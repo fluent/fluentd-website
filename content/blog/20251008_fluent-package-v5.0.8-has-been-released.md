@@ -85,6 +85,8 @@ Please see [the download page](/download/fluent_package).
 We plan to release the next LTS version of fluent-package v5.0.9 by the end of 2025.
 The content of updates are still TBD.
 
+We strongly recommend upgrading to [fluent-package v6 LTS](https://www.fluentd.org/blog/fluent-package-v6.0.0-has-been-released).
+
 ### Follow us on X
 
 We have been posting information about Fluentd in Japanese on [@fluentd_jp](https://x.com/fluentd_jp).
