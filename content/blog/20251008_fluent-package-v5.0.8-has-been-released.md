@@ -41,7 +41,7 @@ On some Linux distributions, tmpfiles.d is configured as follows, and files or d
 q /tmp 1777 root root 10d
 ```
 
-When using the `out_file` or `out_secondary_file` plugins, Fluentd uses temporary directory like `/tmp/fluentd-lock-{...}/`.
+When using the `out_file` or `out_secondary_file` plugins, Fluentd uses temporary directory like `/tmp/fluentd-lock-{...}/`, depending on the config.
 If there is no output with `out_file` or `out_secondary_file` for an extended period, the temporary directory could be deleted by tmpfiles.d.
 
 If the temporary directory is deleted while Fluentd is running, the following error occurs continuously in `out_file` and `out_secondary_file` output:
