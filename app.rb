@@ -60,8 +60,8 @@ FLUENT_PACKAGE_VERSIONS = {
     win: "5.2.0"
   },
   :v5_lts => {
-    linux: "5.0.7",
-    win: "5.0.7"
+    linux: "5.0.8",
+    win: "5.0.8"
   },
   :v6 => {
     linux: "6.0.0",
