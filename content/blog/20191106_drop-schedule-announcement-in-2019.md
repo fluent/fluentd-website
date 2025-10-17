@@ -21,7 +21,7 @@ td-agent 2.3 is no longer supported.
 If you want to use td-agent for fluentd v0.12, use td-agent 2.5 instead.
 td-agent 2.5 uses ruby 2.5, so td-agent 2.5 is more better than td-agent 2.3.
 
-Of course, we recommend to use td-agent 3, fluentd v1 serise, for new deployment :)
+Of course, we recommend to use td-agent 3, fluentd v1 series, for new deployment :)
 
 ## Ruby
 

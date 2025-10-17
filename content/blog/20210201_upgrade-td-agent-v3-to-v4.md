@@ -86,7 +86,7 @@ When RedHat, you can run following script.
 [root@fluent02 ~]# curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent4.sh | sh
 ```
 
-You can find more information about the installation script in [Fluend Doc - Installation](https://docs.fluentd.org/installation).
+You can find more information about the installation script in [Fluentd Doc - Installation](https://docs.fluentd.org/installation).
 
 ### 4. Confirm if td-agent v4 is properly installed.
 

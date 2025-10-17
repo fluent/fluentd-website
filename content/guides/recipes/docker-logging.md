@@ -16,7 +16,7 @@ Using the Docker logging mechanism with [Fluentd](http://www.fluentd.org) is a s
 
 ### Step 1: Create the Fluentd configuration file
 
-The first step is to prepare Fluentd to listen for the messsages that will receive from the Docker containers, for demonstration purposes we will instruct Fluentd to write the messages to the standard output; In a later step you will find how to accomplish the same aggregating the logs into a MongoDB instance.
+The first step is to prepare Fluentd to listen for the messages that will receive from the Docker containers, for demonstration purposes we will instruct Fluentd to write the messages to the standard output; In a later step you will find how to accomplish the same aggregating the logs into a MongoDB instance.
 
 Create a simple file called in_docker.conf which contains the following entries:
 

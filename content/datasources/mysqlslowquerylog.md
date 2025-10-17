@@ -1,4 +1,4 @@
-#Collecting and Analying Slow Query Logs for MySQL
+#Collecting and Analyzing Slow Query Logs for MySQL
 
 ##Scenario
 

@@ -5,7 +5,7 @@
 Here are some cases where Fluentd is useful:
 
 1. Collecting Tweets related to your business to measure share of voice.
-2. Building an archive of past Tweets to performa sentiment analysis.
+2. Building an archive of past Tweets to perform sentiment analysis.
 
 ##Prerequisites
 
