@@ -54,7 +54,7 @@ The logging layer should provide an easy mechanism to add new data inputs/output
 
 The Unified Logging Layer should anticipate network failures and must not lose data when a network failure occurs.
 
-If the Unified Logging Layer is implemented as a push-based system, it means that the logging layer must support retry-able data transfer (e.g. disk-based buffeirng). If the logging layer is implemented as a pull-based system, then, it is the log consumer's responsibility to ensure a successful data transfer (e.g., via offsets).
+If the Unified Logging Layer is implemented as a push-based system, it means that the logging layer must support retry-able data transfer (e.g. disk-based buffering). If the logging layer is implemented as a pull-based system, then, it is the log consumer's responsibility to ensure a successful data transfer (e.g., via offsets).
 
 ## Extensibility to Minimize Infrastructure Debt
 

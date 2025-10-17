@@ -1,4 +1,4 @@
-#Collecting and Analying GlusterFS logs
+#Collecting and Analyzing GlusterFS logs
 
 ##Scenario
 

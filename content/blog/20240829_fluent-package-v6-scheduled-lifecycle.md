@@ -79,7 +79,7 @@ gantt
     %% date -d '20250829 854 days' +%Y%m%d
     %% => 20271231
     v6.0.x (LTS) :lts_v6, 2025-08-29, 854d
-    Fluent Pacakge v7.0.x (LTS) :milestone, lts_v7, 2027-08-29, 10d
+    Fluent Package v7.0.x (LTS) :milestone, lts_v7, 2027-08-29, 10d
 -->
 
 <table border=1 width="100%">

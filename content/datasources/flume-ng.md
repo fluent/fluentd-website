@@ -1,6 +1,6 @@
 # Collectin Data from Flume-NG
 
-## Senario
+## Scenario
 
 You already have an exiting installation of Flume-NG but want to collect data into backend other than HDFS (for which Flume-NG is optimized).
 

@@ -2,7 +2,7 @@
 
 Hey All,
 
-Thank you for being part of the Fluent Slack Community! As part of improving Fluentd and Fluent Bit, we want to know what pains and feedback you are experiencin to better manage our future together.
+Thank you for being part of the Fluent Slack Community! As part of improving Fluentd and Fluent Bit, we want to know what pains and feedback you are experience to better manage our future together.
 
 We have created an anonymous survey that allows you to share this [here](https://www.cognitoforms.com/Fluentecosystem/FluentEcosystemSurvey).
 

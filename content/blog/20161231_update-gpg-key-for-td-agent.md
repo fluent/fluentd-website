@@ -53,7 +53,7 @@ If you found this key in rpm, remove it by following command:
 % rpm -e --allmatches "gpg-pubkey-a12e206f-*"
 ```
 
-### Imoprt new GPG key
+### Import new GPG key
 
 Import by `rpm import`
 

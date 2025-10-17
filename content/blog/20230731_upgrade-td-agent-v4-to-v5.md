@@ -132,7 +132,7 @@ When you use RedHat or derivative distributions, you can run following script if
 # curl -L https://toolbelt.treasuredata.com/sh/install-redhat-fluent-package5-lts.sh | sh
 ```
 
-You can find more information about the installation script in [Fluend Doc - Installation](https://docs.fluentd.org/installation).
+You can find more information about the installation script in [Fluentd Doc - Installation](https://docs.fluentd.org/installation).
 
 ### 4. Confirm if fluent-package v5 is properly installed.
 

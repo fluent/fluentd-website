@@ -84,7 +84,7 @@ gantt
 
     section v5.0 (LTS)
     v5.0.x (LTS) :lts_v5, 2023-07-29, 611d
-    Fluent Pacakge v6.0.x (LTS) :milestone, lts_v6, 2025-03-31, 10d
+    Fluent Package v6.0.x (LTS) :milestone, lts_v6, 2025-03-31, 10d
 -->
 
 <table border=1 width="100%">
