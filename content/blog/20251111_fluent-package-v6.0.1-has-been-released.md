@@ -48,7 +48,9 @@ retryable_response_codes:
   - 504
 ```
 
-Note: The special element [`$arg`](https://docs.fluentd.org/configuration/config-file-yaml#special-yaml-elements) has supported array notation from earlier versions.
+Note: The special element [$arg](https://docs.fluentd.org/configuration/config-file-yaml#special-yaml-elements) has supported array notation from earlier versions.
+
+Note: There is still a known YAML syntax issue where specifying a single int value for an Array option causes a config error. For details, please refer to [#5149](https://github.com/fluent/fluentd/issues/5149).
 
 ### Fixed an issue where Fluentd’s temporary directory could be deleted by tmpfiles.d
 
