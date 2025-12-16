@@ -7,10 +7,17 @@ Fluent Package is a stable distribution package of Fluentd. (successor of td-age
 
 This is a maintenance release of v5.0.x LTS series.
 
+<div markdown="span" class="alert alert-danger" role="alert">
+<b>End of Life:</b>
+<p>
 Fluent Package v5 LTS series is scheduled to be supported until the end of 2025.
 This release (v5.0.9) is planned to be the final version of the v5 LTS series.
+</p>
 
-Bundled Fluentd was updated to 1.16.11.
+<p>
+Please refer to <a href="https://www.fluentd.org/blog/fluent-package-v6-scheduled-lifecycle">Scheduled support lifecycle announcement about Fluent Package v6</a>.
+</p>
+</div>
 
 ## Fluent Package v5.0.9
 
