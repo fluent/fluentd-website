@@ -20,7 +20,12 @@ jobs:
         run: ruby scripts/plugins.rb
       - name: Commit files
         run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}"@users.noreply.github.com
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          else
+            git config --global user.name "${{ github.actor }}"
+            git config --global user.email "${{ github.actor }}"@users.noreply.github.com
+          fi
           git add scripts/plugins.json
           git commit -F scripts/message.txt && git push origin master || echo "No need to update"
