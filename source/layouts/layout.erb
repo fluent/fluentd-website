@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <!-- Start of HubSpot Embed Code -->
+    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19578475.js"></script> -->
+    <!-- End of HubSpot Embed Code -->
+
+    <!-- Workaround for broken asset pipeline -->
+    <%= javascript_include_tag "jquery-1.10.2.min.js" %>
+    <%= javascript_include_tag "jquery-migrate-1.2.1.min.js" %>
+    <%= javascript_include_tag "bootstrap/bootstrap.min.js" %>
+    <%= javascript_include_tag "flexslider/jquery.flexslider-min.js" %>
+    <%= javascript_include_tag "parallax-slider/modernizr.js" %>
+    <%= javascript_include_tag "parallax-slider/jquery.cslider.js" %>
+    <%= javascript_include_tag "hover-dropdown.min.js" %>
+    <%= javascript_include_tag "back-to-top.js" %>
+    <%= javascript_include_tag "app.js" %>
+    <%= javascript_include_tag "pages/index.js" %>
+
+    <% if defined?(meta_redirect) %>
+      <meta http-equiv="refresh" content="<%= timeout %>; url=<%= canonical %>">
+      <% if defined?(canonical) %>
+      <link rel="canonical" href="<%= canonical %>">
+      <% end %>
+    <% end %>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-93T2VC0VBC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-93T2VC0VBC');
+    </script>
+
+    <link href="<%= config[:http_prefix] %>favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="<%= config[:http_prefix] %>favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fluentd Project">
+    <meta name="google-site-verification" content="y_tydIQd6TZaoY-qR9geJSDX95h10_w4CXL6NznjgdI" />
+    <meta name="google-site-verification" content="Vf0Wxu5tJQx4sh-D-p93yVsmbSkkTIr8WF-O7ahvlkA" />
+
+    <!-- Title -->
+    <title><%= (current_page.data.title.nil? or current_page.data.title.empty?) ? "Fluentd | Open Source Data Collector | Unified Logging Layer" : "#{current_page.data.title} | Fluentd" %></title>
+    <meta name="keywords" content="Fluentd, Unified Logging Layer, Data Collector, Log Collector, Log Management">
+    <meta property="og:title" content="<%= current_page.data.title.nil? ? "Fluentd | Open Source Data Collector" : "#{current_page.data.title} | Fluentd" %>">
+    <meta name="twitter:title" content="<%= current_page.data.title.nil? ? "Fluentd | Open Source Data Collector" : "#{current_page.data.title} | Fluentd" %>">
+
+    <!-- CSS Global Compulsory-->
+    <%= stylesheet_link_tag "bootstrap/bootstrap.min" %>
+    <%= stylesheet_link_tag "font-awesome/font-awesome" %>
+    <%= stylesheet_link_tag "flexslider/flexslider" %>
+    <%= stylesheet_link_tag "bootstrap/bootstrap.min" %>
+    <%= stylesheet_link_tag "parallax-slider/parallax-slider" %>
+    <%= stylesheet_link_tag "app" %>
+    <%= stylesheet_link_tag "style" %>
+    <%= stylesheet_link_tag "headers/header1" %>
+    <%= stylesheet_link_tag "responsive" %>
+    <%= stylesheet_link_tag "pages/page_clients" %>
+    <%= stylesheet_link_tag "themes/default" %>
+
+    <!-- Highlight.js https://highlightjs.org/usage/ -->
+    <link rel="stylesheet" href="<%= config[:http_prefix] %>highlight/style/default.css"/>
+    <script src="<%= config[:http_prefix] %>highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFCP8WJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--Facebook-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--Facebook-->
+
+    <!--=== Top ===-->
+    <div class="top">
+      <div class="container">
+        <ul class="loginbar pull-right">
+          <li>
+            <img src="<%= config[:http_prefix] %>images/feedback.png" height="15px" alt="feedback" />
+            <a href="https://www.cognitoforms.com/Fluentecosystem/FluentEcosystemSurvey"><b>Feedback</b></a>
+          </li>
+          <li class="devider"></li>
+          <li class="socialbutton slack"><a href="https://launchpass.com/fluent-all"><img src="<%= config[:http_prefix] %>images/slack_badge.png" width="55px" alt="slack" /></a></li>
+          <li class="devider"></li>
+          <li class="socialbutton github">
+            <iframe title="github" src="https://ghbtns.com/github-btn.html?user=fluent&amp;repo=fluentd&amp;type=watch&amp;count=true" allowtransparency="true" scrolling="0" frameborder="0" height="25px" width="95px">
+            </iframe>
+          </li>
+        </ul>
+      </div>
+    </div><!--/top-->
+    <!--=== End Top ===-->
+
+    <!--=== Header ===-->
+    <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="<%= config[:http_prefix] %>">
+              <img style="margin-top:-20px" id="logo-header" srcset="<%= config[:http_prefix] %>images/miscellany/fluentd-logo.png 1x, <%= config[:http_prefix] %>images/miscellany/fluentd-logo_2x.png 2x" src="<%= config[:http_prefix] %>images/miscellany/fluentd-logo.png" alt="Logo">
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                  Overview
+                  <i class="icon-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="<%= config[:http_prefix] %>architecture">What is Fluentd?</a></li>
+                  <li><a href="<%= config[:http_prefix] %>why">Why use Fluentd?</a></li>
+                  <li><a href="<%= config[:http_prefix] %>testimonials">User Testimonials</a></li>
+                  <li><a href="<%= config[:http_prefix] %>faqs">FAQs</a></li>
+                  <!--
+                  <li><a href="<%= config[:http_prefix] %>centralized_application_logging">Centralized App Logging</a></li>
+                  <li><a href="<%= config[:http_prefix] %>gaming_application_logging">Gaming App Logging</a></li>
+                  <li><a href="<%= config[:http_prefix] %>adtech_application_logging">Adtech App Logging</a></li>
+                  -->
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                  Plug-ins
+                  <i class="icon-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="<%= config[:http_prefix] %>datasources">List of Data Sources</a></li>
+                  <li><a href="<%= config[:http_prefix] %>dataoutputs">List of Data Outputs</a></li>
+                  <li><a href="<%= config[:http_prefix] %>plugins">List of All Plugins</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                  Resources
+                  <i class="icon-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://docs.fluentd.org/">Documentation (Fluentd)</a></li>
+                  <li><a href="http://fluentbit.io/documentation/current/">Documentation (Fluent Bit)</a></li>
+                  <li><a href="https://training.linuxfoundation.org/training/cloud-native-logging-with-fluentd-lfs242/">Online Training Course</a></li>
+                  <li><a href="<%= config[:http_prefix] %>guides">Guides &amp; Recipes</a></li>
+                  <li><a href="<%= config[:http_prefix] %>videos">Videos</a></li>
+                  <li><a href="<%= config[:http_prefix] %>slides">Slides</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                  Community
+                  <i class="icon-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="<%= config[:http_prefix] %>blog/">Blog</a></li>
+                  <!-- <li><a href="<%= config[:http_prefix] %>newsletter">News Letter</a></li> -->
+                  <li><a href="https://www.cognitoforms.com/Fluentecosystem/FluentEcosystemSurvey">Feedback</a></li>
+                  <li><a href="https://store.cncf.io/collections/fluentd">Stickers / T-Shirts / Parkas</a></li>
+		              <li><a href="<%= config[:http_prefix] %>contributing">Contributing</a></li>
+                  <li><a href="<%= config[:http_prefix] %>community">Community List</a></li>
+                  <li><a href="<%= config[:http_prefix] %>related-projects">Related Projects</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="<%= config[:http_prefix] %>enterprise_services">
+                  Enterprise
+                </a>
+              </li>
+              <li>
+                <a style="background-color:#0E83C8; color:#FFF" href="<%= config[:http_prefix] %>download">
+                  Download
+                </a>
+              </li>
+            </ul>
+            <div class="search-open">
+              <div class="input-group">
+                <form>
+                  <input type="text" class="form-control" placeholder="Search" id="st-search-input">
+                </form>
+                <span class="input-group-btn">
+                  <button class="btn-u" type="button">Go</button>
+                </span>
+
+                <!-- JS Global Compulsory -->
+                <%= javascript_include_tag "application", type: "text/javascript" %>
+              </div><!-- /input-group -->
+            </div>
+          </div><!-- /navbar-collapse -->
+        </div>
+      </div>
+    </div><!--/header-->
+    <!--=== End Header ===-->
+
+    <%= yield %>
+
+    <!--=== Footer ===-->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 md-margin-bottom-40">
+            <!-- About -->
+            <div class="headline"><h2>About</h2></div>
+            <p class="margin-bottom-25 md-margin-bottom-40"><a href="https://www.fluentd.org/">Fluentd</a> is an open source data collector, which lets you unify the data collection and consumption for a better use and understanding of data.</p>
+
+            <!-- Monthly Newsletter -->
+            <div class="headline"><h2>Monthly Newsletter</h2></div>
+            <p class="margin-bottom-25"><a href="<%= config[:http_prefix] %>newsletter">Subscribe to our newsletter and stay up to date!</a></p>
+
+            <!-- Community -->
+            <div class="headline"><h2>Community</h2></div>
+            <p>Fluentd is a <a href="https://cncf.io/">Cloud Native Computing Foundation (CNCF)</a> graduated project. All components are available under the Apache 2 License.</p>
+          </div><!--/col-md-4-->
+          <div class="col-md-4 md-margin-bottom-40">
+            <div class="posts">
+              <div class="headline"><h2>Recent Tweets</h2></div>
+              <a class="twitter-timeline" data-lang="en" data-width="100%" data-height="300" data-theme="dark" data-chrome="transparent noheader nofooter noborders" data-link-color="#2ad4e8" href="https://twitter.com/fluentd?ref_src=twsrc%5Etfw">Tweets by fluentd</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div><!--/col-md-4-->
+
+          <div class="col-md-4">
+            <!-- Community -->
+            <div class="margin-bottom-20">
+              <div class="headline"><h2>Community</h2></div>
+              <ul class="list-unstyled">
+                <li><i class="icon-ok color-green"></i><a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/fluent/fluentd/discussions">Forum</a></li>
+                <li><i class="icon-ok color-green"></i><a rel="nofollow noopener noreferrer" target="_blank" href="https://groups.google.com/forum/#!forum/fluentd">Google Group</a></li>
+                <li><i class="icon-stackexchange color-green"></i><a rel="nofollow noopener noreferrer" target="_blank" href="https://stackoverflow.com/questions/tagged/fluentd">Stack Overflow</a></li>
+                <li><i class="icon-github-alt color-green"></i><a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/fluent/fluentd/issues">Issue Tracker</a></li>
+                <li><i class="icon-twitter color-green"></i><a rel="nofollow noopener noreferrer" target="_blank" href="https://twitter.com/fluentd">Twitter</a></li>
+                <li><i class="icon-facebook color-green"></i><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.facebook.com/pages/Fluentd/196064987183037">Facebook</a></li>
+                <li><i class="icon-github color-green"></i><a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/fluent/fluentd">Source Code</a></li>
+              </ul>
+            </div>
+            <!-- Stay Connected -->
+            <div>
+              <div class="headline"><h2>Stay Connected</h2></div>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/pages/Fluentd/196064987183037" data-original-title="Facebook" class="social_facebook" aria-label="Facebook"></a></li>
+                <li><a href="https://twitter.com/fluentd" data-original-title="Twitter" class="social_twitter" aria-label="Twitter"></a></li>
+                <li><a href="https://vimeo.com/tag:fluentd" data-original-title="Vimeo" class="social_vimeo" aria-label="Vimeo"></a></li>
+                <li><a href="<%= config[:http_prefix] %>blog/feed.rss" data-original-title="Blog" class="social_rss" aria-label="Blog"></a></li>
+              </ul>
+            </div>
+          </div><!--/col-md-4-->
+        </div><!--/row-->
+      </div><!--/container-->
+    </div><!--/footer-->
+  <!--=== End Footer ===-->
+
+  <!--=== Copyright ===-->
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="copyright-space">
+            &copy;2010-<%= Date.today.year %> Fluentd Project. ALL Rights Reserved.<br/>
+            Fluentd is a hosted project under the <a href="https://cncf.io/">Cloud Native Computing Foundation (CNCF)</a>. All components are available under the Apache 2 License.
+          </p>
+          <p>The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, 
+            please see our <a href="https://www.linuxfoundation.org/legal/trademark-usage">Trademark Usage page</a>.
+          </p>
+        </div>
+      </div><!--/row-->
+    </div><!--/container-->
+  </div><!--/copyright-->
+  <!--=== End Copyright ===-->
+
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+    App.init();
+    App.initSliders();
+    Index.initParallaxSlider();
+    });
+  </script>
+
+  <!--[if lt IE 9]>
+    <%= javascript_include_tag "respond" %>
+  <![endif]-->
+
+  <%= partial('_tracking_javascripts') %>
+
+  <%= ::NewRelic::Agent.browser_timing_footer rescue "" %>
+</body>
+</html>
