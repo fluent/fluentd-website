@@ -1,0 +1,36 @@
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left"><%= title %></h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="<%= config[:http_prefix] %>">Home</a></li>
+      <li><a href="<%= config[:http_prefix] %>guides">Guides & Recipes</a></li>
+      <li class="active">Here</li>
+    </ul>
+  </div>
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">     
+  <div class="row">
+    <div class="col-md-9">
+      <%= partial content_path %>
+      <h2>
+        What's Next?
+      </h2>
+      <p>
+        Interested in other data sources and output destinations? Check out the following resources:
+          <ul>
+            <li><a href="<%= config[:http_prefix] %>datasources">Fluentd Data Sources</a></li>
+            <li><a href="<%= config[:http_prefix] %>dataoutputs">Fluentd Data Outputs</a></li>            
+          </ul>
+      </p>
+    </div><!--/col-md-9-->
+    <div class="col-md-3">
+      <%= partial "_right_menu" %>
+    </div><!--/col-md-3-->
+  </div><!--/row-->        
+
+</div><!--/container-->     
+<!--=== End Content Part ===-->

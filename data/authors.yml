@@ -1,0 +1,24 @@
+masa:
+  name: "Masahiro Nakagawa"
+  avatar_url: "https://avatars1.githubusercontent.com/u/16928?s=70"
+  desc: "Masahiro (<a href=\"https://twitter.com/repeatedly\">@repeatedly</a>) is the main maintainer of Fluentd. He works on Fluentd development and support full-time. He is also a committer of the D programming language."
+kiyoto:
+  name: "Kiyoto Tamura"
+  avatar_url: "https://avatars3.githubusercontent.com/u/178554?s=70"
+  desc: "Kiyoto (<a href=\"https://twitter.com/kiyototamura\">@kiyototamura</a>) is a maintainer of Fluentd. He works on developer marketing and everything related to Fluentd at <a href=\"http://www.treasuredata.com/\">Treasure Data</a>, the cloud-based, managed service for big data."
+eduardo:
+  name: "Eduardo Silva"
+  avatar_url: "https://avatars3.githubusercontent.com/u/369718?v=3&s=70"
+  desc: "Eduardo (<a href=\"https://twitter.com/edsiper\">@edsiper</a>) is an Open Source Engineer at <a href=\"http://www.treasuredata.com/\">Treasure Data</a>, he is part of Fluentd core team and maintains [Fluent Bit](http://fluentbit.io)."
+moris:
+  name: "Satoshi Tagomori"
+  avatar_url: "https://avatars3.githubusercontent.com/u/230654?v=3&s=70"
+  desc: "Satoshi (a.k.a. Moris) (<a href=\"https://twitter.com/tagomoris\">@tagomoris</a>) is a maintainer of Fluentd. He works on Fluentd, many Fluentd plugins, other OSS projects like msgpack-ruby, Norikra and so on, and distributed systems at <a href=\"http://www.treasuredata.com/\">Treasure Data</a>."
+clearcode:
+  name: "ClearCode, Inc."
+  avatar_url: "https://avatars.githubusercontent.com/u/176515?v=3&s=70"
+  desc: "<a href=\"https://www.clear-code.com/\">ClearCode, Inc.</a> is a software company specializing in the development of Free Software. We maintain Fluentd and its plugin ecosystem, and provide commercial support for them."
+hisa:
+  name: "Hisa Tanaka"
+  avatar_url: "https://avatars.githubusercontent.com/u/19581009?v-3&s=70"
+  desc: "Hisa (<a href=\"https://twitter.com/hisatomot\">@hisatomot</a>) is a maintainer of Fluentd. He works on developer marketing and everything related to Fluentd at <a href=\"http://www.ctc-america.com/\">ITOCHU Techno-Solutions America, Inc.</a>, the global IT solution provider, specialized in hyperscale, cloud native and app dev technologies, providing commercial services around Fluentd and Fluent Bit."

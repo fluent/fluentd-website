@@ -1,0 +1,153 @@
+---
+title: Blog
+---
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left"><a href="<%= config[:http_prefix] %>blog/">Fluentd Blog</a></h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="<%= config[:http_prefix] %>">Home</a></li>
+      <li class="active">Fluentd Blog</li>
+    </ul>
+  </div><!--/container-->
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">
+	<div class="row blog-page">
+    <!-- Left Sidebar -->
+    <div class="col-md-8">
+      <!--Blog Post-->
+      <% articles.each { |h| %>
+      <div class="blog margin-bottom-40">
+        <h2><a href="<%= config[:http_prefix] %>blog/<%= h[:url] %>"><%= h[:title] %></a></h2>
+        <div class="blog-post-tags">
+          <ul class="list-unstyled list-inline blog-info">
+            <li><i class="icon-calendar"></i><%= h[:date] %></li>
+            <li><i class="icon-pencil"></i><%= h[:author_name] %></li>
+          </ul>
+          <ul class="list-unstyled list-inline blog-tags">
+            <li>
+              <i class="icon-tags"></i>
+              <% h[:tags].each do |tag| %>
+              <a href="<%= config[:http_prefix] %>blog/tag/<%=tag%>"><%=tag%></a>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+        <p><%= h[:content] %></p>
+        <p><a class="btn-u btn-u-small" href="<%= config[:http_prefix] %>blog/<%= h[:url] %>"><i class="icon-plus-sign"></i> Read More</a></p>
+      </div>
+      <% } %>
+      <!--End Blog Post-->
+
+      <!--Pagination-->
+      <!--
+      <div class="text-center">
+        <ul class="pagination">
+          <li><a href="#">«</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li class="active"><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">»</a></li>
+        </ul>
+      </div>
+      -->
+      <hr>
+      <div class="blog-archive">
+        <a href="<%= config[:http_prefix] %>blog/archive/" class="archive-link">View Full Archive</a>
+      </div>
+
+      <!--End Pagination-->
+    </div>
+    <!-- End Left Sidebar -->
+
+    <!-- Right Sidebar -->
+    <div class="col-md-4 magazine-page">
+      <!-- Tabs Widget -->
+      <div class="headline headline-md"><h2>About Fluentd</h2></div>
+      <div class="margin-bottom-20">
+        <p><a href="<%= config[:http_prefix] %>">Fluentd</a> is an open source data collector to simplify log management.</p>
+      </div>
+      <!-- End Tabs Widget -->
+
+      <!-- Search Bar -->
+      <!--
+      <div class="headline headline-md"><h2>Search</h2></div>
+      <div class="input-group margin-bottom-40">
+        <input type="text" class="form-control" placeholder="Search">
+          <span class="input-group-btn">
+            <button class="btn-u" type="button">Go</button>
+          </span>
+      </div>
+      -->
+      <!-- End Search Bar -->
+
+      <!-- Topics -->
+      <div class="posts margin-bottom-20">
+        <div class="headline headline-md"><h2>Announcement Topics</h2></div>
+        <% recent_reminder.each { |a| %>
+        <p><%= a[:date] %>: <a href="<%= config[:http_prefix] %>blog/<%= a[:url] %>"><%= a[:title] %></a></p>
+        <% } %>
+      </div>
+      <!-- End Topics -->
+
+      <!-- Posts -->
+      <div class="posts margin-bottom-20">
+        <div class="headline headline-md"><h2>Recent Posts</h2></div>
+        <% recent_articles.each { |a| %>
+        <p><%= a[:date] %>: <a href="<%= config[:http_prefix] %>blog/<%= a[:url] %>"><%= a[:title] %></a></p>
+        <% } %>
+        <div class="blog-archive">
+          <a href="<%= config[:http_prefix] %>blog/archive/" class="archive-link">View Full Archive</a>
+        </div>
+      </div>
+      <!-- End Posts -->
+
+      <!-- Blog Tags -->
+      <!--
+      <div class="headline headline-md"><h2>Blog Tags</h2></div>
+      <ul class="list-unstyled blog-tags margin-bottom-30">
+        <li><a href="#"><i class="icon-tags"></i> Business</a></li>
+        <li><a href="#"><i class="icon-tags"></i> Music</a></li>
+        <li><a href="#"><i class="icon-tags"></i> Internet</a></li>
+        <li><a href="#"><i class="icon-tags"></i> Money</a></li>
+        <li><a href="#"><i class="icon-tags"></i> Google</a></li>
+        <li><a href="#"><i class="icon-tags"></i> TV Shows</a></li>
+        <li><a href="#"><i class="icon-tags"></i> Education</a></li>
+        <li><a href="#"><i class="icon-tags"></i> People</a></li>
+        <li><a href="#"><i class="icon-tags"></i> People</a></li>
+        <li><a href="#"><i class="icon-tags"></i> Math</a></li>
+        <li><a href="#"><i class="icon-tags"></i> Photos</a></li>
+        <li><a href="#"><i class="icon-tags"></i> Electronics</a></li>
+        <li><a href="#"><i class="icon-tags"></i> Apple</a></li>
+        <li><a href="#"><i class="icon-tags"></i> Canada</a></li>
+      </ul>
+      -->
+      <!-- End Blog Tags -->
+
+      <%= partial "_right_menu" %>
+
+      <!-- Socials -->
+      <div class="headline headline-md"><h2>Follow Us!</h2></div>
+      <div class="margin-bottom-40">
+        <div>
+        <ul class="social-icons">
+          <li><a href="https://twitter.com/fluentd" aria-label="twitter" data-original-title="Twitter" class="social_twitter"></a></li>
+          <li><a href="https://www.facebook.com/pages/Fluentd/196064987183037" aria-label="facebook" data-original-title="Facebook" class="social_facebook"></a></li>
+          <li><a href="https://vimeo.com/tag:fluentd" aria-label="vimeo" data-original-title="Vimeo" class="social_vimeo"></a></li>
+          <li><a href="<%= config[:http_prefix] %>blog/feed.rss" aria-label="blog" data-original-title="Blog RSS" class="social_rss"></a></li>
+        </ul>
+        </div>
+      </div><br/>
+    </div>
+    <!-- End Right Sidebar -->
+  </div><!--/row-->
+</div><!--/container-->
+<!--=== End Content Part ===-->

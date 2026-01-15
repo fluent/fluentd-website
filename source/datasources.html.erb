@@ -1,0 +1,158 @@
+---
+title: List of Data Sources
+---
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">List of Data Sources</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="<%= config[:http_prefix] %>">Home</a></li>
+      <li class="active">List of Data Sources</li>
+    </ul>
+  </div>
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">     
+  <div class="row">
+    <div class="col-md-9">
+      <div><h4>Application Logs</h4></div>
+      <div class="clearfix">
+        <table style="width:100%;">
+          <%
+             [
+               ['Java', 'java.jpg', 'https://docs.fluentd.org/language-bindings/java'],
+               ['Ruby', 'ruby.png', 'https://docs.fluentd.org/language-bindings/ruby'],
+               ['Ruby on Rails', 'rails.png', 'datasources/rails'],
+               ['Python', 'python.png', 'https://docs.fluentd.org/language-bindings/python'],
+               ['PHP', 'php.png', 'https://docs.fluentd.org/language-bindings/php'],
+               ['Perl', 'perl.png', 'https://docs.fluentd.org/language-bindings/perl'],
+               ['Node.js', 'nodejs.png', 'https://docs.fluentd.org/language-bindings/nodejs'],
+               ['Scala', 'scala.png', 'https://docs.fluentd.org/language-bindings/scala'],
+               ['.NET', 'dotnet.png', 'https://github.com/fluent/NLog.Targets.Fluentd'],
+             ].each_slice(7) do |a|
+          %>
+          <tr>
+            <% a.each { |e| %>
+            <td style="text-align:center;width:14%;">
+              <% unless e.empty? %>
+              <% if e[2].start_with?('http') %>
+              <a href="<%= e[2] %>">
+              <% else %>
+              <a href="<%= config[:http_prefix] %><%= e[2] %>">
+              <% end %>
+              <img alt="<%= e[0] %>" src="<%= config[:http_prefix] %>images/datasources/<%= e[1] %>" height="50px" style="margin:5px;"/>
+                <h5><%= e[0] %></h5>
+              </a>
+              <% end %>
+            </td>
+            <% } %>
+          </tr>
+          <% end %>
+        </table>
+      </div>
+      <br/>
+
+      <div><h4>Network Protocols</h4></div>
+      <div class="clearfix">
+        <table style="width:100%;">
+          <%
+             [
+               ['Syslog', 'syslog.jpg', 'https://docs.fluentd.org/input/syslog'],
+               ['HTTP', 'http.png', 'https://docs.fluentd.org/input/http'],
+               ['TCP', 'tcp.gif', 'https://docs.fluentd.org/input/forward'],
+               ['UDP', 'udp.jpg', 'https://docs.fluentd.org/input/in_udp'],
+               ['Unix Domain Socket', 'unix.gif', 'https://docs.fluentd.org/v/0.12/input/unix'],
+               ['SNMP', 'snmp.png', 'https://github.com/iij/fluent-plugin-snmp'],
+               ['MQTT', 'mqtt.png', 'https://github.com/yuuna/fluent-plugin-mqtt'],
+             ].each_slice(7) do |a|
+          %>
+          <tr>
+            <% a.each { |e| %>
+            <td style="text-align:center;width:14%;">
+              <% unless e.empty? %>
+              <a href="<%= e[2] %>" target="_blank">
+                <img alt="<%= e[0] %>" src="<%= config[:http_prefix] %>images/datasources/<%= e[1] %>" height="50px" style="margin:5px;"/>
+                <h5><%= e[0] %></h5>
+              </a>
+              <% end %>
+            </td>
+            <% } %>
+          </tr>
+          <% end %>
+        </table>
+      </div>
+      <br/>
+
+      <div><h4>IoT Devices</h4></div>
+      <div class="clearfix">
+        <table style="width:100%;">
+          <%
+             [
+               ['RasperryPi', 'raspi.png', 'https://docs.fluentd.org/how-to-guides/raspberrypi-cloud-data-logger'],
+               [],
+               [],
+               [],
+               [],
+               [],
+               [],
+             ].each_slice(7) do |a|
+          %>
+          <tr>
+            <% a.each { |e| %>
+            <td style="text-align:center;width:14%;">
+              <% unless e.empty? %>
+              <a href="<%= e[2] %>" target="_blank">
+                <img alt="<%= e[0] %>" src="<%= config[:http_prefix] %>images/datasources/<%= e[1] %>" height="50px" style="margin:5px;"/>
+                <h5><%= e[0] %></h5>
+              </a>
+              <% end %>
+            </td>
+            <% } %>
+          </tr>
+          <% end %>
+        </table>
+      </div>
+      <br/>
+
+      <div><h4>Others</h4></div>
+      <div class="clearfix">
+        <table style="width:100%;">
+          <% data.datasources.each_slice(7) do |a| %>
+          <tr>
+          <% a.each do |e| %>
+            <td style="text-align:center;width:14%;">
+              <% unless e.empty? %>
+              <% if e.url.start_with?('https') %>
+              <a href="<%= e.url %>" target="_blank">
+              <% else %>
+              <a href="<%= config[:http_prefix] %><%= e.url %>" target="_blank">
+              <% end %>
+                <img alt="<%= e.label %>" src="<%= config[:http_prefix] %>images/datasources/<%= e.image %>" height="50px" style="margin:5px;"/>
+                <h5><%= e.label %></h5>
+              </a>
+              <% end %>
+            </td>
+            <% end %>
+          </tr>
+          <% end %>
+        </table>
+      </div>
+      <br/>
+      <br/>
+      <div class="row margin-bottom-40">
+        <center>
+          <a class="btn btn-primary hover-effect" style="font-size: 20px;" href="<%= config[:http_prefix] %>plugins/all">Check List of All Plugins</a>
+        </center>
+      </div>
+    </div><!--/col-md-9-->
+    <br/>
+
+    <div class="col-md-3">
+      <%= partial "_right_menu" %>
+    </div><!--/col-md-3-->
+  </div><!--/row-->        
+
+</div><!--/container-->     
+<!--=== End Content Part ===-->

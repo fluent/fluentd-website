@@ -1,0 +1,64 @@
+- docker:
+  label: Docker
+  image: docker.png
+  url: guides/recipes/docker-logging
+- twitter:
+  label: Twitter
+  image: twitter.png
+  url: datasources/twitter
+- mysql:
+  label: MySQL Slow Query Log
+  image: mysql.png
+  url: datasources/mysqlslowquerylog
+- postgresql:
+  label: PostgreSQL Slow Query Log
+  image: postgresql.png
+  url: https://github.com/choplin/fluent-plugin-postgresql
+- gluster:
+  label: Gluster FS
+  image: gluster.jpg
+  url: datasources/glusterfs-log
+- kafka:
+  label: Kafka
+  image: kafka.png
+  url: https://github.com/fluent/fluent-plugin-kafka
+- kestrel:
+  label: Kestrel
+  image: kestrel.png
+  url: datasources/kestrel
+- munin:
+  label: Munin
+  image: munin.png
+  url: https://github.com/y-ken/fluent-plugin-munin
+- dstat:
+  label: DStat
+  image: dstat.png
+  url: datasources/dstat
+- windows_event_log:
+  label: Windows Event Log
+  image: windows.jpg
+  url: https://docs.fluentd.org/input/windows_eventlog
+- netflow:
+  label: Netflow
+  image: netflow.gif
+  url: https://github.com/repeatedly/fluent-plugin-netflow
+- postfix:
+  label: Postfix
+  image: postfix.gif
+  url: https://docs.fluentd.org
+- aws_cloud_watch:
+  label: AWS Cloud Watch
+  image: cloudwatch.png
+  url: https://github.com/yunomu/fluent-plugin-cloudwatch
+- elb:
+  label: AWS ELB Log
+  image: elb.png
+  url: https://github.com/shinsaka/fluent-plugin-elb-log
+- aws_sqs:
+  label: AWS SQS
+  image: sqs.png
+  url: https://github.com/ixixi/fluent-plugin-sqs
+- opentelemetry:
+  label: OpenTelemetry
+  image: opentelemetry.svg
+  url: https://github.com/fluent-plugins-nursery/fluent-plugin-opentelemetry

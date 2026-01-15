@@ -1,0 +1,84 @@
+---
+title: Testimonials
+---
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Testimonials</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="<%= config[:http_prefix] %>">Home</a></li>
+      <li class="active">Testimonials</li>
+    </ul>
+  </div>
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="col-md-12 margin-bottom-30">
+        <div class="alert alert-info">
+          Let's share your Fluentd use-case/testimonials in this page!
+          If your service/organization is not listed here, please feedback via
+	   <a href="https://github.com/fluent/fluentd-website/issues/new?template=testimonials.yml">Creating GitHub Issue!</a>
+        </div>
+      </div>
+
+      <div class="row">
+ 	    <% testimonials.slice!(0, 2).each do |featured_testimonial|
+	      quote = featured_testimonial["quote"]
+	      company = featured_testimonial["company"]
+	      company_normalized = company.gsub(" ", "").downcase
+      %>
+	    <div class="col-md-6">
+        <div class="margin-bottom-20">
+          <a class="img-hover" href="#">
+            <img style="height:100px" src="<%= config[:http_prefix] %>images/testimonials/<%=company_normalized%>.png" alt="<%=company%>" />
+    	    </a>
+          <p style="font-weight:700; font-size: 12px; padding:10px; color: #0096e1;"><%=quote%></p>
+        </div>
+      </div><!--/col-md-6-->
+	    <% end %>
+      </div><!--/row-->
+
+      <div class="col-md-12 margin-bottom-30">
+        <center>
+          <a class="btn btn-primary hover-effect" style="font-size: 20px;" href="<%= config[:http_prefix] %>download">Download Fluentd Now</a>
+        </center>
+      </div>
+
+	    <%
+      testimonials.sort{ |x, y| x["company"].downcase <=> y["company"].downcase }.each do |testimonial|
+        quote = testimonial["quote"]
+        company = testimonial["company"]
+        company_normalized = company.gsub(" ", "").downcase
+      %>
+      <hr/>
+      <div class="row">
+        <div class="col-md-12 margin-bottom-20">
+          <div class="col-md-3">
+            <a name="<%=company_normalized.downcase%>" class="img-hover" href="#<%=company_normalized.downcase%>">
+              <img src="<%= config[:http_prefix] %>images/testimonials/<%=company_normalized%>.png" alt="<%=company%>" width="100%"/>
+    	      </a>
+          </div>
+          <div class="col-md-9">
+            <span style="font-size: 10pt;"><%=quote%></span>
+          </div>
+        </div><!--/col-md-12-->
+      </div><!--/row-->
+      <% end %>
+
+      <div class="row margin-bottom-40">
+        <center>
+          <a class="btn btn-primary hover-effect" style="font-size: 20px;" href="<%= config[:http_prefix] %>download">Download Fluentd Now</a>
+        </center>
+      </div>
+
+    </div><!--/col-md-9-->
+  	<div class="col-md-3">
+      <%= partial "_right_menu" %>
+    </div><!--/col-md-3-->
+  </div><!--/row-->
+</div><!--/container-->
+<!--=== End Content Part ===-->

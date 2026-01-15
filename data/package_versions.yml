@@ -1,0 +1,32 @@
+td_agent:
+  v1:
+    linux: "1.1.21"
+    gem_v10: "0.10.61"
+    gem_v12: "0.12.43"
+    gem_v14: "0.14.25"
+  v2:
+    linux: "2.5.0"
+    mac: "2.3.5"
+  v3:
+    linux: "3.8.1"
+    mac: "3.1.1"
+    win: "3.8.1"
+  v4:
+    linux: "4.5.2"
+    mac: "4.5.2"
+    win: "4.5.3"
+  bit:
+    linux: "1.6.9"
+fluent_package:
+  v5:
+    linux: "5.2.0"
+    win: "5.2.0"
+  v5_lts:
+    linux: "5.0.9"
+    win: "5.0.9"
+  v6:
+    linux: "6.0.0"
+    win: "6.0.0"
+  v6_lts:
+    linux: "6.0.1"
+    win: "6.0.1"

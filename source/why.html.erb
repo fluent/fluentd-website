@@ -1,0 +1,88 @@
+---
+title: Why use Fluentd?
+---
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Why Use Fluentd?</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="<%= config[:http_prefix] %>">Home</a></li>
+      <li class="active">Why Use Fluentd?</li>
+    </ul>
+  </div><!--/container-->
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row margin-bottom-40">
+        <img class="col-md-6" src="<%= config[:http_prefix] %>images/fluentd-architecture.png" width="100%" alt="fluentd architecture" />
+        <div class="col-md-6">
+          <h2>Unified Logging Layer</h2>
+          <p>Fluentd decouples data sources from backend systems by providing a <a href="<%= config[:http_prefix] %>blog/unified-logging-layer">unified logging layer</a> in between.</p>
+          <p>This layer allows developers and data analysts to utilize many types of logs as they are generated. Just as importantly, it mitigates the risk of "bad data" slowing down and misinforming your organization.</p>
+          <p>A unified logging layer lets you and your organization make better use of data and iterate more quickly on your software.</p>
+        </div>
+      </div>
+
+      <div class="row margin-bottom-40">
+        <div class="col-md-3">
+          <center><img src="<%= config[:http_prefix] %>images/simple_is_beautiful.png" width="100%" alt="simple is beautiful" /></center>
+        </div>
+        <div class="col-md-9">
+          <h2>Simple and Easy yet Flexible</h2>
+          <p>Fluentd can be set up on your laptop in less than 10 minutes. You can <a href="<%= config[:http_prefix] %>download">download it here</a> and try it right now. Fluentd's 500+ plugins makes it compatible with dozens of <a href="<%= config[:http_prefix] %>datasources">data sources</a> and <a href="<%= config[:http_prefix] %>dataoutputs">data outputs</a>. Plugins are easy to write and deploy, too.
+        </div>
+      </div>
+
+      <div class="row margin-bottom-40">
+        <div class="col-md-3">
+          <center><img src="<%= config[:http_prefix] %>images/open_source.png" alt="open source" /></center>
+        </div>
+        <div class="col-md-9">
+          <h2>Open Source</h2>
+          <p>Fluentd is Apache 2.0 Licensed, fully open source software. That means your imagination, not license restrictions, is the limit of what you can achieve with Fluentd. The source code is available on <a href="https://github.com/fluent/fluentd">GitHub</a>.</p>
+        </div>
+      </div>
+
+      <div class="row margin-bottom-40">
+        <div class="col-md-3">
+          <center><img src="<%= config[:http_prefix] %>images/trusted.jpg" height="130px" alt="trusted" /></center>
+        </div>
+        <div class="col-md-9">
+          <h2>Proven Reliability and Performance</h2>
+          <p><a href="<%= config[:http_prefix] %>testimonials">5,000+ data-driven companies</a> rely on Fluentd to differentiate their products and services through a better use and understanding of their log data. In fact, according to <a href="https://www.datadoghq.com/docker-adoption/#6">the survey</a> by Datadog, Fluentd is the <u>7th top technologies running on Docker</u> container environments.</p>
+          <p>Some Fluentd users collect data from thousands of machines in real-time. Thanks to its small memory footprint (<b>30~40MB</b>), you can save a lot of memory at scale.</p>
+        </div>
+      </div>
+
+      <div class="row margin-bottom-40">
+        <div class="col-md-3">
+          <center><img src="<%= config[:http_prefix] %>images/community.jpg" height="150px" alt="community" /></center>
+        </div>
+        <div class="col-md-9">
+          <h2>Community</h2>
+          <p>The <a href="<%= config[:http_prefix] %>community">community</a> behind Fluentd keeps improving the software and helps one another to make Fluentd useful for everyone.</p>
+        </div>
+      </div>
+
+      <div class="row margin-bottom-40">
+        <center>
+          <a class="btn btn-primary hover-effect" style="font-size: 20px;" href="<%= config[:http_prefix] %>testimonials">See who is using Fluentd?</a>
+        </center>
+      </div>
+
+      <div class="tag-box tag-box-v2">
+        <h3>Why We Started Fluentd Project Initially?</h3>
+        <p>Just after <a href="https://github.com/frsyuki">Sada</a> co-founded <a href="<%= config[:http_prefix] %>treasuredata">Treasure Data, Inc</a>, he found that a lot of data (especially time-series data) was not used effectively because there's no easy solution to reliably collect it. He wanted to invent 'easy' and 'flexibility' solution to unity the data collection, with machine-readable format. That's how Fluentd was born.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <%= partial "_right_menu" %>
+    </div>
+  </div>
+</div><!--/container-->
+<!--=== End Content Part ===-->
