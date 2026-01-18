@@ -16,6 +16,7 @@ GEM
   specs:
     addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
+    base64 (0.3.0)
     buftok (0.3.0)
     coffee-script (2.4.1)
       coffee-script-source
@@ -109,6 +110,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  base64
   newrelic_rpm (~> 9.2.2)
   nokogiri
   puma
@@ -123,7 +125,7 @@ DEPENDENCIES
   uglifier
 
 RUBY VERSION
-   ruby 3.2.9p265
+   ruby 3.4.8p72
 
 BUNDLED WITH
    2.4.13
