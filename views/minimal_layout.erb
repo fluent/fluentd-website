@@ -3,7 +3,6 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--><html lang="en"> <!--<![endif]-->
 <head>
-  <%= ::NewRelic::Agent.browser_timing_header rescue "" %>
 
   <link href="/favicon.ico" rel="icon" type="image/x-icon" />
   <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -55,6 +54,5 @@
 
   <!--[if lt IE 9]><script src="/assets/plugins/respond.js"></script><![endif]-->
   <%= erb(:_tracking_javascripts, :layout => false) %>
-  <%= ::NewRelic::Agent.browser_timing_footer rescue "" %>
 </body>
 </html>

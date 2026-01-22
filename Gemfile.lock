@@ -48,7 +48,6 @@ GEM
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
     naught (1.1.0)
-    newrelic_rpm (9.2.2)
     nio4r (2.7.3)
     nokogiri (1.18.9-x86_64-linux-gnu)
       racc (~> 1.4)
@@ -111,7 +110,6 @@ PLATFORMS
 
 DEPENDENCIES
   base64
-  newrelic_rpm (~> 9.2.2)
   nokogiri
   puma
   rake
