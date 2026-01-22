@@ -54,3 +54,59 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+
+  # Compare original and modified contents
+  strict:
+    needs: deploy
+    name: "verify with old sitemap.xml"
+    runs-on: ubuntu-latest
+    env:
+      BUNDLE_GEMFILE: Gemfile.middleman
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.4
+          bundler-cache: true
+      - name: Setup shared assets
+        run: |
+          bundle exec ruby scripts/deheroku_checker.rb --deheroku-site https://${{ github.repository_owner }}.github.io/fluentd-website/ --output-dir deheroku-oldsitemap
+      - name: Collect summary
+        if: always()
+        run: |
+          cat deheroku-oldsitemap/summary.md >> $GITHUB_STEP_SUMMARY
+      - name: Upload artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: oldsitemap
+          path: deheroku-oldsitemap
+
+  newsitemap:
+    needs: deploy
+    name: "verify with new sitemap.xml"
+    runs-on: ubuntu-latest
+    env:
+      BUNDLE_GEMFILE: Gemfile.middleman
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.4
+          bundler-cache: true
+      - name: Setup shared assets
+        run: |
+          bundle exec ruby scripts/deheroku_checker.rb --deheroku-site https://${{ github.repository_owner }}.github.io/fluentd-website/ --output-dir deheroku-newsitemap --verify-reverse
+      - name: Collect summary
+        if: always()
+        run: |
+          cat deheroku-newsitemap/summary.md >> $GITHUB_STEP_SUMMARY
+      - name: Upload artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: newsitemap
+          path: deheroku-newsitemap
+
