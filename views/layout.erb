@@ -17,8 +17,6 @@
       gtag('config', 'G-93T2VC0VBC');
     </script>
 
-    <%= ::NewRelic::Agent.browser_timing_header rescue "" %>
-
     <link href="/favicon.ico" rel="icon" type="image/x-icon" />
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
@@ -279,7 +277,5 @@
   <![endif]-->
 
   <%= erb(:_tracking_javascripts, :layout => false) %>
-
-  <%= ::NewRelic::Agent.browser_timing_footer rescue "" %>
 </body>
 </html>

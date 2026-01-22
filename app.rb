@@ -11,11 +11,6 @@ require 'date'
 set :app_file, __FILE__
 set :static_cache_control, [:public, :max_age => 3600*24]
 
-# NewRelic
-configure :production do
-  require 'newrelic_rpm'
-end
-
 # Static Assets
 # @see https://github.com/kalasjocke/sinatra-asset-pipeline
 set :root, __dir__

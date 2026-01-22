@@ -17,9 +17,6 @@ gem 'puma'
 gem 'sassc'
 gem 'uglifier'
 
-# Addons
-gem 'newrelic_rpm', '~> 9.2.2'
-
 # Dev
 group :development do
   gem 'rake'
