@@ -9,7 +9,7 @@ Here are some cases where Fluentd is useful:
 
 ##Prerequisites
 
-We assume that you already have Fluentd installed and have [created a Twitter app]() (we just need the consumer key/secret and OAuth token/secret).
+We assume that you already have Fluentd installed and have created a Twitter app (we just need the consumer key/secret and OAuth token/secret).
 
 ##Setup
 
