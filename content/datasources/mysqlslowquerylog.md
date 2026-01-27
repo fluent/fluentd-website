@@ -21,7 +21,7 @@ Fluentd can be set up to parse and collect data from MySQL's slow query logs. Ap
 
     ```
     <source>
-      type mysql_slow_query
+      @type mysql_slow_query
       path /path/to/mysqld-slow.log
       tag mysqld.slow_query
     </source>
@@ -31,7 +31,7 @@ Fluentd can be set up to parse and collect data from MySQL's slow query logs. Ap
 
     ```
     <source>
-        type mysql_slow_query
+        @type mysql_slow_query
         path /var/log/mysql/slow.log
         tag mysqld.slow_query
     </source>

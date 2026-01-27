@@ -44,7 +44,7 @@ The benefit of this approach is:
 
     ```
     <source>
-      type forward
+      @type forward
       bind 0.0.0.0
       port 24224
     </source>

@@ -39,7 +39,7 @@ In the rest of the article, we assume the format is TCP. Hence, assuming the HAP
 
 ```
 <source>
-  type tail
+  @type tail
   path /var/log/haproxy/haproxy.log
   pos  /path/to/file_position_file
   format /^(?<ps>\w+)\[(?<pid>\d+)\]: (?<pri>\w+) (?<c_ip>[\w\.]+):(?<c_port>\d+) \[(?<time>.+)\] (?<f_end>[\w-]+) (?<b_end>[\w-]+)\/(?<b_server>[\w-]+) (?<tw>\d+)\/(?<tc>\d+)\/(?<tt>\d+) (?<bytes>\d+) (?<t_state>[\w-]+) (?<actconn>\d+)\/(?<feconn>\d+)\/(?<beconn>\d+)\/(?<srv_conn>\d+)\/(?<retries>\d+) (?<srv_queue>\d+)\/(?<backend_queue>\d+)$/
@@ -66,13 +66,13 @@ fluent-gem install fluent-plugin-elasticsearch
 
 ```
 <match haproxy.*>
-  type copy
+  @type copy
   <store>
     # for debug (see /var/log/td-agent.log)
-    type stdout
+    @type stdout
   </store>
   <store>
-    type elasticsearch
+    @type elasticsearch
     logstash_format true
     flush_interval 10s # for testing.
     host YOUR_ES_HOST
@@ -97,7 +97,7 @@ In production, you might want to remove writing output into stdout. So, use the 
 
 ```
 <match haproxy.*>
-  type elasticsearch
+  @type elasticsearch
   logstash_format true
   host YOUR_ES_HOST
   port YOUR_ES_PORT

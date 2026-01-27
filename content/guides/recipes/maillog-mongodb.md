@@ -30,7 +30,7 @@ Thus, assuming the maillog is located at `/var/log/maillog`, to tail and parse t
 
 ```
 <source>
-  type tail
+  @type tail
   path /var/log/maillog
   tag maillog.hostname_1
   format /^(?<date>[^ ]+) (?<host>[^ ]+) (?<process>[^:]+): (?<message>((?<key>[^ :]+)[ :])? ?((to|from)=<(?<address>[^>]+)>)?.*)$/
@@ -47,13 +47,13 @@ Add the following lines to output data into MongoDB:
 
 ```
 <match maillog.*>
-  type copy
+  @type copy
   <store>
     # for debug (see /var/log/td-agent.log)
-    type stdout
+    @type stdout
   </store>
   <store>
-    type mongo
+    @type mongo
     database fluentd #DB name
     tag_mapped true
     host YOUR_MONGODB_HOST
@@ -69,13 +69,13 @@ The `tag_mapped` parameter allows Fluentd to create a collection per tag. For ex
 
 ```
 <match maillog.*>
-  type copy
+  @type copy
   <store>
     # for debug (see /var/log/td-agent.log)
-    type stdout
+    @type stdout
   </store>
   <store>
-    type mongo
+    @type mongo
     database fluentd #DB name
     collection maillog #Collection name
     host YOUR_MONGODB_HOST
@@ -106,7 +106,7 @@ In production, you might want to remove writing output into stdout. So, use the 
 
 ```
 <match haproxy.*>
-  type mongo
+  @type mongo
   database fluentd #DB name
   collection maillog #Collection name
   host YOUR_MONGODB_HOST
