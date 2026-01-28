@@ -1,0 +1,27 @@
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left"><%= casestudy_title %></h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="<%= config[:http_prefix] %>">Home</a></li>
+      <li class="active"><%= casestudy_title %></li>
+    </ul>
+  </div><!--/container-->
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">     
+  <div class="row portfolio-item margin-bottom-50"> 
+    <div class="col-md-7">
+      <%= main_content %>
+    </div>
+    <!-- Content Info -->        
+    <div class="col-md-5">
+      <h2>In a few sentences:</h2>
+      <%= profile %>      
+    </div>
+    <!-- End Content Info -->        
+  </div><!--/row-->
+</div><!--/container-->     
+<!--=== End Content Part ===-->

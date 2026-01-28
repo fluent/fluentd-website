@@ -1,0 +1,169 @@
+---
+title: Frequently Asked Questions
+---
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Frequently Asked Questions</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="<%= config[:http_prefix] %>">Home</a></li>
+      <li class="active">FAQs</li>
+    </ul>
+  </div>
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="headline"><h4>What is Fluentd?</h4></div>
+      <div>
+        Fluentd is an open source data collector for building the <a href="<%= config[:http_prefix] %>blog/unified-logging-layer">unified logging layer</a>. Once installed on a server, it runs in the background to collect, parse, transform, analyze and store various types of data.
+      </div>
+      <br/>
+
+      <div class="headline"><h4>What are the differences between fluent-package and Fluentd?</h4></div>
+      <p>Here's the differences. In one word, fluent-package is a stable distribution package of Fluentd.</p>
+      <div>
+        <table border="1px" style="margin: 10px;">
+          <tr>
+            <th width="25%"></th>
+            <th width="30%">Fluentd</th>
+            <th width="45%">fluent-package</th>
+          </tr>
+          <tr>
+            <td>Installation</td>
+            <td><a href="https://docs.fluentd.org/installation/install-by-gem" rel="noreferrer">Ruby gems</a> or <a href="https://docs.fluentd.org/installation/install-from-source" rel="noreferrer">source code</a></td>
+            <td><a href="https://docs.fluentd.org/installation/install-by-rpm-fluent-package" rel="noreferrer">RPM</a> / <a href="https://docs.fluentd.org/installation/install-by-deb-fluent-package" rel="noreferrer">DEB</a> / <a href="https://docs.fluentd.org/installation/install-by-msi-fluent-package" rel="noreferrer">MSI</a> packages</td>
+          </tr>
+          <tr>
+            <td>Daemon (Service) support</td>
+            <td>No (the user needs to manage by yourself to set it up)</td>
+            <td>Yes. It ships fluentd service file for systemd. (on Windows, registered as a Windows service)</td>
+          </tr>
+          <tr>
+            <td>Memory allocator</td>
+            <td>OS default</td>
+            <td>Optimized (jemalloc)</td>
+          </tr>
+        </table>
+	NOTE: td-agent had reached EOL. Migrate to fluent-package (Successor of td-agent). See <a href="https://www.fluentd.org/blog/upgrade-td-agent-v4-to-v5">Upgrade to fluent-package v5</a>.
+      </div>
+      <br/>
+
+      <div class="headline"><h4>Should I use fluent-package or the Fluentd gem?</h4></div>
+      <div>
+        fluent-package has two release channels - Normal release and Long Term Support (LTS) version.
+        <b>fluent-package (LTS) prioritizes stability over new features</b>.
+        If you wish to control Fluentd features and updates on your own, using the Fluentd gem is recommended.
+        If you are using Fluentd for the first time or are using it in a large scale environment, using fluent-package (LTS) is recommended.
+	A new version of fluent-package (LTS) is released every 3 or 4 months.
+      </div>
+      <br/>
+
+      <div class="headline"><h4>Fluentd is written in Ruby. How's the performance?</h4></div>
+      <div>
+        <p>
+          The most performance sensitive parts of Fluentd are written in C.
+          The Ruby code acts as a wrapper that provides flexibility to the overall solution.
+          In particular, the networking layer and object serialization layer are written in C (See <a href="https://github.com/tarcieri/cool.io">cool.io</a> and <a href="https://www.msgpack.org/">MessagePack</a>, both are maintained by Fluentd maintainers too).
+        </p>
+        <p>
+          Since Fluentd is not written entirely in C or C++, it may be slow in its Ruby parts.
+          But by giving up a little bit of speed, we have gained many plugins from the Ruby community :).
+          Fluentd’s performance has been put to the test at many large services;
+          in fact, a regular PC box can handle 18,000 messages/second with a single process.
+        </p>
+        <p>
+          If this number is insufficient for your application, please consider other solutions which are written entirely in C-family or Java.
+          However, please note that you will lose some flexibility as a tradeoff.
+        </p>
+      </div>
+      <br/>
+
+
+      <div class="headline"><h4>What is Fluent Bit?</h4></div>
+      <div>
+        <a href="https://fluentbit.io/">Fluent Bit</a> is a Lightweight Data Forwarder for Fluentd. Fluent Bit is specifically designed for forwarding the data from the edge to Fluentd aggregators.
+      </div>
+      <br/>
+
+      <div class="headline"><h4>What are the differences between Fluentd and Fluent Bit?</h4></div>
+      <p>Here's the differences. In one word, Fluent Bit is designed for small footprint while Fluentd is designed for flexibilities.</p>
+      <div>
+        <table border="1px" style="margin: 10px;">
+          <tr>
+            <th width="25%"></th>
+            <th width="30%">Fluentd</th>
+            <th width="45%">Fluent Bit</th>
+          </tr>
+          <tr>
+            <td>Scope</td>
+            <td>Servers</td>
+            <td>Containers / Servers / Embedded Systems</td>
+          </tr>
+          <tr>
+            <td>Language</td>
+            <td>C & Ruby</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>Memory</td>
+            <td>~40MB</td>
+            <td>~450KB</td>
+          </tr>
+          <tr>
+            <td>Dependencies</td>
+            <td>Built as a Ruby Gem, it requires a certain number of gems and Ruby interpreter</td>
+            <td>Zero dependencies</td>
+          </tr>
+          <tr>
+            <td>Plugins</td>
+            <td>More than 1100 plugins available</td>
+            <td>Around 30 plugins available</td>
+          </tr>
+          <tr>
+            <td>License</td>
+            <td>Apache License v2.0</td>
+            <td>Apache License v2.0</td>
+          </tr>
+        </table>
+        For more details, please visit <a href="https://fluentbit.io/documentation/current/">Fluent Bit documentation page</a>.
+      </div>
+      <br/>
+
+      <div class="headline"><h4>Does Fluentd run on Windows?</h4></div>
+      <div>
+        Yes, fluentd supports Windows since v0.14. Check <a href="<%= config[:http_prefix] %>download">download page</a>.
+      </div>
+      <br/>
+
+      <div class="headline"><h4>I wrote a new plugin. How to add this plugin to plugin page?</h4></div>
+      <div>
+        Our script updates a plugin page periodically and this script collects the information of fluent-plugin-xxx gems.
+        If you want to add your gem on plugin page, release it as fluent-plugin-xxx, not fluentd-plugin-xxx, fluent-xxx-plugin and etc.
+      </div>
+      <br/>
+
+      <div class="headline" id="certified"><h4>What does `Certified` mean?</h4></div>
+      <div>
+        <p>
+          The plugins marked as `Certified` are developed by either <a href="https://github.com/fluent/fluentd/graphs/contributors">Fluentd core committers</a> or companies who made the commercial commitment to Fluentd project.
+        </p>
+        <p>
+          Since we made it really easy to develop plugins, we have 1100+ more plugins and started hearing from people saying it's hard to figure out which plugins are ready to use in production. That's why we introduced this system.
+        </p>
+        <p>
+          Of course a lot of `Not Certified` plugins are also used by wide veriety of people, but this mark will help you at least navigate through core plugins.
+        </p>
+      </div>
+      <br/>
+    </div>
+    <div class="col-md-3">
+      <%= partial "_right_menu" %>
+    </div><!--/col-md-3-->
+  </div><!--/row-->
+
+</div><!--/container-->
+<!--=== End Content Part ===-->

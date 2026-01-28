@@ -1,0 +1,92 @@
+---
+title: Guides, Solutions and Examples
+---
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Guides and Recipes</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="<%= config[:http_prefix] %>">Home</a></li>
+      <li class="active">Guides and Recipes</li>
+    </ul>
+  </div>
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">     
+  <div class="row">
+    <div class="col-md-9">
+      <div class="headline"><h2>Here is a growing collection of Fluentd resources, solution guides and recipes.</h2></div>
+<!-- Disable due to data sheet content is outdated
+      <div class="clearfix">
+        <h3>Data Sheet (PDF)</h3>
+        <div class="col-md-9">
+          <ul>
+            <li><a target="_blank" href="https://get.treasuredata.com/rs/treasuredata/images/Fluentd-Datasheet.pdf">Fluentd Data Sheet</a>: A two-page overview of Fluentd's key features</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+-->
+      <div class="clearfix">
+        <h3>Solution Guides</h3>
+        <div class="col-md-4">
+          <h4>Log Analytics</h4>
+          <ul>
+            <li><a href="https://docs.fluentd.org/how-to-guides/free-alternative-to-splunk-by-fluentd">Free Splunk Alternative (Elasticsearch + Kibana)</a></li>
+            <li><a href="https://docs.fluentd.org/how-to-guides/graylog2">Free Splunk Alternative (Graylog2)</a></li>
+            <li><a href="<%= config[:http_prefix] %>guides/recipes/rsyslogd-aggregation">Aggregating syslogs into Elasticsearch</a></li>
+            <li><a href="https://docs.fluentd.org/how-to-guides/parse-syslog">Parsing Syslog for user behavior analysis</a></li>
+            <li><a href="<%= config[:http_prefix] %>guides/recipes/elasticsearch-and-s3">Apache/Syslog aggregationg into Elasticsearch+S3</a></li>
+            <li><a href="https://docs.fluentd.org/how-to-guides/syslog-influxdb">Syslog Analysis with InfluxDB</a></li>
+            <li><a href="<%= config[:http_prefix] %>guides/recipes/maillog-mongodb">Postfix Maillogs into MongoDB</a></li>
+          </ul>
+        </div>
+	<div class="col-md-4">
+          <h4>Middleware Logging</h4>
+          <ul>
+            <li><a href="<%= config[:http_prefix] %>guides/recipes/docker-logging">Logging Docker container Logs</a></li>
+            <li><a href="<%= config[:http_prefix] %>guides/recipes/haproxy-elasticsearch">HAProxy logs into Elasticsearch</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Big Data</h4>
+          <ul>
+            <li><a href="https://docs.fluentd.org/how-to-guides/http-to-td">Treasure Data</a></li>
+            <li><a href="https://docs.fluentd.org/how-to-guides/apache-to-mongodb">MongoDB</a></li>
+            <li><a href="https://docs.fluentd.org/how-to-guides/apache-to-s3">Archiving in S3</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Internet of Things</h4>
+          <ul>
+            <li><a href="https://docs.fluentd.org/how-to-guides/raspberrypi-cloud-data-logger">Collect data from RaspberryPi</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Filtering/Data Enrichment</h4>
+          <ul>
+            <li><a href="<%= config[:http_prefix] %>guides/recipes/apache-add-hostname">Adding hostname metadata to events</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="clearfix">
+        <h3>Other Guides</h3>
+        <div class="col-md-9">
+          <ul>
+            <li>See <a target="_blank" href="https://www.fluentd.org/slides">slide page</a></li> for developer presentations
+            <li>See <a target="_blank" href="https://docs.fluentd.org/">official documentation</a></li> for more details
+          </ul>
+        </div>
+      </div>
+    </div><!--/col-md-9-->
+
+    <div class="col-md-3">
+      <%= partial "_right_menu" %>
+    </div><!--/col-md-3-->
+  </div><!--/row-->        
+
+</div><!--/container-->     
+<!--=== End Content Part ===-->

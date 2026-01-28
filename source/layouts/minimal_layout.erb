@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--><html lang="en"> <!--<![endif]-->
+<head>
+  <%= ::NewRelic::Agent.browser_timing_header rescue "" %>
+
+  <link href="<%= config[:http_prefix] %>favicon.ico" rel="icon" type="image/x-icon" />
+  <link href="<%= config[:http_prefix] %>favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Fluentd Project">
+  <meta name="google-site-verification" content="y_tydIQd6TZaoY-qR9geJSDX95h10_w4CXL6NznjgdI" />
+  <meta name="google-site-verification" content="Vf0Wxu5tJQx4sh-D-p93yVsmbSkkTIr8WF-O7ahvlkA" />
+
+  <!-- Title -->
+  <title><%= (current_page.data.title.nil? or current_page.data.title.empty?) ? "Fluentd | Open Source Data Collector | Unified Logging Layer" : "#{current_page.data.title} | Fluentd" %></title>
+  <meta name="keywords" content="Fluentd, Unified Logging Layer, Data Collector, Log Collector, Log Management">
+  <meta property="og:title" content="<%= current_page.data.title.nil? ? "Fluentd | Open Source Data Collector" : "#{current_page.data.title} | Fluentd" %>">
+  <meta name="twitter:title" content="<%= current_page.data.title.nil? ? "Fluentd | Open Source Data Collector" : "#{current_page.data.title} | Fluentd" %>">
+
+  <!-- CSS Global Compulsory-->
+  <%= stylesheet_link_tag "bootstrap/bootstrap.min" %>
+  <%= stylesheet_link_tag "font-awesome/font-awesome" %>
+  <%= stylesheet_link_tag "flexslider/flexslider" %>
+  <%= stylesheet_link_tag "bootstrap/bootstrap.min" %>
+  <%= stylesheet_link_tag "parallax-slider/parallax-slider" %>
+  <%= stylesheet_link_tag "app" %>
+  <%= stylesheet_link_tag "style" %>
+  <%= stylesheet_link_tag "headers/header1" %>
+  <%= stylesheet_link_tag "responsive" %>
+  <%= stylesheet_link_tag "pages/page_clients" %>
+  <%= stylesheet_link_tag "themes/default" %>
+  <%= stylesheet_link_tag "newsletter" %>
+
+  <!-- Treasure Data -->
+  <script type="text/javascript">
+    !function(t,e){if(void 0===e[t]){e[t]=function(){e[t].clients.push(this),this._init=[Array.prototype.slice.call(arguments)]},e[t].clients=[];for(var r=function(t){return function(){return this["_"+t]=this["_"+t]||[],this["_"+t].push(Array.prototype.slice.call(arguments)),this}},s=["addRecord","set","trackEvent","trackPageview","ready"],n=0;n<s.length;n++){var i=s[n];e[t].prototype[i]=r(i)}var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//s3.amazonaws.com/td-cdn/sdk/td-1.2.0.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(a,c)}}("Treasure",this);
+  </script>
+
+  <!-- Highlight.js https://highlightjs.org/usage/ -->
+  <link rel="stylesheet" href="<%= config[:http_prefix] %>highlight/style/default.css"/>
+  <script src="<%= config[:http_prefix] %>highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<!-- Start of HubSpot Embed Code -->
+<!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19578475.js"></script> -->
+<!-- End of HubSpot Embed Code -->
+  <!--Facebook--><div id="fb-root"></div><script>(function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><!--Facebook-->
+
+  <%= yield %>
+
+  <footer>
+     <div class="copyright-wrapper">
+      <p class="copyright-space">
+        &copy;2010-<%= Date.today.year %> Fluentd Project. ALL Rights Reserved.<br/>Fluentd is a hosted project under the <a href="https://cncf.io/">Cloud Native Computing Foundation (CNCF)</a>. All components are available under the Apache 2 License.
+      </p>
+    </div>
+  </footer>
+
+  <script type="text/javascript">jQuery(document).ready(function(){App.init();App.initSliders();Index.initParallaxSlider();});</script>
+
+  <!--[if lt IE 9]><script src="/assets/plugins/respond.js"></script><![endif]-->
+  <%= partial "_tracking_javascripts" %>
+  <%= ::NewRelic::Agent.browser_timing_footer rescue "" %>
+</body>
+</html>

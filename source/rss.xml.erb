@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>Fluentd Blog</title>
+    <link>https://www.fluentd.org/blog</link>
+    <description>Get the Latest Updates on Fluentd and More</description>
+    <pubDate></pubDate>
+  <% recent_articles.each do |art| %>
+    <item>
+      <title><%= art[:title] %></title>
+      <link>https://www.fluentd.org/blog/<%=art[:url] %></link>
+      <description><%= Rack::Utils.escape_html art[:content] %></description>
+      <pubDate><%= art[:date] %></pubDate>
+      <content:encoded><%= Rack::Utils.escape_html art[:content] %></content:encoded>
+    </item>
+  <% end %>
+  </channel>
+</rss>

@@ -1,0 +1,76 @@
+---
+title: Adtech Application Logging
+---
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Use Case: Adtech Application Logging</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="<%= config[:http_prefix] %>">Home</a></li>
+      <li class="active">Use Case: Adtech Application Logging</li>
+    </ul>
+  </div><!--/container-->
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">     
+  <div class="row">
+    <div class="col-md-9">
+
+      <div class="row margin-bottom-40">
+        <img class="col-md-7" src="<%= config[:http_prefix] %>images/fluentd_usecase_adtech_application_logging.png" width="100%"/>
+        <div class="col-md-5">
+          <h3>Adtech Application Logging</h3>
+          <p>Fluentd decouples application logging from backend systems by the <a href="<%= config[:http_prefix] %>blog/unified-logging-layer">unified logging layer</a>.</p>
+          <p>This layer allows developers and data analysts to utilize application logs as they are generated.</p>
+          <p>A unified logging layer lets you and your organization make better use of data and iterate more quickly on your software.</p>
+        </div>
+      </div>
+
+      <div class="row margin-bottom-30">
+        <div class="col-md-3">
+          <center><img src="<%= config[:http_prefix] %>images/trusted.jpg" height="130px"/></center>
+        </div>
+        <div class="col-md-9">
+          <h2>Proven Reliability and Performance</h2>
+          <p><a href="<%= config[:http_prefix] %>testimonials">2,000+ data-driven companies</a> rely on Fluentd to differentiate their products and services through a better use and understanding of their log data.</p>
+          <p>Some Fluentd users collect data from thousands of machines in real-time. Thanks to its small memory footprint (<b>30~40MB</b>), you can save a lot of memory at scale.</p>
+        </div>
+      </div>
+
+      <div class="row margin-bottom-40">
+        <div class="col-md-3">
+          <center><img src="<%= config[:http_prefix] %>images/architecture/log-as-json.png" width="110%" /></center>
+        </div>
+        <div class="col-md-9">
+          <h2>Rapid Iteration with Schemaless Logging</h2>
+          <p>The 'speed' is the name of the game in the adtech industry. Logging in JSON allows game developers to rapidly track additionai information from the app, without interacting with the backend infrastructure team about frequent schema changes.</p>
+        </div>
+      </div>
+
+      <div class="row margin-bottom-40">
+        <div class="col-md-3">
+          <center><img src="<%= config[:http_prefix] %>images/decouple.jpg" width="80%" /></center>
+        </div>
+        <div class="col-md-9">
+          <h2>Choose Your Backend</h2>
+          <p>Now the backend system is fully decoupled from the logging system. It's time to pick up your favirite backend system from a library of <a href="<%= config[:http_prefix] %>dataoutputs">output plugins</a>.</p>
+        </div>
+      </div>
+
+      <div class="tag-box tag-box-v2">
+        <h3>Ad: Need End-to-End Adtech App Analytics Solution?</h3>
+        <p>Our sponsor <a href="<%= config[:http_prefix] %>treasuredata">Treasure Data</a> provides the end-to-end adtech app analytics solution, from the data collection to visualizations.</p>
+        <br/>
+        <center>
+          <a class="btn btn-danger hover-effect" style="font-size: 20px;" href="<%= config[:http_prefix] %>treasuredata">What is Treasure Data?</a>
+        </center>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <%= partial "_right_menu" %>
+    </div>
+  </div>
+</div><!--/container-->     
+<!--=== End Content Part ===-->

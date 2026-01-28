@@ -1,0 +1,442 @@
+---
+title: Download Fluent Package
+---
+
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Download Fluent Package (fluent-package)</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="<%= config[:http_prefix] %>">Home</a></li>
+      <li><a href="<%= config[:http_prefix] %>download">Download Fluentd</a></li>
+      <li class="active">Fluent Package (fluent-package)</li>
+    </ul>
+  </div><!--/container-->
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">
+  <div class="row portfolio-item margin-bottom-20">
+    <!-- Content Info -->
+    <!--
+    <div class="col-md-12 md-margin-bottom-20">
+    </div>
+    -->
+  </div><!--/row-->
+
+  <div class="row margin-bottom-20">
+    <div class="col-md-9">
+
+      <h3><a name=fluent-package></a>Fluent Package (fluent-package)</h3>
+      <p>Fluent Package (fluent-package), formerly known as Treasure Agent (td-agent). There are two channels:</p>
+      <ul>
+        <li>Normal release</li>
+        <li>Long Term Support (LTS)</li>
+      </ul>
+      <p>We ship normal release in rapid release development style. You can use the latest feature of Fluentd.</p>
+      <p>On the other, Long Term Support (LTS) is a more conservative maintenance version which will not introduce a new feature. It only applies teeny updates such as security or bug fixes. We recommend the LTS channel for enterprise services.</p>
+
+      <h4><a name=fluent-package></a>Fluent Package v6 (fluent-package)</h4>
+      <div class="alert alert-info">
+        <p>LTS for v6 will be supported until Dec, 2027. Please see <a href="<%= config[:http_prefix] %>blog/fluent-package-v6-scheduled-lifecycle">Scheduled support lifecycle announcement about Fluent Package</a> for more details.</p>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="20%">Platform</th>
+            <th width="30%">Platform Version</th>
+            <th width="50%">Package or Installer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/icon_redhat.png" height="60px"><br/>
+                RHEL / Amazon Linux
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">fluent-package LTS v<%= data.package_versions.fluent_package.v6_lts.linux %></span>
+              <ul>
+                <li>
+                  x86_64:
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/redhat/10/x86_64/index.html">RHEL10</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/redhat/9/x86_64/index.html">RHEL9</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/redhat/8/x86_64/index.html">RHEL8</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/amazon/2023/x86_64/index.html">Amazon Linux 2023</a>
+                </li>
+                <li>
+                  aarch64:
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/redhat/10/aarch64/index.html">RHEL10</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/redhat/9/aarch64/index.html">RHEL9</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/redhat/8/aarch64/index.html">RHEL8</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/amazon/2023/aarch64/index.html">Amazon Linux 2023</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">fluent-package v<%= data.package_versions.fluent_package.v6.linux %></span>
+              <ul>
+                <li>
+                  x86_64:
+                  <a href="https://fluentd.cdn.cncf.io/6/redhat/10/x86_64/index.html">RHEL10</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/redhat/9/x86_64/index.html">RHEL9</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/redhat/8/x86_64/index.html">RHEL8</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/amazon/2023/x86_64/index.html">Amazon Linux 2023</a>
+                </li>
+                <li>
+                  aarch64:
+                  <a href="https://fluentd.cdn.cncf.io/6/redhat/10/aarch64/index.html">RHEL10</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/redhat/9/aarch64/index.html">RHEL9</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/redhat/8/aarch64/index.html">RHEL8</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/amazon/2023/aarch64/index.html">Amazon Linux 2023</a>
+                </li>
+              </ul>
+              <a href="https://docs.fluentd.org/installation/install-fluent-package/install-by-rpm-fluent-package">Installation Guide</a><br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/icon_ubuntu.png" height="60px"><br/>
+                Ubuntu/Debian
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">fluent-package LTS v<%= data.package_versions.fluent_package.v6_lts.linux %></span>
+              <ul>
+                <li>Ubuntu:
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/ubuntu/noble/pool/contrib/f/fluent-package/index.html">Noble</a>,
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/ubuntu/jammy/pool/contrib/f/fluent-package/index.html">Jammy</a>,
+                </li>
+                <li>Debian:
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/debian/trixie/pool/contrib/f/fluent-package/index.html">Trixie</a>
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/debian/bookworm/pool/contrib/f/fluent-package/index.html">Bookworm</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">fluent-package v<%= data.package_versions.fluent_package.v6.linux %></span>
+              <ul>
+                <li>Ubuntu:
+                  <a href="https://fluentd.cdn.cncf.io/6/ubuntu/noble/pool/contrib/f/fluent-package/index.html">Noble</a>,
+                  <a href="https://fluentd.cdn.cncf.io/6/ubuntu/jammy/pool/contrib/f/fluent-package/index.html">Jammy</a>,
+                </li>
+                <li>Debian:
+                  <a href="https://fluentd.cdn.cncf.io/6/debian/trixie/pool/contrib/f/fluent-package/index.html">Trixie</a>
+                  <a href="https://fluentd.cdn.cncf.io/6/debian/bookworm/pool/contrib/f/fluent-package/index.html">Bookworm</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/installation/install-fluent-package/install-by-deb-fluent-package">Installation Guide</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/download-icons/windows-logo.png"><br/>
+                Windows
+              </center>
+            </td>
+            <td>Windows Server 2016+ (64-bit)<br/>Windows 10+ (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">fluent-package LTS v<%= data.package_versions.fluent_package.v6_lts.win %></span>
+              <ul>
+                <li>
+                  <a href="https://fluentd.cdn.cncf.io/lts/6/windows/index.html">msi repository</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">fluent-package v<%= data.package_versions.fluent_package.v6.win %></span>
+              <ul>
+                <li>
+                  <a href="https://fluentd.cdn.cncf.io/6/windows/index.html">msi repository</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/installation/install-fluent-package/install-by-msi-fluent-package">Installation Guide</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>If you could not access <a href="https://fluentd.cdn.cncf.io">https://fluentd.cdn.cncf.io</a>, try to use <a href="https://td-agent-package-browser.herokuapp.com">https://td-agent-package-browser.herokuapp.com</a>.</p>
+      <br/>
+
+      <h4><a name=fluent-package></a>Fluent Package v5 (fluent-package)</h4>
+
+      <div class="alert alert-danger">
+        <p>
+          Fluent Package (fluent-package) v5 (LTS) had already reached <a href="<%= config[:http_prefix] %>blog/schedule-for-fluent-package-5-eol">End of Life (EOL)</a> in Dec, 2025.
+        </p>
+        <p>
+          There is no support anymore - Thus No new release and No security update.
+        </p>
+        <p>
+          fluent-package user should migrate to Fluent Package v6.
+          See <a href="<%= config[:http_prefix] %>blog/upgrade-guide-for-fluent-package-v6">Upgrade to fluent-package v6</a> for migration.
+        </p>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="20%">Platform</th>
+            <th width="30%">Platform Version</th>
+            <th width="50%">Package or Installer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/icon_redhat.png" height="60px"><br/>
+                RHEL / Amazon Linux
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">fluent-package LTS v<%= data.package_versions.fluent_package.v5_lts.linux %></span>
+              <ul>
+                <li>
+                  x86_64:
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/redhat/9/x86_64">RHEL9</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/redhat/8/x86_64">RHEL8</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/amazon/2/x86_64">Amazon Linux 2</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/amazon/2023/x86_64">Amazon Linux 2023</a>
+                </li>
+                <li>
+                  aarch64:
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/redhat/9/aarch64">RHEL9</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/redhat/8/aarch64">RHEL8</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/amazon/2/aarch64">Amazon Linux 2</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/amazon/2023/aarch64">Amazon Linux 2023</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">fluent-package v<%= data.package_versions.fluent_package.v5.linux %></span>
+              <ul>
+                <li>
+                  x86_64:
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/redhat/9/x86_64">RHEL9</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/redhat/8/x86_64">RHEL8</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/amazon/2/x86_64">Amazon Linux 2</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/amazon/2023/x86_64">Amazon Linux 2023</a>
+                </li>
+                <li>
+                  aarch64:
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/redhat/9/aarch64">RHEL9</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/redhat/8/aarch64">RHEL8</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/amazon/2/aarch64">Amazon Linux 2</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/amazon/2023/aarch64">Amazon Linux 2023</a>
+                </li>
+              </ul>
+              <a href="https://docs.fluentd.org/installation/install-fluent-package/install-by-rpm-fluent-package">Installation Guide</a><br>
+              <p>NOTE: As CentOS 7 had reached EOL, dropped support for RHEL7/CentOS since v5.0.4.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/icon_ubuntu.png" height="60px"><br/>
+                Ubuntu/Debian
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">fluent-package LTS v<%= data.package_versions.fluent_package.v5_lts.linux %></span>
+              <ul>
+                <li>Ubuntu:
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/ubuntu/noble/pool/contrib/f/fluent-package">Noble</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/ubuntu/jammy/pool/contrib/f/fluent-package">Jammy</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/ubuntu/focal/pool/contrib/f/fluent-package">Focal</a>
+                </li>
+                <li>Debian:
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/debian/bookworm/pool/contrib/f/fluent-package">Bookworm</a>
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/debian/bullseye/pool/contrib/f/fluent-package">Bullseye</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">fluent-package v<%= data.package_versions.fluent_package.v5.linux %></span>
+              <ul>
+                <li>Ubuntu:
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/ubuntu/noble/pool/contrib/f/fluent-package">Noble</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/ubuntu/jammy/pool/contrib/f/fluent-package">Jammy</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/ubuntu/focal/pool/contrib/f/fluent-package">Focal</a>
+                </li>
+                <li>Debian:
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/debian/bookworm/pool/contrib/f/fluent-package">Bookworm</a>
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/debian/bullseye/pool/contrib/f/fluent-package">Bullseye</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/installation/install-fluent-package/install-by-deb-fluent-package">Installation Guide</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/download-icons/windows-logo.png"><br/>
+                Windows
+              </center>
+            </td>
+            <td>Windows Server 2016+ (64-bit)<br/>Windows 10+ (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">fluent-package LTS v<%= data.package_versions.fluent_package.v5_lts.win %></span>
+              <ul>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/lts/5/windows">msi repository</a>
+                </li>
+              </ul>
+              <span style="font-weight:bold">fluent-package v<%= data.package_versions.fluent_package.v5.win %></span>
+              <ul>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/windows">msi repository</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/installation/install-fluent-package/install-by-msi-fluent-package">Installation Guide</a>
+            </td>
+          </tr>
+          <!--
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/download-icons/logo_mac.gif"><br/>
+                MacOS X
+              </center>
+            </td>
+            <td>OSX 10.11 or later</td>
+            <td>
+              <span style="font-weight:bold">fluent-package (experimental) v<%= data.package_versions.fluent_package.v5.mac %></span>
+              <ul>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/5/macosx">dmg repository</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/installation/install-fluent-package/install-by-dmg-fluent-package">Installation Guide</a>
+              <br/>
+              <br/>
+            </td>
+          </tr>
+          -->
+        </tbody>
+      </table>
+      <br/>
+
+      <h4><a name=td-agent></a>Treasure Agent (td-agent)</h4>
+      <div class="alert alert-danger">
+        <p>
+          Treasure Agent (td-agent) had already reached <a href="https://www.fluentd.org/blog/schedule-for-td-agent-4-eol">End of Life (EOL)</a> in Dec, 2023.
+        </p>
+        <p>
+          There is no support anymore - Thus No new release and No security update.
+        </p>
+        <p>
+          td-agent user should migrate to Fluent Package. It was designed to support migration from td-agent and it provides Long Term Support (LTS) version.
+          See <a href="https://www.fluentd.org/blog/upgrade-td-agent-v4-to-v5">Upgrade to fluent-package v5</a> for migration.
+        </p>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="20%">Platform</th>
+            <th width="30%">Platform Version</th>
+            <th width="50%">Package or Installer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/icon_redhat.png" height="60px"><br/>
+                RHEL / CentOS / Amazon Linux
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">td-agent v<%= data.package_versions.td_agent.v4.linux %> (old stable)</span>
+              <ul>
+                <li>
+                  x86_64:
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/9/x86_64">RHEL9</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/8/x86_64">RHEL8</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/7/x86_64">RHEL7</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/amazon/2/x86_64">Amazon Linux 2</a>
+                </li>
+                <li>
+                  aarch64:
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/9/aarch64">RHEL9</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/8/aarch64">RHEL8</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/redhat/7/aarch64">RHEL7</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/amazon/2/aarch64">Amazon Linux 2</a>
+                </li>
+              </ul>
+              <a href="https://docs.fluentd.org/installation/obsolete-installation/treasure-agent-v4-eol-installation/install-by-rpm-td-agent-v4">Installation Guide</a><br>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/icon_ubuntu.png" height="60px"><br/>
+                Ubuntu/Debian
+              </center>
+            </td>
+            <td>2.6+ Linux kernel (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">td-agent v<%= data.package_versions.td_agent.v4.linux %> (old stable)</span>
+              <ul>
+                <li>Ubuntu:
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/ubuntu/jammy/pool/contrib/t/td-agent">Jammy</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/ubuntu/focal/pool/contrib/t/td-agent">Focal</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/ubuntu/bionic/pool/contrib/t/td-agent">Bionic</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/ubuntu/xenial/pool/contrib/t/td-agent">Xenial</a>
+                </li>
+                <li>Debian:
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/debian/bullseye/pool/contrib/t/td-agent">Bullseye</a>,
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/debian/buster/pool/contrib/t/td-agent">Buster</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/installation/obsolete-installation/treasure-agent-v4-eol-installation/install-by-deb-td-agent-v4">Installation Guide</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/download-icons/windows-logo.png"><br/>
+                Windows
+              </center>
+            </td>
+            <td>Windows Server 2012+ (64-bit)</td>
+            <td>
+              <span style="font-weight:bold">td-agent v<%= data.package_versions.td_agent.v4.win %> (old stable)</span>
+              <ul>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/windows">msi repository</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/installation/obsolete-installation/treasure-agent-v4-eol-installation/install-by-msi-td-agent-v4">Installation Guide</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/download-icons/logo_mac.gif"><br/>
+                MacOS X
+              </center>
+            </td>
+            <td>OSX 10.11 or later</td>
+            <td>
+              <span style="font-weight:bold">td-agent v<%= data.package_versions.td_agent.v4.mac %> (old stable)</span>
+              <ul>
+                <li>
+                  <a href="https://td-agent-package-browser.herokuapp.com/4/macosx">dmg repository</a>
+                </li>
+              </ul>
+              <a href="//docs.fluentd.org/installation/obsolete-installation/treasure-agent-v4-eol-installation/install-by-dmg-td-agent-v4">Installation Guide</a>
+              <br/>
+              <br/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+
+    </div><!--/col-md-9-->
+    <div class="col-md-3">
+      <%= partial 'right_menu' %>
+    </div>
+  </div><!--/row-->
+</div><!--/container-->
+<!--=== End Content Part ===-->

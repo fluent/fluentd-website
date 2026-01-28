@@ -1,0 +1,101 @@
+---
+title: Download
+---
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-10">
+  <div class="container">
+    <h1 class="pull-left">Download Fluentd</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="<%= config[:http_prefix] %>">Home</a></li>
+      <li class="active">Download Fluentd</li>
+    </ul>
+  </div><!--/container-->
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">
+  <div class="row portfolio-item margin-bottom-20">
+    <!-- Content Info -->
+    <!--
+    <div class="col-md-12 md-margin-bottom-20">
+    </div>
+    -->
+  </div><!--/row-->
+
+  <div class="row margin-bottom-20">
+    <div class="col-md-9">
+      <div class="headline"><h2>Fluentd (v1, current stable)</h2></div>
+      <h3>RPM, deb, Windows, macOS</h3>
+      <p>Fluentd v1 is available on Linux, Mac OSX and Windows. It's packaged by Fluentd Project and <a href="https://calyptia.com/">Calyptia</a> respectively as:</p>
+      <ul class="list-unstyled">
+        <li>
+          <i class="icon-arrow-right color-green"></i>
+          <a href="<%= config[:http_prefix] %>download/fluent_package">Fluent Package (fluent-package), formerly known as Treasure Agent (td-agent)</a>
+        </li>
+        <li>
+          <i class="icon-arrow-right color-green"></i>
+          <a href="<%= config[:http_prefix] %>download/calyptia_fluentd">Calyptia Fluentd (calyptia-fluentd)</a>
+        </li>
+      </ul>
+      <br/>
+
+      <h3><a name=other-distributions></a>Other distributions</h3>
+      <p><a href="#other-distributions">Docker images, Kubernetes DaemonSet and Ruby gems</a> are also available from the community. </p>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th width="20%">Platform</th>
+            <th width="80%">Package or Installer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/download-icons/docker_small.png" height="40px"><br/>
+                Container
+              </center>
+            </td>
+            <td>
+              <a href="https://hub.docker.com/r/fluent/fluentd/">Docker image at Docker Hub</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/download-icons/k8s.png" height="40px"><br/>
+                Container Orchestration
+              </center>
+            </td>
+            <td>
+              <a href="https://hub.docker.com/r/fluent/fluentd-kubernetes-daemonset/">Kubernetes DaemonSet for Fluentd</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/download-icons/ruby.jpg"><br/>
+                Ruby
+              </center>
+            </td>
+            <td>
+              <a href="//docs.fluentd.org/v1.0/articles/install-by-gem">Install by Ruby Gem</a> (* ruby expert-use only)<br/>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+
+      <div class="headline"><h2>Fluent Bit (Lightweight Forwarder)</h2></div>
+      <p>If you're looking for more lightweight forwarder for edge devices / servers / containers, use <a href="https://fluentbit.io/">Fluent Bit</a>, an open source data collector specifically designed for data forwarding. Fluent Bit is more efficient in terms of CPU / Memory usage, but has limited features. The following table list the available Linux packages for different distributions. Note that Fluent Bit packaged is known as <i>td-agent-bit</i>.</p>
+      <p>Visit <a href="https://fluentbit.io/">fluent-bit official site</a> and <a href="https://docs.fluentbit.io/">documentation</a>.</p>
+
+    </div><!--/col-md-9-->
+    <div class="col-md-3">
+      <%= partial 'right_menu' %>
+    </div>
+  </div><!--/row-->
+</div><!--/container-->
+<!--=== End Content Part ===-->
