@@ -21,7 +21,7 @@ The benefit of this approach is:
 
     ```
     <source>
-      type scribe
+      @type scribe
       port 1463
       bind 0.0.0.0
       msg_format json

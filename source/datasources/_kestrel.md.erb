@@ -21,7 +21,7 @@ The benefit of this approach is:
 
     ```
     <source>
-      type kestrel
+      @type kestrel
       host localhost     # (required) kestrel host
       queue fluent       # (required) kestrel queue name
       tag kestrel.log    # (required) fluentd tag

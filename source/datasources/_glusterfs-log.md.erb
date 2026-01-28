@@ -21,7 +21,7 @@ By collecting dstat output into Fluentd and storing them in various backend syst
 
     ```
     <source>
-      type glusterfs_log
+      @type glusterfs_log
       path /var/log/glusterfs/etc-glusterfs-glusterd.vol.log
       tag glusterfs_log.glusterd
       format /^(?<message>.*)$/

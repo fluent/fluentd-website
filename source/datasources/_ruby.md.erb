@@ -26,7 +26,7 @@ The basic idea is to run Fluentd to accept TCP requests and use Fluentd's Ruby l
 
     ```
     <source>
-      type forward
+      @type forward
       port 24224
     </source>
     ```

@@ -23,7 +23,7 @@ We assume that you already have Fluentd installed and have created a Twitter app
 
     ```
     <source>
-      type twitter
+      @type twitter
       consumer_key        YOUR_CONSUMER_KEY # Required
       consumer_secret     YOUR_CONSUMER_SECRET # Required
       oauth_token         YOUR_OAUTH_TOKEN # Required
@@ -37,7 +37,7 @@ We assume that you already have Fluentd installed and have created a Twitter app
 
     ```
     <source>
-      type twitter
+      @type twitter
       consumer_key        YOUR_CONSUMER_KEY # Required
       consumer_secret     YOUR_CONSUMER_SECRET # Required
       oauth_token         YOUR_OAUTH_TOKEN # Required
