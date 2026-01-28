@@ -65,7 +65,7 @@ def read_blog_articles(markdown_files)
   markdown_files.map { |f| read_blog_article(f) }
 end
 
-def blog_posts_all
+def blog_posts_all(prefix)
   Dir.glob(File.join("content/blog/*.md"))
     .sort
     .reverse
@@ -78,7 +78,7 @@ def blog_posts_all
         end
         {
           date: Date.new(y.to_i, mo.to_i, d.to_i),
-          url:  "<%= config[:http_prefix] %>blog/#{article}",
+          url:  "#{prefix}blog/#{article}",
           title: title,
         }
       end
@@ -305,7 +305,7 @@ proxy "/blog/index.html",
 proxy "/blog/archive/index.html",
       "blog_archive.html",
       locals: {
-        posts: blog_posts_all
+        posts: blog_posts_all(config[:http_prefix])
       },
       ignore: true
 
