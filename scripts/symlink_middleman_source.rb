@@ -62,8 +62,8 @@ Dir.chdir('source') do |dir|
     make_symlink('../../assets/plugins/font-awesome/css', 'font-awesome', css_dir)
     make_symlink('../../assets/plugins/font-awesome/font', 'fonts', css_dir)
     Dir.chdir('flexslider') do |flexslider_dir|
-      make_symlink('../../assets/plugins/flexslider/flexslider.css', 'flexslider.css', flexslider_dir)
-      make_symlink('../../assets/plugins/flexslider/images', 'images', flexslider_dir)
+      make_symlink('../../../assets/plugins/flexslider/flexslider.css', 'flexslider.css', flexslider_dir)
+      make_symlink('../../../assets/plugins/flexslider/images', 'images', flexslider_dir)
     end
   end
   
