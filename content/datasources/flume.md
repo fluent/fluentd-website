@@ -21,7 +21,7 @@ The benefit of this approach is:
 
     ```
     <source>
-        type flume
+        @type flume
         bind YOUR_FLUME_SERVER_HOST
         port YOUR_FLUME_PORT 
     </source>

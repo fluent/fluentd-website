@@ -21,7 +21,7 @@ By collecting dstat output into Fluentd and storing them in various backend syst
 
     ```
     <source>
-      type dstat
+      @type dstat
       tag input.dstat
       option -c
       delay 3

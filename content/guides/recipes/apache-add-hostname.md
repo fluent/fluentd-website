@@ -75,7 +75,7 @@ like this:
 
 ```
 <source>
-  type tail
+  @type tail
   tag "access.#{Socket.gethostname}"
   path /var/log/apache2/access.log
   format apache2

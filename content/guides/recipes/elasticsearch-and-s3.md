@@ -89,7 +89,7 @@ Finally, configure Fluentd by editing `/etc/td-agent/td-agent.conf` as follows.
 ```
 # Listen to incoming data over SSL
 <source>
-  type secure_forward
+  @type secure_forward
   shared_key FLUENTD_SECRET
   self_hostname logs.example.com
   cert_auto_generate yes
@@ -97,9 +97,9 @@ Finally, configure Fluentd by editing `/etc/td-agent/td-agent.conf` as follows.
 
 # Store Data in Elasticsearch and S3
 <match *.**>
-  type copy
+  @type copy
   <store>
-    type elasticsearch
+    @type elasticsearch
     host localhost
     port 9200
     include_tag_key true
@@ -108,7 +108,7 @@ Finally, configure Fluentd by editing `/etc/td-agent/td-agent.conf` as follows.
     flush_interval 10s
   </store>
   <store>
-    type s3
+    @type s3
     aws_key_id AWS_KEY
     aws_sec_key AWS_SECRET
     s3_bucket S3_BUCKET
@@ -164,7 +164,7 @@ Edit `/etc/td-agent/td-agent.conf` as follows:
 ```
 # Apache Access Logs
 <source>
-  type tail
+  @type tail
   format apache
   path /var/log/httpd/access_log
   pos_file /var/log/td-agent/httpd.access.pos
@@ -172,7 +172,7 @@ Edit `/etc/td-agent/td-agent.conf` as follows:
 </source>
 # Apache Error Logs
 <source>
-  type tail
+  @type tail
   format /^\[[^ ]* (?<time>[^\]]*)\] \[(?<level>[^\]]*)\] (?<message>.*)$/
   time_format %b %d %H:%M:%S %Y
   path /var/log/httpd/error_log
@@ -182,14 +182,14 @@ Edit `/etc/td-agent/td-agent.conf` as follows:
 
 # Listen to Syslog
 <source>
-  type syslog
+  @type syslog
   port 42185
   tag hostname.system
 </source>
 
 # Ship data to the aggregator over SSL
 <match *.**>
-  type secure_forward
+  @type secure_forward
   shared_key FLUENTD_SECRET
   self_hostname node1.example.com
   <server>
