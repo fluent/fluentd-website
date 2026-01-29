@@ -37,13 +37,6 @@ jobs:
       # FIXME: Avoid broken scss asset pipeline, rewrite them!
       - name: Last resort patch
         run: |
-          sed -i "s|url('/fonts/|url('/fluentd-website/fonts/|g" build/stylesheets/font-awesome/font-awesome.css
-          sed -i  "s|url(/images/icons/|url(/fluentd-website/images/icons/|g" build/stylesheets/app.css
-          sed -i  "s|url(\"/images/|url(\"/fluentd-website/images/|g" build/stylesheets/app.css
-          sed -i  "s|url('/images/|url('/fluentd-website/images/|g" build/stylesheets/parallax-slider/parallax-slider.css
-          sed -i  "s|src=\"/images/|src=\"/fluentd-website/images/|g" build/javascripts/back-to-top.js
-          sed -i  "s|url(/images/|url(/fluentd-website/images/|g" build/stylesheets/style.css
-          sed -i  "s|url(/images/|url(/fluentd-website/images/|g" build/stylesheets/app.css
           # Change relative img path
           sed -i  "s|url(/assets/plugins/parallax-slider/img|img|g" build/stylesheets/parallax-slider/parallax-slider.css
       - name: Upload Pages artifact
