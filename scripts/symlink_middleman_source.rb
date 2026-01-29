@@ -49,6 +49,7 @@ Dir.chdir('source') do |dir|
 
   # stylesheets
   FileUtils.mkdir_p('stylesheets/flexslider')
+  FileUtils.mkdir_p('stylesheets/parallax-slider')
   Dir.chdir('stylesheets') do |css_dir|
     Dir.glob('../../assets/css/*').each do |path|
       # use customized version of application.css
@@ -58,12 +59,15 @@ Dir.chdir('source') do |dir|
     end
     make_symlink('../../assets/plugins/bootstrap/css', 'bootstrap', css_dir)
     make_symlink('../../assets/plugins/bootstrap/fonts', 'fonts', css_dir)
-    make_symlink('../../assets/plugins/parallax-slider/css', 'parallax-slider', css_dir)
     make_symlink('../../assets/plugins/font-awesome/css', 'font-awesome', css_dir)
     make_symlink('../../assets/plugins/font-awesome/font', 'fonts', css_dir)
     Dir.chdir('flexslider') do |flexslider_dir|
       make_symlink('../../../assets/plugins/flexslider/flexslider.css', 'flexslider.css', flexslider_dir)
       make_symlink('../../../assets/plugins/flexslider/images', 'images', flexslider_dir)
+    end
+    Dir.chdir('parallax-slider') do |parallax_dir|
+      make_symlink('../../../assets/plugins/parallax-slider/css/parallax-slider.css', 'parallax-slider.css', parallax_dir)
+      make_symlink('../../../assets/plugins/parallax-slider/img', 'img', parallax_dir)
     end
   end
   
