@@ -51,12 +51,50 @@ jobs:
         with:
           path: ./build
 
+  # preview on https://fluent.github.io/fluentd-website
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+
+  netlify:
+    runs-on: ubuntu-latest
+    env:
+      BUNDLE_GEMFILE: Gemfile.middleman
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.4
+          bundler-cache: true
+      - name: Install dependencies
+        run: bundle install
+      - name: Setup shared assets
+        run: |
+          bundle exec ruby scripts/symlink_middleman_source.rb
+          find source
+      - name: Build website
+        run: |
+          sed -i'' -e "s|^set :http_prefix, '/fluentd-website/'|#set :http_prefix, '/fluentd-website/'|" config.rb
+          sed -i'' -e "s|^#set :http_prefix, '/'|set :http_prefix, '/'|" config.rb
+          bundle exec middleman build --verbose
+
+      # FIXME: Avoid broken scss asset pipeline, rewrite them!
+      - name: Last resort patch
+        run: |
+          # Change relative img path
+          sed -i  "s|url(/assets/plugins/parallax-slider/img|img|g" build/stylesheets/parallax-slider/parallax-slider.css
+      - name: Publish
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=build --no-build --prod
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
 
   # Compare original and modified contents
   strict:
