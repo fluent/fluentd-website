@@ -322,6 +322,24 @@ Dir.glob("content/blog/tag/*").map { |path| File.basename(path) }.each do |tag|
           recent_reminder: recent_reminder
         },
         ignore: true
+  # /blog/tag/:tag/:article
+  article_paths.each do |article_path|
+    caption = File.basename(article_path.split('_', 2).last, '.md')
+    article = read_blog_article(article_path)
+    title = article[:title]
+    proxy "/blog/tag/#{tag}/#{caption}/index.html",
+          "blog_single.html",
+          data: {
+            title: title,
+          },
+          locals: {
+            title: title,
+            article: article,
+            recent_articles: recent_articles,
+            recent_reminder: recent_reminder
+          },
+          ignore: true
+  end
 end
 
 # /blog/:article
