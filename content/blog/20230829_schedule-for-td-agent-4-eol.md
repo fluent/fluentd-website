@@ -26,7 +26,7 @@ Thus, we recommend using fluent-package v5 for new deployment :)
 
 There is a good article to do it.
 
-* [Upgrade to fluent-package v5](upgrade-td-agent-v4-to-v5)
+* [Upgrade to fluent-package v5](/blog/upgrade-td-agent-v4-to-v5)
 
 Follow the above instructions.
 

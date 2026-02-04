@@ -12,8 +12,8 @@ As significant slow starting service and crash issues during startup on Windows 
 
 * Update fluentd to [1.16.5](https://github.com/fluent/fluentd/releases/tag/v1.16.5).
   See the following blog articles about details.
-  * [Fluentd v1.16.4 has been released](fluentd-v1.16.4-have-been-released)
-  * [Fluentd v1.16.5 has been released](fluentd-v1.16.5-have-been-released)
+  * [Fluentd v1.16.4 has been released](/blog/fluentd-v1.16.4-have-been-released)
+  * [Fluentd v1.16.5 has been released](/blog/fluentd-v1.16.5-have-been-released)
 * Update bundled plugins
   * e.g. fluent-diagtool v1.0.5. It supports to collect list of plugins on Windows.
 * msi: fixed wrong environment path for Fluent Package Prompt ([#606](https://github.com/fluent/fluent-package-builder/pull/606))
@@ -43,13 +43,13 @@ The content of updates are still in T.B.D.
 
 #### End of support for td-agent v4, let's migrate to fluent-package
 
-As it was already announced [Drop schedule announcement about EOL of Treasure Agent (td-agent) 4](schedule-for-td-agent-4-eol), td-agent v4 was reached EOL in Dec, 2023.
+As it was already announced [Drop schedule announcement about EOL of Treasure Agent (td-agent) 4](/blog/schedule-for-td-agent-4-eol), td-agent v4 was reached EOL in Dec, 2023.
 
 After reached EOL, td-agent v4.5.3 on Windows was released because there was a crash bug during startup on Windows. It was backported fix from fluent-package v5 as
 it is critical in some case. Even though this was a exceptional maintenance release, but there is no change to the fact that we already stopped maintaining td-agent v4.
 
 We strongly recommend migrating from td-agent v4 to fluent-package v5 (LTS).
-See [Upgrade to fluent-package v5](upgrade-td-agent-v4-to-v5)
+See [Upgrade to fluent-package v5](/blog/upgrade-td-agent-v4-to-v5)
 
 TAG: Fluentd fluent-package Announcement
 AUTHOR: clearcode

@@ -13,7 +13,7 @@ Bundled Fluentd was updated to 1.16.10.
 
 * Updated bundled Ruby to 3.2.9
 * Updated bundled Fluentd to v1.16.10
-  * [Fluentd v1.16.10 has been released](fluentd-v1.16.10-has-been-released)
+  * [Fluentd v1.16.10 has been released](/blog/fluentd-v1.16.10-has-been-released)
 * Fixed an issue where Fluentd’s temporary directory could be deleted by tmpfiles.d
 * Updated bundled Nokogiri (Windows only) and rexml to address vulnerabilities
 
@@ -85,7 +85,7 @@ Please see [the download page](/download/fluent_package).
 We plan to release the next LTS version of fluent-package v5.0.9 by the end of 2025.
 The content of updates are still TBD.
 
-We strongly recommend upgrading to [fluent-package v6 LTS](fluent-package-v6.0.0-has-been-released).
+We strongly recommend upgrading to [fluent-package v6 LTS](/blog/fluent-package-v6.0.0-has-been-released).
 
 ### Follow us on X
 
