@@ -1,0 +1,3 @@
+[build]
+  command = "./scripts/build_netlify.sh"
+  publish = "build"
