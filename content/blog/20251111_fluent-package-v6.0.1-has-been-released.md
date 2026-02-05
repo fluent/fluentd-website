@@ -13,7 +13,7 @@ Fluent Package v6.0.1 includes the following improvements:
 
 * Updated bundled Ruby to 3.4.7
 * Updated bundled Fluentd from v1.19.0 to v1.19.1
-  * [Fluentd v1.19.1 has been released](fluentd-v1.19.1-has-been-released)
+  * [Fluentd v1.19.1 has been released](/blog/fluentd-v1.19.1-has-been-released)
 * Fixed an issue where Fluentd’s temporary directory could be deleted by tmpfiles.d
 * Fixed Windows installer error for custom install path containing spaces
 
@@ -54,7 +54,7 @@ Note: There is still a known YAML syntax issue where specifying a single int val
 
 ### Fixed an issue where Fluentd’s temporary directory could be deleted by tmpfiles.d
 
-This issue, which was previously fixed in [Fluent Package v5.0.8](fluent-package-v5.0.8-has-been-released), has now been included in Fluent Package v6.0.1.
+This issue, which was previously fixed in [Fluent Package v5.0.8](/blog/fluent-package-v5.0.8-has-been-released), has now been included in Fluent Package v6.0.1.
 
 On some Linux distributions, tmpfiles.d is configured as follows, and files or directories in `/tmp` that remain unused for more than 10 days are deleted:
 

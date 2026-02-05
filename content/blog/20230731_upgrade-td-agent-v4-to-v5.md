@@ -27,7 +27,7 @@ In this version, fluentd will be eventually updated to newer minor version (e.g.
 The other is a more conservative maintenance version (Long Term Support) which will not introduce a new feature. It only applies teeny update such as
 security or bug fix only. LTS for v5 will be supported until March, 2025.
 
-More details about difference between normal release version and LTS version will be explained in [Scheduled support lifecycle announcement about Fluent Package](fluent-package-scheduled-lifecycle).
+More details about difference between normal release version and LTS version will be explained in [Scheduled support lifecycle announcement about Fluent Package](/blog/fluent-package-scheduled-lifecycle).
 
 ## Differences between td-agent v4 and fluent-package v5
 

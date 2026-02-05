@@ -25,7 +25,7 @@ Thus, we recommend using fluent-package v6 for new deployment :)
 
 There is a good article to do it.
 
-* [Upgrade to fluent-package v6](upgrade-guide-for-fluent-package-v6)
+* [Upgrade to fluent-package v6](/blog/upgrade-guide-for-fluent-package-v6)
 
 Follow the above instructions.
 

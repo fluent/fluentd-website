@@ -133,7 +133,7 @@ Please see [the download page](/download/fluent_package).
 
 ### End of support for td-agent v4, let's migrate to fluent-package
 
-As it was already announced [Drop schedule announcement about EOL of Treasure Agent (td-agent) 4](schedule-for-td-agent-4-eol),
+As it was already announced [Drop schedule announcement about EOL of Treasure Agent (td-agent) 4](/blog/schedule-for-td-agent-4-eol),
 td-agent v4 reached EOL in Dec, 2023.
 
 And fluent-package v5 will reach EOL in end of 2025.

@@ -20,7 +20,7 @@ Thus, we recommend to use td-agent 4, latest fluentd v1 series, for new deployme
 
 There is a good article to do it.
 
-* [Upgrade td-agent from v3 to v4](upgrade-td-agent-v3-to-v4)
+* [Upgrade td-agent from v3 to v4](/blog/upgrade-td-agent-v3-to-v4)
 
 Follow the above instructions.
 

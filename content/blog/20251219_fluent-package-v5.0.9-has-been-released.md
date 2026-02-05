@@ -22,7 +22,7 @@ Please refer to <a href="https://www.fluentd.org/blog/fluent-package-v6-schedule
 ## Fluent Package v5.0.9
 
 * Updated bundled Fluentd to v1.16.11
-  * [Fluentd v1.16.11 has been released](fluentd-v1.16.11-has-been-released)
+  * [Fluentd v1.16.11 has been released](/blog/fluentd-v1.16.11-has-been-released)
 
 This article explains the changes in Fluent Package v5.0.9.
 
