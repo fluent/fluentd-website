@@ -1,3 +1,15 @@
 [build]
   command = "./scripts/build_netlify.sh"
   publish = "build"
+
+[[redirects]]
+  from = "https://discuss.fluentd.org/*"
+  to = "https://github.com/fluent/fluentd/discussions"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://slack.fluentd.org/*"
+  to = "https://launchpass.com/fluent-all"
+  status = 301
+  force = true
