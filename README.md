@@ -5,9 +5,11 @@
 ## Running it locally
 
 ```
-$ bundle install --path vendor
-$ bundle exec rake server
+$ BUNDLE_GEMFILE=Gemfile.middleman bundle install
+$ BUNDLE_GEMFILE=Gemfile.middleman bundle exec middleman server
 ```
+
+Then you can preview via http://localhost:4567.
 
 ## Blog
 
@@ -28,4 +30,4 @@ This must be the world's most sophisticated blog system.
 
 ### How to mark a plugin as obsolete
 
-Find the global array `OBSOLETE\_PLUGINS` inside `scripts/plugin.rb` and add the name of the plugin as listed on Rubygems. When the script is run the next time, the change should be reflected.
+Find the global array `OBSOLETE\_PLUGINS` inside `scripts/plugin.rb` and add the name of the plugin as listed on Rubygems to `scripts/obsolete-plugins.yml`. When the script is run the next time, the change should be reflected.
