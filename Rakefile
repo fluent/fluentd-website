@@ -2,21 +2,16 @@ require 'rubygems'
 require 'bundler'
 Bundler.setup
 
-require 'sinatra/asset_pipeline/task'
-require_relative './app'
-Sinatra::AssetPipeline::Task.define! Sinatra::Application
-
 desc 'Run local server'
 task :server do
-  exec 'ruby app.rb -p 9395'
-end
-def which(command)
-  ENV['PATH'].
-    split(':').
-    map  { |p| "#{p}/#{command}" }.
-    find { |p| File.executable?(p) }
+  exec 'bundle exec middleman server --verbose'
 end
 task :start => :server
+
+desc 'Build local content'
+task :build do
+  exec './scripts/build_netlify.sh'
+end
 
 desc 'Update tags'
 task :update_tags do

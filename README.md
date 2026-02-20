@@ -5,8 +5,8 @@
 ## Running it locally
 
 ```
-$ BUNDLE_GEMFILE=Gemfile.middleman bundle install
-$ BUNDLE_GEMFILE=Gemfile.middleman bundle exec middleman server
+$ bundle install
+$ rake server
 ```
 
 Then you can preview via http://localhost:4567.

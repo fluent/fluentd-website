@@ -1,28 +1,12 @@
 source 'https://rubygems.org'
 
-# https://devcenter.heroku.com/articles/ruby-support#supported-runtimes
-ruby '3.4.8'
-gem 'base64'
-
-# Framework
-gem 'sinatra', '~> 2.2.3'
-gem 'sinatra-asset-pipeline', git: 'https://github.com/ashie/sinatra-asset-pipeline.git', ref: '4fda55a4ab990396008b95eea246feea0cb256b2'
+gem 'rake'
 gem 'redcarpet'
-gem 'slugify'
+gem 'pastel'
+gem 'nokogiri'
 
-# Webserver
-gem 'puma'
-
-# Compressor
-gem 'sassc'
-gem 'uglifier'
-
-# Dev
-group :development do
-  gem 'rake'
-  gem 'test-unit'
-end
-
-# Scripts
-gem "twitter"
-gem "nokogiri"
+# middleman 4.6 was incompatible with sinatra < 3.0
+gem "middleman", "~> 4.6"
+# "middleman-sitemap" is not compatible with Middleman 4.x. use middleman-search_engine_sitemap.
+gem 'middleman-search_engine_sitemap', '~> 1.4'
+gem 'middleman-robots', '~> 1.3', '>= 1.3.7'
