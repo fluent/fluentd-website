@@ -15,10 +15,10 @@ set :markdown,
 activate :directory_indexes
 
 # For *.github.io/fluentd-website
-set :http_prefix, '/fluentd-website/'
+#set :http_prefix, '/fluentd-website/'
 
 # For fluentd.org
-#set :http_prefix, '/'
+set :http_prefix, '/'
 
 helpers do
   def is_certified(plugin)
