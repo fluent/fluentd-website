@@ -28,5 +28,5 @@ fluent_package:
     linux: "6.0.0"
     win: "6.0.0"
   v6_lts:
-    linux: "6.0.1"
-    win: "6.0.1"
+    linux: "6.0.2"
+    win: "6.0.2"
