@@ -5,6 +5,9 @@ on:
     - cron: '8 14 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-plugins:
     runs-on: ubuntu-latest
