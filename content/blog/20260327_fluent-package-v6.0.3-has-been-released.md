@@ -26,7 +26,7 @@ This release completely resolves this problem.
 * Affected Environments
   * This issue occurs in environments where TCP connections are frequently connected and disconnected.
   * It is easily reproducible when using the `out_forward` plugin with the `keepalive false` setting (which is the default value).
-* Cause
+* Root cause
   * The asynchronous I/O library `cool.io` (v1.9.2 and v1.9.3) bundled in fluent-package v6.0.2 had a bug in its detachment process.
   * When a TCP connection was detached, the internal watcher objects were not properly garbage collected, leaving "garbage" data accumulated in the memory.
 * Resolution
