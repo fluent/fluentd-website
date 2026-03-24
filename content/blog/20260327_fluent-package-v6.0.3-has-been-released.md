@@ -13,6 +13,7 @@ Fluent Package v6.0.3 includes the following improvements:
 
 * Fixed a severe memory leak issue in the bundled `cool.io` v1.9.3 under specific conditions
 * Updated bundled Ruby to 3.4.9
+* Updated bundled Nokogiri to v1.19.2 (Windows only) for vulnerability fix
 
 This article explains the changes in Fluent Package v6.0.3.
 
@@ -38,8 +39,17 @@ If operated for a long period, this memory leak will exhaust system memory resou
 
 ### Updated bundled Ruby to 3.4.9
 
-Ruby 3.4.9 includes multiple bug and security fixes.
+Ruby 3.4.9 includes multiple bug and security fixes. Specifically, it addresses the following vulnerability:
+
+* [CVE-2026-27820](https://www.ruby-lang.org/en/news/2026/03/05/buffer-overflow-zlib-cve-2026-27820/)
+
 For details, please see the [Ruby 3.4.9 release notes](https://github.com/ruby/ruby/releases/tag/v3_4_9).
+
+### Updated bundled Nokogiri (Windows only) for vulnerability fix
+
+We have updated the bundled [Nokogiri](https://nokogiri.org/index.html) from v1.18.10 to v1.19.2 for the Windows version to address the following vulnerability:
+
+* [Nokogiri does not check the return value from xmlC14NExecute](https://github.com/advisories/GHSA-wx95-c6cv-8532)
 
 ## Download
 
