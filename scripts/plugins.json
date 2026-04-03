@@ -88,8 +88,8 @@
     "source_code_uri": null
   },
   {
-    "obsolete": true,
-    "note": "Can't access the homepage.",
+    "obsolete": null,
+    "note": null,
     "name": "fluent-plugin-prometheus",
     "info": "A fluent plugin that collects metrics and exposes for Prometheus.",
     "authors": "Masahiro Sano",
