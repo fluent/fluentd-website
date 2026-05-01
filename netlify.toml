@@ -10,6 +10,6 @@
 
 [[redirects]]
   from = "https://slack.fluentd.org/*"
-  to = "https://launchpass.com/fluent-all"
+  to = "https://slack.cncf.io"
   status = 301
   force = true
