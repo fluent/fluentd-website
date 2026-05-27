@@ -118,17 +118,31 @@ class Plugins
   end
 
   def self.uri_alive?(uri)
-    OpenURI.open_uri(uri, read_timeout: 5) { |f|
-      status_code = f.status[0].to_i
-      if status_code >= 400
-        puts "#{uri} is dead: #{status_code}" if ENV["DEBUG"]
-        return false
-      end
-    }
+    OpenURI.open_uri(uri, read_timeout: 5)
     true
-  rescue => e
-    puts "#{uri} error: #{e.inspect}" if ENV["DEBUG"]
+  rescue OpenURI::HTTPError => e
+    status_code = e.io.status[0].to_i
+
+    if status_code >= 500 || [408, 429].include?(status_code)
+      # Skip following server status codes because they are temporary issues.
+      # 408 Request Timeout
+      # 429 Too Many Requests
+      # 500 Internal Server Error
+      # 502 Bad Gateway
+      # 503 Service Unavailable
+      # 504 Gateway Timeout
+      return true
+    end
+
     return false
+  rescue SocketError, Socket::ResolutionError, Errno::ECONNREFUSED => e
+    # Treat unresolvable domains (DNS errors) and connection refusals (e.g., localhost) as completely dead.
+    puts "#{uri} fatal network error (DNS/Refused): #{e.inspect}" if ENV["DEBUG"]
+    return false
+  rescue => e
+    # Skip network errors like timeouts to avoid false positives, as they are usually temporary.
+    puts "#{uri} error: #{e.inspect}" if ENV["DEBUG"]
+    return true
   end
 
   def self.commit_message_file
