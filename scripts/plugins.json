@@ -1650,8 +1650,8 @@
     "source_code_uri": null
   },
   {
-    "obsolete": true,
-    "note": "Can't access the homepage.",
+    "obsolete": null,
+    "note": null,
     "name": "fluent-plugin-flowcounter-simple",
     "info": "Simple Fluentd Plugin to count number of messages and outputs to log",
     "authors": "Naotoshi Seo",
