@@ -267,3 +267,5 @@ fluent-plugin-splunk-http-eventcollector-test: |+
   Unmaintained since 2020-03-21.
 fluent-plugin-arango: |+
   Unmaintained since 2022-08-09.
+fluent-plugin-scribe: |+
+  Unmaintained since 2026-03-17.
