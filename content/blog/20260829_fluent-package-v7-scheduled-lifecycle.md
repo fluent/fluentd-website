@@ -4,7 +4,7 @@ Hi users!
 
 We had launched `fluent-package` v6 series last year, recently shipped [v6.0.4](/blog/fluent-package-v6.0.4-has-been-released) in LTS release channel.
 
-In this blog article, we explains the planned next major updates - v7.0.0.
+In this blog article, we explain the planned next major updates - v7.0.0.
 
 ### When the next LTS (Long Term Support) version available?
 
