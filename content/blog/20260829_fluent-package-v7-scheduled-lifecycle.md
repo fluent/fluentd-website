@@ -10,7 +10,7 @@ In this blog article, we explains the planned next major updates - v7.0.0.
 
 In short, we will ship fluent-package v7 in Aug, 2027.
 
-We keeps two release channels as follows:
+We keep two release channels as follows:
 
 * Normal release
 * LTS (Long Term Support)
