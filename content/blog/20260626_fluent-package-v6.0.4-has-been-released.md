@@ -81,5 +81,5 @@ The content of updates are still TBD.
 We have been posting information about Fluentd in Japanese on [@fluentd_jp](https://x.com/fluentd_jp).
 We would appreciate it if you followed the X account.
 
-TAG: Fluentd fluent-package Announcement
+TAG: Fluentd fluent-package Announcement Security
 AUTHOR: clearcode
