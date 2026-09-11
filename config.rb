@@ -392,6 +392,11 @@ activate :robots,
   ],
   sitemap: 'https://www.fluentd.org/sitemap.xml'
 
+# /llms.txt
+page "/llms.txt",
+     layout: false,
+     directory_index: false
+
 # /digicert/verify.html
 proxy "/digicert/verify.html",
        "digicert_verify.html",

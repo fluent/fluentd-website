@@ -1,0 +1,60 @@
+<%
+  site = config[:url_root]
+  # Pages under content/ have no front matter, so take the title from the first heading.
+  first_heading = ->(path) { File.open(path, &:readline).sub(/\A#+\s*/, "").strip }
+  recipes = Dir.glob("content/guides/recipes/*.md").sort
+  casestudies = Dir.glob("content/casestudy/*.md").sort
+%># Fluentd
+
+> Fluentd is an open source data collector for a unified logging layer. It decouples data sources from backend systems, so you can unify the collection and consumption of your data. Fluentd is a graduated project of the Cloud Native Computing Foundation (CNCF), and all components are available under the Apache 2 License.
+
+This site is the home of the Fluentd project. It explains what Fluentd is, where to download it, which plugins are available, and how to take part in the community. The reference manual lives on a separate site, https://docs.fluentd.org.
+
+## Getting started
+
+- [What is Fluentd?](<%= site %>/architecture): Overview of the unified logging layer and how Fluentd works.
+- [Why use Fluentd?](<%= site %>/why): Reasons to choose Fluentd, such as its simple design, small footprint and plugin ecosystem.
+- [Download](<%= site %>/download): Install packages and installation guides for each platform.
+- [Download Fluent Package](<%= site %>/download/fluent_package): The stable distribution of Fluentd maintained by the project.
+- [Documentation](https://docs.fluentd.org/): The reference manual for configuration, plugins and internals.
+- [FAQs](<%= site %>/faqs): Answers to common questions about Fluentd.
+
+## Plugins and data
+
+- [List of Data Sources](<%= site %>/datasources): Input plugins grouped by the system that produces the data.
+- [List of Data Outputs](<%= site %>/dataoutputs): Output plugins grouped by the system that stores the data.
+- [List of Plugins By Category](<%= site %>/plugins): Searchable list of all plugins published on RubyGems.
+
+## Guides and recipes
+
+- [Guides, Solutions and Examples](<%= site %>/guides): Index of the recipes below.
+<% recipes.each do |md| -%>
+- [<%= first_heading.call(md) %>](<%= site %>/guides/recipes/<%= File.basename(md, ".md") %>): Step by step configuration example.
+<% end -%>
+
+## Use cases
+
+- [Centralized Application Logging](<%= site %>/centralized_application_logging): Sending application logs from many servers to one place.
+- [Gaming Application Logging](<%= site %>/gaming_application_logging): Logging patterns for online games.
+- [Adtech Application Logging](<%= site %>/adtech_application_logging): Logging patterns for advertising systems.
+- [Testimonials](<%= site %>/testimonials): Companies that run Fluentd in production.
+<% casestudies.each do |md| -%>
+- [<%= first_heading.call(md) %>](<%= site %>/casestudy/<%= File.basename(md, ".md") %>): Case study.
+<% end -%>
+
+## Community
+
+- [Community](<%= site %>/community): Forum and other places to ask questions.
+- [Contributing](<%= site %>/contributing): How to report issues and send patches.
+- [Blog](<%= site %>/blog/): Release announcements and articles from the maintainers.
+- [Blog feed](<%= site %>/blog/feed.rss): RSS feed of the blog.
+- [Related Projects](<%= site %>/related-projects): Fluent Bit and other projects around Fluentd.
+- [Source code](https://github.com/fluent/fluentd): The Fluentd repository on GitHub.
+
+## Optional
+
+- [Enterprise Services](<%= site %>/enterprise_services): Companies that offer commercial support for Fluentd.
+- [Events](<%= site %>/events): Talks and meetups about Fluentd.
+- [Videos](<%= site %>/videos): Recorded talks and introductions.
+- [Slides](<%= site %>/slides): Presentation decks about Fluentd.
+- [Blog archive](<%= site %>/blog/archive): All blog entries by date.
