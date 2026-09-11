@@ -1,0 +1,80 @@
+---
+title: Security Advisories
+---
+<!--=== Breadcrumbs ===-->
+<div class="breadcrumbs margin-bottom-40">
+  <div class="container">
+    <h1 class="pull-left">Security Advisories</h1>
+    <ul class="pull-right breadcrumb">
+      <li><a href="<%= config[:http_prefix] %>">Home</a></li>
+      <li class="active">Security Advisories</li>
+    </ul>
+  </div>
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <h3>Recent security advisories</h3>
+      <p>
+        Keep running Fluent/fluent-package secure, we raise attention to you.
+      </p>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th width="20%">Vulnerability</th>
+            <th width="30%">Affected version</th>
+            <th>Patched version</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2026-06-26</td>
+            <td>CVE-2026-44024, CVE-2026-44025, CVE-2026-44160, CVE-2026-44161</td>
+            <td>
+              <ul>
+                <li>Fluent Pacakge &lt; v6.0.4 (LTS)</li>
+                <li>Fluent Pacakge &lt; v6.0.0</li>
+                <li>Fluent Pacakge &lt;= v5.0.9 (LTS)</li>
+                <li>Fluent Pacakge &lt;= v5.2.0</li>
+                <li>Td Agent &lt;= v4.x</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Fluent Pacakge v6.0.4</li>
+              </ul>
+            </td>
+            <td>See <a href="<%= config[:http_prefix] %>blog/fluent-package-v6.0.4-has-been-released">v6.0.4 release announcement.</td>
+          </tr>
+          <tr>
+            <td>2026-06-25</td>
+            <td>CVE-2026-44024, CVE-2026-44025, CVE-2026-44160, CVE-2026-44161</td>
+            <td>
+              <ul>
+                <li>Fluentd &lt; v1.19.3</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Fluentd v1.19.3</li>
+              </ul>
+            </td>
+            <td>See <a href="<%= config[:http_prefix] %>blog/fluentd-v1.19.3-has-been-released">Fluentd v1.19.3 release announcement.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!--/col-md-9-->
+
+    <div class="col-md-3">
+      <%= partial "_right_menu" %>
+    </div><!--/col-md-3-->
+  </div><!--/row-->
+
+</div><!--/container-->
+<!--=== End Content Part ===-->
