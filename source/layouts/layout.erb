@@ -181,17 +181,22 @@
                   <i class="icon-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="<%= config[:http_prefix] %>community">Get Help</a></li>
                   <li><a href="<%= config[:http_prefix] %>blog/">Blog</a></li>
                   <li><a href="https://www.cognitoforms.com/Fluentecosystem/FluentEcosystemSurvey">Feedback</a></li>
 		              <li><a href="<%= config[:http_prefix] %>contributing">Contributing</a></li>
                   <li><a href="<%= config[:http_prefix] %>related-projects">Related Projects</a></li>
                 </ul>
               </li>
-              <li>
-                <a href="<%= config[:http_prefix] %>enterprise_services">
-                  Enterprise
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">
+                  Support
+                  <i class="icon-angle-down"></i>
                 </a>
+                <ul class="dropdown-menu">
+                  <li><a href="<%= config[:http_prefix] %>community">Get Help</a></li>
+                  <li><a href="<%= config[:http_prefix] %>enterprise_services">Commercial Support</a></li>
+                </ul>
               </li>
               <li>
                 <a style="background-color:#0E83C8; color:#FFF" href="<%= config[:http_prefix] %>download">
@@ -237,6 +242,7 @@
               <div class="headline"><h2>Community</h2></div>
               <ul class="list-unstyled">
                 <li><i class="icon-ok color-green"></i><a href="<%= config[:http_prefix] %>community">Get Help</a></li>
+                <li><i class="icon-ok color-green"></i><a href="<%= config[:http_prefix] %>enterprise_services">Commercial Support</a></li>
                 <li><i class="icon-ok color-green"></i><a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/fluent/fluentd/discussions">Forum</a></li>
                 <li><i class="icon-stackexchange color-green"></i><a rel="nofollow noopener noreferrer" target="_blank" href="https://stackoverflow.com/questions/tagged/fluentd">Stack Overflow</a></li>
                 <li><i class="icon-github-alt color-green"></i><a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/fluent/fluentd/issues">Issue Tracker</a></li>
