@@ -1,13 +1,13 @@
 ---
-title: Community
+title: Get Help
 ---
 <!--=== Breadcrumbs ===-->
 <div class="breadcrumbs margin-bottom-40">
   <div class="container">
-    <h1 class="pull-left">Community</h1>
+    <h1 class="pull-left">Get Help</h1>
     <ul class="pull-right breadcrumb">
       <li><a href="<%= config[:http_prefix] %>">Home</a></li>
-      <li class="active">Community</li>
+      <li class="active">Get Help</li>
     </ul>
   </div>
 </div><!--/breadcrumbs-->
@@ -17,10 +17,16 @@ title: Community
 <div class="container">
 	<div class="row">
     <div class="col-md-9">
+      <p class="margin-bottom-20">
+        Fluentd is maintained by its community. If you have a question or hit a problem, start with the channels below.
+        They are all free to use, and answers come from other users and from maintainers when they have time.
+      </p>
+
       <div class="clients-page margin-bottom-20">
         <img src="<%= config[:http_prefix] %>images/env_icon.png" alt="" />
         <p><h3><a href="https://github.com/fluent/fluentd/discussions">Forum</a></h3>
           Got a question? Have some cool Fluentd-related projects? The forum (GitHub Discussions) is the place to be.
+          It is a good fit for how-to questions and for design discussions before you write a configuration.
         </p>
       </div>
 
@@ -28,6 +34,8 @@ title: Community
         <img src="<%= config[:http_prefix] %>images/env_issue.png" alt="" />
         <p><h3><a href="https://github.com/fluent/fluentd/issues">Issue Tracker</a></h3>
           Do you think Fluentd has a bug? Do you wish Fluentd could do X? File an issue on GitHub.
+          Please attach the steps to reproduce it, otherwise nobody can act on the report.
+          Do not report a vulnerability here. See <a href="<%= config[:http_prefix] %>security">Security Advisories</a> for how to report it privately.
         </p>
       </div>
 
@@ -42,6 +50,7 @@ title: Community
         <img src="<%= config[:http_prefix] %>images/env_slack.png" alt="" />
         <p><h3><a href="https://slack.cncf.io">Slack #fluentd</a></h3>
         Join our Slack channel!, register to get an invitation and stay in touch.
+        Chat is good for a quick question, but it is not suitable to dig into the problem, so the forum is a better place for anything worth keeping.
         </p>
       </div>
 
@@ -50,6 +59,24 @@ title: Community
           We migrated it to <a href="https://github.com/fluent/fluentd/discussions">GitHub Discussions</a> above, so please don't post new articles here.
         </p>
       </div>
+
+      <div class="headline margin-bottom-20"><h3>What to expect from community support</h3></div>
+      <p>
+        Knowing what the community can and cannot do saves you time when something is urgent.
+      </p>
+      <ul class="margin-bottom-20">
+        <li>There is no guaranteed response time. Your question is answered when somebody has time for it.</li>
+        <li>Maintainers decide what to work on and when, so you cannot raise the priority of your own issue or feature request.</li>
+        <li>Whether a fix is backported to an older release depends on the support policy of that release. See <a href="<%= config[:http_prefix] %>download/fluent_package/releases">Fluent Package Maintenance Releases</a>.</li>
+        <li>Nobody can look into your production environment, your configuration or your logs for you.</li>
+      </ul>
+
+      <div class="headline margin-bottom-20"><h3>Commercial support</h3></div>
+      <p class="margin-bottom-20">
+        If you run Fluentd in production and need a guaranteed response time, help with your own environment,
+        or a fix that lands on your own schedule, several companies offer commercial support for Fluentd.
+        See <a href="<%= config[:http_prefix] %>enterprise_services">Enterprise Services</a> for the list.
+      </p>
 
     </div><!--/col-md-9-->
 
