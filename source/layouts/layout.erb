@@ -49,8 +49,7 @@
     <!-- Title -->
     <title><%= (current_page.data.title.nil? or current_page.data.title.empty?) ? "Fluentd | Open Source Data Collector | Unified Logging Layer" : "#{current_page.data.title} | Fluentd" %></title>
     <meta name="keywords" content="Fluentd, Unified Logging Layer, Data Collector, Log Collector, Log Management">
-    <meta property="og:title" content="<%= current_page.data.title.nil? ? "Fluentd | Open Source Data Collector" : "#{current_page.data.title} | Fluentd" %>">
-    <meta name="twitter:title" content="<%= current_page.data.title.nil? ? "Fluentd | Open Source Data Collector" : "#{current_page.data.title} | Fluentd" %>">
+    <%= ogp_meta_tags %>
 
     <!-- CSS Global Compulsory-->
     <%= stylesheet_link_tag "bootstrap/bootstrap.min" %>

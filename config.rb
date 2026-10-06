@@ -20,6 +20,9 @@ activate :directory_indexes
 # For fluentd.org
 set :http_prefix, '/'
 
+require_relative "lib/ogp"
+helpers OGP::Helpers
+
 helpers do
   def is_certified(plugin)
     certified_plugins = YAML.load_file('data/certified_plugins.yml')
