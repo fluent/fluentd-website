@@ -2,6 +2,9 @@
   command = "./scripts/build_netlify.sh"
   publish = "build"
 
+[build.processing.html]
+  pretty_urls = false
+
 [[redirects]]
   from = "https://discuss.fluentd.org/*"
   to = "https://github.com/fluent/fluentd/discussions"
