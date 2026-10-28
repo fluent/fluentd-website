@@ -40,11 +40,11 @@ Ruby 3.4.12 is a maintenance release. Compared to Ruby 3.4.5 which was bundled i
 
 * `uri`: [CVE-2025-61594](https://www.ruby-lang.org/en/news/2025/10/07/uri-cve-2025-61594/) (fixed in Ruby 3.4.7)
 * `rexml`: [CVE-2025-58767](https://www.ruby-lang.org/en/news/2025/09/18/dos-rexml-cve-2025-58767/) (fixed in Ruby 3.4.8)
-* `zlib`: [CVE-2025-58767](https://www.ruby-lang.org/en/news/2025/09/18/dos-rexml-cve-2025-58767/) (fixed in Ruby 3.4.9)
+* `zlib`: [CVE-2026-27820](https://www.ruby-lang.org/en/news/2026/03/05/buffer-overflow-zlib-cve-2026-27820/) (fixed in Ruby 3.4.9)
 * `net-imap`: [CVE-2026-47240](https://github.com/advisories/GHSA-8p34-64r3-mwg8), [CVE-2026-47241](https://github.com/advisories/GHSA-c4fp-cxrr-mj66), [CVE-2026-47242](https://github.com/advisories/GHSA-46q3-7gv7-qmgg) (fixed in Ruby 3.4.10)
 * `resolv`: [CVE-2026-80212 and CVE-2026-80213](https://www.ruby-lang.org/en/news/2026/08/27/multiple-vulnerabilities-in-resolv/) (fixed in Ruby 3.4.11)
 
-For details, please see the [Ruby 3.4.7](https://www.ruby-lang.org/en/news/2025/10/07/ruby-3-4-7-released/), [Ruby 3.4.8](https://www.ruby-lang.org/en/news/2025/10/07/ruby-3-4-7-released/), [Ruby 3.4.9](https://www.ruby-lang.org/en/news/2026/03/11/ruby-3-4-9-released/), [Ruby 3.4.10](https://www.ruby-lang.org/en/news/2026/06/30/ruby-3-4-10-released/) and [Ruby 3.4.11](https://www.ruby-lang.org/en/news/2026/09/23/ruby-3-4-11-released/) release notes.
+For details, please see the [Ruby 3.4.7](https://www.ruby-lang.org/en/news/2025/10/07/ruby-3-4-7-released/), [Ruby 3.4.8](https://www.ruby-lang.org/en/news/2025/12/17/ruby-3-4-8-released/), [Ruby 3.4.9](https://www.ruby-lang.org/en/news/2026/03/11/ruby-3-4-9-released/), [Ruby 3.4.10](https://www.ruby-lang.org/en/news/2026/06/30/ruby-3-4-10-released/), [Ruby 3.4.11](https://www.ruby-lang.org/en/news/2026/09/23/ruby-3-4-11-released/) and [Ruby 3.4.12](https://www.ruby-lang.org/en/news/2026/10/23/ruby-3-4-12-released/) release notes.
 
 ### ARM64 windows has been supported
 
