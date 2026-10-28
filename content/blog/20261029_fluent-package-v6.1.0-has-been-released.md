@@ -20,6 +20,7 @@ Fluent Package v6.1.0 includes the following improvements:
 * Drop LTO flags on RHEL 10.x and Ubuntu. Note that hardening flags are kept. ([#1101](https://github.com/fluent/fluent-package-builder/pull/1101))
 * Added experimental support for Windows ARM64 ([#1132](https://github.com/fluent/fluent-package-builder/pull/1132))
 * Stopped bundling `nokogiri` on Windows, including x86_64.
+* Changed the default package repository URL to `packages.fluentd.org`.
 
 This article explains the changes in Fluent Package v6.1.0.
 
@@ -86,6 +87,19 @@ The hardening flags such as stack protection, control flow protection and `FORTI
 
 This change also means that native extensions which users build with `fluent-gem install` no longer
 inherit the LTO overhead. ([#1102](https://github.com/fluent/fluent-package-builder/pull/1102))
+
+### Package repository requests now go through packages.fluentd.org
+
+The default package repository URL has changed from `fluentd.cdn.cncf.io` to `packages.fluentd.org`.
+Requests now pass through [Scarf](https://scarf.sh) before being redirected to the existing CDN at `fluentd.cdn.cncf.io`.
+
+We use statistics on requests for packages and repository metadata to understand usage trends across distributions,
+versions and architectures. This helps us decide which platforms to prioritize and when to end support for older ones.
+These statistics do not directly measure the number of running installations.
+
+Updating the repository configuration package normally applies this URL change automatically.
+If your network restricts outbound access, allow connections to `packages.fluentd.org` and `fluentd.gateway.scarf.sh`
+in addition to `fluentd.cdn.cncf.io`.
 
 ## Download
 
