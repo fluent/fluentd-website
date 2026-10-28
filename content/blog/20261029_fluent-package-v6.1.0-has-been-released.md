@@ -12,8 +12,8 @@ If you prefer stability, please use the LTS version (v6.0.x) instead.
 
 Fluent Package v6.1.0 includes the following improvements:
 
-* Updated bundled Fluentd to v1.20.0.
-* Updated bundled Ruby to 3.4.11 (same as v6.0.5 LTS)
+* Updated bundled Fluentd to v1.20.1.
+* Updated bundled Ruby to 3.4.12
 * Updated most of bundled gems
 * Changed to keep compatibility with older RHEL 9.x/10.x ([#1087](https://github.com/fluent/fluent-package-builder/pull/1087), [#1088](https://github.com/fluent/fluent-package-builder/pull/1088))
 * msi: fix broken link to enterprise services ([#1078](https://github.com/fluent/fluent-package-builder/pull/1078))
@@ -24,9 +24,9 @@ This article explains the changes in Fluent Package v6.1.0.
 
 ## Changes
 
-### Updated bundled Fluentd to v1.20.0.
+### Updated bundled Fluentd to v1.20.1.
 
-Unlike v1.19.x, which is bundled in the LTS version, Fluentd v1.20.0
+Unlike v1.19.x, which is bundled in the LTS version, Fluentd v1.20.1
 includes not only many bug fixes but also includes new major features.
 
 See the following [Fluentd v1.20.0 has been released](/blog/fluentd-v1.20.0-has-been-released.html) article in details.
@@ -34,9 +34,9 @@ See the following [Fluentd v1.20.0 has been released](/blog/fluentd-v1.20.0-has-
 If you want to use the latest features right away, we recommend this
 version. If you prefer stability, please keep using the LTS version.
 
-### Updated bundled Ruby to 3.4.11
+### Updated bundled Ruby to 3.4.12
 
-Ruby 3.4.11 is a maintenance release. Compared to Ruby 3.4.5 which was bundled in the previous version (v6.0.0), it includes the following security fixes in bundled gems:
+Ruby 3.4.12 is a maintenance release. Compared to Ruby 3.4.5 which was bundled in the previous version (v6.0.0), it includes the following security fixes in bundled gems:
 
 * `uri`: [CVE-2025-61594](https://www.ruby-lang.org/en/news/2025/10/07/uri-cve-2025-61594/) (fixed in Ruby 3.4.7)
 * `rexml`: [CVE-2025-58767](https://www.ruby-lang.org/en/news/2025/09/18/dos-rexml-cve-2025-58767/) (fixed in Ruby 3.4.8)
