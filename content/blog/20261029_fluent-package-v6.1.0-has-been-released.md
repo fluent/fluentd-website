@@ -18,7 +18,8 @@ Fluent Package v6.1.0 includes the following improvements:
 * Changed to keep compatibility with older RHEL 9.x/10.x ([#1087](https://github.com/fluent/fluent-package-builder/pull/1087), [#1088](https://github.com/fluent/fluent-package-builder/pull/1088))
 * msi: fix broken link to enterprise services ([#1078](https://github.com/fluent/fluent-package-builder/pull/1078))
 * Drop LTO flags on RHEL 10.x and Ubuntu. Note that hardening flags are kept. ([#1101](https://github.com/fluent/fluent-package-builder/pull/1101))
-* ARM64 windows has been supported ([#1132](https://github.com/fluent/fluent-package-builder/pull/1132))
+* Added experimental support for Windows ARM64 ([#1132](https://github.com/fluent/fluent-package-builder/pull/1132))
+* Stopped bundling `nokogiri` on Windows, including x86_64.
 
 This article explains the changes in Fluent Package v6.1.0.
 
@@ -46,16 +47,17 @@ Ruby 3.4.12 is a maintenance release. Compared to Ruby 3.4.5 which was bundled i
 
 For details, please see the [Ruby 3.4.7](https://www.ruby-lang.org/en/news/2025/10/07/ruby-3-4-7-released/), [Ruby 3.4.8](https://www.ruby-lang.org/en/news/2025/12/17/ruby-3-4-8-released/), [Ruby 3.4.9](https://www.ruby-lang.org/en/news/2026/03/11/ruby-3-4-9-released/), [Ruby 3.4.10](https://www.ruby-lang.org/en/news/2026/06/30/ruby-3-4-10-released/), [Ruby 3.4.11](https://www.ruby-lang.org/en/news/2026/09/23/ruby-3-4-11-released/) and [Ruby 3.4.12](https://www.ruby-lang.org/en/news/2026/10/23/ruby-3-4-12-released/) release notes.
 
-### ARM64 windows has been supported
+### Added experimental support for Windows ARM64
 
-Even though [Windows arm64 hosted runners were available](https://github.blog/changelog/2025-04-14-windows-arm64-hosted-runners-now-available-in-public-preview/), 
-fluent-package didn't support it for a long time.
+We have started providing an experimental Windows ARM64 installer in preparation for the upcoming v7 release.
 
-We decided to include Windows ARM64 support to prepare for the upcoming v7 release.
+### Stopped bundling nokogiri on Windows
 
-As a side effect, `nokogiri` is no longer bundled on Windows, including x86_64.
+Windows packages no longer bundle `nokogiri`. This change also applies to x86_64 packages.
 
-There are some bundled fluentd plugins which use it, but they have been updated to use alternatives such as `REXML`.
+When `nokogiri` is not installed, the `winevt_xml` parser uses `REXML`, and `in_windows_eventlog2` performs less strict bookmark validation.
+
+To retain the previous behavior or use `parser nokogiri`, install `nokogiri` with `fluent-gem install nokogiri`.
 
 ### msi: fixed a broken link to enterprise services on popup window
 
