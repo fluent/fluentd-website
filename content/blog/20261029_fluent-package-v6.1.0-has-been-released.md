@@ -66,12 +66,10 @@ It has been fixed in this release. ([#1079](https://github.com/fluent/fluent-pac
 
 ### rpm: keep compatibility with older RHEL 9.x and 10.x
 
-The packages for RHEL 9.x and 10.x were built on the latest minor version of each series.
-As a result, the built binaries required newer symbols such as `GLIBC_2.35` or `OPENSSL_3.4.0`,
-and they did not work on older minor versions like RHEL 9.6 or RHEL 10.1.
+Recent build environments introduced dependencies on library symbols unavailable in older RHEL minor releases.
 
-To keep the ABI compatible in the whole 9.x and 10.x series, the build environment is now pinned to
-RHEL 9.2 and RHEL 10.0. ([#1089](https://github.com/fluent/fluent-package-builder/pull/1089), [#1090](https://github.com/fluent/fluent-package-builder/pull/1090))
+We now build the RHEL 9 and 10 packages using AlmaLinux 9.2 and 10.0 environments, respectively,
+with key build dependencies pinned to preserve ABI compatibility. ([#1087](https://github.com/fluent/fluent-package-builder/pull/1087), [#1088](https://github.com/fluent/fluent-package-builder/pull/1088))
 
 This issue was fixed and shipped as 6.0.4-2 on above platforms which had been implemented in advance, has now been officially released.
 
