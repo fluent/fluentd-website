@@ -165,3 +165,7 @@
     company: Sophotech
     quote: |
         At <a href="https://sopho.tech/">Sophotech</a> we rely on Fluentd to streamline log collection across our systems, ensuring consistent, reliable observability at scale. Its flexibility and ease of integration allow us to simplify operations and focus on delivering value, while reducing the overhead traditionally associated with managing logs.
+-
+    company: Wordfully
+    quote: |
+        <a href="https://wordfully.ai">Wordfully</a> uses Fluentd to collect and forward logs from its application services for troubleshooting.
