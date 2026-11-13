@@ -160,6 +160,21 @@ title: Download Fluent Package
               <a href="//docs.fluentd.org/installation/install-fluent-package/install-by-msi-fluent-package">Installation Guide</a>
             </td>
           </tr>
+          <tr>
+            <td>
+              <center>
+                <img src="<%= config[:http_prefix] %>images/download-icons/logo_mac.gif"><br/>
+                macOS
+              </center>
+            </td>
+            <td>Apple Silicon (ARM64)</td>
+            <td>
+              <p>Install fluent-package with Homebrew. This formula supports Apple Silicon Macs.</p>
+              <pre>brew tap fluent/package-builder https://github.com/fluent/fluent-package-builder
+brew install fluent/package-builder/fluent-package</pre>
+              <a href="//docs.fluentd.org/installation/install-fluent-package/install-by-homebrew-fluent-package">Installation Guide</a>
+            </td>
+          </tr>
         </tbody>
       </table>
       <p>If you could not access <a href="https://packages.fluentd.org/index.html">https://packages.fluentd.org</a>, try to use <a href="https://fluentd.cdn.cncf.io/index.html">https://fluentd.cdn.cncf.io</a> or <a href="https://td-agent-package-browser.herokuapp.com">https://td-agent-package-browser.herokuapp.com</a>.</p>
@@ -177,6 +192,9 @@ title: Download Fluent Package
         <p>
           fluent-package user should migrate to Fluent Package v6.
           See <a href="<%= config[:http_prefix] %>blog/upgrade-guide-for-fluent-package-v6">Upgrade to fluent-package v6</a> for migration.
+        </p>
+        <p>
+          Fluent Package v5 was not available for macOS. For current macOS installations, see the <a href="//docs.fluentd.org/installation/install-fluent-package/install-by-homebrew-fluent-package">Homebrew installation guide for Fluent Package v6</a>.
         </p>
         <p>
           If you cannot finish the migration on your own, several companies offer <a href="<%= config[:http_prefix] %>enterprise_services">commercial support</a>, including help with upgrades from an EOL version.
@@ -298,28 +316,6 @@ title: Download Fluent Package
               <a href="//docs.fluentd.org/installation/install-fluent-package/install-by-msi-fluent-package">Installation Guide</a>
             </td>
           </tr>
-          <!--
-          <tr>
-            <td>
-              <center>
-                <img src="<%= config[:http_prefix] %>images/download-icons/logo_mac.gif"><br/>
-                MacOS X
-              </center>
-            </td>
-            <td>OSX 10.11 or later</td>
-            <td>
-              <span style="font-weight:bold">fluent-package (experimental) v<%= data.package_versions.fluent_package.v5.mac %></span>
-              <ul>
-                <li>
-                  <a href="https://td-agent-package-browser.herokuapp.com/5/macosx">dmg repository</a>
-                </li>
-              </ul>
-              <a href="//docs.fluentd.org/installation/install-fluent-package/install-by-dmg-fluent-package">Installation Guide</a>
-              <br/>
-              <br/>
-            </td>
-          </tr>
-          -->
         </tbody>
       </table>
       <br/>
