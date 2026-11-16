@@ -1210,8 +1210,8 @@
     "source_code_uri": null
   },
   {
-    "obsolete": true,
-    "note": "Can't access the homepage.",
+    "obsolete": null,
+    "note": null,
     "name": "fluent-plugin-td",
     "info": "Treasure Data Cloud Data Service plugin for Fluentd",
     "authors": "Treasure Data, Inc.",
