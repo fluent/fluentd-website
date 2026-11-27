@@ -22,7 +22,7 @@ haproxy[27508]: info 127.0.0.1:45111 [12/Jul/2012:15:19:03.258] wss-relay wss-re
 Which can be parsed with the following regular expression:
 
 ```
-/^(?<ps>\w+)\[(?<pid>\d+)\]: (?<pri>\w+) (?<c_ip>[\w\.]+):(?<c_port>\d+) \[(?<time>.+)\] (?<f_end>[\w-]+) (?<b_end>[\w-]+)\/(?<b_server>[\w-]+) (?<tw>\d+)\/(?<tc>\d+)\/(?<tt>\d+) (?<bytes>\d+) (?<t_state>[\w-]+) (?<actconn>\d+)\/(?<feconn>\d+)\/(?<beconn>\d+)\/(?<srv_conn>\d+)\/(?<retries>\d+) (?<srv_queue>\d+)\/(?<backend_queue>\d+)$/
+/^(?<ps>\w+)\[(?<pid>\d+)\]: (?<pri>\w+) (?<c_ip>[\w\.:]+):(?<c_port>\d+) \[(?<time>.+)\] (?<f_end>[\w-]+) (?<b_end>[\w-]+)\/(?<b_server>[\w-]+) (?<tw>\d+)\/(?<tc>\d+)\/(?<tt>\d+) (?<bytes>\d+) (?<t_state>[\w-]+) (?<actconn>\d+)\/(?<feconn>\d+)\/(?<beconn>\d+)\/(?<srv_conn>\d+)\/(?<retries>\d+) (?<srv_queue>\d+)\/(?<backend_queue>\d+)$/
 ```
 
 The HTTP HAProxy logs look something like this:
@@ -31,7 +31,7 @@ The HTTP HAProxy logs look something like this:
 Which can be parsed with the following regular expression:
 
 ```
- /^(?<ps>\w+)\[(?<pid>\d+)\]: (?<c_ip>[\w\.]+):(?<c_port>\d+) \[(?<time>.+)\] (?<f_end>[\w-]+) (?<b_end>[\w-]+)\/(?<b_server>[\w-]+) (?<tq>\d+)\/(?<tw>\d+)\/(?<tc>\d+)\/(?<tr>\d+)\/(?<tt>\d+) (?<status_code>\d+) (?<bytes>\d+) (?<req_cookie>\S+) (?<res_cookie>\S+) (?<t_state>[\w-]+) (?<actconn>\d+)\/(?<feconn>\d+)\/(?<beconn>\d+)\/(?<srv_conn>\d+)\/(?<retries>\d+) (?<srv_queue>\d+)\/(?<backend_queue>\d+) \{(?<req_headers>[^}]*)\} \{(?<res_headers>[^}]*)\} "(?<request>[^"]*)"/
+ /^(?<ps>\w+)\[(?<pid>\d+)\]: (?<c_ip>[\w\.:]+):(?<c_port>\d+) \[(?<time>.+)\] (?<f_end>[\w-]+) (?<b_end>[\w-]+)\/(?<b_server>[\w-]+) (?<tq>\d+)\/(?<tw>\d+)\/(?<tc>\d+)\/(?<tr>\d+)\/(?<tt>\d+) (?<status_code>\d+) (?<bytes>\d+) (?<req_cookie>\S+) (?<res_cookie>\S+) (?<t_state>[\w-]+) (?<actconn>\d+)\/(?<feconn>\d+)\/(?<beconn>\d+)\/(?<srv_conn>\d+)\/(?<retries>\d+) (?<srv_queue>\d+)\/(?<backend_queue>\d+) \{(?<req_headers>[^}]*)\} \{(?<res_headers>[^}]*)\} "(?<request>[^"]*)"/
 ```
 
 In the rest of the article, we assume the format is TCP. Hence, assuming the HAProxy log is located at `/var/log/haproxy/haproxy.log`, add the following to the configuration file (which, for `td-agent` is at `/etc/td-agent/td-agent.conf`.)
@@ -41,7 +41,7 @@ In the rest of the article, we assume the format is TCP. Hence, assuming the HAP
   @type tail
   path /var/log/haproxy/haproxy.log
   pos  /path/to/file_position_file
-  format /^(?<ps>\w+)\[(?<pid>\d+)\]: (?<pri>\w+) (?<c_ip>[\w\.]+):(?<c_port>\d+) \[(?<time>.+)\] (?<f_end>[\w-]+) (?<b_end>[\w-]+)\/(?<b_server>[\w-]+) (?<tw>\d+)\/(?<tc>\d+)\/(?<tt>\d+) (?<bytes>\d+) (?<t_state>[\w-]+) (?<actconn>\d+)\/(?<feconn>\d+)\/(?<beconn>\d+)\/(?<srv_conn>\d+)\/(?<retries>\d+) (?<srv_queue>\d+)\/(?<backend_queue>\d+)$/
+  format /^(?<ps>\w+)\[(?<pid>\d+)\]: (?<pri>\w+) (?<c_ip>[\w\.:]+):(?<c_port>\d+) \[(?<time>.+)\] (?<f_end>[\w-]+) (?<b_end>[\w-]+)\/(?<b_server>[\w-]+) (?<tw>\d+)\/(?<tc>\d+)\/(?<tt>\d+) (?<bytes>\d+) (?<t_state>[\w-]+) (?<actconn>\d+)\/(?<feconn>\d+)\/(?<beconn>\d+)\/(?<srv_conn>\d+)\/(?<retries>\d+) (?<srv_queue>\d+)\/(?<backend_queue>\d+)$/
   tag haproxy.tcp
   time_format %d/%B/%Y:%H:%M:%S
 </source>
